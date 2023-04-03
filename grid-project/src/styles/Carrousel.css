@@ -1,6 +1,13 @@
 .car-section{
+    display:flexbox;
     height: 900px;
-   width: 100%;
+   width: 77%;
+   margin-left: 12%;
+   margin-right: 12%;
+  
+   justify-content: center;
+   align-content: center;
+
     
    
 }

@@ -4,7 +4,8 @@
     width: 70%;
     justify-content: center;
     align-items: center;
-    margin-left: 12vw;
+    margin-left: 12%;
+    margin-right: 12%;
 
 }
 .contact-section{
@@ -14,8 +15,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     border-bottom: 2px #36B079 solid;
-    width: 1800px;
-    margin-left: -12%;
+    width: 101%;
+   
 }
 .contact-form{
     display: grid;
@@ -140,7 +141,7 @@
 
     .contact-section{
         height: 380px;
-        width: 414px;
+        width: 100%;
     }
     .contact-input-description::placeholder{
     

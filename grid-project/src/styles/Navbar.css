@@ -5,16 +5,22 @@
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    
     z-index: 1000; 
     width: 100%;
+   
+    margin-right: 12%;
+  
+   
 }
 .hamburguer-navbar{
   display: none;
 }
 
  .navbar.sticky {
-    width: 100%;
+  width: 100%;
+ 
+  margin-right: 150px;
     position: fixed;
     background-color: transparent; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
@@ -25,12 +31,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 15rem;
-    margin-left: 1%;
+    width: 15vw;
+    margin-left: 80%;
+    
+   
 }
 .nav-items{
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: center;
     align-self: center;
 }
@@ -61,7 +69,8 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 8rem;
-    margin-left: 0.4%;
+    margin-left: 12%;
+    margin-right: 12%;
     z-index: 9999;
     display: grid;
     grid-template-columns: repeat(4, 0fr);
@@ -146,7 +155,10 @@
   @media only screen and (max-width: 450px) {
     .navbar {
       height: 70px;
-      width: 500px;
+      width: 100%;
+    }
+    .navbar.sticky{
+      width: 100%;
     }
     .hamburguer-navbar{
       display:flex;

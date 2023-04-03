@@ -1,0 +1,129 @@
+.faqs-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    margin: auto;
+    /* background-image: url('../assets/backgroundNube1.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; */
+
+}
+.faqs-titulo{
+    font-size: 3rem;
+    font-family: rouben;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #eef4ed;
+    margin-top: 5%;
+}
+.faqs-subtitulo{
+    font-size: 1.3rem;
+    font-family: rouben ligth;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #eef4ed;
+}
+.faqs{
+    justify-content: center;
+    align-items: center;
+}
+
+.faqs-icon{
+    height: 400px;
+    margin-left: 15%;
+}
+
+
+.accordion{
+    width: 600px;
+}
+
+.item{
+    background: #eef4ed;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.title{
+    color: #0c1317;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: rouben;
+    font-size: 0.8rem;
+}
+.title.show{
+    color: #36B079;
+    
+}
+
+.content {
+    color: #0c13179f;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1.1s cubic-bezier(0,1,0,1);
+}
+.content.show{
+    height: auto;
+    max-height: 9999px;
+    transition: all 1.1s cubic-bezier(1,0,1,0);
+}
+
+.guarantee{
+   margin-top: 5%;
+ }
+
+@media  (max-width:450px){
+
+    .faqs-container{
+        
+        display: grid;
+        grid-template-columns: auto;
+        height: 1000px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        
+    }
+    .content{
+        font-size: 12px;
+    }
+
+    .title{
+        color: #0c1317;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-family: rouben;
+        font-size: 0.6rem;
+    }
+    .faqs-subtitulo{
+        font-size: 16px;
+    }
+
+    .item{
+       width: 250px;
+    }
+
+    .guarantee{
+        margin-top: -30%;
+        margin-left: 0%;
+       
+     }
+     .accordion{
+        width: 100%;
+    }
+    .faqs-titulo{
+        font-size: 2rem;
+        
+       
+    }
+}

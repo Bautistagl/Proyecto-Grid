@@ -1,0 +1,265 @@
+
+.navbar{
+  position: fixed;
+    background:#0c1317 ;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1000; 
+    width: 100%;
+}
+.hamburguer-navbar{
+  display: none;
+}
+
+ .navbar.sticky {
+    width: 100%;
+    position: fixed;
+    background-color: transparent; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(10px);
+  } 
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15rem;
+    margin-left: 1%;
+}
+.nav-items{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+}
+
+.nav-title{
+    font-size: 1.1rem;
+    font-family: rouben;
+    margin-left: 3%;
+    cursor: pointer;
+    color: #eef4ed;
+    padding: 25px 25px;
+   
+}
+.nav-title:hover{
+    color: #36B079;
+}
+
+.menu-navbar{
+  display: none;
+}
+.menu-navbar.show{
+  display: none;
+}
+
+
+.container-productos{
+    position: fixed;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8rem;
+    margin-left: 0.4%;
+    z-index: 9999;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 300px;
+    width: 82%;
+    background: #eef4ed;
+    border-radius: 10px;
+    backdrop-filter: blur(0px);
+    transition: opacity 0.4s ease-in-out; /* Add the transition property with a longer duration */
+    opacity: 0; /* Set the initial opacity to 0 */
+    pointer-events: none; /* Disable pointer events when the element is hidden */  
+}
+
+.container-productos.show {
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1; /* Change the opacity to 1 to show the element */
+    pointer-events: auto; /* Enable pointer events when the element is shown */
+  }
+  
+  .container-productos.show.sticky {
+   margin-top: 8rem;
+  }
+
+.productos {
+    border-radius: 5px;
+    height: 100px;
+    pad: 16px 16px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+  .productos:hover{
+    background: #d3dcd26c;
+    cursor:pointer;
+  }
+
+  .descripcion-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 10%;
+  }
+
+  .titulo-productos{
+    margin-bottom: 5%;
+    font-family: rouben;
+    font-size: 1rem;
+    color: #0c1317;
+  }
+  .titulo-productos:hover{
+    color: #36B079;
+  }
+  
+  .subtitulo-productos{
+    font-family: rouben ligth;
+    width: 70%;
+    font-size: 0.7rem;
+    color: #0c1317;
+
+  }
+  .logo-productos{
+    height: 50px;
+    margin-left: 2%;
+  }
+  .producto.show{
+    height: 300px;
+    background-color: #e7eee6;
+    border-radius: 10px;
+    width: 250px;
+    margin-left: 10%;
+    justify-content: center;
+    align-content: center;
+    overflow-y: scroll;
+  }
+  .noshow{
+    display: none;
+  }
+ 
+  @media only screen and (max-width: 450px) {
+    .navbar {
+      height: 70px;
+      width: 500px;
+    }
+    .hamburguer-navbar{
+      display:flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-left: 40%;
+      background-color: transparent;
+      border-style: none;
+    }
+    
+    .nav-items {
+      display: none;
+      flex-direction: column;
+      margin-top: 300px;
+    }
+    
+    .nav-item {
+     margin: auto;
+    }
+    .navbar-logo{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 8rem;
+      height: 3rem;
+      margin-left: 0;
+  }
+  .container-productos{
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 15vw;
+    margin-right: 10vw;
+    z-index: 9999;
+    display: grid;
+    grid-template-columns: auto;
+    height: 960px;
+    width: 300px;
+}
+.productos {
+  display: flex;
+  margin: auto;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.logo-productos{
+  height: 30px;
+
+}
+.titulo-productos{
+  margin-bottom: 5%;
+  font-family: rouben;
+  font-size: 0.8rem;
+}
+.subtitulo-productos{
+  font-family: rouben ligth;
+  width: 70%;
+  font-size: 0.6rem;
+
+}
+.menu-navbar.show{
+   position: fixed;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 8rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    z-index: 9999;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    background: #eef4ed;
+    border-radius: 10px;
+    backdrop-filter: blur(0px);
+    overflow-y: scroll;
+}
+.menu-title{
+  display: flex;
+  font-family: rouben;
+  width: 100%;
+  padding: 16px 16px;
+  justify-content: flex-start;
+  align-content: flex-start;
+  
+}
+.menu-title:active{
+  color:#36B079
+}
+.hamburger-logo{
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+
+}
+.hamburger-span{
+ width: 200px;
+ margin-left: 55%;
+}
+.hamburger-cerrado{
+  width: 15px;
+  height: 15px;
+}
+.hamburger-abierto{
+  width: 20px;
+  height: 20px;
+}
+.hamburger-logoCerrado{
+  width: 15px;
+  height: 15px;
+
+}
+
+
+  }

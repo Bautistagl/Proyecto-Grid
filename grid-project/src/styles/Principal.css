@@ -60,7 +60,7 @@
     }
 }
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:500px){
     .tituloPrincipal{
         color: #eef4ed;
         font-family: rouben;

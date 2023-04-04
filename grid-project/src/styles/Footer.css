@@ -101,7 +101,7 @@ ul{
   margin: auto;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   .container-footer{
     display: grid;
     grid-template-columns: auto;
@@ -109,7 +109,7 @@ ul{
     padding: 0px;
     z-index: 0;
     justify-content: flex-start;
-    width: 100%;
+    width: 90%;
     margin-left: 0px;
     
 }
@@ -129,13 +129,13 @@ ul{
 }
 .licencias-footer{
   
-  all: initial;
+ 
   font-family: 'Courier New', Courier, monospace;
   color:#eef4ed;
   margin: auto;
   font-size: 0.6rem;
   width: 100%;
-  margin-left: 3%;
+  margin-left: 6%;
   margin-bottom: 5%;
 }
 .footer-titulo-principal{

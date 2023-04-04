@@ -152,7 +152,7 @@
     display: none;
   }
  
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 500px) {
     .navbar {
       height: 70px;
       width: 100%;

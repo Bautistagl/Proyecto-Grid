@@ -51,6 +51,7 @@
 }
 .slick-arrow.slick-prev,.slick-arrow.slick-next{
     margin-top: 14%;
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -89,6 +90,7 @@
 .animacion-car{
     display: none;
 }
+
 
 }
 @media only screen and (max-width: 400px) {

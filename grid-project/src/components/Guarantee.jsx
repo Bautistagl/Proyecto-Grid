@@ -13,7 +13,7 @@ const Guarantee = () => {
             <div className='guarantee-subtitulo'> 
                   Not happy with our services? We`ll send you your money back for the first trial month! Open a ticket at support.runonflux.io
             </div>
-            <button className='guarantee-button'>Discover more</button>
+            <div className='guarantee-button'>Discover more</div>
              </div>
              <img className='guarantee-icon' src={"/moneyBack.png"}/>
         </div>

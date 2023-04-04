@@ -1,7 +1,7 @@
 .faqs-container{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    
     align-items: center;
     height: 100vh;
     margin: auto;
@@ -128,5 +128,11 @@
         font-size: 2rem;
         
        
+    }
+}
+@media  (max-width:1500px){
+    .faqs-container{
+       gap: 120px;
+    
     }
 }

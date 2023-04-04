@@ -28,8 +28,8 @@ const Footer = () => {
                 <img className='icon-redes' src={"/instagram.png"}/>
               </a>
            </div>
-           <button className='boton-footer' > Contact us! </button>
-           <button className='boton-footer' > Support Center</button>
+           <div className='boton-footer' > Contact us! </div>
+           <div className='boton-footer' > Support Center</div>
 
          </div>
       

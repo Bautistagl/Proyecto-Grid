@@ -39,10 +39,10 @@ const toggleMenu = () => {
             <Link href="/">
                    <img className='navbar-logo' src="/gridLogo1.png"/>
              </Link>
-             <button
+             <div
               onClick={()=>toggleMenu() }
               
-             className='hamburguer-navbar'> {menu===false ?  <img className='hamburger-logo' src={"/menu.png"}/> : <img className='hamburger-logoCerrado' src={"/menuCerrado.png"}/>} </button>
+             className='hamburguer-navbar'> {menu===false ?  <img className='hamburger-logo' src={"/menu.png"}/> : <img className='hamburger-logoCerrado' src={"/menuCerrado.png"}/>} </div>
         <ul className='nav-items'>
           <div className='nav-title'> Home</div>
           <div
@@ -52,7 +52,16 @@ const toggleMenu = () => {
           <div className='nav-title'> Solutions </div>
           <div className='nav-title'> About Us </div>
           <div className='nav-title'> Contact </div>
+
         </ul>
+          <button className='boton-landing' >
+    <span>Login</span>
+    <i />
+  </button>
+  <button >
+    <span>Register</span>
+    <i />
+  </button>
         </nav>
         <div className={`menu-navbar ${menu ? 'show' : ''}`}> 
         <ul className='menu-items'>
@@ -125,6 +134,7 @@ const toggleMenu = () => {
           <div className='menu-title'> Solutions </div>
           <div className='menu-title'> About Us </div>
           <div className='menu-title'> Contact </div>
+          
         </ul>
         
         </div>

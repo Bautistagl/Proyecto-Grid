@@ -151,6 +151,12 @@
 
     .contact-button{
         margin-left: 58%;    
-        font-size: 0.9rem;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-span{
+       justify-content: center;
+       margin-left: 30%;
     }
 }

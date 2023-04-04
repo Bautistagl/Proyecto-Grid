@@ -1,5 +1,5 @@
 
-html,body {
+body {
   overflow-x: hidden;
   background: #0c1317;
   margin: 0;
@@ -10,14 +10,5 @@ html,body {
      
 }
 
-/* @media  (max-width:450px){
-  body {
-
-   
-  
-       
-  }
-
-} */
 
 

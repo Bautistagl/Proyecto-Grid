@@ -91,3 +91,12 @@
 }
 
 }
+@media only screen and (max-width: 400px) {
+    .tituloCar{
+        font-size: 16px;
+    }
+    .subtituloCar{
+        
+        width: 85%;
+    }
+}

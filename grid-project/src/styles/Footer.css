@@ -206,8 +206,13 @@ li{
   }
   
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .columnas{
     margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 3500px) {
+  .columnas{
+    margin-left: 10px;
   }
 }

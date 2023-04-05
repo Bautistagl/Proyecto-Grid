@@ -121,7 +121,16 @@
       align-items: center;
    }
    .login-form{
-     
-      width: 100%;
+      width: 80%;
   }
+  .login-submit{
+   width: 250px;
+}
+.login-input{
+   width: 250px;
+}
+.member-login{
+   width: 250px;
+ }
+
   }

@@ -229,9 +229,7 @@
   }
   
   .login-navbar{
-    height: 25px;
-    margin-left: 50px;
-    margin-top: 3%;
+   display: none;
   }
 
   
@@ -363,6 +361,11 @@ button{
 i{
   display: none
 }
-
+.login-navbar{
+  display: flex;
+  height: 25px;
+  margin-left: 50px;
+  margin-top: 3%;
+}
 
   }

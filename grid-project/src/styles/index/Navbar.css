@@ -369,3 +369,19 @@ i{
 }
 
   }
+  @media only screen and (max-width: 400px) {
+    .hamburguer-navbar{
+      display:flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-left: 20%;
+      background-color: transparent;
+      border-style: none;
+    }
+    .login-navbar{
+      display: flex;
+      height: 25px;
+      margin-left: 30px;
+      margin-top: 3%;
+    }
+  }

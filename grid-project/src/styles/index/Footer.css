@@ -211,7 +211,10 @@ li{
     margin-left: 40px;
   }
 }
-@media only screen and (max-width: 3500px) {
+@media only screen and (max-width: 350px) {
+  .container-footer{
+    margin-left: 5px;
+  }
   .columnas{
     margin-left: 10px;
   }

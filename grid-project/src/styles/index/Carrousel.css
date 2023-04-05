@@ -98,10 +98,11 @@
 }
 @media only screen and (max-width: 400px) {
     .tituloCar{
-        font-size: 16px;
+        font-size: 14px;
+        width: 90%;
     }
     .subtituloCar{
-        
+        font-size: 10px;
         width: 85%;
     }
 }

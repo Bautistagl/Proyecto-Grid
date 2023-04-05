@@ -1,0 +1,113 @@
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
+
+.login-title{
+    color: #eef4ed;
+    font-family: rouben;
+}
+.login-input{
+    margin-top: 5%;
+    height: 25px;
+    width: 320px;
+    padding: 10px 10px;
+   border-style: none;
+    border-radius: 5px;
+}
+
+.login-submit{
+    border-style: none;
+    display: flex;
+    color: white;
+    margin-top: 5%;
+    background-color: #36B079;
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    height: 25px;
+    border-radius: 5px;
+    font-family: rouben;
+    cursor: pointer;
+}
+
+.forgot-login{
+    color:#36B079;
+    font-family: rouben;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.forgot-login:hover{
+    color: #7ce2b4;
+}
+ .member-login{
+   text-align: center;
+    width: 340px;
+    margin-top: 5%;
+    color: #eef4ed;
+    font-family: rouben;
+ }
+ .member2-login{
+    color: #36B079;
+    cursor: pointer;
+ }
+ .member2-login:hover{
+    color: #7ce2b4;
+    
+ }
+
+ .login-redes{
+    display: flex;
+    flex: row;
+    justify-content: center;
+ }
+ .logo-google-login{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20%;
+   
+ }
+ .logo-facebook-login{
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 8%;
+   
+ }
+
+ .a-redes-login{
+    display: flex;
+    background: #eef4ed;
+    border-radius: 5px;
+    width: 60px;
+    height: 50px;
+    margin-right: 20%;
+    margin-left: 25%;
+   
+
+ }
+ .separator {
+    width: 165px;
+    margin-top: 5%;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  .login-separador{
+    display: flex;
+  }
+  .letra-separador{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1.5%;
+    color:#eef4ed ;
+ 
+  }

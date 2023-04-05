@@ -1,9 +1,5 @@
 import React,{useState,useEffect,useRef} from 'react'
 import Link from 'next/link'
-
-
-
-
 function Navbar()  {
     const[dropdown,setDropdown] = useState(false)
     const[menu,setMenu] = useState(false)
@@ -54,14 +50,18 @@ const toggleMenu = () => {
           <div className='nav-title'> Contact </div>
 
         </ul>
+        <Link href="/login"> 
+
           <button className='boton-landing' >
-    <span>Login</span>
-    <i />
-  </button>
-  <button >
-    <span>Register</span>
-    <i />
-  </button>
+            Login
+          </button>
+        </Link>
+        <Link href="register">
+        
+          <button className='boton-landing' >
+              Register
+           </button>
+        </Link>
         </nav>
         <div className={`menu-navbar ${menu ? 'show' : ''}`}> 
         <ul className='menu-items'>

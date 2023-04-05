@@ -4,6 +4,31 @@ import Principal from "./Principal";
 import Link from "next/link";
 
 
+
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <img
+    src="/previous (1).png"
+      className={className}
+      style={{ ...style, display: "block",height:"30px"  }}
+      onClick={onClick}
+    />
+  );
+}
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <img
+    src="/next (3).png"
+      className={className}
+      style={{ ...style, display: "block",height:"30px"  }}
+      onClick={onClick}
+    />
+  );
+}
+
 export default class SimpleSlider extends Component {
 
     state = {
@@ -21,6 +46,8 @@ export default class SimpleSlider extends Component {
       speed: 400,
       slidesToShow: 1,
       slidesToScroll: 1,
+      nextArrow: <SampleNextArrow/>,
+      prevArrow:  <SamplePrevArrow/>,
       afterChange: this.handleSlideChange
     };
 

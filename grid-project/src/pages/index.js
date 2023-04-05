@@ -1,26 +1,23 @@
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-import { Inter } from 'next/font/google'
+
 import dynamic from "next/dynamic";
-
-import Navbar from '@/components/Navbar'
-import Carrousel from '@/components/Carrousel'
-import Segundo from "@/components/Segundo";
-import Powered from "@/components/Powered";
-import Faqs from "@/components/Faqs";
-import ContactForm from "@/components/ContactForm";
-import Footer from "@/components/Footer";
+import Segundo from "@/components/index/Segundo";
+import Powered from "@/components/index/Powered";
+import Faqs from "@/components/index/Faqs";
+import ContactForm from "@/components/index/ContactForm";
+import Footer from "@/components/index/Footer";
 
 
-const inter = Inter({ subsets: ['latin'] })
-const DynamicNavbar = dynamic(()=>import("../components/Navbar"),
+
+const DynamicNavbar = dynamic(()=>import("../components/index/Navbar"),
   {
     ssr:false,
     loading: () => <p> Im f</p>
   }
 )
-const DynamicCarrousel = dynamic(()=>import("../components/Carrousel"),
+const DynamicCarrousel = dynamic(()=>import("../components/index/Carrousel"),
   {
     ssr:false,
     loading: () => <p> Im f</p>

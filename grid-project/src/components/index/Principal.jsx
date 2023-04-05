@@ -13,7 +13,7 @@ const Principal = () => {
       renderer:'svg',
       loop:true,
       autoplay:true,
-      animationData: require('../../public/animGlobe3.json')
+      animationData: require('../../../public/animGlobe3.json')
     })
   },[])
 

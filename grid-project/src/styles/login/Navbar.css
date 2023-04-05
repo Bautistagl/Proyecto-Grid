@@ -9,5 +9,8 @@
   }
   
   .logo-navbarLogin {
-    height: 80px; /* adjust to your logo size */
+    width: 8rem;
+    height: 3rem;
+    margin-top: 10px;
+    margin-left: 10px;
   }

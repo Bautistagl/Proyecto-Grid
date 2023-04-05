@@ -35,10 +35,17 @@ const toggleMenu = () => {
             <Link href="/">
                    <img className='navbar-logo' src="/gridLogo1.png"/>
              </Link>
+             <div > 
+              <Link href="/login"> 
+             <img className='login-navbar' src='/login.png' alt='login'/>
+              </Link>
+             </div>
+
              <div
               onClick={()=>toggleMenu() }
               
              className='hamburguer-navbar'> {menu===false ?  <img className='hamburger-logo' src={"/menu.png"}/> : <img className='hamburger-logoCerrado' src={"/menuCerrado.png"}/>} </div>
+             
         <ul className='nav-items'>
           <div className='nav-title'> Home</div>
           <div
@@ -62,8 +69,11 @@ const toggleMenu = () => {
               Register
            </button>
         </Link>
+        
         </nav>
+        
         <div className={`menu-navbar ${menu ? 'show' : ''}`}> 
+        
         <ul className='menu-items'>
           <div className='menu-title'> Home</div>
           <div

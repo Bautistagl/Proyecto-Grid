@@ -1,4 +1,5 @@
 
+import Home from "@/components/logged-login/Home";
 import dynamic from "next/dynamic";
 const DynamicNavbar = dynamic(()=>import("../../components/logged-login/Navbar"),
   {
@@ -11,6 +12,9 @@ export default function LoggedLogin() {
     return (
       <>
       <DynamicNavbar/>
+      <Home/>
+      
+
 
       </>
     )

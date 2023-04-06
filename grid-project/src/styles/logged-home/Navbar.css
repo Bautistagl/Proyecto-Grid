@@ -1,0 +1,46 @@
+.navbarLogged {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #36B079;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 25px 25px;
+
+  }
+  
+  li {
+    margin-left: 2rem;
+  }
+  .li-logged:hover{
+    color: #36B079;
+  }
+  
+  .logo {
+    margin-left: 20px;
+  }
+  .logo-navbarLogged {
+    width: 12vw;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .user-logged-navbar{
+    display: flex;
+    margin-left: 30%;
+  }
+  .icono-user-logged{
+    height: 35px;
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .logo-navbarLogged {
+      width: 8rem;
+      height: 3rem;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  }

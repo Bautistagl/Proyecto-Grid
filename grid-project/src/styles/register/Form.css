@@ -1,4 +1,4 @@
-.login-form{
+.register-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,11 +8,11 @@
 }
 
 
-.login-title{
+.register-title{
     color: #eef4ed;
     font-family: rouben;
 }
-.login-input{
+.register-input{
     margin-top: 5%;
     height: 25px;
     width: 320px;
@@ -21,10 +21,10 @@
     border-radius: 5px;
 }
 
-.login-submit{
-   display: flex;
+.register-submit{
+    display: flex;
     color: #eef4ed;
-    margin-top: 13%;
+    margin-top: 5%;
     background-color: #36B079;
     width: 340px;
     justify-content: center;
@@ -37,37 +37,38 @@
     cursor: pointer;
 }
 
-.forgot-login{
+
+.forgot-register{
     color:#36B079;
     font-family: rouben;
     margin-top: 5%;
     cursor: pointer;
 }
-.forgot-login:hover{
+.forgot-register:hover{
     color: #7ce2b4;
 }
- .member-login{
+ .member-register{
    text-align: center;
     width: 340px;
-    margin-top: 5%;
+    margin-top: 15%;
     color: #eef4ed;
     font-family: rouben;
  }
- .member2-login{
+ .member2-register{
     color: #36B079;
     cursor: pointer;
  }
- .member2-login:hover{
+ .member2-register:hover{
     color: #7ce2b4;
     
  }
 
- .login-redes{
+ .register-redes{
     display: flex;
     flex: row;
     justify-content: center;
  }
- .logo-google-login{
+ .logo-google-register{
     height: 30px;
     width: 30px;
     margin-right: 10px;
@@ -75,7 +76,7 @@
     margin-top: 20%;
    
  }
- .logo-facebook-login{
+ .logo-facebook-register{
     height: 35px;
     width: 35px;
     margin-right: 10px;
@@ -84,7 +85,7 @@
    
  }
 
- .a-redes-login{
+ .a-redes-register{
     display: flex;
     background: #eef4ed;
     border-radius: 5px;
@@ -101,7 +102,7 @@
     border: 0;
     border-top: 1px solid #ccc;
   }
-  .login-separador{
+  .register-separador{
     display: flex;
   }
   .letra-separador{
@@ -114,19 +115,19 @@
 
   @media only screen and (max-width: 500px) {
 
-   .login-title{
+   .register-title{
       display: flex;
       width: 100%;
       justify-content: center;
       align-items: center;
    }
-   .login-form{
+   .register-form{
       width: 80%;
   }
-  .login-submit{
+  .register-submit{
    width: 250px;
 }
-.login-input{
+.register-input{
    width: 250px;
 }
 .member-login{

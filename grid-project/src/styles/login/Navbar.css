@@ -7,10 +7,18 @@
   .logo {
     margin-left: 20px;
   }
-  
   .logo-navbarLogin {
-    width: 8rem;
-    height: 3rem;
+    width: 12vw;
     margin-top: 10px;
     margin-left: 10px;
+  }
+
+  @media only screen and (max-width: 500px) {
+
+    .logo-navbarLogin {
+      width: 8rem;
+      height: 3rem;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
   }

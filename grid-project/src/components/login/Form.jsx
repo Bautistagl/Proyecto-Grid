@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 
@@ -27,7 +28,10 @@ function Form() {
       </div>
         <input placeholder='Email' className='login-input' type="email"  value={email} onChange={(e) => setEmail(e.target.value)} required />
         <input placeholder='Password' className='login-input' type="password"  value={password} onChange={(e) => setPassword(e.target.value)} required />
-      <div className='login-submit' type="submit" >Login</div>
+      <Link href="/logged">
+      
+      <button className='login-submit' type="submit" >Login</button>
+      </Link>
       <div className='forgot-login'>
         Forgot your password?
       </div>

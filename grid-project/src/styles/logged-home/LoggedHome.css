@@ -13,7 +13,7 @@
     font-weight: normal;
     font-style: normal;
   }
-  .logged-home-component{
+  .logged-home-container{
     background-color: #77aa77;
 background-image: url("../../../public/background2.svg");
 background-size: cover;

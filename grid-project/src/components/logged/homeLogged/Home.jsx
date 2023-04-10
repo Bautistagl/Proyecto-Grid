@@ -3,7 +3,8 @@ import React from 'react'
 const Home = () => {
   return (
     <div className='logged-home-container'>
-    <div className='logged-bienvenida'> Hola, Usuario 👋</div>
+      <div>adsads</div>
+    <div className='logged-bienvenida'> Bienvenido/a 👋</div>
     <div className='container-logged'> 
     <div className='subcontainer-logged'> 
     <img className='foto-container-logged' src='https://hpanel-main.hostinger.com/assets/img/HomeHostingCrossSell.197ab14d.png'/>

@@ -6,6 +6,7 @@
     font-size: 1.5rem;
     font-family: rouben;
     margin-top: 2%;
+    margin-left: 10%;
 
     
     
@@ -19,9 +20,9 @@
     height: 40vh;
     width: 60vw;
     border: 4px solid #36B079;
-    margin: auto;
     border-radius: 10px;
-   margin-top: 3%;
+    margin-top: 3%;
+    margin-left: 25vw;
 
 }
 
@@ -85,13 +86,13 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: auto;
     height: 30vh;
     width: 60vw;
     border: 4px solid #36B079;
     border-radius: 10px;
     margin-top: 3%;
     margin-bottom: 7%;
+    margin-left: 25vw;
 }
 .titulo-subcontainer2-logged{
     font-size: 1.3rem;
@@ -139,4 +140,11 @@
     .input-logged-subcontainer{
         width: 350px;
     }
+    .container-logged{
+        margin-left: 30vw;
+    }
+    .container2-logged{
+        margin-left: 30vw;
+    }
 }
+/* @media only screen and (max-width: 1200px) {} */

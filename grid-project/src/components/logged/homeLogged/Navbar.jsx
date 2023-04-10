@@ -9,8 +9,10 @@ const Navbar = () => {
         <img className="logo-navbarLogged" src="/gridLogo1.png" alt="Logo" />
         </Link>
       </div>
-      <ul>
+      <ul className='ul-logged'>
+        <Link href="/profile"> 
         <li className='li-logged'> Home </li>
+        </Link>
         <li className='li-logged'> Hosting </li>
         <li className='li-logged'> Emails </li>
         <li className='li-logged'> Domains </li>
@@ -19,7 +21,7 @@ const Navbar = () => {
         <li className='li-logged'> Facturacion </li>
       </ul>
       <div className='user-logged-navbar'>
-        <Link href="/logged/personal"> 
+        <Link href="/profile/personal-information"> 
         <img className='icono-user-logged' src='/user (1).png'/>
         </Link>
       </div>

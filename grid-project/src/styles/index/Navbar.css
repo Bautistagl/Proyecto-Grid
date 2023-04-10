@@ -90,6 +90,7 @@
     transition: opacity 0.4s ease-in-out;
     opacity: 1; /* Change the opacity to 1 to show the element */
     pointer-events: auto; /* Enable pointer events when the element is shown */
+ 
   }
   
   .container-productos.show.sticky {
@@ -103,6 +104,7 @@
     display: flex;
     align-items: center;
     width: 200px;
+    
   }
   .productos:hover{
     background: #d3dcd26c;

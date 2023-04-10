@@ -1,5 +1,4 @@
-@import url("./Home.css");
-@import url("./Navbar.css");
+@import url("./InfoSecurity.css");
 
 @font-face {
     font-family: 'Rouben';
@@ -12,10 +11,16 @@
     src: url(../../../public/fonts/Rouben-Light.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
+  } 
+
+  .container-sideNavbar-infoSecurity{
+    display: flex;
   }
-  .logged-home-component{
-    background-color: #77aa77;
-background-image: url("../../../public/background2.svg");
-background-size: cover;
-height: 110vh;
+  
+  .container-Security{
+    background-image: url("../../../public/background2.svg");
+    background-attachment: fixed;
+    background-size:cover;
+    height: 120vh;
+    
   }

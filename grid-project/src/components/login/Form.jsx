@@ -28,7 +28,7 @@ function Form() {
       </div>
         <input placeholder='Email' className='login-input' type="email"  value={email} onChange={(e) => setEmail(e.target.value)} required />
         <input placeholder='Password' className='login-input' type="password"  value={password} onChange={(e) => setPassword(e.target.value)} required />
-      <Link href="/logged">
+      <Link href="/profile">
       
       <button className='login-submit' type="submit" >Login</button>
       </Link>

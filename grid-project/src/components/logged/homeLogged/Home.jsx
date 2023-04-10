@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <>
+    <div className='logged-home-container'>
     <div className='logged-bienvenida'> Hola, Usuario 👋</div>
     <div className='container-logged'> 
     <div className='subcontainer-logged'> 
@@ -29,7 +29,7 @@ const Home = () => {
     
     
     
-    </>
+    </div>
   )
 }
 

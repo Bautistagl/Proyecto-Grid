@@ -3,7 +3,7 @@ import React from 'react'
 const CardProWord = () => {
   return (
     <div>
-    <div className='cardHosting' style={{ borderRight:"none", borderTopLeftRadius:"0px",borderTopRightRadius:"0px",borderEndEndRadius:"0px",borderEndStartRadius:"0px"}}>
+    <div className='cardHosting' style={{ borderStartEndRadius:"10px", borderTopLeftRadius:"0px",borderEndEndRadius:"10px",borderEndStartRadius:"0px"}}>
 <div> </div>
 <span className='saveSpan'> Save up to 56% </span>
 <p className='pSpan'> WordPress Pro</p>

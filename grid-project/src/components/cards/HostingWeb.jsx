@@ -6,6 +6,7 @@ import CardStarterWord from '../cardHostingWordpress/CardStarterWord'
 import CardSingleWord from '../cardHostingWordpress/CardSingleWord'
 import CardBusinessWord from '../cardHostingWordpress/CardBusinessWord'
 import CardProWord from '../cardHostingWordpress/CardProWord'
+import Link from 'next/link'
 
 const HostingWeb = () => {
   const [selected, setSelected] = useState(1);
@@ -17,6 +18,14 @@ const toggle = (i) => {
   return (
     <> 
     <div>s</div>
+    <div className='guia-paginacion'> 
+      <Link href="/profile">
+      <span className='titulo-guia-paginacion'> Services</span>
+      </Link>
+      <img className='icono-guia-paginacion' src='/next (4).png' alt=''/>
+      <span className='actual-guia=paginacion'> Hosting  </span>
+      
+     </div>
     <div className='tituloPrincipal-hosting'> Elige tu plan de hosting web </div>
     <div className='contenedor-titulos-hosting-click'> 
     <span className='spanHosting-clickeable' onClick={()=> toggle(0)}> Hosting web </span>

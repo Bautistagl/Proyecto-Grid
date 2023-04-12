@@ -29,6 +29,11 @@
 
 }
 .icon-sideNavbar{
+    height: 50px;
+    margin-right: 15px;
+    margin-left: 12px;
+}
+.icon-sideNavbar2{
     height: 20px;
     margin-right: 15px;
     margin-left: 25px;

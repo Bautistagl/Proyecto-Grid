@@ -1,0 +1,189 @@
+.cardHosting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 85%;
+    width: 280px;
+    background-color: #ffffff;
+    margin-top: 4%;
+    border-radius: 10px;
+    margin: 0;
+    margin-bottom: 10%;
+    border: 1px solid rgb(191, 191, 191);
+}
+.cardHostingPremium{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 85%;
+    width: 280px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0;
+    margin-top: -13.7%;
+    margin-bottom: 10%;
+    border: 4px solid #36B079;
+    border-top: 40px solid #36B079;
+}
+
+.saveSpan{
+    display: flex;
+    margin-top: 5%;
+    font-family: Rouben ligth;
+    font-size: 12px;
+    padding: 2px 8px;
+    background-color: #9cefca;
+    height: 20px;
+    border-radius: 15px;
+    line-height: 18px;
+    margin-left: 3%;
+    width: 35%;
+   
+}
+.pSpan{
+    font-family: Rouben;
+    font-size: 20px;
+    padding: 2px 8px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+.precioDiv{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-left: 4%;
+}
+.precioSpan{
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.extraSpan{
+    margin-left: 5%;
+    font-family: Rouben ligth;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 2%;
+    color: rgb(228, 50, 50);
+}
+.botonHosting{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #36B079;
+    margin-top: 7%;
+    border-radius: 20px;
+}
+.spanGarantia{
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 3%;
+    color: rgba(0, 0, 0, 0.537);
+    margin-bottom: 10%;
+}
+.iconoFeatures{
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-left: 15px;
+   
+}
+.spanFeatures{
+    display: flex;
+    border: 1px solid rgb(179, 175, 175);
+    height: 50px;
+    font-family: rouben ligth;
+    font-size: 0.8rem;
+    
+    justify-content: flex-start;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    margin-top: 7%;
+   
+}
+.contenedorSpans{
+    margin-top: 5%;
+}
+.FeaturesContainer{
+    display: flex;
+    position: absolute;
+    background-color: #eef4ed;
+    width: 220px;
+
+    margin-top: 15.85%;
+    margin-left: 17.3%;
+}
+
+.contenedorCards{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 6%;
+}
+.contenedorHostingWebCompleto{
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: -10%;
+}
+.contenedor-vacio{
+   margin-bottom: 11%;
+}
+.bordeCardImportante{
+    display: flex;
+    position: absolute;
+    border: 3px solid #36B079;
+    height: 985px;
+    width: 280px;
+    margin-left: 34.5%;
+    margin-top: 4%;
+    border-top: 40px solid #36B079;
+    border-radius: 10px;
+    border-end-end-radius: 0px;
+}
+.tituloBestOption{
+    display: flex;
+    
+    font-family: rouben;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: -11%;
+    margin-bottom: 2.5%;
+    color: #eef4ed;
+
+}
+.tituloPrincipal-hosting{
+    display: flex;
+    color: #0c1317;
+    text-align: center;
+    justify-content: center;
+    font-family: rouben;
+    font-size: 2rem;
+    margin-top: 3%;
+}
+.contenedor-titulos-hosting-click{
+    display: flex;
+    color: #0c1317;
+    text-align: center;
+    justify-content: center;
+    font-family: rouben ;
+    font-size: 1.2rem;
+}
+.spanHosting-clickeable{
+    display: flex;
+    padding: 10px 10px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.spanHosting-clickeable:hover{
+    color: #36B079;
+}

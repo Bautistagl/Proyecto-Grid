@@ -24,7 +24,7 @@ const toggle = (i) => {
     </div>
     {selected === 0 ? <div className='contenedorHostingWebCompleto'> 
     <div className='FeaturesContainer'>
-      asdsadsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssss
+   
        </div>
        <div className='contenedorCards'>
        

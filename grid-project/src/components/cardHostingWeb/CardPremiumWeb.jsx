@@ -3,9 +3,9 @@ import React from 'react'
 const CardPremiumWeb = () => {
   return (
     <div>
-          <div className='cardHostingPremium' style={{borderTopRightRadius:"10px",borderEndEndRadius:"0px"}}>
+          <div className='cardHostingPremium' style={{borderEndEndRadius:"0px",borderStartEndRadius:"10px"}}>
         <div className='tituloBestOption'> Best option </div>
-     
+      
      <span className='saveSpan'> Save up to 73% </span>
      <p className='pSpan'> Premium Web Hosting </p>
      <div className='precioDiv'> 999.00 AR$<span className='precioSpan'>/mes</span> </div>

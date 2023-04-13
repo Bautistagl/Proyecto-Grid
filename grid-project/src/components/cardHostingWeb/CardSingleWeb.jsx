@@ -4,7 +4,7 @@ const CardSingleWeb = () => {
   return (
     <div>
             <div className='cardHosting' style={{ borderRight:"none", borderTopLeftRadius:"0px",borderTopRightRadius:"0px",borderEndEndRadius:"0px",borderEndStartRadius:"0px"}}>
-      <div> </div>
+   
       <span className='saveSpan'> Save up to 65% </span>
       <p className='pSpan'> Single Web Hosting </p>
       <div className='precioDiv'> 599.00 AR$<span className='precioSpan'>/mes</span> </div>

@@ -9,7 +9,7 @@ import CardProWord from '../cardHostingWordpress/CardProWord'
 import Link from 'next/link'
 
 const HostingWeb = () => {
-  const [selected, setSelected] = useState(1);
+  const [selected, setSelected] = useState(0);
 
 const toggle = (i) => {
   
@@ -32,6 +32,7 @@ const toggle = (i) => {
     <span className='spanHosting-clickeable' onClick={()=> toggle(1)}> Hosting Word press</span>
     </div>
     {selected === 0 ? <div className='contenedorHostingWebCompleto'> 
+    {/* <div className='bestOption-aparte'> Best option</div> */}
     <div className='FeaturesContainer'>
    
        </div>

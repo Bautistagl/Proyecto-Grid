@@ -5,12 +5,13 @@
   justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: 1000px;
+    height: 1100px;
     width: 280px;
     background-color: #ffffff;
     padding: 0px 0px;
     border-radius: 10px;
     margin-bottom: 10%;
+   
    
 }
 .cardHostingPremium{
@@ -20,7 +21,7 @@
   justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: 1000px;
+    height: 1100px;
     width: 280px;
     background-color: #ffffffdb;;
     border-radius: 10px;
@@ -28,6 +29,7 @@
     margin-bottom: 10%;
     padding: 0px 0px;
     border-top: 40px solid #ffffff;
+    border-top-right-radius: 10px;
 }
 
 .saveSpan{
@@ -42,6 +44,7 @@
     line-height: 18px;
     margin-left: 3%;
     width: 35%;
+    
    
 }
 .pSpan{
@@ -50,10 +53,11 @@
     padding: 2px 8px;
     margin-left: 2%;
     margin-top: 3%;
+    
 }
 .precioDiv{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bolder;
     margin-left: 4%;
 }
@@ -89,7 +93,7 @@
     height: 20px;
     vertical-align: middle;
     margin-right: 15px;
-    margin-left: 15px;
+    margin-left: 25px;
    
 }
 .spanFeatures{
@@ -98,7 +102,7 @@
     height: 50px;
     font-family: rouben ligth;
     font-size: 0.8rem;
-    
+
     justify-content: flex-start;
     border-top: none;
     border-left: none;
@@ -148,13 +152,13 @@
 }
 .tituloBestOption{
     display: flex;
-    
+    position: absolute;
     font-family: rouben;
     font-size: 1.2rem;
     text-align: center;
     justify-content: center;
     align-content: center;
-    margin-top: -11%;
+    margin-top: -1100px;
     margin-bottom: 2.5%;
     color: #000000;
 
@@ -222,6 +226,21 @@
 .titulo-guia-paginacion:hover{
     color: #9cefca
 }
+.bestOption-aparte{
+    display: flex;
+    position: absolute;
+
+    
+    font-family: rouben;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: calc((100% - 350px - 100%) / 2);
+    margin-top: 4.6%;
+    color: #000000;
+
+}
 
 @media only screen and (max-width: 1500px) {
     .cardHosting,  .cardHostingPremium{
@@ -242,8 +261,9 @@
         width: 50%;
     }
     .tituloBestOption{
-        margin-top: -15%;
+        margin-top: -950px;
     }
+    
 }
 @media only screen and (max-width: 1300px) {
 

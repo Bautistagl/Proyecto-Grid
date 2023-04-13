@@ -28,8 +28,8 @@ const toggle = (i) => {
      </div>
     <div className='tituloPrincipal-hosting'> Elige tu plan de hosting web </div>
     <div className='contenedor-titulos-hosting-click'> 
-    <span className='spanHosting-clickeable' onClick={()=> toggle(0)}> Hosting web </span>
-    <span className='spanHosting-clickeable' onClick={()=> toggle(1)}> Hosting Word press</span>
+    <span className={`spanHosting-clickeable${selected === 0 ? "focus" : ""}`} onClick={()=> toggle(0)}> Hosting web </span>
+    <span className={`spanHosting-clickeable${selected === 1 ? "focus" : ""}`} onClick={()=> toggle(1)}> Hosting Word press</span>
     </div>
     {selected === 0 ? <div className='contenedorHostingWebCompleto'> 
     {/* <div className='bestOption-aparte'> Best option</div> */}

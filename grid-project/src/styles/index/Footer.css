@@ -4,9 +4,8 @@
     background: #0c1317;
     padding: 20px;
     z-index: 0;
-    width: 100%;
+    width: 98%;
     justify-content: flex-start;
-   
     margin-right: 12%;
     
 }
@@ -51,8 +50,8 @@ ul{
   text-align: flex-start;
   font-family: rouben;
   font-size: 1.1rem;
-  margin-right: 10%;
   grid-column: 1 / 2;
+  margin-left: 190px;
  
 }
 
@@ -100,6 +99,17 @@ ul{
   font-family: 'Courier New', Courier, monospace;
   color:#eef4ed;
   margin: auto;
+}
+.boton-contact-form{
+  display: flex;
+  background-color: #36B079;
+  width: 30%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 4%;
+  border: 2px solid #0c1317;
+
 }
 
 @media only screen and (max-width: 500px) {

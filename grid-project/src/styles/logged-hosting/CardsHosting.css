@@ -201,6 +201,15 @@
     color: #9cefca;
     border-bottom: 2px solid #36B079;
 }
+.spanHosting-clickeablefocus{
+    display: flex;
+    padding: 10px 10px;
+    margin-left: 5%;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s ease;
+    color: #24f396;
+}
 .guia-paginacion{
     display: flex;
     color: #eef4ed;

@@ -244,12 +244,8 @@
 
 @media only screen and (max-width: 1500px) {
     .cardHosting,  .cardHostingPremium{
-        width: 210px;
+        width: 230px;
        
-    }
-    .cardHostingPremium{
-        margin-top: -22%;
-        height: 85%;
     }
     .precioDiv{
         font-size: 1.5rem;
@@ -261,7 +257,7 @@
         width: 50%;
     }
     .tituloBestOption{
-        margin-top: -950px;
+        margin-top: -1100px;
     }
     
 }

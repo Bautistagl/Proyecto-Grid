@@ -13,22 +13,22 @@ const SideNavbar = () => {
         </Link>
         <li className='titulo-servicios-sidenavbar'> SERVICES </li>
         <Link href="/profile/hosting">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconoGrid3.png'/>  Hosting</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Hosting</li>
         </Link>
         <Link href="/profile/personal-information">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconoGrid3.png'/> Email</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/> Email</li>
         </Link>
         <Link href="/profile/personal-information">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconoGrid3.png'/>  Dominios</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Dominios</li>
         </Link>
         <Link href="/profile/personal-information">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconoGrid3.png'/>  VPN</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  VPN</li>
         </Link>
         <Link href="/profile/personal-information">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconoGrid3.png'/>  Asic Hosting</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Asic Hosting</li>
         </Link>
         <Link href="/profile/personal-information">  
-        <li  className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconoGrid3.png'/>  Billing</li>
+        <li  className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Billing</li>
         </Link>
         <li className='titulo-servicios-sidenavbar'> SETTINGS </li>
        

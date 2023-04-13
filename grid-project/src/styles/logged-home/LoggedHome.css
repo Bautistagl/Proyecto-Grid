@@ -14,8 +14,7 @@
     font-style: normal;
   }
   .logged-home-container{
-    background-color: #77aa77;
-background-image: url("../../../public/background2.svg");
+    background-image: url("../../../public/Fondo\ profile.svg");
 background-size: cover;
 height: 110vh;
   }

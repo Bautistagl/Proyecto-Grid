@@ -3,10 +3,11 @@
     justify-content: center;
     color: #eef4ed;
     margin: auto;
-    font-size: 1.5rem;
-    font-family: rouben;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
     margin-top: 2%;
-    margin-left: 10%;
+    margin-left: 13%;
 
     
     
@@ -14,7 +15,7 @@
 
 .container-logged{
     display: flex;
-    background: #eef4ed;
+    background: #ffffffdb;
     justify-content: center;
     align-content: center;
     height: 40vh;
@@ -79,7 +80,7 @@
 }
 
 .container2-logged{
-    background: #eef4ed;
+    background: #ffffffdb;
     font-family: rouben;
     color: #0c1317;
     display: flex;

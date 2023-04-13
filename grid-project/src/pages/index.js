@@ -27,7 +27,8 @@ const DynamicCarrousel = dynamic(()=>import("../components/index/Carrousel"),
 export default function Home() {
   return (
     <>
-    
+    <div className="container-homePrincipal"> 
+
     <DynamicNavbar/>
    <DynamicCarrousel/>
    <Segundo/>
@@ -35,6 +36,7 @@ export default function Home() {
    <Faqs/>
    <ContactForm/>
    <Footer/>
+    </div>
  
       
     </>

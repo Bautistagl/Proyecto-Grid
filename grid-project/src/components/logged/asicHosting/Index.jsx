@@ -22,8 +22,8 @@ const toggle = (i) => {
         <span className="actual-guia=paginacion"> Asic Mining </span>
       </div>
         <div className="tituloPrincipal-hosting">
-        {' '}
-        My miners{' '}
+        
+        My miners
       </div>
       <div className='tituloPrincipal-asicHosting'> My miners </div>
       <div className="cards-productos-asicHosting">
@@ -38,8 +38,8 @@ const toggle = (i) => {
           <img className="foto-asicHosting" src="/HardwareMinero.png" alt="" />
 
           <div className="calificacion-asicHosting">
-            {' '}
-            Home Mining ASICs are currently not scored{' '}
+            
+            Home Mining ASICs are currently not scored
           </div>
           
         </div>
@@ -54,8 +54,8 @@ const toggle = (i) => {
           <img className="foto-asicHosting" src="/HardwareMinero.png" alt="" />
 
           <div className="calificacion-asicHosting">
-            {' '}
-            Home Mining ASICs are currently not scored{' '}
+            
+            Home Mining ASICs are currently not scored
           </div>
           
         </div>
@@ -70,8 +70,8 @@ const toggle = (i) => {
           <img className="foto-asicHosting" src="/HardwareMinero.png" alt="" />
 
           <div className="calificacion-asicHosting">
-            {' '}
-            Home Mining ASICs are currently not scored{' '}
+            
+            Home Mining ASICs are currently not scored
           </div>
           
         </div>
@@ -80,10 +80,10 @@ const toggle = (i) => {
         <img src="/placeholderMyMiners.png" alt="" />
         <div className="info-not-mining">
           <div className="titulo-not-mining">
-          It seems that you haven't configured any miners yet. Let's begin mining.{' '}
+          It seems that you haven`t configured any miners yet. Let`s begin mining.
           </div>
           <div className="subtitulo-not-mining">
-            {' '}
+            
             Get started mining with us by purchasing a hosting package from our
             product offerings.
           </div>

@@ -1,7 +1,6 @@
 .faqs-container{
     display: flex;
     justify-content: space-between;
-    
     align-items: center;
     height: 100vh;
     margin: auto;
@@ -47,7 +46,7 @@
 }
 
 .item{
-    background: #eef4ed;
+    background: white;
     margin-bottom: 10px;
     padding: 10px 20px;
     border-radius: 5px;

@@ -24,7 +24,7 @@ const SideNavbar = () => {
         <Link href="/profile/personal-information">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  VPN</li>
         </Link>
-        <Link href="/profile/personal-information">  
+        <Link href="/profile/asicHosting">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Asic Hosting</li>
         </Link>
         <Link href="/profile/personal-information">  

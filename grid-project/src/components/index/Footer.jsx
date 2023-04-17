@@ -69,7 +69,7 @@ const Footer = () => {
              <li>Buy Flux </li>
             </ul>
          </div>
-         <div style={{marginRight:"180px",marginLeft:"0px",width:"180px"}} className='columna'> 
+         <div  className='columna'> 
             <div className='footer-titulo'>
               COMMUNITY
             </div>

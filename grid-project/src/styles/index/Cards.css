@@ -8,12 +8,12 @@
 .card3{
     height: 160px;
     width: 300px;
-    background-color: #eef4ed ;
+    color: #eef4ed;
     box-shadow: 7.74807px 7.74807px 18.7404px 7.87404px rgba(43,97,209,.05);
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 12px;
-     background-image: url('/Fondo4Cards.jpg'); 
+    background-image: url('/endless-constellation (1).svg'); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -23,17 +23,18 @@
 .card3-selected{
     height: 160px;
     width: 300px;
-    background-color: #eef4ed ;
+    color: #eef4ed;
     box-shadow: 7.74807px 7.74807px 18.7404px 7.87404px rgba(43,97,209,.05);
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 12px;
-     background-image: url('/Fondo4Cards.jpg'); 
+    background-image: url('/endless-constellation (1).svg'); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     transform: translateY(-15px);
     transition: transform 0.3s ease-in;
+  
 }
 
 
@@ -47,7 +48,7 @@
     font-family: rouben;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-left: 5%;
     margin-bottom: 0.5rem;
     margin-top: 7rem;

@@ -144,3 +144,23 @@
     transition: all 1.1s cubic-bezier(0,1,0,1);
 }
 
+@media  only screen and (max-width:1500px){
+
+    .card-asicHosting{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        margin-right: 60px;
+        margin-left: 0px;
+        padding: 0;
+        width: 380px;
+        height: 380px;
+        background-color: white;
+        border-radius: 10px ;
+    }
+    .cards-productos-asicHosting{
+        display: flex;
+        width: 75%;
+        margin-left: 290px;
+    }
+}

@@ -12,21 +12,21 @@
 li{
   list-style: none;
   padding: 10px 10px 10px 0px;
-  color: #eef4edad;
+  color: white;
   cursor: pointer;
 }
 li:hover{
-  color: #eef4ed;
+  color: white;
   font-weight: bold;
   transition: ease-out 0.3s;
 }
 a{
   text-decoration: none;
-  color: #eef4ed ;
+  color: white ;
   
 }
 .columnas {
-  color: #eef4ed;
+  color: white;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   margin-bottom: 4%;
@@ -58,7 +58,7 @@ ul{
 .footer-parrafo{
   padding: 10px 10px;
   width: 320px;
-  color: #eef4edad;
+  color: whitead;
 }
 .redes-footer{
   display: flex;
@@ -71,12 +71,12 @@ ul{
 }
 .boton-footer{
   border-style: none;
-  border: 2px solid #eef4edad;
+  border: 2px solid white;
   display: flex;
   margin-top: 5%;
   height: 15%;
   background: #0c1317;
-  color:#eef4ed;
+  color:white;
   width: 100%;
   border-radius: 3px;
   font-family: rouben ligth ;
@@ -89,7 +89,7 @@ ul{
 
 .footer-titulo-principal{
   font-size: 1.3rem;
-  color: #eef4ed;
+  color: white;
   font-weight: bolder;
 }
 
@@ -98,7 +98,7 @@ ul{
   all: initial;
   display: flex;
   font-family: 'Courier New', Courier, monospace;
-  color:#eef4ed;
+  color:white;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -145,7 +145,7 @@ ul{
   justify-content: center;
  
   font-family: 'Courier New', Courier, monospace;
-  color:#eef4ed;
+  color:white;
   margin: auto;
   font-size: 0.4rem;
   width: 100%;
@@ -153,7 +153,7 @@ ul{
 }
 .footer-titulo-principal{
   font-size: 1rem;
-  color: #eef4ed;
+  color: white;
   font-weight: bolder;
   justify-content: center;
   align-items: center;
@@ -164,7 +164,7 @@ ul{
   width: 50%;
 }
 .columnas {
-  color: #eef4ed;
+  color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
@@ -199,7 +199,7 @@ ul{
 li{
   font-size: 0.6rem;
   padding: 5px 5px 5px 0px;
-  color: #eef4edad;
+  color: whitead;
   cursor: pointer;
   width: 100%;
 }
@@ -232,4 +232,10 @@ li{
   .columnas{
     margin-left: 10px;
   }
+}
+@media only screen and (max-width: 1350px) {
+.columna-principal {
+
+    margin-left: 90px;
+}
 }

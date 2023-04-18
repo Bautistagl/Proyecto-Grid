@@ -8,7 +8,7 @@
 .card3{
     height: 160px;
     width: 300px;
-    color: #eef4ed;
+    color: white;
     box-shadow: 7.74807px 7.74807px 18.7404px 7.87404px rgba(43,97,209,.05);
     margin-left: 5%;
     margin-right: 5%;
@@ -23,7 +23,7 @@
 .card3-selected{
     height: 160px;
     width: 300px;
-    color: #eef4ed;
+    color: white;
     box-shadow: 7.74807px 7.74807px 18.7404px 7.87404px rgba(43,97,209,.05);
     margin-left: 5%;
     margin-right: 5%;
@@ -73,7 +73,7 @@
     margin-top: 9%;
     margin-bottom: 5%;
     margin-left: 9%;
-    background: #eef4ed;
+    background: white;
    
 }
 
@@ -108,7 +108,7 @@
     .card3{
         height: 220px;
         width: 85%;
-        background-color: #eef4ed ;
+        background-color: white ;
         box-shadow: 7.74807px 7.74807px 18.7404px 7.87404px rgba(43,97,209,.05);
         border-radius: 18px;
         display: grid;
@@ -134,7 +134,7 @@
        margin-top: 20px;
        margin-bottom: 0;
        margin-left: 5px;
-       background: #eef4ed;
+       background: white;
     }
     .subtitulo-card{
         font-family: rouben ligth;

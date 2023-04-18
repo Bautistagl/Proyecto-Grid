@@ -21,7 +21,7 @@
 
 
 .tituloPrincipal{
-    color: #eef4ed;
+    color: white;
     font-family: rouben;
     font-size: 42px;
     width: 700px;
@@ -29,7 +29,7 @@
     font-weight: 500;
 }
 .subtituloPrincipal{
-    color: #eef4ed;
+    color: white;
     font-family: rouben ligth;
     font-size: 20px;
     width: 700px;
@@ -62,7 +62,7 @@
 
 @media only screen and (max-width:500px){
     .tituloPrincipal{
-        color: #eef4ed;
+        color: white;
         font-family: rouben;
         font-size: 16px;
         width: 300px;
@@ -70,7 +70,7 @@
         font-weight: 500;
     }
     .subtituloPrincipal{
-        color: #eef4ed;
+        color: white;
         font-family: rouben ligth;
         font-size: 12px;
         width: 80%;

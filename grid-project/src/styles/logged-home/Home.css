@@ -1,7 +1,7 @@
 .logged-bienvenida{
     display: flex;
     justify-content: center;
-    color: #eef4ed;
+    color: white;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -65,7 +65,7 @@
 }
 .oferta-subcontainer-logged{
     display: flex;
-    color: #eef4ed;
+    color: white;
     margin-top: 5%;
     background-color: #36B079;
     width: 90%;

@@ -59,7 +59,7 @@ const toggleMenu = () => {
         </ul>
         <Link href="/login"> 
 
-          <button className='boton-landing' >
+          <button className='boton-landing1' >
             Login
           </button>
         </Link>

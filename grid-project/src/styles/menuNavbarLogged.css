@@ -1,6 +1,6 @@
 .menuNavbarLogged{
     position: absolute;
-    background-color: #eef4ed;
+    background-color: white;
     width: 270px;
     border-radius: 5px;
     margin-top: 4.5%;
@@ -15,7 +15,7 @@
     background-color: #36B079;
     font-family: rouben;
     padding: 15px 15px;
-    color: #eef4ed;
+    color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     
@@ -23,7 +23,7 @@
 
 .menuNavbar-subtitulo{
     font-size: 0.9rem;
-    color: #eef4ede2;
+    color: whitee2;
     margin-bottom: 3%;
 }
 .menuNavbar-titulo{

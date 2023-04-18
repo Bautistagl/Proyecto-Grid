@@ -121,7 +121,7 @@
 .FeaturesContainer{
     display: flex;
     position: absolute;
-    background-color: #eef4ed;
+    background-color: white;
     width: 220px;
 
     margin-top: 15.85%;
@@ -183,7 +183,7 @@
 }
 .contenedor-titulos-hosting-click{
     display: flex;
-    color: #eef4ed;
+    color: white;
     text-align: center;
     justify-content: center;
     font-family: rouben ;
@@ -216,7 +216,7 @@
 }
 .guia-paginacion{
     display: flex;
-    color: #eef4ed;
+    color: white;
     margin-left: 300px;
     font-family: rouben;
     font-size: 1.2rem;
@@ -232,7 +232,7 @@
     margin-right: 1%;
 }
 .titulo-guia-paginacion{
-    color:#eef4ed;
+    color:white;
 
     
 }

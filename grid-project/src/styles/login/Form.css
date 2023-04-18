@@ -9,7 +9,7 @@
 
 
 .login-title{
-    color: #eef4ed;
+    color: white;
     font-family: rouben;
 }
 .login-input{
@@ -23,7 +23,7 @@
 
 .login-submit{
    display: flex;
-    color: #eef4ed;
+    color: white;
     margin-top: 13%;
     background-color: #36B079;
     width: 340px;
@@ -50,7 +50,7 @@
    text-align: center;
     width: 340px;
     margin-top: 5%;
-    color: #eef4ed;
+    color: white;
     font-family: rouben;
  }
  .member2-login{
@@ -86,7 +86,7 @@
 
  .a-redes-login{
     display: flex;
-    background: #eef4ed;
+    background: white;
     border-radius: 5px;
     width: 60px;
     height: 50px;
@@ -108,7 +108,7 @@
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 1.5%;
-    color:#eef4ed ;
+    color:white ;
  
   }
 

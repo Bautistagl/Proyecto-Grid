@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    color: #eef4ed;
+    color: white;
     margin-top: 5%;
 }
 .faqs-subtitulo{
@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     
-    color: #eef4ed;
+    color: white;
 }
 .faqs{
     justify-content: center;

@@ -31,7 +31,7 @@
     font-family: rouben ligth;
     font-size: 20px;
     width: 600px;
-    color: #eef4ed;
+    color: white;
 }
 .tituloCar{
     
@@ -40,7 +40,7 @@
     width: 700px;
     font-weight: 500;
     margin-bottom: 3%;
-    color:#eef4ed ;
+    color:white ;
     margin-top: 10%;
 
 }
@@ -75,7 +75,7 @@
         width: 280px;
         font-weight: 500;
         
-        color:#eef4ed ;
+        color:white ;
         margin-top: 10%;
     
     }
@@ -85,7 +85,7 @@
     font-size: 12px;
     margin-top: 5%;
     width: 280px;
-    color: #eef4ed;
+    color: white;
 }
 .card-contenedor{
     display: none;

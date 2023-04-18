@@ -4,7 +4,7 @@ const CardBusinessWeb = () => {
   return (
     <div>
         
-        <div className='cardHosting' style={{borderTopLeftRadius:"0px",borderEndStartRadius:"0px"}}>
+        <div className='cardHosting' style={{}}>
       
       <span className='saveSpan'> Save up to 72% </span>
       <p className='pSpan'> Business Web Hosting </p>

@@ -51,6 +51,7 @@ const toggleMenu = () => {
           <div
            onMouseOver={() => setDropdown(true)}
           className='nav-title'> Productos 
+            <img className='downNavbar' src='/downNavbar.png' alt=''/>
            </div>
           <div className='nav-title'> Solutions </div>
           <div className='nav-title'> About Us </div>

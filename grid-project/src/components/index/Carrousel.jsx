@@ -57,7 +57,7 @@ export default class SimpleSlider extends Component {
         
         <Slider className="sliderCar" {...settings}>
         <div className='textosCar'>
-        {/* <Principal className="animacion-car"/> */}
+        <Principal className="animacion-car"/>
 
             <div className='tituloCar'>
                 <span className='primeraParteCar'> WEB HOSTING  </span>  Prueba nuestros servicios de cloud descentralizado y ahorra en costos de alojamiento.
@@ -67,7 +67,7 @@ export default class SimpleSlider extends Component {
             </div>
         </div>
         <div className='textosCar'>
-        {/* <Principal className="animacion-car"/> */}
+        <Principal className="animacion-car"/>
 
 <div className='tituloCar'>
     <span className='primeraParteCar'> ASIC MINING </span>  Prueba nuestros servicios de cloud descentralizado y ahorra en costos de alojamiento.
@@ -77,7 +77,7 @@ export default class SimpleSlider extends Component {
 </div>
 </div>
 <div className='textosCar'>
-{/* <Principal className="animacion-car"/> */}
+<Principal className="animacion-car"/>
 
 <div className='tituloCar'>
     <span className='primeraParteCar'> VPS</span>  Prueba nuestros servicios de cloud descentralizado y ahorra en costos de alojamiento.

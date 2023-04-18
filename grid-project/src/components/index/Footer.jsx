@@ -18,7 +18,7 @@ const Footer = () => {
               </a>
             
               <a href='//www.discord.com'>
-                <img className='icon-redes' src={"/discord.png"}/>
+                <img className='icon-redes' src={"/discord (1).png"}/>
               </a>
 
               <a href='//www.twitter.com'>

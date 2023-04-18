@@ -45,6 +45,7 @@
 }
 
 .nav-title{
+  display: flex;
     font-size: 1rem;
     font-family: rouben;
     margin-left: 3%;
@@ -245,6 +246,12 @@
   }
   .boton-landing1{
     margin-left: 40%;
+  }
+  .downNavbar{
+    height: 20px;
+    width: 25px;
+    margin-left: 10px;
+    margin-top: 1.5px;
   }
 
   

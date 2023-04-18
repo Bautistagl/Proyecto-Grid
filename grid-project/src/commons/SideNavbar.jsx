@@ -1,7 +1,19 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+
 
 const SideNavbar = () => {
+
+  const [selected, setSelected] = useState(false);
+
+  const toggle = () => {
+    console.log(selected)
+    if(selected === false) {
+      
+      return setSelected(true)
+    }
+    setSelected(false)
+  }
   return (
     <nav className='sideNavbar'>
       <ul className='sideNavbar-ul'>
@@ -24,9 +36,18 @@ const SideNavbar = () => {
         <Link href="/profile/personal-information">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  VPN</li>
         </Link>
+       
+        <li className='sideNavbar-li' onClick={()=> toggle()}><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Asic Hosting <span> <img className='icon-sideNavbarAsicHosting' src='/abierto.png' alt=''/> </span></li>
+        
+        <div className={`dropdown-asicHosting ${selected === true ? 'selected' : ''}  `} > 
+
+        <ul >
         <Link href="/profile/asicHosting">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Asic Hosting</li>
-        </Link>
+          <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/servers.png' alt=''/> My Miners </li>
+          </Link>
+          <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/invoice.png' alt=''/>  Billing</li>  
+         </ul>
+        </div>
         <Link href="/profile/personal-information">  
         <li  className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Billing</li>
         </Link>

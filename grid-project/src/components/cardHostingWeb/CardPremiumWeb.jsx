@@ -3,7 +3,7 @@ import React from 'react'
 const CardPremiumWeb = () => {
   return (
     <div>
-          <div className='cardHostingPremium' style={{borderEndEndRadius:"0px",borderStartEndRadius:"10px"}}>
+          <div className='cardHostingPremium' style={{borderStartEndRadius:"10px"}}>
         <div className='tituloBestOption'> Best option </div>
       
      <span className='saveSpan'> Save up to 73% </span>

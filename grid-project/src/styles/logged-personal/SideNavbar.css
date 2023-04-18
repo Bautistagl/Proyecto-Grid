@@ -20,13 +20,20 @@
     margin-left: 0;
     margin-right: 0%;
     color: #0c1317;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
 }
 .sideNavbar-li:hover{
     background-color:#dbf3d7;
     color:#36B079;
     font-weight: 100;
 
+}
+.icon-sideNavbarAsicHosting{
+    display: flex;
+    margin-left: 10px;
+    
+    margin-right: 32px;
+    height: 20px;
 }
 .icon-sideNavbar{
     height: 50px;
@@ -59,6 +66,30 @@
     width: 250px;
     margin-top: -10%;
     margin-left: -12%;
+}
+
+.li-asicHosting{
+    display: flex;
+    color: #0c1317;
+    font-family: rouben ligth;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin-left: 10px;
+    font-size: 0.80rem;
+}
+.li-asicHosting:hover{
+    color: #0c1317;
+    font-family: rouben ligth;
+    font-weight: bold; 
+   
+}
+.dropdown-asicHosting.selected{
+    display: flex;
+    height: 10%;
+    width: 240px;
+}
+.dropdown-asicHosting{
+    display: none;
 }
 
 @media only screen and (max-width: 1400px) {

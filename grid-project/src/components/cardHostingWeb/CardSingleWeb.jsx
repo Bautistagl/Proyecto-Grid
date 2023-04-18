@@ -3,7 +3,7 @@ import React from 'react'
 const CardSingleWeb = () => {
   return (
     <div>
-            <div className='cardHosting' style={{ borderRight:"none", borderTopLeftRadius:"0px",borderTopRightRadius:"0px",borderEndEndRadius:"0px",borderEndStartRadius:"0px"}}>
+            <div className='cardHosting' >
    
       <span className='saveSpan'> Save up to 65% </span>
       <p className='pSpan'> Single Web Hosting </p>
@@ -25,7 +25,7 @@ const CardSingleWeb = () => {
       <span className='spanFeatures'> <img className='iconoFeatures' src='/yellow.png' alt=''/>  2 subdominios </span>
       <span className='spanFeatures'> <img className='iconoFeatures' src='/yellow.png' alt=''/>  1 cuenta FTP</span>
       <span className='spanFeatures'> <img className='iconoFeatures' src='/red.png' alt=''/>    Caché de objetos para WordPress</span>
-      <span style={{borderBottom:"none",borderRight:"none"}} className='spanFeatures'> <img className='iconoFeatures' src='/green.png' alt=''/> Copias de seguridad semanales  </span>
+      <span  className='spanFeatures'> <img className='iconoFeatures' src='/green.png' alt=''/> Copias de seguridad semanales  </span>
       </>
     </div>
     </div>

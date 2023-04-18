@@ -29,7 +29,7 @@ const Principal = () => {
         Our decentralized cloud hosting service offers you the ability to scale your applications and data without the need for a centralized data center. Say goodbye to high costs and enjoy the benefits of distributed computing
         </div>
      </div> */}
-          <div className='animacion-principal' ref={container}> </div>
+          <div className='animacion-principal' > <img src='/ilustracion-asicMining2.svg' alt=''/> </div>
           {/* <img className='fotoPrincipal' src={gridLogo1} alt="" /> */}
          
     </section>

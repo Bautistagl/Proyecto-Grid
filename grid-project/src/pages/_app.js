@@ -9,6 +9,7 @@ import "../styles/logged-shared/LoggedShared.css"
 import "../styles/logged-hosting/LoggedHosting.css"
 import "../styles/menuNavbarLogged.css"
 import "../styles/logged-asicHosting/LoggedAsicHosting.css"
+import "../styles/checkout-asicHosting/CheckoutAsic.css"
 
 
 

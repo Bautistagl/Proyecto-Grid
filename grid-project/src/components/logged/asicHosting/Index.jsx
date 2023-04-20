@@ -26,6 +26,7 @@ const toggle = (i) => {
         My miners
       </div>
       <div className='tituloPrincipal-asicHosting'> My miners </div>
+      <div className='lineaTitulo-asic'> </div>
       <div className="cards-productos-asicHosting">
         <div className="card-asicHosting">
           <div className="textos-card-asicHosting">
@@ -33,7 +34,9 @@ const toggle = (i) => {
             <div className="titulo-asicHosting"> Antminer S19j Pro</div>
             <div className="velocidad-asicHosting"> 100 TH/s | 3050w</div>
             <div className="precio-asicHosting"> $1,900</div>
+            <Link href="/profile/asicCheckout">
             <button className="boton-asicHosting"> Buy Now </button>
+            </Link>
           </div>
           <img className="foto-asicHosting" src="/HardwareMinero.png" alt="" />
 

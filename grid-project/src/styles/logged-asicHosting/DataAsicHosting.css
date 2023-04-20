@@ -143,6 +143,12 @@
     overflow: hidden;
     transition: all 1.1s cubic-bezier(0,1,0,1);
 }
+.lineaTitulo-asic{
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 75vw;
+    margin-left: 20%;
+}
 
 @media  only screen and (max-width:1500px){
 

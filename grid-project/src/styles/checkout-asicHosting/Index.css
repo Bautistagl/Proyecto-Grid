@@ -1,0 +1,221 @@
+.container-asicHosting-Checkout{
+    display: flex;
+    background-image: url("../../../public/Fondo\ profile.svg");
+    background-size: cover;
+    height: 100%;
+}
+.card1-Checkout{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 450px;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+.infoCard1-Checkout{
+   
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    height: 300px;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+.icono-Principal-Card1{
+    display: flex;
+    height: 90px;
+    padding: 10px 10px;
+    margin-left: 20px;
+}
+.principal-Card1-Checkout{
+    display: flex;
+}
+.titulos-principal-card1{
+    margin-top: 30px;
+}
+.titulo-principal-card1{
+    font-family: rouben;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.subtitulo-Card1-Checkout{
+    font-family: rouben ligth;
+    font-size: 0.8rem;
+}
+.parrafo-card1-checkout{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-family: rouben ligth;
+    font-weight: bold;
+}
+.iconos-card1-checkout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,);
+    font-family: rouben ligth;
+    color: #0c13179b;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+.card1-Checkout span{
+    color: #0c1317;
+    font-family: rouben;
+    margin-left: 5%;
+    
+}
+.primer-titulo-asicHostingCard{
+    display: flex;
+    font-family: rouben;
+    margin-left: 2%;
+    padding: 10px 10px;
+    margin-bottom: -3%;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.precio-asicHosting-card1{
+    display: flex;
+    justify-content: flex-end;
+    font-family: rouben;
+    margin-bottom: 20px;
+}
+.precio-AsicHosting-card1{
+    display: flex;
+    padding: 10px 30px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    margin-right: 5%;
+    border: 0.5px solid #6d6d6d27;
+}
+.texto-precio-asicHosting{
+    padding: 10px 30px;
+}
+.card2-Checkout{
+    background: white;
+    height: 1100px;
+    width: 500px;
+    margin-left: auto;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-right: 3%;
+    margin-left: 5%;
+}
+.titulo-card2-hosting{
+    font-family: rouben;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 30px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.257);
+    width: 90%;
+    margin-left: 15px;
+}
+.reservation-card2{
+    font-family: rouben ligth;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    color: #a6a9ac;
+    margin-left: 15px;
+    margin-top: 25px;
+
+}
+.contenedor-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 100%;
+    font-weight: bold;
+    font-family: rouben;
+}
+.card2-Checkout span{
+    padding: 10px 30px;
+    font-size: 0.85rem;
+    font-family: rouben;
+    width: 100%;
+   
+}
+.metodosPago-asicHosting{
+    border: 2px solid #36B079;
+    width: 90%;
+    margin-left: 15px;
+    border-radius: 5px;
+    height: 130px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.iconos-metodo-de-pago{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.miniCard-metodoPago img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+   
+}
+.miniCard-metodoPago{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.span-minicard{
+    display: flex;
+    justify-content: center;
+    font-size: 0.6rem !important;
+}
+.titulo-metodo-pago{
+    font-family: rouben;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.precio-AsicHosting-card2{
+    display: flex;
+    padding: 10px 30px;
+    margin-right: 5%;
+    
+}
+.contenedor-flex2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    width: 100%;
+    font-weight: bold;
+    font-family: rouben;
+}
+.contenedor-cards-asicHosting{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenedor-agree{
+    display: flex;
+    font-family: rouben;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+.contenedor-agree div{
+    margin-left: 10px;
+    padding: 5px;
+}
+.check-asicHosting{
+    margin-left: 50px;
+}
+.boton-asicHosting-checkout{
+display: flex;
+justify-content: center;
+background-color: #36B079;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+width: 90%;
+}

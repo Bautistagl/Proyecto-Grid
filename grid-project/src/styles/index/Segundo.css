@@ -1,35 +1,38 @@
 .contenedorSegundo{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 12%;
     margin-right: 150px;
+    height: 500px;
     
 }
 .textos{
-    width: 100%;
-    margin-top: 10%;
+    width: 90%;
+    margin-top: -5%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .fotoSegundo{
-    height: 60%;
+    display: flex;
+    margin-left: 50px;
+    width: 50%;
     z-index: 0;
 }
 
 
 .tituloSegundo{
     font-family: rouben;
-    font-size: 42px;
+    font-size: 3.5rem;
     width: 100%;
     font-weight: 500;
     margin-bottom: 2%;
 }
 .subtituloSegundo{
     font-family: rouben ligth;
-    font-size: 20px;
-    width: 500px;
+    font-size: 1.3rem;
+    width: 75%;
     color: white;
     
 }
@@ -51,6 +54,10 @@
 
 @media only screen and (max-width: 500px) {
 
+    .contenedorSegundo{
+        display: grid;
+    }
+
     .textos{
         width: 85%;
         margin-top: 10%;
@@ -58,9 +65,7 @@
         margin-right: 50px;
        
     }
-    .fotoSegundo{
-       margin-left: 5%;
-    }
+  
     
     .contenedorSegundo{
         justify-content: center;
@@ -68,6 +73,8 @@
         margin-top: 0;
         width: 100%;
         margin: 0;
+        height: 350px;
+        margin-top: -15%;
        
    
     }
@@ -79,7 +86,7 @@
         
     }
     .fotoSegundo{
-        height: 100%;
+        height: 95%;
         z-index: 0;
         width: 80%;
         margin: 0;
@@ -96,8 +103,9 @@
     }
     .tituloSegundo{
         font-family: rouben;
-        font-size: 16px;
+        font-size: 20px;
         width: 100%;
+        height: 20%;
         font-weight: 500;
         margin-bottom: 2%;
         
@@ -110,6 +118,14 @@
         margin-top: 10%;
         margin-left: 40px;
         margin-right: 40px;
+       
+    }
+}
+@media only screen and (max-width: 1450px) {
+
+    .tituloSegundo{
+      
+        font-size: 3rem;
        
     }
 }

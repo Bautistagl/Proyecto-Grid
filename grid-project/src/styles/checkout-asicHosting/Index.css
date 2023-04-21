@@ -12,7 +12,7 @@
     width: 50%;
     margin-left: 15%;
     margin-top: 5%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .infoCard1-Checkout{
    
@@ -95,12 +95,13 @@
 .card2-Checkout{
     background: white;
     height: 1100px;
-    width: 500px;
+    width: 42%;
     margin-left: auto;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 5%;
     margin-right: 3%;
     margin-left: 5%;
+    margin-bottom: 5%;
 }
 .titulo-card2-hosting{
     font-family: rouben;
@@ -139,7 +140,8 @@
 .metodosPago-asicHosting{
     border: 2px solid #36B079;
     width: 90%;
-    margin-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
     height: 130px;
     margin-top: 20px;
@@ -218,4 +220,51 @@ margin-top: 20px;
 margin-left: auto;
 margin-right: auto;
 width: 90%;
+}
+@media only screen and (max-width: 1400px) {
+
+    .card1-Checkout{
+        width: 50%;
+        margin-left: 300px;
+        height: 42%;
+    }
+    .infoCard1-Checkout{
+        margin-top: 8%;
+        height: 50%;
+    }
+    .iconos-card1-checkout{
+        margin-top: 30px;
+    }
+    .iconos-card1-checkout span{
+        font-size: 0.8rem;
+    }
+    .iconos-card1-checkout div{
+        font-size: 0.9rem;
+    }
+    .parrafo-card1-checkout{
+        font-size: 0.9rem;
+    }
+    .precio-AsicHosting-card1{
+        justify-content: center;
+        font-size: 0.9rem;
+        height: 20px;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .infoCard1-Checkout{
+        height: 50%;
+    }
+    .card1-Checkout{
+        height: 45%;
+    }
+    .iconos-card1-checkout{
+        margin-top: 40px;
+    }
+    .card2-Checkout{
+        height: 1150px;
+    }
+   
+
 }

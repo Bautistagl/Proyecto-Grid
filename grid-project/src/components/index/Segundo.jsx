@@ -1,6 +1,19 @@
-import React from 'react';
+import Lottie from 'lottie-web'
+import React, { useEffect, useRef } from 'react';
 
 const Segundo = () => {
+  
+  const container = useRef(null)
+
+  useEffect(()=>{
+    Lottie.loadAnimation({
+      container: container.current,
+      renderer:'svg',
+      loop:true,
+      autoplay:true,
+      animationData: require('../../../public/animGlobe3.json')
+    })
+  },[])
   return (
     <section className="contenedorSegundo">
       <div className="textos">
@@ -15,7 +28,8 @@ const Segundo = () => {
           77 geographic location
         </div>
       </div>
-      <img className="fotoSegundo" src={'/mapa.png'} alt="" />
+      {/* <img className="fotoSegundo" src={'/mapa.png'} alt="" /> */}
+      <div className='animacion-principal2' ref={container} > </div>
     </section>
   );
 };

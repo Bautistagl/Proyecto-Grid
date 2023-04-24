@@ -5,11 +5,13 @@
     margin-left: 12%;
     margin-right: 150px;
     height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
 }
 .textos{
     width: 90%;
-    margin-top: -5%;
+    margin-top: 0%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -17,22 +19,23 @@
 .fotoSegundo{
     display: flex;
     margin-left: 50px;
-    width: 50%;
+    width: 45%;
     z-index: 0;
+    margin-right: 70px;
 }
 
 
 .tituloSegundo{
     font-family: rouben;
     font-size: 3.5rem;
-    width: 100%;
+    width: 40%;
     font-weight: 500;
     margin-bottom: 2%;
 }
 .subtituloSegundo{
     font-family: rouben ligth;
     font-size: 1.3rem;
-    width: 75%;
+    width: 35%;
     color: white;
     
 }

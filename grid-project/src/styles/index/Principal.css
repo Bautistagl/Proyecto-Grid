@@ -47,6 +47,18 @@
    z-index: 1000;
     
 }
+.animacion-principal2{
+    margin-top: auto;
+    
+    margin-left: 35%;
+    position: absolute;
+    width: 700px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+     
+ }
 
 @keyframes animation1{
     0% {

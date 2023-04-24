@@ -3,6 +3,7 @@
     justify-content: flex-start;
     align-self: center;
     
+    
 }
 .textos{
     margin-top: 5%;
@@ -37,23 +38,33 @@
 }
 
 .animacion-principal{
-   margin-top: 60px;
-   margin-left: 6.7%;
+   margin-top: 110px;
+   margin-left: 7.7%;
    position: absolute;
-   width: 700px;
-   height: 550px;
+   width: 500px;
+   height: 450px;
    justify-content: center;
    align-items: center;
    z-index: 1000;
     
 }
 .animacion-principal2{
-    margin-top: auto;
-    
-    margin-left: 35%;
+    margin-top: 0.9%;
+    margin-left: 700px;
     position: absolute;
-    width: 700px;
-    height: 650px;
+    width: 630px;
+   
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+     
+ }
+ .animacion-mundo{
+    margin-top: 0.9%;
+    margin-left: 550px;
+    position: absolute;
+    width: 630px;
+   
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -100,4 +111,29 @@
          
      }
 
+}
+@media only screen and (max-width:1500px){
+    .animacion-principal2{
+        margin-top: 1%;
+        margin-left: 550px;
+        width: 610px;
+    }
+    .animacion-principal{
+        margin-top: 1.6%;
+        margin-left: 640px;
+        width: 5%;
+    }
+}
+@media only screen and (max-width:1350px){
+    
+    .animacion-principal{
+        margin-top: 2.2%;
+        margin-left: 640px;
+        width: 4.5%
+    }
+    .animacion-principal2{
+        margin-top: 1.4%;
+        margin-left: 550px;
+        width: 40vw
+    }
 }

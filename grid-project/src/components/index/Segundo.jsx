@@ -29,7 +29,7 @@ const Segundo = () => {
         </div>
       </div>
       {/* <img className="fotoSegundo" src={'/mapa.png'} alt="" /> */}
-      <div className='animacion-principal2' ref={container} > </div>
+      <div className='animacion-mundo' ref={container} > </div>
     </section>
   );
 };

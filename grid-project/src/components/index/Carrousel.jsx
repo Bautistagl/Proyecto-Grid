@@ -2,6 +2,7 @@ import React, { Component} from "react";
 import Slider from "react-slick";
 import Principal from "./Principal";
 import Link from "next/link";
+import Principal2 from "./Principal2";
 
 
 
@@ -67,7 +68,7 @@ export default class SimpleSlider extends Component {
             </div>
         </div>
         <div className='textosCar'>
-        <Principal className="animacion-car"/>
+        <Principal2 className="animacion-car"/>
 
 <div className='tituloCar'>
     <span className='primeraParteCar'> ASIC MINING </span>  Prueba nuestros servicios de cloud descentralizado y ahorra en costos de alojamiento.

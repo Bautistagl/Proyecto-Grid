@@ -1,21 +1,11 @@
-import Lottie from 'lottie-web'
+
 import React, { useEffect, useRef } from 'react'
 
 
 
 const Principal = () => {
 
-  const container = useRef(null)
-
-  useEffect(()=>{
-    Lottie.loadAnimation({
-      container: container.current,
-      renderer:'svg',
-      loop:true,
-      autoplay:true,
-      animationData: require('../../../public/animGlobe3.json')
-    })
-  },[])
+  
 
   return (
    <section className='contenedorPrincipal'>
@@ -29,7 +19,7 @@ const Principal = () => {
         Our decentralized cloud hosting service offers you the ability to scale your applications and data without the need for a centralized data center. Say goodbye to high costs and enjoy the benefits of distributed computing
         </div>
      </div> */}
-          <div className='animacion-principal' > <img src='/ilustracion-asicMining2.svg' alt=''/> </div>
+          <div className='animacion-principal' > <img src='/ilustracion-webHosting.svg' alt=''/> </div>
           {/* <img className='fotoPrincipal' src={gridLogo1} alt="" /> */}
          
     </section>

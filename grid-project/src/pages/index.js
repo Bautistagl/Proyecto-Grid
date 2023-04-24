@@ -29,12 +29,12 @@ export default function Home() {
     <>
     <div className="container-homePrincipal"> 
 
-    {/* <DynamicNavbar/> */}
+    <DynamicNavbar/>
    <DynamicCarrousel/>
    <Segundo/>
-   <Powered/>
+   {/* <Powered/> */}
    <Faqs/>
-   <ContactForm/>
+   {/* <ContactForm/> */}
    <Footer/>
     </div>
  

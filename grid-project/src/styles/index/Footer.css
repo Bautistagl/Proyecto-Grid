@@ -236,4 +236,7 @@ li{
   .columnas{
     margin-left: 10px;
   }
+  .columna-principal {
+    margin-left: 0;
+  }
 }

@@ -87,7 +87,10 @@
     }
 
     .guarantee-button{
-        width: 80%;
+        display: flex !important;
+        width: 100%;
+        justify-content: center;
+       
     }
 
     .guarantee-titulo{  

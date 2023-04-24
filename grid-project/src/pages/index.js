@@ -29,7 +29,7 @@ export default function Home() {
     <>
     <div className="container-homePrincipal"> 
 
-    <DynamicNavbar/>
+    {/* <DynamicNavbar/> */}
    <DynamicCarrousel/>
    <Segundo/>
    <Powered/>

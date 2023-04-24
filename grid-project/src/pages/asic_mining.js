@@ -1,13 +1,7 @@
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-
-
 import dynamic from "next/dynamic";
-import Segundo from "@/components/index/Segundo";
-import Powered from "@/components/index/Powered";
-import Faqs from "@/components/index/Faqs";
 import ContactForm from "@/components/index/ContactForm";
 import Footer from "@/components/index/Footer";
+import Banner from "@/components/AsicMiningProduct/Banner";
 
 
 
@@ -17,23 +11,16 @@ const DynamicNavbar = dynamic(()=>import("../components/index/Navbar"),
     loading: () => <p> Im f</p>
   }
 )
-const DynamicCarrousel = dynamic(()=>import("../components/index/Carrousel"),
-  {
-    ssr:false,
-    loading: () => <p> Im f</p>
-  }
-)
 
-export default function Home() {
+
+export default function AsicMining() {
   return (
     <>
     <div className="container-homePrincipal"> 
 
     <DynamicNavbar/>
-   <DynamicCarrousel/>
-   <Segundo/>
-   <Powered/>
-   <Faqs/>
+    <Banner/>
+  
    <ContactForm/>
    <Footer/>
     </div>

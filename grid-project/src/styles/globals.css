@@ -7,15 +7,12 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  
-
-     
 }
 .container-homePrincipal{
   background-image: url('/fondo_pagina4.svg');
   background-size: cover;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   margin-right: 0;
 }
 

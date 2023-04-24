@@ -84,6 +84,12 @@
 }
 
 @media only screen and (max-width:550px){
+    .animacion-mundo{
+        display: none;
+    }
+    .animacion-principal2{
+        display: none;
+    }
     .tituloPrincipal{
         color: white;
         font-family: rouben;

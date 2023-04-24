@@ -28,7 +28,7 @@ const Segundo = () => {
           77 geographic location
         </div>
       </div>
-      {/* <img className="fotoSegundo" src={'/mapa.png'} alt="" /> */}
+      <img className="fotoSegundo" src={'/mapa.png'} alt="" />
       <div className='animacion-mundo' ref={container} > </div>
     </section>
   );

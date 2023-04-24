@@ -2,7 +2,9 @@
 
 body {
   overflow-x: hidden;
-  background: #0c1317;
+  background-image: url("../../public/fondo_pagina4.svg");
+  background-size: cover;
+  
   margin: 0;
   padding: 0;
   width: 100%;
@@ -13,12 +15,11 @@ background-size: cover; */
      
 }
 .container-homePrincipal{
-  background-image: url("../../public/fondo_pagina3.svg");
+  background-image: url("../../public/fondo_pagina4.svg");
   background-size: cover;
   height: 100%;
   width: 100%;
   margin-right: 0;
-
 }
 
 

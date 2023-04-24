@@ -32,9 +32,9 @@ export default function Home() {
     <DynamicNavbar/>
    <DynamicCarrousel/>
    <Segundo/>
-   {/* <Powered/> */}
+   <Powered/>
    <Faqs/>
-   {/* <ContactForm/> */}
+   <ContactForm/>
    <Footer/>
     </div>
  

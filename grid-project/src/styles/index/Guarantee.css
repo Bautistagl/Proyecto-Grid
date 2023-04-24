@@ -92,6 +92,9 @@
         justify-content: center;
        
     }
+    .guarantee-texts{
+        width: 100%;
+    }
 
     .guarantee-titulo{  
         font-size: 32px;

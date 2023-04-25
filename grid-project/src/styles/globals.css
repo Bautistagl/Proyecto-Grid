@@ -12,11 +12,12 @@ body {
      
 }
 .container-homePrincipal{
-  background-image: url('/fondo_pagina4.svg');
+  background-image: url('/fondoFinal7.svg');
   background-size: cover;
+  /* background: #0c1317; */
   height: 100%;
   width: 100%;
-  margin-right: 0;
+  padding: 0;
 }
 
 

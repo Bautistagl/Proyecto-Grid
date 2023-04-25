@@ -1,0 +1,69 @@
+.banner-section{
+    height: 100%;
+
+   justify-content: center;
+   align-content: center; 
+}
+
+.producto-principal{
+    color: white;
+    font-family: rouben;
+    font-size: 26px;
+    margin-bottom: -4%;
+    margin-top: 3%;
+}
+
+.textosBanner{
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+    margin-left: 12%;
+    width: 100%;
+}
+.banner-container{
+    display: flex;
+}
+
+.primeraParteBanner{
+    color: #36B079;
+    font-weight: bold;
+}
+
+.subtituloBanner{
+    font-family: rouben ligth;
+    font-size: 20px;
+    width: 600px;
+    color: white;
+}
+.tituloBanner{
+    
+    font-family: rouben;
+    font-size: 42px;
+    width: 700px;
+    font-weight: 500;
+    margin-bottom: 3%;
+    color:white ;
+    margin-top: 10%;
+
+}
+.ilustracion-banner{
+    display: flex;
+    width: 40%;
+    margin-top: 13%;
+    margin-left: -10%;
+    
+ }
+
+ .container-botones{
+    display: flex;
+    margin-top: -100px;
+    margin-left:15%;
+    margin-bottom: 100px;
+ }
+ .boton-create-asic{
+    background-color:#36B079;
+    height: 50px;
+ }
+ .boton-create-asic2{
+    background-color: #0c1317;
+ }

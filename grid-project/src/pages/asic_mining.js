@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import ContactForm from "@/components/index/ContactForm";
 import Footer from "@/components/index/Footer";
-import Banner from "@/components/AsicMiningProduct/Banner";
+import Banner from "@/components/landing-AsicHosting/Banner";
 
 
 

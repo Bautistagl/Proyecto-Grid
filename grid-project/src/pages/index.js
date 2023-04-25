@@ -25,9 +25,10 @@ const DynamicCarrousel = dynamic(()=>import("../components/index/Carrousel"),
 )
 
 export default function Home() {
+
   return (
     <>
-    <div className="container-homePrincipal"> 
+    <div className="container-homePrincipal" > 
 
     <DynamicNavbar/>
    <DynamicCarrousel/>

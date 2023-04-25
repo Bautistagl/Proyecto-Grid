@@ -10,6 +10,7 @@ import "../styles/logged-hosting/LoggedHosting.css"
 import "../styles/menuNavbarLogged.css"
 import "../styles/logged-asicHosting/LoggedAsicHosting.css"
 import "../styles/checkout-asicHosting/CheckoutAsic.css"
+import "../styles/landing-AsicHosting/landingAsic.css"
 
 
 

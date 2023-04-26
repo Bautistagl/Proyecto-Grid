@@ -3,7 +3,7 @@ import React from 'react'
 const CardStarterWord = () => {
   return (
     <div>
-    <div className='cardHostingPremium' style={{borderTopRightRadius:"10px",borderEndEndRadius:"0px"}}>
+    <div className='cardHostingPremium2' >
   <div className='tituloBestOption'> Best option </div>
 
 <span className='saveSpan'> Save up to 68% </span>

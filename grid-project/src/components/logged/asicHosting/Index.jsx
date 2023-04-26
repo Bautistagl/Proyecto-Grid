@@ -1,3 +1,4 @@
+import Paginacion from '@/commons/Paginacion';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
@@ -14,13 +15,10 @@ const toggle = (i) => {
   return (
     <div className="container-asicHosting">
       <div>a</div>
-      <div className="guia-paginacion">
-        <Link href="/profile">
-          <span className="titulo-guia-paginacion"> Services</span>
-        </Link>
-        <img className="icono-guia-paginacion" src="/next (4).png" alt="" />
-        <span className="actual-guia=paginacion"> Asic Mining </span>
-      </div>
+      <Paginacion 
+        links="/profile"
+        titulo="Asic Hosting"
+      />
         <div className="tituloPrincipal-hosting">
         
         My miners

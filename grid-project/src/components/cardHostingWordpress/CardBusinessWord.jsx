@@ -3,7 +3,7 @@ import React from 'react'
 const CardBusinessWord = () => {
   return (
     <div>
-    <div className='cardHosting' style={{ borderRight:"none", borderTopLeftRadius:"0px",borderTopRightRadius:"0px",borderEndEndRadius:"0px",borderEndStartRadius:"0px"}}>
+    <div className='cardHosting2' >
 <div> </div>
 <span className='saveSpan'> Save up to 72% </span>
 <p className='pSpan'> Business WordPress </p>

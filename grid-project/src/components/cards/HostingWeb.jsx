@@ -7,6 +7,7 @@ import CardSingleWord from '../cardHostingWordpress/CardSingleWord';
 import CardBusinessWord from '../cardHostingWordpress/CardBusinessWord';
 import CardProWord from '../cardHostingWordpress/CardProWord';
 import Link from 'next/link';
+import Paginacion from '@/commons/Paginacion';
 
 const HostingWeb = () => {
   const [selected, setSelected] = useState(0);
@@ -25,13 +26,10 @@ const HostingWeb = () => {
   return (
     <>
       <div>s</div>
-      <div className="guia-paginacion">
-        <Link href="/profile">
-          <span className="titulo-guia-paginacion"> Services</span>
-        </Link>
-        <img className="icono-guia-paginacion" src="/next (4).png" alt="" />
-        <span className="actual-guia=paginacion"> Hosting </span>
-      </div>
+      <Paginacion 
+        links="/profile"
+        titulo="Web Hosting"
+      />
       <div className="tituloPrincipal-hosting">
         {' '}
         Elige tu plan de hosting web{' '}
@@ -65,8 +63,8 @@ const HostingWeb = () => {
       )}
       {selected === 1 ? (
         <div className="contenedorHostingWebCompleto">
-          <div className="FeaturesContainer"></div>
-          <div className="contenedorCards">
+          
+          <div className="contenedorCards2">
             <CardStarterWord />
             <CardSingleWord />
             <CardBusinessWord />

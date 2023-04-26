@@ -18,10 +18,10 @@ const SideNavbar = () => {
     <nav className='sideNavbar'>
       <ul className='sideNavbar-ul'>
         <Link href="/">
-      <img className='icono-sideBar-grid' src='/iconoGrid2.png'/>
+      <img className='icono-sideBar-grid' src='/gridLogo1.png'/>
         </Link>
       <Link href="/profile">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar2' src='/home.png'/>  Home</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar2' src='/homeDark.png'/>  Home</li>
         </Link>
         <li className='titulo-servicios-sidenavbar'> SERVICES </li>
         <Link href="/profile/hosting">  
@@ -43,9 +43,9 @@ const SideNavbar = () => {
 
         <ul >
         <Link href="/profile/asicHosting">  
-          <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/servers.png' alt=''/> My Miners </li>
+          <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/serversDark.png' alt=''/> My Miners </li>
           </Link>
-          <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/invoice.png' alt=''/>  Billing</li>  
+          <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/invoiceDark.png' alt=''/>  Billing</li>  
          </ul>
         </div>
         <Link href="/profile/personal-information">  
@@ -56,13 +56,13 @@ const SideNavbar = () => {
 
 
         <Link href="/profile/personal-information">  
-        <li  className='sideNavbar-li'><img className='icon-sideNavbar2' src='/user (2).png'/>  Account settings</li>
+        <li  className='sideNavbar-li'><img className='icon-sideNavbar2' src='/userDark.png'/>  Account settings</li>
         </Link>
         <Link href="/profile/security"> 
-         <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/padlock.png'/> Security</li>
+         <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/padlockDark.png'/> Security</li>
         </Link>
         <Link href="sharedAccount"> 
-        <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/group.png'/> Shared Account</li>
+        <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/groupDark.png'/> Shared Account</li>
         </Link>
         
       </ul>

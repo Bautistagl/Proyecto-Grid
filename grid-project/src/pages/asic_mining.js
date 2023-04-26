@@ -20,10 +20,7 @@ export default function AsicMining() {
 
     <DynamicNavbar/>
     <div className="banner-container">
-    <Banner
-        title='Web hosting worldwide. Deploy everywhere, at any time.'
-        subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      />
+    <Banner/>
        <img src="/ilustracion-asicMining3.svg" alt="" className="ilustracion-bannerChica" />
        </div>
   

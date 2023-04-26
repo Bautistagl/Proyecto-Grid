@@ -13,7 +13,7 @@ const DynamicNavbar = dynamic(()=>import("../components/index/Navbar"),
 )
 
 
-export default function AsicMining() {
+export default function WebHosting() {
   return (
     <>
     <div className="container-homePrincipal"> 
@@ -24,9 +24,8 @@ export default function AsicMining() {
         title='Web hosting worldwide. Deploy everywhere, at any time.'
         subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       />
-       <img src="/ilustracion-asicMining3.svg" alt="" className="ilustracion-bannerChica" />
+       <img src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
-  
    <ContactForm/>
    <Footer/>
     </div>

@@ -35,7 +35,7 @@ const CardsAsic = () => {
       </div>
       <div className='cardAsic'>
       <div className='cardIcon'> </div>
-        <h1>Add your NFT's</h1>
+        <h1>Add your NFT`s</h1>
         <span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown specimen book. </span>
       </div>
       <div className='cardAsic' >

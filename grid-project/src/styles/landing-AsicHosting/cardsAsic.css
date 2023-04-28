@@ -1,0 +1,90 @@
+.cardsAsicContainer{
+    display: grid;
+    height: 600px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 7%;
+    opacity: 0;
+    
+}
+.titulo-asic{
+    margin-top: 5%;
+    display: flex;
+    color: white;
+    opacity: 0;
+    font-family: rouben;
+    font-size: 3rem;
+    margin-left: 12%;
+    animation: fade-in-left 1s forwards 0.5s;
+    
+}
+
+.cardsAsicContainer div{
+    display: flex;
+    padding: 10px;
+    width: 570px;
+    height: 180px;
+    background-color: #0c1317;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: none;
+    opacity: 0; /* Initially set the opacity to 0 */
+    animation: fade-in-down 1s forwards; /* Apply the fade-in animation */
+}
+
+.cardsAsicContainer h1{
+    color: white;
+    font-family: rouben ligth;
+    font-size: 20px;
+    margin-top: 6%;
+    padding: 0px 5%;
+}
+
+.cardsAsicContainer span{
+    color: rgba(255, 255, 255, 0.561);
+    font-family: rouben;
+    padding: 0px 5%;
+}
+
+.cardAsic{
+    display: flex;
+    flex-direction: column;
+}
+.cardIcon{
+    color: white;
+    width: 60px !important;
+    height: 60px !important;
+    background: linear-gradient(to right, #36B079, #8ae1ba) !important;
+    border-radius: 10px !important;
+    margin-left: 5% !important;
+    margin-top: -10%;
+    
+
+}
+.fade-in {
+    animation: fade-in-down 1s forwards 0.6s;
+    opacity: 0;
+  }
+
+@keyframes fade-in-down {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateY(50px); /* Start slightly offscreen to the left */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+      transform: translateY(0); /* Slide in to the original position */
+    }
+  }
+  
+@keyframes fade-in-left {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateX(-50px); /* Start slightly offscreen to the left */
+    }
+    to {
+      opacity: 1; /* End with opacity 1 */
+      transform: translateX(0); /* Slide in to the original position */
+    }
+  }

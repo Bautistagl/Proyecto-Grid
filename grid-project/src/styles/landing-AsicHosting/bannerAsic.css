@@ -1,0 +1,96 @@
+.banner-section{
+    height: 100%;
+
+   justify-content: center;
+   align-content: center; 
+}
+
+.producto-principal{
+    color: white;
+    font-family: rouben;
+    font-size: 26px;
+    margin-bottom: -4%;
+    margin-top: 3%;
+}
+
+.textosBanner{
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+    margin-left: 12%;
+    width: 700px;
+}
+.banner-container{
+    display: flex;
+    height: 700px;
+}
+
+.primeraParteBanner{
+    color: #36B079;
+    font-weight: bold;
+}
+
+.subtituloBanner{
+    font-family: rouben ligth;
+    font-size: 20px;
+    width: 85%;
+    color: white;
+}
+.tituloBanner{
+    font-family: rouben;
+    font-size: 42px;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 3%;
+    color:white ;
+    margin-top: 10%;
+
+}
+.ilustracion-bannerGrande{
+    display: flex;
+    justify-content: flex-end;
+    width: 650px;
+   height: 400px;
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-left: 5%;
+   
+ }
+ .ilustracion-bannerChica{
+    display: flex;
+    justify-content: flex-end;
+    width: 550px;
+   height: 400px;
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-left: 5%;
+   
+ }
+
+ .container-botones{
+    display: flex;
+    margin-top: 50px;
+    margin-left:10%;
+    margin-bottom: 100px;
+ }
+ .boton-create-asic{
+    background-color:#36B079;
+    height: 50px;
+ }
+ .boton-create-asic2{
+    background-color: #0c1317;
+ }
+ @media only screen and (max-width:1500px){
+    
+    .ilustracion-bannerGrande{
+       width: 500px;
+     }
+     .ilustracion-bannerChica{
+       width: 450px;
+       
+     }
+     .tituloBanner{
+        width: 550px;
+     }
+
+ }

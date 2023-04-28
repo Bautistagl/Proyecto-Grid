@@ -4,6 +4,7 @@ import React from 'react';
 
 const Index = () => {
   return (
+    
     <div className="container-asicHosting-Checkout">
       <div>a</div>
       <div className="contenedor-cards-asicHosting">

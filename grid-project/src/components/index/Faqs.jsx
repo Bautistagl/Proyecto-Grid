@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Guarantee from './Guarantee';
+import Guarantee from '../../commons/Guarantee';
 
 const Faqs = () => {
 

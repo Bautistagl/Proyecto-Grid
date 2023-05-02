@@ -1,10 +1,13 @@
 .cardsAsicContainer{
     display: grid;
     height: 600px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     margin-top: 7%;
     opacity: 0;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
     
 }
 .titulo-asic{
@@ -18,12 +21,16 @@
     animation: fade-in-left 1s forwards 0.5s;
     
 }
-
+.foto-card-asic{
+  display: flex;
+  height: 60px;
+  vertical-align: middle;
+}
 .cardsAsicContainer div{
     display: flex;
     padding: 10px;
-    width: 570px;
-    height: 180px;
+    width: 90%;
+    height: 300px;
     background-color: #0c1317;
     margin-left: auto;
     margin-right: auto;
@@ -36,9 +43,10 @@
 .cardsAsicContainer h1{
     color: white;
     font-family: rouben ligth;
-    font-size: 20px;
+    font-size: 1.7rem;
     margin-top: 6%;
     padding: 0px 5%;
+    width: 100%;
 }
 
 .cardsAsicContainer span{
@@ -58,7 +66,7 @@
     background: linear-gradient(to right, #36B079, #8ae1ba) !important;
     border-radius: 10px !important;
     margin-left: 5% !important;
-    margin-top: -10%;
+    margin-top: -15%;
     
 
 }

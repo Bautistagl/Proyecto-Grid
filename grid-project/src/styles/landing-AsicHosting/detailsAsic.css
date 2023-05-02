@@ -1,0 +1,82 @@
+.asicDetailContainer{
+    display: flex;
+    margin-left: auto;
+    width: 100%;
+    color: white;
+    margin-top: -7%;
+    margin-bottom: 10%;
+}
+.contenedorFotoAsic{
+    width: 55%;
+    margin-top: -5%;
+}
+.asicDetailFoto{
+    width: 65%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-asic-detail{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+.info-asic-detail h1{
+    font-family: rouben;
+    font-size: 3.5rem;
+    margin: 0;
+}
+.info-asic-detail span{
+    color: rgba(255, 255, 255, 0.51);
+    font-size: 1rem;
+    font-family: rouben ligth;
+}
+.info-asic-detail h3{
+    font-family: rouben;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.info-asic-detail h4{
+    margin: 5px;
+    font-family: rouben ligth;
+}
+.info-asic-detail button{
+    background-color: #36B079;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.features-asic-detail{
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.icono-check-detail{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    height: 20px;
+    vertical-align: middle;
+}
+.disclaimer-asicDetail span{
+    color: white;
+   display: flex;
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+    
+    
+}
+.disclaimer-asicDetail{
+    width: 70%;
+    justify-content: flex-start;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

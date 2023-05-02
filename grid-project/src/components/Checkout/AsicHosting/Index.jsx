@@ -1,10 +1,7 @@
 import React from 'react';
 
-
-
 const Index = () => {
   return (
-    
     <div className="container-asicHosting-Checkout">
       <div>a</div>
       <div className="contenedor-cards-asicHosting">
@@ -94,60 +91,77 @@ const Index = () => {
             <span> Hosting Term Length</span>{' '}
             <div className="precio-AsicHosting-card1"> 3 years </div>
           </div>
-          <div className='metodosPago-asicHosting'>
-            <div className='titulo-metodo-pago' > Select a payment method</div>
-            <div className='iconos-metodo-de-pago'>
-                <div className='miniCard-metodoPago'>
-                    <img src='/credit-card.png' alt=''/>
-                    <span className='span-minicard'> Credit card</span>
-                </div>
-                <div className='miniCard-metodoPago'>
-                    <img src='/bitcoin.png' alt=''/>
-                    <span className='span-minicard'> Crypto</span>
-                </div>
-                <div className='miniCard-metodoPago'>
-                    <img src='/thunderbolt.png' alt=''/>
-                    <span className='span-minicard'> Lightning</span>
-                </div>
+          <div className="metodosPago-asicHosting">
+            <div className="titulo-metodo-pago"> Select a payment method</div>
+            <div className="iconos-metodo-de-pago">
+              <div className="miniCard-metodoPago">
+                <img src="/credit-card.png" alt="" />
+                <span className="span-minicard"> Credit card</span>
+              </div>
+              <div className="miniCard-metodoPago">
+                <img src="/bitcoin.png" alt="" />
+                <span className="span-minicard"> Crypto</span>
+              </div>
+              <div className="miniCard-metodoPago">
+                <img src="/thunderbolt.png" alt="" />
+                <span className="span-minicard"> Lightning</span>
+              </div>
             </div>
-    
           </div>
           <div className="contenedor-flex2">
-            <span style={{fontFamily:"rouben ligth"}}> Hardware Total:</span>{' '}
+            <span style={{ fontFamily: 'rouben ligth' }}> Hardware Total:</span>{' '}
             <div className="precio-AsicHosting-card2"> $2000,00</div>
           </div>
           <div className="contenedor-flex2">
-            <span style={{fontFamily:"rouben ligth"}}> Total Hosting Prepayment:</span>{' '}
+            <span style={{ fontFamily: 'rouben ligth' }}>
+              {' '}
+              Total Hosting Prepayment:
+            </span>{' '}
             <div className="precio-AsicHosting-card2"> $351,60</div>
           </div>
           <div className="contenedor-flex2">
-            <span style={{fontFamily:"rouben ligth"}}> Total Security Deposit:</span>{' '}
+            <span style={{ fontFamily: 'rouben ligth' }}>
+              {' '}
+              Total Security Deposit:
+            </span>{' '}
             <div className="precio-AsicHosting-card2"> $175,80</div>
           </div>
           <div className="contenedor-flex2">
-            <span style={{fontFamily:"rouben ligth"}}> Sales Tax</span>{' '}
+            <span style={{ fontFamily: 'rouben ligth' }}> Sales Tax</span>{' '}
             <div className="precio-AsicHosting-card2"> $130,00</div>
           </div>
           <div className="contenedor-flex2">
-            <span style={{fontFamily:"rouben", fontWeight:"bolder"}}> Due Today: </span>{' '}
+            <span style={{ fontFamily: 'rouben', fontWeight: 'bolder' }}>
+              {' '}
+              Due Today:{' '}
+            </span>{' '}
             <div className="precio-AsicHosting-card2"> $5314,17</div>
           </div>
-          <div className='contenedor-agree'>
-          <input className='check-asicHosting' type="checkbox" />
-            <div> I have read and agree to the Compass Hardware Purchase Agreement </div>
-           </div>
-           <div className='contenedor-agree'>
-           <input className='check-asicHosting' type="checkbox" />
-            <div> I have read and agree to the Compass Hosting Service Agreement </div>
-           </div>
-           <div className='contenedor-agree'>
-           <input className='check-asicHosting' type="checkbox" />
-            <div> I acknowledge that all sales are final and Compass Mining will not offer refunds or exchanges </div>
-           </div>
-           <button className='boton-asicHosting-checkout'> Place Order</button>
+          <div className="contenedor-agree">
+            <input className="check-asicHosting" type="checkbox" />
+            <div>
+              {' '}
+              I have read and agree to the Compass Hardware Purchase Agreement{' '}
+            </div>
+          </div>
+          <div className="contenedor-agree">
+            <input className="check-asicHosting" type="checkbox" />
+            <div>
+              {' '}
+              I have read and agree to the Compass Hosting Service Agreement{' '}
+            </div>
+          </div>
+          <div className="contenedor-agree">
+            <input className="check-asicHosting" type="checkbox" />
+            <div>
+              {' '}
+              I acknowledge that all sales are final and Compass Mining will not
+              offer refunds or exchanges{' '}
+            </div>
+          </div>
+          <button className="boton-asicHosting-checkout"> Place Order</button>
         </div>
       </div>
-      
     </div>
   );
 };

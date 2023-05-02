@@ -3,6 +3,9 @@ import ContactForm from "@/components/index/ContactForm";
 import Footer from "@/components/index/Footer";
 import Banner from "@/components/landing-AsicHosting/Banner";
 import CardsAsic from "@/components/landing-AsicHosting/CardsAsic";
+import AsicDetails from "@/components/landing-AsicHosting/AsicDetails";
+import CardFaqs from "@/commons/CardFaqsRight";
+import FaqsAsic from "@/components/landing-AsicHosting/FaqsAsic";
 
 
 
@@ -25,7 +28,9 @@ export default function AsicMining() {
        <img src="/ilustracion-asicMining3.svg" alt="" className="ilustracion-bannerChica" />
        </div>
        <CardsAsic/>
-  
+       <AsicDetails/>
+       <FaqsAsic/>
+      
    <ContactForm/>
    <Footer/>
     </div>

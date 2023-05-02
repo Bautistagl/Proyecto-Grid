@@ -1,0 +1,42 @@
+.faqsCard{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 70%;
+    height: 180px;
+    background-color: #0c1317;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    opacity: 0;
+}
+
+.faqsCard-pregunta{
+    display: inline-flex;
+    color: white;
+    height: 60px !important;
+    background: #36B079;
+    border-radius: 10px !important;
+    margin-top: -7%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: rouben;
+    font-size: 1.3rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 85%;
+
+}
+.faqsCard span{
+    display: flex;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 0.9rem;
+    justify-content: center;
+}

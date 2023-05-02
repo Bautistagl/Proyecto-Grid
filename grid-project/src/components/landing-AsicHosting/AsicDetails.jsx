@@ -25,9 +25,9 @@ const AsicDetails = () => {
           </span>
           <span>
             {' '}
-            If you purchase ASIC's through Terra Hosting, we waive our
+            If you purchase ASICs through Terra Hosting, we waive our
             commission and pass the savings to you making our prices very
-            competitive. If you wish to purchase ASIC's, please email
+            competitive. If you wish to purchase ASICs, please email
             co*****@te**********.io or open a ticket on the Terra Discord
             channel.{' '}
           </span>

@@ -12,6 +12,7 @@ import "../styles/logged-asicHosting/LoggedAsicHosting.css"
 import "../styles/checkout-asicHosting/CheckoutAsic.css"
 import "../styles/landing-AsicHosting/landingAsic.css"
 import "../styles/commons/CardFaqs.css"
+import "../styles/commons/CardFaqs2.css"
 
 
 

@@ -1,0 +1,76 @@
+
+.todos-faqs2-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+.titulo-faqs2{
+    font-size: 2.5rem;
+    font-family: rouben;
+    text-align: center;
+    
+    margin-bottom: 50px;
+    color: white;
+}
+.asic-faqs2-textos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.asic-faqs2-textos img{
+    display: flex;
+    height: 30px;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: start;
+    margin-right: 10px;
+    margin-left: -60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.asic-faqs2-textos h1{
+    display: flex;
+    color: white;
+    font-family: rouben ligth;
+    justify-content: center;
+}
+
+.asic-faqs2-textos span{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: open sans;
+    color: white;
+}
+
+.container-faqs-general{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+  
+}
+.segundo-container-faqs{
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+   
+    
+}
+.primer-container-faqs{
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    
+    
+}
+.accordion2{
+    width: 80%;
+}

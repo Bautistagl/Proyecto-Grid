@@ -140,7 +140,9 @@ const toggleMenu = () => {
                <div className='productos'> 
                <img alt='' className='logo-productos' src={"/cloudIcon.png"}/>
                <div  className='descripcion-productos'> 
+               <Link href='/immersion_cooling'>
                <span className='titulo-productos'> Immersion Cooling Mining </span>
+               </Link>
                <span className='subtitulo-productos'> Una descripcion un poco mas larga paraq ver  </span>
                </div>
                </div>
@@ -214,7 +216,9 @@ const toggleMenu = () => {
                <div className='productos'> 
                <img alt='' className='logo-productos' src={"/cloudIcon.png"}/>
                <div  className='descripcion-productos'> 
+               <Link href='/immersion_cooling'>
                <span className='titulo-productos'> Immersion Cooling Mining </span>
+               </Link>
                <span className='subtitulo-productos'> Una descripcion un poco mas larga paraq ver  </span>
                </div>
                </div>

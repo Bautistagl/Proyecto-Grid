@@ -2,8 +2,11 @@ import React from 'react';
 
 const Index = () => {
   return (
-    <div className="container-asicHosting-Checkout">
+    <div className='container-asicHosting-Checkout'>
       <div>a</div>
+      <div style={{color:"black"}} className='tituloPrincipal-hosting'> Order Checkout </div>
+    
+      <div className='lineaDeTitulo'></div>
       <div className="contenedor-cards-asicHosting">
         <div className="card1-Checkout">
           <div className="primer-titulo-asicHostingCard">
@@ -163,6 +166,7 @@ const Index = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

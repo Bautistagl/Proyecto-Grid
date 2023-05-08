@@ -12,6 +12,7 @@ import Paginacion from '@/commons/Paginacion';
 const HostingWeb = () => {
   const [selected, setSelected] = useState(0);
   const [selected1, setSelected1] = useState(null);
+  
 
   const toggle1 = (i) => {
     if(selected1 === i) {
@@ -19,6 +20,7 @@ const HostingWeb = () => {
     }
     setSelected1(i)
   }
+
 
   const toggle = (i) => {
     return setSelected(i);
@@ -74,18 +76,7 @@ const HostingWeb = () => {
       ) : (
         ''
       )}
-      {selected === 2 ? (
-        <div className="contenedorHostingWebCompleto">
-          <div className="FeaturesContainer"></div>
-          <div className="contenedorCards">
-            <CardPremiumWeb />
-            <CardSingleWeb />
-            <CardBusinessWeb />
-          </div>
-        </div>
-      ) : (
-        ''
-      )}
+   
          <div className="tituloPrincipal-hosting"> FAQs</div>
       
       <section className="faqs-container-asicHosting">

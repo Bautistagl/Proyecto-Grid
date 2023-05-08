@@ -3,6 +3,9 @@ import ContactForm from "@/components/index/ContactForm";
 import Footer from "@/components/index/Footer";
 import Banner from "@/components/landing-AsicHosting/Banner";
 
+import PrimerFaqs from "@/components/landing-AsicHosting/PrimerFaqs";
+import CardsAsic from "@/components/landing-AsicHosting/CardsAsic";
+
 
 
 const DynamicNavbar = dynamic(()=>import("../components/index/Navbar"),
@@ -26,6 +29,8 @@ export default function WebHosting() {
       />
        <img src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
+       <CardsAsic/>
+       <PrimerFaqs/>
    <ContactForm/>
    <Footer/>
     </div>

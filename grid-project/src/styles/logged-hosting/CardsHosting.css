@@ -30,8 +30,9 @@
     padding: 0px 0px;
     border-top: 40px solid #ffffff;
     border-top-right-radius: 10px;
-    border-right: 1px solid transparent;
-    border-left: 1px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+ 
 }
 
 .saveSpan{
@@ -167,7 +168,7 @@
 }
 .tituloPrincipal-hosting{
     display: flex;
-    color: #ffffff;
+    color: white;
     text-align: center;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;

@@ -1,6 +1,6 @@
 .container-asicHosting-Checkout{
-    display: flex;
-    background-image: url("../../../public/fondo_pagina4.svg");
+   
+   background-color: #F6F6F6;
     background-size: cover;
     height: 100%;
 }
@@ -197,6 +197,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+   
 }
 .contenedor-agree{
     display: flex;
@@ -221,6 +222,14 @@ margin-left: auto;
 margin-right: auto;
 width: 90%;
 }
+.lineaDeTitulo{
+    display: flex;
+    width: 70%;
+    border: 1px solid black;
+    margin-left: 350px;
+    
+}
+
 @media only screen and (max-width: 1400px) {
 
     .card1-Checkout{

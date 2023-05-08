@@ -38,7 +38,7 @@
 }
 .tituloBanner{
     font-family: rouben;
-    font-size: 42px;
+    font-size: 3rem;
     width: 100%;
     font-weight: 500;
     margin-bottom: 3%;
@@ -93,4 +93,11 @@
         width: 550px;
      }
 
+ }
+
+ @media only screen and (max-width:1250px){
+
+    .ilustracion-bannerGrande{
+        width: 400px;
+      }
  }

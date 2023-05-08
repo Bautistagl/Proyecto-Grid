@@ -6,16 +6,16 @@ const CardPremiumWeb = () => {
 
 
 
-  const [opcion, setOpcion] = useLocalStorage('opcion','')
+  // const [opcion, setOpcion] = useLocalStorage('opcion','')
 
-  const seleccionar = () => {
+  // const seleccionar = () => {
     
-    localStorage.setItem('opcion', 1);
-  }
+  //   localStorage.setItem('opcion', 1);
+  // }
 
-  const verStorage = () => {
-    console.log(localStorage.getItem(opcion))
-  }
+  // const verStorage = () => {
+  //   console.log(localStorage.getItem(opcion))
+  // }
   return (
     <div>
           <div className='cardHostingPremium' style={{borderStartEndRadius:"10px"}}>
@@ -25,7 +25,7 @@ const CardPremiumWeb = () => {
      <p className='pSpan'> Premium Web Hosting </p>
      <div className='precioDiv'> 999.00 AR$<span className='precioSpan'>/mes</span> </div>
      <span className='extraSpan'> + 3 meses EXTRA </span>
-     <button className='botonHosting'onClick={seleccionar}> Seleccionar </button>
+     <button className='botonHosting'> Seleccionar </button>
      {/* <button onClick={verStorage}> probadno</button> */}
      <span className='spanGarantia'> El plan se renueva a 899.00 AR$/mes </span>
      < > 

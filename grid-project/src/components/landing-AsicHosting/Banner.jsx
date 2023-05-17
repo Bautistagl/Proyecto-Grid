@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Banner = ({ title, subtitle, imageSource, buttonText1, buttonText2 }) => {
+const Banner = ({ title, subtitle, imageSource, producto, buttonText1, buttonText2 }) => {
   return (
    
         <div className="textosBanner">
-          <div className="producto-principal"> Asic Mining</div>
+          <div className="producto-principal"> {producto}</div>
           <div className="tituloBanner">{title}</div>
           <div className="subtituloBanner">{subtitle}</div>
         <div className="container-botones">
@@ -17,6 +17,7 @@ const Banner = ({ title, subtitle, imageSource, buttonText1, buttonText2 }) => {
 };
 
 Banner.defaultProps = {
+  producto: "Asic Mining",
   title:
     'Power Your  Asic mining Operations with Our Reliable Hosting Solution',
   subtitle:

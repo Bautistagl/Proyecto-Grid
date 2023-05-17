@@ -5,6 +5,7 @@ import Banner from "@/components/landing-AsicHosting/Banner";
 
 import PrimerFaqs from "@/components/landing-AsicHosting/PrimerFaqs";
 import CardsAsic from "@/components/landing-AsicHosting/CardsAsic";
+import CardsHosting from "@/commons/CardsHosting";
 
 
 
@@ -24,12 +25,13 @@ export default function WebHosting() {
     <DynamicNavbar/>
     <div className="banner-container">
     <Banner
+    producto='Web Hosting'
         title='Web hosting worldwide. Deploy everywhere, at any time.'
         subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       />
        <img src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
-       <CardsAsic/>
+       <CardsHosting/>
        <PrimerFaqs/>
    <ContactForm/>
    <Footer/>

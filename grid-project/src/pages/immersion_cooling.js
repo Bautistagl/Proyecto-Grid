@@ -25,10 +25,11 @@ export default function ImmersionCooling() {
     <DynamicNavbar/>
     <div className="banner-container">
     <Banner
-        title='Web hosting worldwide. Deploy everywhere, at any time.'
-        subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        producto='Immersion Cooling'
+        title='Power up your ASIC mining operations with our immersion cooling solution.'
+        subtitle='Our immersion cooling product protects mining equipment from dust buildup, high temperatures, humidity, and oxidation, resulting in increased mining efficiency and extended equipment lifespan. Our Immersion Cooling Hosting service provides a secure and stable environment for your equipment with 24/7 monitoring, redundant power and cooling, and expert support. Contact us to learn more about our immersion cooling product and hosting service.'
       />
-       <img src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
+       <img src="/Batea.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
        <CardsImmersion/>
        <PrimerFaqs/>

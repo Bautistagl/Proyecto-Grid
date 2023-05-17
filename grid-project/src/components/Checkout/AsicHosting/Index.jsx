@@ -1,3 +1,4 @@
+import ItemCheckout from '@/commons/ItemCheckout';
 import React from 'react';
 
 const Index = () => {
@@ -11,65 +12,27 @@ const Index = () => {
         <div className="card1-Checkout">
           <div className="primer-titulo-asicHostingCard">
             {' '}
-            Hardware Purchase
+            Shopping Cart
           </div>
-          <div className="infoCard1-Checkout">
-            <div className="principal-Card1-Checkout">
-              <img
-                className="icono-Principal-Card1"
-                src="/Antminer-S19-Pro.png"
-                alt=""
-              />
-              <div className="titulos-principal-card1">
-                <div
-                  className="titulo-principal-card1"
-                  style={{ marginBottom: '10px' }}>
-                  {' '}
-                  Antminer S19j Pro
-                </div>
-                <div className="subtitulo-Card1-Checkout">
-                  {' '}
-                  100 TH/s, 3,050 W hide details | $ 2000,00 | Ohio 2, United
-                  States{' '}
-                </div>
-              </div>
-            </div>
-            <div className="parrafo-card1-checkout">
-              {' '}
-              The Antminer S19j Pro by Bitmain is a SHA256 ASIC miner. This
-              mining machine has a maximum hashrate of 100 TH/s for a power
-              consumption of 3050 watts and is a popular choice for Bitcoin
-              miners. The S19j Pro comes in variants of 92/96/100/104 TH. For
-              large orders, these units might be a mixed combination but the
-              overall hashrate of the order will remain the same.{' '}
-            </div>
-            <div className="iconos-card1-checkout">
-              <div>
-                {' '}
-                <img /> Compass Score: <span> 98.9</span>{' '}
-              </div>
-              <div>
-                {' '}
-                <img /> Est. Online Date: <span> 05/15/2023</span>{' '}
-              </div>
-              <div>
-                {' '}
-                <img /> Condition: <span> New</span>{' '}
-              </div>
-              <div>
-                {' '}
-                <img /> Power: <span> 3050 Watts</span>{' '}
-              </div>
-              <div>
-                {' '}
-                <img /> Algorithm: <span> SHA256</span>{' '}
-              </div>
-              <div>
-                {' '}
-                <img /> Hashrate: <span> 100 TH/s</span>{' '}
-              </div>
-            </div>
-          </div>
+
+              <ItemCheckout
+            producto='Antminer S19j Pro'
+            icono='/Antminer-S19-Pro.png'
+            features='100 TH/s, 3,050 W | $ 2000,00 | Ohio 2, United
+            States'
+          />
+             <ItemCheckout
+            producto='Antminer S19j Pro'
+            icono='/Antminer-S19-Pro.png'
+            features='100 TH/s, 3,050 W | $ 2000,00 | Ohio 2, United
+            States'
+          />
+             <ItemCheckout
+            producto='Antminer S19j Pro'
+            icono='/Antminer-S19-Pro.png'
+            features='100 TH/s, 3,050 W | $ 2000,00 | Ohio 2, United
+            States'
+          />
           <div className="precio-asicHosting-card1">
             <div className="texto-precio-asicHosting"> Total cost </div>
             <div className="precio-AsicHosting-card1"> $2000,00</div>

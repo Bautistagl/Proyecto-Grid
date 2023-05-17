@@ -13,10 +13,6 @@ export default function AsicCheckout() {
       <div className="logged-asicHosting-component">
       <DynamicNavbar/>
       <Index/>
-      
-      
-
-
       </div>
     )
   }

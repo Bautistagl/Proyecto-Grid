@@ -4,10 +4,6 @@ import Footer from "@/components/index/Footer";
 import Banner from "@/components/landing-AsicHosting/Banner";
 import CardsAsic from "@/components/landing-AsicHosting/CardsAsic";
 import AsicDetails from "@/components/landing-AsicHosting/AsicDetails";
-import CardFaqs from "@/commons/CardFaqsRight";
-import FaqsAsic from "@/components/landing-AsicHosting/FaqsAsic";
-import FaqsAsic2 from "@/components/landing-AsicHosting/FaqsAsic2";
-import FaqsClassic from "@/commons/FaqsClassic";
 import PrimerFaqs from "@/components/landing-AsicHosting/PrimerFaqs";
 
 

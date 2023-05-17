@@ -49,11 +49,11 @@
 .ilustracion-bannerGrande{
     display: flex;
     justify-content: flex-end;
-    width: 650px;
-   height: 400px;
-   margin-top: auto;
+    width: 450px;
+   height: 500px;
+   margin-top: 12%;
    margin-bottom: auto;
-   margin-left: 5%;
+   margin-left: 10%;
    
  }
  .ilustracion-bannerChica{

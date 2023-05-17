@@ -1,8 +1,17 @@
 .container-asicHosting{
+   
     background-image: url("../../../public/fondoFinal7.svg");
     background-size: cover;
     height: 100%;
+  
+  
 }
+.container-asicHosting.blur-background{
+    filter: blur(8px);
+}
+
+
+
 .card-not-mining{
     display: flex;
     margin: auto;
@@ -13,6 +22,8 @@
     background-color: white;
     margin-left: calc((100% + 240px - 800px) / 2);
     border-radius: 5px;
+    
+    
 }
 .info-not-mining{
     margin-left: 60px;
@@ -88,10 +99,11 @@
     justify-content: center;
     background-color: #36B079;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
     font-size: 0.7rem;
     padding: 6px 6px;
     margin-top: 3px;
+    width: 110px
 }
 .foto-asicHosting{
     display: flex;
@@ -167,6 +179,9 @@
     .cards-productos-asicHosting{
         display: flex;
         width: 75%;
-        margin-left: 290px;
+        margin-left: 330px;
+    }
+    .boton-asicHosting{
+        width: 80px;
     }
 }

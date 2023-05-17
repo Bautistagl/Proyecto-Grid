@@ -4,6 +4,7 @@
     background-size: cover;
     height: 100%;
 }
+
 .card1-Checkout{
     display: flex;
     flex-direction: column;
@@ -14,13 +15,36 @@
     margin-top: 5%;
     border-radius: 10px;
 }
+.principal-Card1-Checkout button{
+    display: flex;
+    background-color: #36B079;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: 2%;
+}
 .infoCard1-Checkout{
-   
+    display: flex;
+    position: absolute;
     border: 1px solid rgba(0, 0, 0, 0.115);
-    height: 300px;
+    height: 350px;
+    width: 40%;
+    margin-top: 250px;
+   margin-left: 600px;
+   border-radius: 10px;
+   background-color: white;
+   border: 5px solid black;
+   z-index: 999;
+    
+}
+.checkOut-singular{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
-    margin: auto;
-    border-radius: 10px;
 }
 .icono-Principal-Card1{
     display: flex;
@@ -30,6 +54,7 @@
 }
 .principal-Card1-Checkout{
     display: flex;
+   
 }
 .titulos-principal-card1{
     margin-top: 30px;
@@ -229,8 +254,15 @@ width: 90%;
     margin-left: 350px;
     
 }
+.botones-popUp{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto
+}
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
 
     .card1-Checkout{
         width: 50%;
@@ -238,8 +270,8 @@ width: 90%;
         height: 42%;
     }
     .infoCard1-Checkout{
-        margin-top: 8%;
-        height: 50%;
+        margin-top: 12%;
+        height: 370px;
     }
     .iconos-card1-checkout{
         margin-top: 30px;
@@ -260,10 +292,23 @@ width: 90%;
         width: 40%;
     }
 }
+@media only screen and (max-width: 1400px) {
+    .infoCard1-Checkout{
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .infoCard1-Checkout{
+        height: 380px;
+        margin-left: 37%;
+    }
+}
 
 @media only screen and (max-width: 1250px) {
     .infoCard1-Checkout{
-        height: 50%;
+        margin-left: 40%;
+        height: 400px;
     }
     .card1-Checkout{
         height: 45%;

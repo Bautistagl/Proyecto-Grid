@@ -12,10 +12,6 @@ export default function AsicHosting() {
       <div className="logged-asicHosting-component">
       <DynamicNavbar/>
       <Index/>
-      
-      
-
-
       </div>
     )
   }

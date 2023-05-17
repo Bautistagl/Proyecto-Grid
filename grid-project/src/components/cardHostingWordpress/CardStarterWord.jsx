@@ -13,14 +13,18 @@ const CardStarterWord = () => {
 <button className='botonHosting' > Seleccionar </button>
 <span className='spanGarantia'> El plan se renueva a 1699.00 AR$/mes </span>
 < > 
+<div className='separador-cardHosting'> Main functions</div>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/red.png' alt=''/>Caché de objetos para WordPress  </span>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/red.png' alt=''/>Herramienta WordPress staging  </span>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/green.png' alt=''/>WordPress multisitio </span>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/yellow.png' alt=''/>100 sitios web </span>
+<div className='separador-cardHosting'> Rendimiento </div>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/yellow.png' alt=''/>100 subdominios  </span>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/yellow.png' alt=''/> 1 GB de RAM  </span>
+<div className='separador-cardHosting'> Beneficios </div>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/yellow.png' alt=''/>Copias de seguridad semanales </span>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/yellow.png' alt=''/> 100 GB de almacenamiento SSD </span>
+<div className='separador-cardHosting'> Wordpress features</div>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/yellow.png' alt=''/>1 CPU Core </span>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/green.png' alt=''/>   Email gratuito </span>
 <span className='spanFeatures'> <img className='iconoFeatures' src='/green.png' alt=''/>Cuentas FTP ilimitadas  </span>

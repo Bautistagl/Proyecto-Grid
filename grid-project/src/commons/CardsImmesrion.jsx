@@ -31,17 +31,17 @@ const CardsImmersion = () => {
       <div className="cardsAsicContainer" ref={cardsContainerRef}>
         <CardsFeatures 
           titulo="Efficiency"
-          parrafo=" Location matters when it comes to Bitcoin mining, and Argentina has an advantage in offering highly competitive electricity rates. By minimizing energy costs, clients can maximize their profits in Bitcoin. This reliable and affordable energy source allows for efficient mining, as clients can overclock their equipment and gain an additional 20% to 30% of computational power. With this feature, clients can take advantage of Argentina's favorable energy costs and optimize their mining operations for maximum profitability."
+          parrafo=" Immersion cooling technology allows for efficient mining and increased profitability. Equipment can be harnessed with an affordable power source and immersion cooling to speed up and gain an additional 20-30% efficiency."
           foto="/lowCost.png"
         />
           <CardsFeatures
           titulo="Increase Lifetime"
-          parrafo=" Our immersion cooling product, allows equipment to be submerged in dielectric oil, helps to reduce dust buildup, high temperatures, and protects against humidity and oxidation that can significantly impact the lifespan of mining equipment. By using immersion cooling, clients can benefit from extended equipment lifespan, increased mining efficiency, and added protection against environmental factors that can damage equipment"
+          parrafo="Our immersion cooling product submerges mining equipment in dielectric oil, reducing dust buildup and high temperatures, and protecting against humidity and oxidation that can damage equipment and shorten its lifespan. This allows for extended equipment lifespan, increased mining efficiency, and added environmental protection."
           foto="/support.png"
         />
           <CardsFeatures
           titulo="Zero sound"
-          parrafo=" Immersion cooling eliminates the need for fans and other cooling components, resulting in a quieter mining environment. Additionally, allows for mining operations to take place in any location, as there are no restrictions related to noise pollution."
+          parrafo="  Immersion cooling eliminates the need for fans and other cooling components, resulting in a quieter mining environment. Additionally, allows for mining operations to take place in any location, as there are no restrictions related to noise pollution."
           foto="/easy.png"
         />  
       </div>

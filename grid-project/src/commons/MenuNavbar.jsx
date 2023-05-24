@@ -10,7 +10,7 @@ const MenuNavbar = () => {
          </div>
         <div>
              <ul> 
-              <Link href="/profile/personal-information"> 
+              <Link href="/profile/ssl"> 
                 <li> <img className='icono-menuNavbar' src='/user (2).png' alt=''/> Account settings </li>
               </Link>
               <Link href="/profile/security">

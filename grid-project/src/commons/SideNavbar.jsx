@@ -27,14 +27,14 @@ const SideNavbar = () => {
         <Link href="/profile/hosting">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Hosting</li>
         </Link>
-        <Link href="/profile/personal-information">  
+        <Link href="/profile/ssl">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/> Email</li>
         </Link>
-        <Link href="/profile/personal-information">  
+        <Link href="/profile/ssl">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Dominios</li>
         </Link>
-        <Link href="/profile/personal-information">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  VPN</li>
+        <Link href="/profile/immersion-dashboard">  
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Immersion Cooling</li>
         </Link>
        
         <li className='sideNavbar-li' onClick={()=> toggle()}><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Asic Hosting <span> <img className='icon-sideNavbarAsicHosting' src='/abierto.png' alt=''/> </span></li>
@@ -48,20 +48,20 @@ const SideNavbar = () => {
           <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/invoiceDark.png' alt=''/>  Billing</li>  
          </ul>
         </div>
-        <Link href="/profile/personal-information">  
+        <Link href="/profile/ssl">  
         <li  className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Billing</li>
         </Link>
         <li className='titulo-servicios-sidenavbar'> SETTINGS </li>
        
 
 
-        <Link href="/profile/personal-information">  
+        <Link href="/profile/ssl">  
         <li  className='sideNavbar-li'><img className='icon-sideNavbar2' src='/userDark.png'/>  Account settings</li>
         </Link>
         <Link href="/profile/security"> 
          <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/padlockDark.png'/> Security</li>
         </Link>
-        <Link href="sharedAccount"> 
+        <Link href="/profile/sharedAccount"> 
         <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/groupDark.png'/> Shared Account</li>
         </Link>
         

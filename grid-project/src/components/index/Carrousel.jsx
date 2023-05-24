@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import Principal from './Principal';
+import Principal from './FotoWebHosting';
 import Link from 'next/link';
-import Principal2 from './Principal2';
+import Principal2 from './FotoAsicMining';
+import FotoWebHosting from './FotoWebHosting';
+import FotoAsicMining from './FotoAsicMining';
+import FotoImmersion from './FotoImmersion';
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
@@ -52,7 +55,7 @@ export default class SimpleSlider extends Component {
       <section className="car-section">
         <Slider className="sliderCar" {...settings}>
           <div className="textosCar">
-            <Principal className="animacion-car" />
+            <FotoWebHosting className="animacion-car" />
 
             <div className="tituloCar">
               <span className="primeraParteCar"> WEB HOSTING </span> Prueba
@@ -67,7 +70,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div className="textosCar">
-            <Principal2 className="animacion-car" />
+            <FotoAsicMining className="animacion-car" />
 
             <div className="tituloCar">
               <span className="primeraParteCar"> ASIC MINING </span> Prueba
@@ -82,10 +85,10 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div className="textosCar">
-            <Principal className="animacion-car" />
+            <FotoImmersion className="animacion-car" />
 
             <div className="tituloCar">
-              <span className="primeraParteCar"> VPS</span> Prueba nuestros
+              <span className="primeraParteCar"> IMMERSION COOLING</span> Prueba nuestros
               servicios de cloud descentralizado y ahorra en costos de
               alojamiento.
             </div>

@@ -2,6 +2,7 @@
    
     background-image: url("../../../public/fondoFinal7.svg");
     background-size: cover;
+    min-height: 100vh;
     height: 100%;
   
   

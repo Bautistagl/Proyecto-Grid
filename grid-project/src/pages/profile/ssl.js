@@ -1,3 +1,6 @@
+import SideNavbar from "@/commons/SideNavbar";
+import InfoShared from "@/components/logged/sharedAccount/infoShared";
+import InfoPersonal from "@/components/logged/personal/InfoPersonal"
 import dynamic from "next/dynamic";
 const DynamicNavbar = dynamic(()=>import("../../commons/Navbar"),
   {
@@ -8,12 +11,11 @@ const DynamicNavbar = dynamic(()=>import("../../commons/Navbar"),
 
 export default function LoggedSSL() {
     return (
-      <div className="logged-home-component">
-      <DynamicNavbar/>
+      <div className="logged-hosting-component">
+      <SideNavbar/>
+      <InfoPersonal/>
       
+         </div>
       
-
-
-      </div>
     )
   }

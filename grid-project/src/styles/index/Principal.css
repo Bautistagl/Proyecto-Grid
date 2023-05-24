@@ -37,7 +37,7 @@
     margin-top: auto;
 }
 
-.animacion-principal{
+.animacion-WebHosting{
    margin-top: 110px;
    margin-left: 7.7%;
    position: absolute;
@@ -48,7 +48,7 @@
    z-index: 999;
     
 }
-.animacion-principal2{
+.animacion-AsicMining{
     margin-top: 1.2%;
     margin-left: 750px;
     position: absolute;
@@ -58,6 +58,16 @@
     align-items: center;
     z-index: 999;
      
+ }
+ .animacion-Immersion{
+    margin-top: 1.2%;
+    margin-left: 900px;
+    position: absolute;
+    width: 230px;
+   
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
  }
  .animacion-mundo{
     margin-top: 0.9%;
@@ -83,12 +93,12 @@
     }
 }
 @media only screen and (max-width:1500px){
-    .animacion-principal2{
+    .animacion-AsicMining{
         margin-top: 1.4%;
         margin-left: 650px;
         width: 410px;
     }
-    .animacion-principal{
+    .animacion-WebHosting{
         margin-top: 1.6%;
         margin-left: 640px;
         width: 5%;
@@ -96,12 +106,12 @@
 }
 @media only screen and (max-width:1350px){
     
-    .animacion-principal{
+    .animacion-WebHosting{
         margin-top: 2.2%;
         margin-left: 640px;
         width: 4.5%
     }
-    .animacion-principal2{
+    .animacion-AsicMining{
         margin-top: 1.4%;
         margin-left: 650px;
         width: 350px;
@@ -111,7 +121,7 @@
     .animacion-mundo{
         display: none;
     }
-    .animacion-principal2{
+    .animacion-AsicMining{
         display: none;
     }
     .tituloPrincipal{
@@ -136,7 +146,7 @@
         align-self: center;
         
     }
-    .animacion-principal{
+    .animacion-WebHosting{
         display: none;
          
      }

@@ -96,3 +96,10 @@
       transform: translateX(0); /* Slide in to the original position */
     }
   }
+
+  @media only screen and (max-width: 1500px) {
+    .titulo-asic{
+      margin-top: 10%;
+    }
+
+  }

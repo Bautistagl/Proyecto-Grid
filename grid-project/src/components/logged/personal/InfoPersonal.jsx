@@ -2,6 +2,8 @@ import React from 'react'
 
 const InfoPersonal = () => {
   return (
+     <>
+    <div> s</div>
     <div className='infoPersonal-container'> 
     <div className='infoPersonal-titulo'>      Account information</div>
     <div className='infoPersonal-informacion' >
@@ -38,6 +40,8 @@ const InfoPersonal = () => {
        
     </div>
     </div>
+    <div>s</div>
+     </>
   )
 }
 

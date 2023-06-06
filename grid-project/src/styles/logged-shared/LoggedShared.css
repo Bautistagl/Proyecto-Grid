@@ -1,5 +1,6 @@
 @import url("./InfoShared.css");
 
+
 @font-face {
     font-family: 'Rouben';
     src: url(../../../public/fonts/Rouben-Medium.otf) format('opentype');
@@ -20,5 +21,5 @@
     background-image: url("../../../public/fondo_pagina4.svg");
     background-attachment: fixed;
     background-size:cover;
-    height: 120vh;
+    height: 100%;
   }

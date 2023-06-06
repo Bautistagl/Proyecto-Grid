@@ -27,6 +27,10 @@
     width: 60%;
     font-weight: 500;
     margin-bottom: 2%;
+    background: linear-gradient(225deg,#fff,#36B079);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
 }
 .subtituloSegundo{
     font-family: rouben ligth;

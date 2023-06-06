@@ -1,4 +1,5 @@
 import Paginacion from '@/commons/Paginacion'
+import FaqsImmersion from '@/components/FaqsImmersion';
 import CardBusinessWeb from '@/components/cardHostingWeb/CardBusinessWeb';
 import CardPremiumWeb from '@/components/cardHostingWeb/CardPremiumWeb';
 import CardSingleWeb from '@/components/cardHostingWeb/CardSingleWeb';
@@ -168,6 +169,7 @@ const ImmersionBuy = () => {
     ))}
   </div>
 </section>
+{/* <FaqsImmersion/> */}
 <div>s</div>
     </div>
     

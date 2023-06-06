@@ -48,7 +48,7 @@ const SideNavbar = () => {
           <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/invoiceDark.png' alt=''/>  Billing</li>  
          </ul>
         </div>
-        <Link href="/profile/ssl">  
+        <Link href="/profile/billing">  
         <li  className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Billing</li>
         </Link>
         <li className='titulo-servicios-sidenavbar'> SETTINGS </li>

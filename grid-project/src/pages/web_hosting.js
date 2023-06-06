@@ -6,6 +6,7 @@ import Banner from "@/components/landing-AsicHosting/Banner";
 import PrimerFaqs from "@/components/landing-AsicHosting/PrimerFaqs";
 import CardsAsic from "@/components/landing-AsicHosting/CardsAsic";
 import CardsHosting from "@/commons/CardsHosting";
+import { useInView } from "react-intersection-observer";
 
 
 
@@ -18,6 +19,16 @@ const DynamicNavbar = dynamic(()=>import("../components/index/Navbar"),
 
 
 export default function WebHosting() {
+
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Animation triggers only once
+    threshold: 0.7, // Percentage of element visibility to trigger the animation
+  });
+  const fadeInStylesLeft = {
+    opacity: 1,
+    transform: 'translateX(-50px)',
+    transition: 'opacity 1s ease-in-out, transform 1s ease-in-out',
+  };
   return (
     <>
     <div className="container-homePrincipal"> 
@@ -29,7 +40,10 @@ export default function WebHosting() {
         title='Web hosting worldwide. Deploy everywhere, at any time.'
         subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       />
-       <img src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
+       <img 
+         ref={ref}
+         style={inView ? fadeInStylesLeft : {}}
+       src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
        <CardsHosting/>
        <PrimerFaqs/>

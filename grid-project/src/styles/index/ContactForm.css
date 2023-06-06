@@ -89,8 +89,10 @@
     display: flex;
     font-family: rouben;
     font-size: 3.5rem;
-    color: #36B079;
     margin-top: 4%;
+    background: linear-gradient(225deg, #fff 30%, #36B079 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contact-subtitulo{

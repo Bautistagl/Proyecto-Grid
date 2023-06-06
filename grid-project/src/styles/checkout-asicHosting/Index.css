@@ -230,9 +230,12 @@
     justify-content: flex-start;
     font-size: 0.9rem;
     text-decoration: underline;
+    margin-left: -45px;
+    
 }
 .contenedor-agree div{
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-bottom: 1px;
     padding: 5px;
 }
 .check-asicHosting{

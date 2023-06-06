@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 
-
 function Form() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -9,36 +8,88 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // handle form submission here
-  }
+  };
 
   return (
-    <form className='register-form' onSubmit={handleSubmit}>
-      <h2 className='register-title' >Create Acount</h2>
-      <div className='register-redes'> 
-      <a className='a-redes-register'>
-        <img className='logo-google-register' src='/search.png'/>
-      </a>
-      <a className='a-redes-register' >
-        <img className='logo-facebook-register' src='/facebook.png'/>
-      </a>
-      </div>\
-      <div className='register-separador'> 
+    <div className='contenedor-login'> 
+    <div className='textos-login'> 
+    <div> Grid Mine </div>
+    <h1> Deploy and scale effortlessly with Grid Mine</h1>
+    <span> <img alt='' src=''/> 14 day free trial (no credit card required) </span>
+    <span> <img alt='' src=''/> Generous stratup program for seed-stage companies </span>
+    <span> <img alt='' src=''/> Use your AWS credits </span>
 
-      <hr className='separator' /> <span className='letra-separador'> o </span> <hr className='separator' />
+
+    </div>
+    <form className="login-form" onSubmit={handleSubmit}>
+      <h2 className="login-title">Create your Grid Mine account</h2>
+      <div className='github-login'> <img className='login-icono' alt='' src='/github.png'/> <span> Sign up with GitHub</span></div>
+      <div className="login-separador">
+        <hr className="separator" />{' '}
+        <span className="letra-separador"> o </span>{' '}
+        <hr className="separator" />
       </div>
-        <input placeholder='Email' className='register-input' type="email"  value={email} onChange={(e) => setEmail(e.target.value)} required />
-        <input placeholder='Password' className='register-input' type="password"  value={password} onChange={(e) => setPassword(e.target.value)} required />
-      <button className='register-submit' type="submit" >Create free acount</button>
-      <div className='member-container'>
-      <div className='member-register'>
-        Already a member?
-        <Link href="/login">
-        <span className='member2-register'> Log in </span>
-        </Link>
-      </div>
+      <div className='doble-contenedor'>
+      <input
+        placeholder="First name"
+        className="login-input-small"
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      <input
+        placeholder="Last name"
+        className="login-input-small"
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+        
+      
+     </div>
+      <input
+        placeholder="Company name"
+        className="login-input"
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      <input
+        placeholder="Email"
+        className="login-input"
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      <input
+        placeholder="Password"
+        className="login-input"
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        required
+      />
+      <Link href="/profile">
+        <button className="login-submit" type="submit">
+          Continue
+        </button>
+      </Link>
+     
+      <div className="member-container">
+        <div className="member-login">
+          Already have an account?
+          <Link href='/login'> 
+          <span className="member2-login"> Log in  </span>
+          </Link>
+          
+        </div>
       </div>
     </form>
-
+    </div>
   );
 }
 

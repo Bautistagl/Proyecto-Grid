@@ -44,6 +44,9 @@
     margin-bottom: 3%;
     color:white ;
     margin-top: 10%;
+    background: linear-gradient(225deg, #fff 30%, #36B079 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 .ilustracion-bannerGrande{
@@ -61,16 +64,16 @@
     justify-content: flex-end;
     width: 550px;
    height: 400px;
-   margin-top: auto;
+   margin-top: 250px;
    margin-bottom: auto;
-   margin-left: 5%;
+   margin-left: 8%;
    
  }
 
  .container-botones{
     display: flex;
     margin-top: 50px;
-    margin-left:10%;
+   
     margin-bottom: 100px;
  }
  .boton-create-asic{

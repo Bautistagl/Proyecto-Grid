@@ -1,6 +1,9 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Banner = ({ title, subtitle, imageSource, producto, buttonText1, buttonText2 }) => {
+  
+
   return (
    
         <div className="textosBanner">

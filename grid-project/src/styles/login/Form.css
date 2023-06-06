@@ -4,9 +4,46 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 50%;
+   margin-top: 100px;
+    margin-right: 300px;
 }
-
+.contenedor-login{
+   display: flex;
+}
+.textos-login{
+   display: flex;
+   flex-direction: column;
+   margin-left: auto;
+   justify-content: center;
+   margin-left: 200px;
+   margin-top: 50px;
+   width: 30%;
+   
+}
+.doble-contenedor{
+   display: flex;
+}
+.textos-login h1{
+   background: linear-gradient(225deg,#fff,#36B079);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-family: rouben;
+   font-size: 2.5rem;
+   width: 100%;
+   font-weight: bolder;
+}
+.textos-login div{
+   color: white;
+   font-family: rouben;
+   font-size: 2.5rem;
+   font-weight: bolder;
+   margin-bottom: 20px;
+}
+.textos-login span{
+   color: rgba(255, 255, 255, 0.798);
+   font-family: rouben;
+   margin: 5px;
+}
 
 .login-title{
     color: white;
@@ -15,18 +52,51 @@
 .login-input{
     margin-top: 5%;
     height: 25px;
-    width: 320px;
+    width: 400px;
     padding: 10px 10px;
    border-style: none;
     border-radius: 5px;
 }
+.login-input-small{
+   margin-top: 5%;
+   margin-left: 10px;
+   margin-right: 10px;
+   height: 25px;
+   width: 180px;
+   padding: 10px 10px;
+   border-style: none;
+   border-radius: 5px;
+}
+.login-icono{
+   height: 20px;
+}
 
+.github-login{
+   display: flex;
+   background-color: white;
+   margin-top: 5%;
+   height: 25px;
+   width: 400px;
+   padding: 10px 10px;
+   border-style: none;
+   border-radius: 5px;
+   font-family: rouben;
+   font-size: 1rem;
+   cursor: pointer;
+
+}
+.github-login:hover{
+   background-color: rgba(255, 255, 255, 0.934);
+}
+.github-login span{
+   margin-left: 10px;
+}
 .login-submit{
    display: flex;
     color: white;
     margin-top: 13%;
     background-color: #36B079;
-    width: 340px;
+    width: 420px;
     justify-content: center;
     align-items: center;
     padding: 15px 15px;

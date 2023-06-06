@@ -16,7 +16,7 @@ function Form() {
     <div> Grid Mine </div>
     <h1> Welcome back to Grid Mine</h1>
     <span> <img alt='' src=''/> Read the Grid Mine docs </span>
-    <span> <img alt='' src=''/> See what's new with Grid Mine </span>
+    <span> <img alt='' src=''/> See whats new with Grid Mine </span>
     <span> <img alt='' src=''/> Join the community </span>
 
 

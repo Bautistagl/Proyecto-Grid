@@ -202,12 +202,13 @@
     padding: 10px 10px;
     margin-left: 5%;
     cursor: pointer;
+    color: rgba(255, 255, 255, 0.798);
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.5s ease;
 }
 .spanHosting-clickeable:hover{
     color: #9cefca;
-    border-bottom: 2px solid #36B079;
+    
 }
 .spanHosting-clickeablefocus{
     display: flex;
@@ -313,6 +314,7 @@
 .botonera-meses button{
     display: flex;
     flex-direction: column;
+    background-color: #0c1317;
     
     color: #ffffff;
 }

@@ -26,7 +26,7 @@ const HostingWeb = () => {
   return (
     <>
       <div>s</div>
-      <Paginacion links="/profile" titulo="Web Hosting" />
+      <Paginacion anterior="Services" links="/profile" titulo="Web Hosting" />
       <div className="tituloPrincipal-hosting">
         {' '}
         Elige tu plan de hosting web{' '}

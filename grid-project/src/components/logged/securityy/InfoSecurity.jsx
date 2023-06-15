@@ -1,3 +1,4 @@
+import Paginacion from '@/commons/Paginacion'
 import React from 'react'
 
 const InfoSecurity = () => {
@@ -5,7 +6,9 @@ const InfoSecurity = () => {
         <> 
         
     <div className='infoSecurity-container'> 
-      <div className='infoSecurity-titulo'> Two factor authentication settings</div>
+    <div> s</div>
+    <Paginacion anterior="Settings" links="/profile" titulo="Billing" />
+    <div className="infoShared-titulo"> Two factor authentication</div>
       <div className='permisos-container-security'> 
 
     <div className='infoSecurity-permisos'>

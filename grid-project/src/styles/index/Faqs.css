@@ -41,23 +41,29 @@
 
 
 .accordion{
+    display: flex;
+    flex-direction: column;
     width: 600px;
+    margin-left: -300px;
+    opacity: 0;
+   
 }
 
 .item{
-    background: white;
+    background-color: #0c1317;
     margin-bottom: 10px;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
 .title{
-    color: #0c1317;
+    color: white;
+   background-color: #0c1317;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    font-family: rouben;
+    font-family: rouben ligth;
     font-size: 0.8rem;
 }
 .title.show{
@@ -67,7 +73,7 @@
 
 .content {
     font-family: rouben;
-    color: #0c13179f;
+    color: white;
     max-height: 0;
     overflow: hidden;
     transition: all 1.1s cubic-bezier(0,1,0,1);
@@ -81,6 +87,7 @@
 
 .guarantee{
    margin-top: 5%;
+   margin-right: -160px;
  }
 
  @media  only screen and (max-width:1300px){

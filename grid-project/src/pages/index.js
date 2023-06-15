@@ -32,7 +32,10 @@ export default function Home() {
 
     <DynamicNavbar/>
    <DynamicCarrousel/>
-   <Segundo/>
+   <Segundo
+   
+   
+   />
    <Powered/>
    <Faqs/>
    <ContactForm/>

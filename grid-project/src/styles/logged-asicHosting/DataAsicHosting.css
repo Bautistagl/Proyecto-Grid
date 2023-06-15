@@ -20,7 +20,7 @@
     margin-bottom: 5%;
     width: 800px;
     height: 300px;
-    background-color: white;
+    background-color: #0c1317;
     margin-left: calc((100% + 240px - 800px) / 2);
     border-radius: 5px;
     
@@ -35,12 +35,13 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     width: 85%;
+    color: white;
 }
 .subtitulo-not-mining{
     margin-top: 7%;
     font-family: rouben ligth;
     font-size: 1.1rem;
-    color: rgba(0, 0, 0, 0.53);
+    color: rgba(255, 255, 255, 0.786)
 }
 .boton-not-mining{
     display: flex;
@@ -144,10 +145,11 @@
     width: 800px;
 }
 .content.show.asicHosting{
+    color: white;
     height: auto;
     font-family: rouben;
     max-height: 9999px;
-    transition: all 1.1s cubic-bezier(1,0,1,0);
+    transition: all 0.5s cubic-bezier(1,0,1,0);
 }
 .content.asicHosting{
     color: #0c13179f;

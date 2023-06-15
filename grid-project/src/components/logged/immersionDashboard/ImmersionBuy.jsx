@@ -31,7 +31,7 @@ const ImmersionBuy = () => {
 
 
 <div>s</div>
-      <Paginacion links="/profile" titulo="Immersion cooling" />
+      <Paginacion anterior="Services" links="/profile" titulo="Immersion cooling" />
       <div className="tituloPrincipal-hosting">
         {' '}
         Elige tu plan de Immersion cooling{' '}

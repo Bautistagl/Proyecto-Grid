@@ -1,7 +1,30 @@
 import React, {useState} from 'react'
 import Guarantee from '../../commons/Guarantee';
+import { useInView } from 'react-intersection-observer';
 
 const Faqs = () => {
+
+  const [ref5, inView5] = useInView({
+    triggerOnce: true, // Animation triggers only once
+    threshold: 0.5, // Percentage of element visibility to trigger the animation
+  });
+  const fadeInStylesLeft = {
+    opacity: 1,
+    transform: 'translateX(280px)',
+    transition: 'opacity 2s ease-in-out, transform 2s ease-in-out',
+  };
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Animation triggers only once
+    threshold: 0.8, // Percentage of element visibility to trigger the animation
+  });
+  const fadeInStylesRight = {
+    opacity: 1,
+    transform: 'translateX(-80px)',
+    transition: 'opacity 2s ease-in-out, transform 2s ease-in-out',
+  };
+
+
+
 
 
 
@@ -18,8 +41,12 @@ const toggle = (i) => {
     <>
     <div className='faqs-titulo'> FAQs</div>
     <div className='faqs-subtitulo'> Most frecuently asked questions</div>
-    <section className='faqs-container'> 
-    <div className='accordion'>
+    <section
+    className='faqs-container'> 
+    <div
+    ref={ref5}
+    style={inView5 ? fadeInStylesLeft : {}}
+    className='accordion'>
       {data.map((item,i)=>(
       <div key={i} className={selected === i ? 'item show' : 'item'}>
         <div className={selected === i ? 'title show' : 'title'} onClick={()=>toggle(i)}>
@@ -33,7 +60,10 @@ const toggle = (i) => {
 
     </div>
     
-        <div className='guarantee'>  
+        <div
+         ref={ref}
+         style={inView ? fadeInStylesRight : {}}
+        className='guarantee'>  
 
     <Guarantee/>
         </div>

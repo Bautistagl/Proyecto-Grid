@@ -10,7 +10,7 @@ const BillingInfo = () => {
   return (
     <div>
       <div>s</div>
-      <Paginacion links="/profile" titulo="Billing" />
+      <Paginacion  anterior="Services" links="/profile" titulo="Billing" />
 
       <div className="tituloPrincipal-hosting">Billing</div>
       <div className="contenedor-titulos-hosting-click">

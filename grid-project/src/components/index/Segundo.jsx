@@ -1,7 +1,17 @@
 import Lottie from 'lottie-web'
 import React, { useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Segundo = () => {
+  const [ref2, inView2] = useInView({
+    triggerOnce: false, // Animation triggers only once
+    threshold: 1, // Percentage of element visibility to trigger the animation
+  });
+  const fadeInStylesLeft = {
+    opacity: 1,
+    transform: 'translateX(100px)',
+    transition: 'opacity 3s ease-in-out, transform 1s ease-in-out',
+  };
   
   const container = useRef(null)
 
@@ -16,9 +26,14 @@ const Segundo = () => {
   },[])
   return (
     <section className="contenedorSegundo">
-      <div className="textos">
+      <div 
+          ref={ref2}
+          style={inView2 ? fadeInStylesLeft : {}}
+      className="textos">
         <div className="tituloSegundo">
-          <span className="primeraParte">
+          <span
+          className="primeraParte"
+          >
             {' '}
             Flux provides a global cloud network{' '}
           </span>

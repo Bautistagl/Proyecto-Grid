@@ -15,6 +15,10 @@
     margin-top: 50px;
   
 }
+.botones-shared button:focus{
+    background-color: #36B079;
+    box-shadow: 1px 1px 20px 4px white;
+}
 
 .contenedor-nuevo-shared div{
     color: white;

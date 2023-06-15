@@ -7,9 +7,22 @@
     width: 240px;
     background-color: #0c1317;
     border-right: 1px solid white;
+    z-index: 100;
+}
+.boton-sidebar-ocultar{
+    display: flex;
+    justify-content: flex-start;
     z-index: 9999;
 }
-
+.boton-sidebar-mostrar{
+    position: absolute;
+    margin-left: 240px;
+   
+}
+.no-visible{
+    display: none;
+    
+}
 
 .sideNavbar-li{
     display: flex;

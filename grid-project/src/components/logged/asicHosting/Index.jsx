@@ -77,7 +77,7 @@ const Index = () => {
       )}
     <div className={`container-asicHosting ${popUp ? 'blur-background' : ''}`}>
       <div>a</div>
-      <Paginacion links="/profile" titulo="Asic Hosting" />
+      <Paginacion anterior="Services" links="/profile" titulo="Asic Hosting" />
       <div className="tituloPrincipal-hosting">My miners</div>
       <div className="tituloPrincipal-asicHosting"> My miners </div>
       <div className="lineaTitulo-asic"> </div>

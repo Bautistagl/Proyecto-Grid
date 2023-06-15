@@ -10,10 +10,13 @@
     
 }
 .textos{
+    display: flex;
+    flex-direction: column;
     width: 90%;
     margin-top: 0%;
-    margin-left: 0px;
-    margin-right: auto;
+    margin-left: -250px;
+    opacity: 0;
+  
 }
 
 .fotoSegundo{
@@ -30,6 +33,7 @@
     background: linear-gradient(225deg,#fff,#36B079);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
    
 }
 .subtituloSegundo{
@@ -54,6 +58,7 @@
         transform: translateY(-10px);
     }
 }
+
 
 @media only screen and (max-width: 550px) {
 

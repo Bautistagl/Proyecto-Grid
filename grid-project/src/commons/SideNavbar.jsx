@@ -4,10 +4,15 @@ import React, { useState } from 'react';
 
 const SideNavbar = () => {
 
+  const[visible, setVisible] = useState(true)
   const [selected, setSelected] = useState(false);
 
+  const toggleSideBar = () => {
+     return setVisible(!visible)
+  }
+
   const toggle = () => {
-    console.log(selected)
+    
     if(selected === false) {
       
       return setSelected(true)
@@ -15,7 +20,9 @@ const SideNavbar = () => {
     setSelected(false)
   }
   return (
-    <nav className='sideNavbar'>
+    <>
+    <nav className={ visible ? 'sideNavbar' : 'sideNavbar-noVisible'}>
+   
       <ul className='sideNavbar-ul'>
         <Link href="/">
       <img className='icono-sideBar-grid' src='/gridLogo1.png'/>
@@ -67,6 +74,7 @@ const SideNavbar = () => {
         
       </ul>
     </nav>
+    </>
   );
 };
 

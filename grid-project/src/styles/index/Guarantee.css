@@ -6,7 +6,7 @@
     text-align: flex-start;
     display: flex;
     align-items: center;
-    background-color: white;;
+    background-color: #0c1317;
     margin-right: auto;
     margin-left: auto;
     /* background-image: url('../assets/guarantee5.jpg'); 
@@ -23,7 +23,7 @@
     margin-bottom: 80px;
 }
 .guarantee-leyenda{
-    color:#0c1317;
+    color:white;
     margin-top: 20px;
     margin-left: 20px;
     font-size: 0.7rem;
@@ -31,7 +31,7 @@
 }
 
 .guarantee-titulo{  
-    color:#0c1317;
+    color:white;
     margin-left: 20px;
     font-size: 2.5rem;
     font-family: rouben;
@@ -39,7 +39,7 @@
 }
 
 .guarantee-subtitulo{  
-    color:#0c1317;
+    color:rgba(255, 255, 255, 0.713);
     margin-left: 20px;
     font-size: 1rem;
     font-family: rouben;    

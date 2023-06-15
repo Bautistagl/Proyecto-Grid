@@ -5,7 +5,7 @@ const InfoShared = () => {
   return (
     <div>
       <div>s</div>
-      <Paginacion links="/profile" titulo="Billing" />
+      <Paginacion anterior="Services" links="/profile" titulo="Billing" />
       <div className="infoShared-container">
         <div className="infoShared-titulo"> Shared Account</div>
 

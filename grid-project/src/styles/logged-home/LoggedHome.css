@@ -49,9 +49,73 @@
     font-family: open sans;
     font-weight: bold;
   }
+  .chart-asic-hosting{
+   
+    margin-left: 320px;
+    width: 600px;
+  }
+  .chart-line-asic-hosting{
+    
+    margin-left: 320px;
+    width: 600px;
+    height: 300px;
+  }
+  .contenedor-general-charts{
+    display: flex;
+    margin-top: 50px;
+  }
 
+  .contenedor-hardware{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    margin-left: 100px;
+    background-color: black;
+    border: 2px solid #36B079;
+    border-radius: 5px;
+  }
   .button-proyecto{
     margin-left: 20px;
+  }
+  .total-balance{
+    background-color: rgba(0, 0, 0, 0.455);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: rouben;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    width: 220px;
+    height: 80px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #36B079 ;
+  }
+  .total-balance h5{
+    color: #36B079;
+    margin-top: 10px;
+    font-size: 1.8rem;
+  }
+  .contenedor-hardware h4{
+    display: flex;
+    color: white;
+    width: 100%;
+    font-family: rouben;
+    text-decoration:underline;
+    font-size: 1.3rem;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .foto-hardware{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    /* border: 2px solid #36B079;
+    border-radius: 50px; */
   }
 
   .logged-home-component-sin-sidebar{

@@ -35,8 +35,13 @@ const CardsHosting = () => {
           foto="/lowCost.png"
         />
           <CardsFeatures
-          titulo="Increase Lifetime"
-          parrafo="Our decentralized web hosting solution powered by Run on Flux infrastructure offers affordable hosting options for individuals and businesses of all sizes. By leveraging the decentralized architecture of Run on Flux, we can offer cost-effective solutions that can fit any budget. With our pay-as-you-go pricing model, you only pay for the resources you use, giving you the flexibility to scale up or down as your needs change. Experience high-quality web hosting at a low cost with our decentralized solution on the reliable Run on Flux network."
+          titulo="Low Cost"
+          parrafo="Our decentralized web hosting solution powered by Run on Flux infrastructure offers affordable hosting options for individuals and businesses of all sizes. By leveraging the decentralized architecture of Run on Flux, we can offer cost-effective solutions that can fit any budget. With our pay-as-you-go pricing model, you only pay for the resources you use, giving you the flexibility to scale up or down as your needs change. Experience high-quality web hosting at a low cost with our decentralized solution on the reliable Run on Flux network"
+          foto="/support.png"
+        />
+          <CardsFeatures
+          titulo="No Experience"
+          parrafo="Descubre la libertad de tener un sitio web sin preocuparte por la tecnología. Con Grid, nos encargamos de todo, incluso si no estás familiarizado con las nuevas tecnologías descentralizadas. Hacemos que el alojamiento web sea sin estrés y accesible para todos, brindándote una experiencia fácil y confiable en el mundo de la descentralización. "
           foto="/support.png"
         />
       

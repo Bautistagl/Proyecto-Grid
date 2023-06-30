@@ -52,8 +52,7 @@
     margin-top: 1.2%;
     margin-left: 750px;
     position: absolute;
-    width: 430px;
-   
+    width: 300px;
     justify-content: center;
     align-items: center;
     z-index: 999;
@@ -61,9 +60,9 @@
  }
  .animacion-Immersion{
     margin-top: 1.2%;
-    margin-left: 900px;
+    margin-left: 700px;
     position: absolute;
-    width: 230px;
+    width: 220px;
    
     justify-content: center;
     align-items: center;
@@ -94,9 +93,9 @@
 }
 @media only screen and (max-width:1500px){
     .animacion-AsicMining{
-        margin-top: 1.4%;
-        margin-left: 650px;
-        width: 410px;
+        margin-top: 1.6%;
+        margin-left: 620px;
+        width: 380px;
     }
     .animacion-WebHosting{
         margin-top: 1.6%;

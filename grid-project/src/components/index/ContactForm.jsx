@@ -12,7 +12,11 @@ const ContactForm = () => {
             <input className='contact-input' placeholder='Name / Company'></input>
             <input className='contact-input' placeholder='Email'></input>
             <input className='contact-input-description' placeholder={`Write us your suggestions and ideas, let's talk`}></input>
+            <div className='contenedorFlex'>
+
+            <button className='boton-contact-form'>  Book a demo</button>
             <button className='boton-contact-form'>  Send</button>
+            </div>
         </form>
 
 

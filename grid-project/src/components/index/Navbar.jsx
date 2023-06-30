@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
+  const [dropdown2, setDropdown2] = useState(false);
   const [menu, setMenu] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
@@ -13,6 +14,7 @@ function Navbar() {
     }
     setSelected(true);
   };
+  
   const toggleMenu = () => {
     setMenu(!menu);
     setSelected(false);
@@ -50,14 +52,16 @@ function Navbar() {
         </div>
 
         <ul className="nav-items">
-          <div className="nav-title"> Home</div>
+          
           <div onMouseOver={() => setDropdown(true)} className="nav-title">
             {' '}
             Productos
             <img className="downNavbar" src="/downNavbar.png" alt="" />
           </div>
-          <div className="nav-title"> Solutions </div>
-          <div className="nav-title"> About Us </div>
+          <div onMouseOver={() => setDropdown2(true)} className="nav-title"> Why choose us?
+          <img className="downNavbar" src="/downNavbar.png" alt="" />
+           </div>
+          
           <div className="nav-title"> Contact </div>
         </ul>
         <Link href="/login">
@@ -70,7 +74,7 @@ function Navbar() {
 
       <div className={`menu-navbar ${menu ? 'show' : ''}`}>
         <ul className="menu-items">
-          <div className="menu-title"> Home</div>
+         
           <div className="menu-title" onClick={() => toggle()}>
             {' '}
             Productos
@@ -228,6 +232,61 @@ function Navbar() {
           </div>
         </div>
       </div>
+
+
+
+
+      <div
+        className={`container-productos ${dropdown2 ? 'show' : ''} ${
+          isSticky ? 'sticky' : ''
+        }`}
+        onMouseOver={() => setDropdown2(true)}
+        onMouseLeave={() => setDropdown2(false)}>
+      
+       
+        <div className="productos">
+          <img alt="" className="logo-productos" src={'/solution.png'} />
+          <div className="descripcion-productos">
+            <Link href="/web_hosting">
+              <span className="titulo-productos"> Solutions </span>
+            </Link>
+            <span className="subtitulo-productos">
+              {' '}
+              Una descripcion un poco mas larga paraq ver{' '}
+            </span>
+          </div>
+        </div>
+     
+     
+        <div className="productos">
+          <img alt="" className="logo-productos" src={'/aboutUs.png'} />
+          <div className="descripcion-productos">
+            <Link href="/asic_mining">
+              <span className="titulo-productos"> About Us </span>
+            </Link>
+            <span className="subtitulo-productos">
+              {' '}
+              Una descripcion un poco mas larga paraq ver{' '}
+            </span>
+          </div>  
+        </div>
+        <div className="productos">
+          <img alt="" className="logo-productos" src={'/blog.png'} />
+          <div className="descripcion-productos">
+            <Link href="/immersion_cooling">
+              <span className="titulo-productos">
+                {' '}
+                Blog{' '}
+              </span>
+            </Link>
+            <span className="subtitulo-productos">
+              {' '}
+              Una descripcion un poco mas larga paraq ver{' '}
+            </span>
+          </div>
+        </div>
+      </div>
+      
     </>
   );
 }

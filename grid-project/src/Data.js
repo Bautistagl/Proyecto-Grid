@@ -2,8 +2,8 @@ export const UserData = [
     {
         id:1,
         year: '31 ago 2022',
-        btcGain: 0.0011,
-        userLost: 345,
+        btcGain: 0.0009,
+        userLost: 545,
     },
     {
         id:2,

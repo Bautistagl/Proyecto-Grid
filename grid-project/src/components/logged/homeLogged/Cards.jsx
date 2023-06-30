@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Cards = ({titulo,link,push,ultimaFecha,icono}) => {
   return (
     <div>
-       
+       <Link href='/profile/proyecto'>
     <div className='card-proyecto'>
         <div className='contenedor-flex-proyecto'> 
         <img alt='' src={icono} className='icono-proyecto'/>
@@ -18,6 +19,7 @@ const Cards = ({titulo,link,push,ultimaFecha,icono}) => {
 
 
     </div>
+       </Link>
     </div>
   )
 }

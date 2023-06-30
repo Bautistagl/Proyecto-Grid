@@ -10,14 +10,30 @@
     z-index: 100;
 }
 .boton-sidebar-ocultar{
-    display: flex;
+    position: absolute;
     justify-content: flex-start;
+    margin-left:180px;
+    margin-top: 115px;
+    width: 35px;
     z-index: 9999;
+    cursor: pointer;
+}
+.icon-ocultar{
+    display: flex;
+    height: 35px;
+    width: 35px;
 }
 .boton-sidebar-mostrar{
     position: absolute;
+    height: 80px;
+    width: 50px;
     margin-left: 240px;
+    margin-top: 370px;
    
+}
+.icon-mostrar{
+height: 30px;
+margin-left: -10px;
 }
 .no-visible{
     display: none;

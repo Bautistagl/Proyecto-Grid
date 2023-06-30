@@ -51,12 +51,12 @@ export default function LoggedLogin() {
       <div className={ visible ? "logged-home-component" : "logged-home-component-sin-sidebar"}>
         {!visible ? <button 
         onClick={()=>{toggleSideBar()}}
-        className="boton-sidebar-mostrar"> Mostrar</button> : ''}
-        <div className={visible ? '' : 'no-visible'}>
-      <DynamicNavbar/>
-           </div>
-      <button className="boton-sidebar-ocultar" onClick={()=>{ toggleSideBar()}}> ocultar </button>
-      {/* <Home/> */}
+        className="boton-sidebar-mostrar"><img className="icon-mostrar" alt="" src='/abrir-side.png'/></button> :
+         <>
+          <div className="boton-sidebar-ocultar" onClick={()=>{ toggleSideBar()}}> <img className="icon-ocultar" alt="" src='/hide.png'/> </div>
+         <DynamicNavbar/>
+        </>  }
+        <div>s</div>
       <Paginacion  anterior="Home" links="/profile"  />
       <div className="contenedor-titulos-hosting-click-shared">
         <span

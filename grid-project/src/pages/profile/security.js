@@ -9,7 +9,7 @@ const DynamicNavbar = dynamic(()=>import("../../commons/SideNavbar"),
   }
 )
 
-const security = () => {
+export default function Security  ()  {
   const[visible, setVisible] = useState(true)
   const toggleSideBar = () => {
     return setVisible(!visible)
@@ -32,4 +32,3 @@ const security = () => {
   )
 }
 
-export default security

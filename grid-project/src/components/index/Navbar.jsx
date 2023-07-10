@@ -53,12 +53,20 @@ function Navbar() {
 
         <ul className="nav-items">
           
-          <div onMouseOver={() => setDropdown(true)} className="nav-title">
+          <div onClick={() => {
+            setDropdown(!dropdown)
+            setDropdown2(false)
+          
+          }} className="nav-title">
             {' '}
             Productos
             <img className="downNavbar" src="/downNavbar.png" alt="" />
           </div>
-          <div onMouseOver={() => setDropdown2(true)} className="nav-title"> Why choose us?
+          <div onClick={() => {
+            setDropdown2(!dropdown2)
+            setDropdown(!false)
+
+            }} className="nav-title"> Why choose us?
           <img className="downNavbar" src="/downNavbar.png" alt="" />
            </div>
           
@@ -186,7 +194,10 @@ function Navbar() {
         className={`container-productos ${dropdown ? 'show' : ''} ${
           isSticky ? 'sticky' : ''
         }`}
-        onMouseOver={() => setDropdown(true)}
+        onMouseOver={() => {
+          setDropdown(true)
+          setDropdown2(false)
+        }}
         onMouseLeave={() => setDropdown(false)}>
       
        
@@ -240,7 +251,10 @@ function Navbar() {
         className={`container-productos ${dropdown2 ? 'show' : ''} ${
           isSticky ? 'sticky' : ''
         }`}
-        onMouseOver={() => setDropdown2(true)}
+        onMouseOver={() => {
+          setDropdown2(true)
+          setDropdown(false)
+        }}
         onMouseLeave={() => setDropdown2(false)}>
       
        

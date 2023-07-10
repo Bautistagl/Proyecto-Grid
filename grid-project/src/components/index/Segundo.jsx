@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 const Segundo = () => {
   const [ref2, inView2] = useInView({
-    triggerOnce: false, // Animation triggers only once
+    triggerOnce: true, // Animation triggers only once
     threshold: 1, // Percentage of element visibility to trigger the animation
   });
   const fadeInStylesLeft = {

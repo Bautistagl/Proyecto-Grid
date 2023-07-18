@@ -134,14 +134,14 @@
 
 .contenedorCards{
     display: flex;
-    margin-left: 20%;
+   justify-content: center;
     margin-top: 6%;
 }
 .contenedorHostingWebCompleto{
     display: flex;
     justify-content: center;
-    margin-right: auto;
-    margin-left: -10%;
+    
+   
 }
 .contenedor-vacio{
    margin-bottom: 11%;
@@ -181,8 +181,8 @@
     font-size: 2.5rem;
     margin-bottom: 1%;
     margin-top: 2%;
-    width: 80%;
-    margin-left: calc((100% + 270px - 80%) / 2);
+
+   
     
 }
 .contenedor-titulos-hosting-click{
@@ -192,9 +192,9 @@
     justify-content: center;
     font-family: rouben ;
     font-size: 1.4rem;
-    width: 70%;
-    margin-left: calc((100% + 380px - 80%) / 2);
-    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0.31);
     
 }
 .spanHosting-clickeable{
@@ -261,7 +261,7 @@
 }
 .contenedorCards2{
     display: flex;
-    margin-left: 22%;
+    
     margin-top: 6%;
     
 }
@@ -307,7 +307,7 @@
 .botonera-meses{
     display: flex;
     justify-content: center;
-    margin-left: 200px;
+ 
     margin-top: 20px;
 
 }
@@ -354,7 +354,7 @@
 
 
     .contenedorCards2{
-        margin-left: 25%;
+        
     }
 }
 

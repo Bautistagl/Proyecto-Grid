@@ -1,12 +1,19 @@
+
+.fondo-footer{
+  background: #0c1317;
+  width: 100%;
+}
+
 .container-footer{
     display: flex;
     flex-direction: column;
     background: #0c1317;
     
     z-index: 0;
-    width: 100%;
-    justify-content: flex-start;
-    margin-right: 12%;
+    width: 70%;
+    
+    margin-right: auto !important;
+    margin-left: auto !important;
     
 }
 li{
@@ -51,7 +58,7 @@ ul{
   font-family: rouben;
   font-size: 1.1rem;
   grid-column: 1 / 2;
-  margin-left: 190px;
+
  
 }
 
@@ -74,7 +81,7 @@ ul{
   border: 2px solid white;
   display: flex;
   margin-top: 5%;
-  height: 15%;
+  height: 10%;
   background: #0c1317;
   color:white;
   width: 100%;

@@ -22,7 +22,7 @@ export default function LoggedHosting() {
         className="boton-sidebar-mostrar"><img className="icon-mostrar" alt="" src='/abrir-side.png'/></button> :
          <>
           <div className="boton-sidebar-ocultar" onClick={()=>{ toggleSideBar()}}> <img className="icon-ocultar" alt="" src='/hide.png'/> </div>
-         <DynamicNavbar/>
+          <DynamicNavbar/>
         </>  }
       <HostingWeb/>
       

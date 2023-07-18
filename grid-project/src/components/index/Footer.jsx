@@ -3,6 +3,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
+    <div className='fondo-footer'>
+
       <section className='container-footer'>
         <div className='columnas'> 
          <div className='columna-principal'>
@@ -28,8 +30,8 @@ const Footer = () => {
                 <img className='icon-redes' src={"/instagram.png"}/>
               </a>
            </div>
-           <div className='boton-footer' > Contact us! </div>
-           <div className='boton-footer' > Support Center</div>
+           <button style={{marginTop:'30px'}}> Contact us! </button>
+           <button > Support Center</button>
 
          </div>
       
@@ -89,6 +91,7 @@ const Footer = () => {
         <span> <a href='#'> Términos y condiciones  </a></span>
         </div>
     </section>
+    </div>
   )
 }
 

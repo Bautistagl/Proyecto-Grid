@@ -19,20 +19,32 @@
     background-size: cover;
     height: 110vh;
   }
-
+  .contenedor-charts{
+    margin-left: -240px;
+  }
   .logged-home-cards{
-    
     display: grid;
-    margin-left: 400px;
     grid-template-columns: auto auto;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: #1e2b3193;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 300px;
+    margin-right: 100px;
+    width: 75%;
     
   }
   .logged-home-cards-sin-sidebar{
     display: grid;
-    margin-left: 400px;
+    justify-content: center;
+    margin-left: 300px;
     grid-template-columns: auto auto auto ;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
+    background-color: #1e2b3193;
+    width: 90%;
+    margin-top: 50px;
+    border-radius: 10px;
+  
     
     
   }
@@ -63,6 +75,11 @@
   .contenedor-general-charts{
     display: flex;
     margin-top: 50px;
+    background-color: #1e2b3193;
+    border-radius: 10px;
+    margin-left: 300px;
+    margin-right: 100px;
+    width: 75%;
   }
 
   .contenedor-hardware{
@@ -70,10 +87,14 @@
     flex-direction: column;
     width: 300px;
     height: 400px;
-    margin-left: 100px;
-    background-color: black;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
     border: 2px solid #36B079;
     border-radius: 5px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
   }
   .button-proyecto{
     margin-left: 20px;
@@ -125,4 +146,15 @@
   .logged-home-component{
     transform: translateX(0px); 
     transition: transform 1s ease-in-out
+  }
+
+
+  .probando-index{
+   
+    margin-top: 50px;
+    background-color: #1e2b3193;
+    border-radius: 10px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+    width: 75%;
   }

@@ -1,16 +1,14 @@
 
 .sideNavbar{
-    display: flex;
-    position: fixed;
+    height: 100%;
+    position:fixed;
     top: 0;
-    height: 110vh;
     width: 240px;
     background-color: #0c1317;
-    border-right: 1px solid white;
-    z-index: 100;
+    z-index: 10;
 }
 .boton-sidebar-ocultar{
-    position: absolute;
+    position: fixed;
     justify-content: flex-start;
     margin-left:180px;
     margin-top: 115px;
@@ -24,7 +22,7 @@
     width: 35px;
 }
 .boton-sidebar-mostrar{
-    position: absolute;
+    position: fixed;
     height: 80px;
     width: 50px;
     margin-left: 240px;
@@ -45,16 +43,17 @@ margin-left: -10px;
     align-items: center;
     font-family: rouben;
     padding: 5px 5px;
-    width: 230px;
+    width: 95%;
     height: 40px;
-    margin-left: 0;
-    margin-right: 0%;
+    margin-left: 10px !important;
+    margin-right: 0 !important;
     color: white;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    border-radius: 10px;
 }
 .sideNavbar-li:hover{
-    background-color:#dbf3d7;
-    color:#36B079;
+    background-color:#36B079;
+   
     font-weight: 100;
 
 }
@@ -66,14 +65,15 @@ margin-left: -10px;
     height: 20px;
 }
 .icon-sideNavbar{
-    height: 50px;
+    height: 25px;
     margin-right: 15px;
-    margin-left: 12px;
+    margin-left: 5px;
+
 }
 .icon-sideNavbar2{
-    height: 20px;
+    height: 25px;
     margin-right: 15px;
-    margin-left: 25px;
+    margin-left: 5px;
 }
 
 .titulo-servicios-sidenavbar{
@@ -83,6 +83,7 @@ margin-left: -10px;
     letter-spacing: 1.5px;
     font-weight: lighter;
     cursor:default;
+    margin-left: 15px;
 }
 .titulo-servicios-sidenavbar:hover{
     color: white;
@@ -95,7 +96,7 @@ margin-left: -10px;
     height: 80px;
     width: 200px;
     margin-top: 10%;
-    margin-left: 1%;
+    margin-left: -10px;
 }
 
 .li-asicHosting{
@@ -128,4 +129,13 @@ margin-left: -10px;
         width: 250px;
     }
 
+}
+
+.logout-sidebar{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 40px;
 }

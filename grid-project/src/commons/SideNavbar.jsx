@@ -32,19 +32,19 @@ const SideNavbar = () => {
         </Link>
         <li className='titulo-servicios-sidenavbar'> SERVICES </li>
         <Link href="/profile/hosting">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Hosting</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconHost3.png'/>  Hosting</li>
         </Link>
         <Link href="/profile/ssl">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/> Email</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconMail3.png'/> Email</li>
         </Link>
         <Link href="/profile/ssl">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Dominios</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconDom3.png'/>  Dominios</li>
         </Link>
         <Link href="/profile/immersion-dashboard">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Immersion Cooling</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconCool.png'/>  Immersion Cooling</li>
         </Link>
        
-        <li className='sideNavbar-li' onClick={()=> toggle()}><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Asic Hosting <span> <img className='icon-sideNavbarAsicHosting' src='/abierto.png' alt=''/> </span></li>
+        <li className='sideNavbar-li' onClick={()=> toggle()}><img className='icon-sideNavbar' src='/iconAsic2.png'/>  Asic Hosting <span> <img className='icon-sideNavbarAsicHosting' src='/abierto.png' alt=''/> </span></li>
         
         <div className={`dropdown-asicHosting ${selected === true ? 'selected' : ''}  `} > 
 
@@ -56,7 +56,7 @@ const SideNavbar = () => {
          </ul>
         </div>
         <Link href="/profile/billing">  
-        <li  className='sideNavbar-li'><img className='icon-sideNavbar' src='/IconoGrid3.png'/>  Billing</li>
+        <li  className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconBill.png'/>  Billing</li>
         </Link>
         <li className='titulo-servicios-sidenavbar'> SETTINGS </li>
        
@@ -72,6 +72,7 @@ const SideNavbar = () => {
         <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/groupDark.png'/> Shared Account</li>
         </Link>
         
+      <button className='logout-sidebar'> Logout </button>
       </ul>
     </nav>
     </>

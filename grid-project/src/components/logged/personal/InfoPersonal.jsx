@@ -9,11 +9,13 @@ const InfoPersonal = () => {
       };
   return (
      <>
-    <div> s</div>
+    <div style={{opacity:'0'}}>.</div>
     <Paginacion anterior="Settings" links="/profile" titulo="Billing" />
+    <div className='probando-index'>
+    <div style={{opacity:'0'}}>.</div>
     <div className="infoShared-titulo"> Account Information</div>
     
-    <div className="contenedor-titulos-hosting-click-shared">
+    <div className="contenedor-titulos-hosting-click-shared2">
         <span
           className={`spanHosting-clickeable-shared${selected === 0 ? 'focus' : ''}`}
           onClick={() => toggle(0)}>
@@ -76,6 +78,7 @@ const InfoPersonal = () => {
       }
    
     <div>s</div>
+    </div>
      </>
   )
 }

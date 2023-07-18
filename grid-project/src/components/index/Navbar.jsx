@@ -64,7 +64,7 @@ function Navbar() {
           </div>
           <div onClick={() => {
             setDropdown2(!dropdown2)
-            setDropdown(!false)
+            setDropdown(false)
 
             }} className="nav-title"> Why choose us?
           <img className="downNavbar" src="/downNavbar.png" alt="" />
@@ -186,7 +186,7 @@ function Navbar() {
             </div>
           </div>
           <div className="menu-title"> Solutions </div>
-          <div className="menu-title"> About Us </div>
+          <div className="menu-title"> <Link href='/aboutUs' > About Us </Link> </div>
           <div className="menu-title"> Contact </div>
         </ul>
       </div>
@@ -275,22 +275,24 @@ function Navbar() {
         <div className="productos">
           <img alt="" className="logo-productos" src={'/aboutUs.png'} />
           <div className="descripcion-productos">
-            <Link href="/asic_mining">
-              <span className="titulo-productos"> About Us </span>
+          
+          <Link href="/aboutUs">
+              <span className="titulo-productos"> About us </span>
             </Link>
+            
             <span className="subtitulo-productos">
               {' '}
-              Una descripcion un poco mas larga paraq ver{' '}
+              Una descripcion undsadsa poco mas larga paraqas ver{' '}
             </span>
           </div>  
         </div>
         <div className="productos">
           <img alt="" className="logo-productos" src={'/blog.png'} />
           <div className="descripcion-productos">
-            <Link href="/immersion_cooling">
+            
+              <Link href="/immersion_cooling">
               <span className="titulo-productos">
-                {' '}
-                Blog{' '}
+                Blog
               </span>
             </Link>
             <span className="subtitulo-productos">

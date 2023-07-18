@@ -32,6 +32,7 @@ const ImmersionBuy = () => {
 
 <div>s</div>
       <Paginacion anterior="Services" links="/profile" titulo="Immersion cooling" />
+      <div className='probando-index'> 
       <div className="tituloPrincipal-hosting">
         {' '}
         Elige tu plan de Immersion cooling{' '}
@@ -170,7 +171,8 @@ const ImmersionBuy = () => {
   </div>
 </section>
 {/* <FaqsImmersion/> */}
-<div>s</div>
+<div style={{opacity:'0'}}>.</div>
+</div>
     </div>
     
   )

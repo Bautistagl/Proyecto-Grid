@@ -60,12 +60,25 @@
     justify-content:flex-start;
     font-family: rouben ;
     font-size: 1rem;
-    width: 70%;
-    margin-left: 320px;
+    width: 90%;
+    margin-left: 300px;
+    
     border-bottom: 1px solid rgb(255, 255, 255);
     
 }
-
+.contenedor-titulos-hosting-click-shared2{
+    display: flex;
+    color: white;
+    text-align: start;
+    justify-content:flex-start;
+    font-family: rouben ;
+    font-size: 1rem;
+    width: 100%;
+   
+    
+    border-bottom: 1px solid rgb(255, 255, 255);
+    
+}
 .spanHosting-clickeable-shared{
     display: flex;
     padding: 10px 10px;
@@ -120,14 +133,14 @@
 
 .infoShared-titulo{
     display: flex;
-    justify-content: flex-start;
+  
     color: white ;
     z-index: 100;
-    width: 60%;
+    
     font-family: rouben;
     font-size: 3rem;
-    margin-left: 320px;
-    margin-top: 50px;
+    margin-left: 2%;
+    margin-top: 10px;
     margin-bottom: 3%;
 }
 

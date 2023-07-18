@@ -57,8 +57,8 @@
 .card-asicHosting{
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
-    margin-right: auto;
+   
+    margin: 40px;
     padding: 0;
     width: 380px;
     height: 380px;
@@ -130,13 +130,13 @@
 }
 .cards-productos-asicHosting{
     display: flex;
-    width: 75%;
-    margin-left: 380px;
+    
+   
 }
 .faqs-container-asicHosting{
     display: flex;
-    align-items: center;
-    margin-left: calc((100% + 240px - 800px) / 2);
+    justify-content: center;
+    
     margin-bottom: 5%;
     margin-top: 3%;
     
@@ -171,18 +171,20 @@
         display: flex;
         flex-direction: column;
         margin-top: 5%;
-        margin-right: 60px;
-        margin-left: 0px;
+        
+        
         padding: 0;
-        width: 380px;
-        height: 380px;
+       
+        height: 100%;
         background-color: white;
         border-radius: 10px ;
     }
     .cards-productos-asicHosting{
         display: flex;
-        width: 75%;
-        margin-left: 330px;
+        margin-left: auto;
+        margin-right: auto;
+     
+       
     }
     .boton-asicHosting{
         width: 80px;

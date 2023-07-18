@@ -1,14 +1,14 @@
 .card-proyecto{
-   
     background-color: black;
-    width: 380px;
     height: 200px;
+  
     margin-top: 50px;
     border: 2px solid rgba(255, 255, 255, 0.465);
     border-radius: 5px;
     cursor: pointer;
     color: white;
-    margin-right: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 .contenedor-flex-proyecto{
     display: flex;
@@ -23,6 +23,7 @@
 }
 .main-titulos-proyecto {
     margin-top: 20px;
+    margin-right: 30px;
 }
 .main-titulos-proyecto span{
     display: flex;

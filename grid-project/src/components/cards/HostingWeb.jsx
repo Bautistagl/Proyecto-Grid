@@ -8,6 +8,16 @@ import CardBusinessWord from '../cardHostingWordpress/CardBusinessWord';
 import CardProWord from '../cardHostingWordpress/CardProWord';
 import Link from 'next/link';
 import Paginacion from '@/commons/Paginacion';
+import dynamic from 'next/dynamic';
+
+
+
+const DynamicNavbar = dynamic(()=>import("../../commons/SideNavbar"),
+  {
+    ssr:false,
+    loading: () => <p> Im f</p>
+  }
+)
 
 const HostingWeb = () => {
   const [selected, setSelected] = useState(0);
@@ -25,8 +35,11 @@ const HostingWeb = () => {
   };
   return (
     <>
+      
       <div>s</div>
       <Paginacion anterior="Services" links="/profile" titulo="Web Hosting" />
+      <div className='probando-index'>
+    <div style={{opacity:'0'}}>.</div>
       <div className="tituloPrincipal-hosting">
         {' '}
         Elige tu plan de hosting web{' '}
@@ -112,7 +125,9 @@ const HostingWeb = () => {
           ))}
         </div>
       </section>
-      <div>a</div>
+      <div style={{opacity:'0'}}>.</div>
+      </div>
+      
     </>
   );
 };

@@ -1,0 +1,146 @@
+.fondo-aboutUs{
+    border-bottom: 2px #36B079 solid;
+}
+.container-aboutUs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.container-aboutUs h1{
+    color: white;
+   margin-top: 120px;
+   font-family: rouben;
+   justify-content: center;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 3rem;
+   background: linear-gradient(225deg,#fff,#36B079);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.container-aboutUs div{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-family: rouben ligth;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container-aboutUs h2{
+
+    color: white;
+   margin-top: 120px;
+   font-family: rouben;
+   justify-content: center;
+   text-align: center;
+
+   margin-right: auto;
+   font-size: 2.5rem;
+   background: linear-gradient(225deg,#fff,#36B079);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+.container-aboutUs h3{
+    color: white;
+    font-family: rouben;
+    justify-content: center;
+    text-align: center;
+ 
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.contenedor-parrafos-about{
+    display: flex;
+}
+.aboutUs-final{
+    margin-bottom: 200px;
+}
+.aboutUs-final h1{
+    color: white;
+    margin-top: 120px;
+    font-family: rouben;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+  
+   
+}
+.aboutUs-final h3{
+    color: white;
+  
+    font-family: rouben;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: lighter;
+  
+}
+
+.botones-aboutUs2{
+    display: flex;
+   margin-right: auto;
+   background-color: #36B079;
+   
+   
+}
+.botones-aboutUs{
+    display: flex;
+   margin-left: auto;
+   background-color: #36B079;
+}
+.contenedor-flex{
+    margin-bottom: 50px;
+}
+
+.card-aboutUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 130px;
+    width: 250px;
+    background: linear-gradient(225deg,#fff,#36B079);
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(223, 194, 212, 0.3) 10px 10px, rgba(254, 242, 250, 0.2) 15px 15px, rgba(193, 189, 192, 0.1) 20px 20px, rgba(167, 163, 166, 0.05) 25px 25px;
+   
+}
+
+
+
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+}
+
+.card-aboutUs span{
+    margin-top: -10px;
+    color: black;
+    font-family: rouben;
+    justify-content: center;
+    
+}
+.card-aboutUs h4 {
+ color: black;
+ font-size: 2rem;
+ font-weight: bold;
+ margin-top: 10px;
+ margin-bottom: -10px;
+ margin-left: 0;
+}
+

@@ -123,6 +123,7 @@ export default function LoggedLogin() {
          ultimaFecha='10d ago via Github'
          icono='/iconoGrid3.png'
          />
+         <div style={{opacity:'0'}}>.</div>
          </div>
       </div>
 

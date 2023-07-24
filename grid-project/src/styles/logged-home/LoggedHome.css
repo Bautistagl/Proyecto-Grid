@@ -31,7 +31,7 @@
     border-radius: 10px;
     margin-left: 300px;
     margin-right: 100px;
-    width: 75%;
+    width: 65%;
     
   }
   .logged-home-cards-sin-sidebar{
@@ -41,7 +41,7 @@
     grid-template-columns: auto auto auto ;
     margin-bottom: 200px;
     background-color: #1e2b3193;
-    width: 90%;
+    width: 75%;
     margin-top: 50px;
     border-radius: 10px;
   
@@ -75,7 +75,7 @@
   .contenedor-general-charts{
     display: flex;
     margin-top: 50px;
-    background-color: #1e2b3193;
+    background-color: #1e2b31c9;
     border-radius: 10px;
     margin-left: 300px;
     margin-right: 100px;
@@ -140,10 +140,18 @@
   }
 
   .logged-home-component-sin-sidebar{
+    background-image: url("../../../public/fondoFinal7.svg");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 120vw;
     transform: translateX(-240px); 
     transition: transform 1s ease-in-out
   }
   .logged-home-component{
+    background-image: url("../../../public/fondoFinal7.svg");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 115vw;
     transform: translateX(0px); 
     transition: transform 1s ease-in-out
   }
@@ -152,9 +160,9 @@
   .probando-index{
    
     margin-top: 50px;
-    background-color: #1e2b3193;
+    background-color: #1e2b31c9;
     border-radius: 10px;
     margin-left: 300px;
     margin-bottom: 100px;
-    width: 75%;
+    width: 68%;
   }

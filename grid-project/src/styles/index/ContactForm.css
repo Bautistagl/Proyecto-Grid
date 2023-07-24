@@ -94,6 +94,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.contact-titulo2{
+    justify-content: flex-start;
+    align-self: flex-start;
+    display: flex;
+    font-family: rouben;
+    font-size: 2.5rem;
+    margin-top: 4%;
+    color: white;
+}
 
 .contact-subtitulo{
     justify-content: flex-start;
@@ -102,6 +111,24 @@
     font-family: rouben;
     color: #0c1317;
 
+}
+.contact-subtitulo2{
+    display: flex;
+    margin-top: 20px;
+    font-family: rouben;
+    font-size: 1.5rem;
+    color: white !important;
+    
+   
+}
+.contact-subtitulo3{
+    display: flex;
+    margin-top: 20px;
+    font-family: rouben;
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 0.713);
+    
+   
 }
 
 @media only screen and (max-width:550px){

@@ -1,5 +1,6 @@
 
 .sideNavbar{
+    min-height: 100vh;
     height: 100%;
     position:fixed;
     top: 0;
@@ -20,6 +21,8 @@
     display: flex;
     height: 35px;
     width: 35px;
+    margin-top: -66px;
+    margin-left: 20px;
 }
 .boton-sidebar-mostrar{
     position: fixed;
@@ -43,7 +46,7 @@ margin-left: -10px;
     align-items: center;
     font-family: rouben;
     padding: 5px 5px;
-    width: 95%;
+    width: 90%;
     height: 40px;
     margin-left: 10px !important;
     margin-right: 0 !important;

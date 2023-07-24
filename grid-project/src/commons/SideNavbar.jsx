@@ -32,7 +32,7 @@ const SideNavbar = () => {
         </Link>
         <li className='titulo-servicios-sidenavbar'> SERVICES </li>
         <Link href="/profile/hosting">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconHost3.png'/>  Hosting</li>
+        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconDeploy.png'/>  Deploy</li>
         </Link>
         <Link href="/profile/ssl">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconMail3.png'/> Email</li>

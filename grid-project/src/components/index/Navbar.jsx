@@ -59,7 +59,7 @@ function Navbar() {
           
           }} className="nav-title">
             {' '}
-            Productos
+            Products
             <img className="downNavbar" src="/downNavbar.png" alt="" />
           </div>
           <div onClick={() => {
@@ -70,7 +70,8 @@ function Navbar() {
           <img className="downNavbar" src="/downNavbar.png" alt="" />
            </div>
           
-          <div className="nav-title"> Contact </div>
+          <div className="nav-title"> Contact </div>  
+          <div className="nav-title"> <Link href='https://cal.com/bautista-gonzalez-lazo-g8xn68' > Book a demo </Link> </div> 
         </ul>
         <Link href="/login">
           <button className="boton-landing1">Login</button>
@@ -85,7 +86,7 @@ function Navbar() {
          
           <div className="menu-title" onClick={() => toggle()}>
             {' '}
-            Productos
+            Products
             <span className="hamburger-span">
               {selected === true ? (
                 <img className="hamburger-cerrado" src={'/cerrado.png'} />
@@ -187,7 +188,7 @@ function Navbar() {
           </div>
           <div className="menu-title"> Solutions </div>
           <div className="menu-title"> <Link href='/aboutUs' > About Us </Link> </div>
-          <div className="menu-title"> Contact </div>
+          <div className="menu-title">  <Link href='https://cal.com/bautista-gonzalez-lazo-g8xn68' > Contact </Link> </div>
         </ul>
       </div>
       <div
@@ -219,7 +220,7 @@ function Navbar() {
           <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
           <div className="descripcion-productos">
             <Link href="/asic_mining">
-              <span className="titulo-productos"> Asic Mining </span>
+              <span className="titulo-productos"> Game Servers </span>
             </Link>
             <span className="subtitulo-productos">
               {' '}
@@ -227,7 +228,7 @@ function Navbar() {
             </span>
           </div>  
         </div>
-        <div className="productos">
+        {/* <div className="productos">
           <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
           <div className="descripcion-productos">
             <Link href="/immersion_cooling">
@@ -241,7 +242,7 @@ function Navbar() {
               Una descripcion un poco mas larga paraq ver{' '}
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
 
 

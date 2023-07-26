@@ -1,7 +1,7 @@
 
 .navbar{
   position: fixed;
-    background:#0c1317 ;
+    background:#0c1317d9 ;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -17,8 +17,7 @@
 }
 
  .navbar.sticky {
-  width: 100%;
-  margin-right: 150px;
+    width: 100%;
     position: fixed;
     background-color: transparent; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
@@ -67,17 +66,17 @@
 
 
 .container-productos{
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    margin-left: 30vw;
+    
     position: fixed;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 8rem;
-    margin-left: 350px;
- 
+    margin-left: auto;
     z-index: 9999;
     height: 140px;
-    width: 55%;
+    width: 40%;
     background: white;
     border-radius: 10px;
     backdrop-filter: blur(0px);
@@ -91,17 +90,19 @@
 }
 
 .container-productos.show {
+   
     transition: opacity 0.4s ease-in-out;
     opacity: 1; /* Change the opacity to 1 to show the element */
     pointer-events: auto; /* Enable pointer events when the element is shown */
-    margin-left: 350px;
+    margin-left: 30vw;
+   
    
  
   }
   
   .container-productos.show.sticky {
    margin-top: 8rem;
-   margin-left: 500px;
+   margin-left: 350px;
  
   }
 

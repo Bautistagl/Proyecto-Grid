@@ -24,20 +24,23 @@
 }
 
 .subtituloCar{
+    display: flex;
     font-family: rouben ligth;
     font-size: 20px;
-    width: 600px;
+    width: 35vw;
     color: white;
+    z-index: 999;
 }
 .tituloCar{
     
     font-family: rouben;
     font-size: 36px;
-    width: 700px;
+    width: 35vw;
     font-weight: 500;
     margin-bottom: 3%;
     color:white ;
     margin-top: 10%;
+    z-index: 999;
 
 }
 .sliderCar{

@@ -8,6 +8,7 @@ import Powered from "@/components/index/Powered";
 import Faqs from "@/components/index/Faqs";
 import ContactForm from "@/components/index/ContactForm";
 import Footer from "@/components/index/Footer";
+import FaqsIndex from "@/components/FaqsIndex";
 
 
 
@@ -37,7 +38,7 @@ export default function Home() {
    
    />
    <Powered/>
-   <Faqs/>
+   <FaqsIndex/>
    <ContactForm/>
    <Footer/>
     </div>

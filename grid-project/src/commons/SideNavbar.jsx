@@ -40,11 +40,11 @@ const SideNavbar = () => {
         <Link href="/profile/ssl">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconDom3.png'/>  Dominios</li>
         </Link>
-        <Link href="/profile/immersion-dashboard">  
+        {/* <Link href="/profile/immersion-dashboard">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconCool.png'/>  Immersion Cooling</li>
-        </Link>
+        </Link> */}
        
-        <li className='sideNavbar-li' onClick={()=> toggle()}><img className='icon-sideNavbar' src='/iconAsic2.png'/>  Asic Hosting <span> <img className='icon-sideNavbarAsicHosting' src='/abierto.png' alt=''/> </span></li>
+        {/* <li className='sideNavbar-li' onClick={()=> toggle()}><img className='icon-sideNavbar' src='/iconAsic2.png'/>  Asic Hosting <span> <img className='icon-sideNavbarAsicHosting' src='/abierto.png' alt=''/> </span></li> */}
         
         <div className={`dropdown-asicHosting ${selected === true ? 'selected' : ''}  `} > 
 

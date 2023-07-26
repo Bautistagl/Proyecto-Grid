@@ -4,24 +4,30 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-   margin-top: 100px;
-    margin-right: 300px;
+
+    margin-top: 100px;
+    
 }
 .contenedor-login{
-   display: flex;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
 }
 .textos-login{
    display: flex;
    flex-direction: column;
    margin-left: auto;
    justify-content: center;
-   margin-left: 200px;
+  
    margin-top: 50px;
-   width: 30%;
+   width: 100%;
    
 }
 .doble-contenedor{
    display: flex;
+   width: 26.5vw;
 }
 .textos-login h1{
    background: linear-gradient(225deg,#fff,#36B079);
@@ -46,13 +52,16 @@
 }
 
 .login-title{
+   display: flex;
+   justify-content: center;
     color: white;
+    font-size: 1.5rem;
     font-family: rouben;
 }
 .login-input{
     margin-top: 5%;
     height: 25px;
-    width: 400px;
+    width: 25vw;
     padding: 10px 10px;
    border-style: none;
     border-radius: 5px;
@@ -62,7 +71,7 @@
    margin-left: 10px;
    margin-right: 10px;
    height: 25px;
-   width: 180px;
+   width: 100%;
    padding: 10px 10px;
    border-style: none;
    border-radius: 5px;
@@ -76,7 +85,7 @@
    background-color: white;
    margin-top: 5%;
    height: 25px;
-   width: 400px;
+   width: 25vw;
    padding: 10px 10px;
    border-style: none;
    border-radius: 5px;
@@ -96,7 +105,7 @@
     color: white;
     margin-top: 13%;
     background-color: #36B079;
-    width: 420px;
+    width: 26.5vw;
     justify-content: center;
     align-items: center;
     padding: 15px 15px;
@@ -118,7 +127,7 @@
 }
  .member-login{
    text-align: center;
-    width: 340px;
+    width: 100%;
     margin-top: 5%;
     color: white;
     font-family: rouben;
@@ -173,6 +182,7 @@
   }
   .login-separador{
     display: flex;
+    width: 26.5vw;
   }
   .letra-separador{
     margin-left: 3%;

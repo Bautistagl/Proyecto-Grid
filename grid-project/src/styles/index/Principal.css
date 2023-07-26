@@ -39,20 +39,20 @@
 
 .animacion-WebHosting{
    margin-top: 110px;
-   margin-left: 7.7%;
+   margin-left: 10%;
    position: absolute;
-   width: 500px;
+   width: 30vw;
    height: 450px;
    justify-content: center;
    align-items: center;
-   z-index: 999;
+   z-index: 1;
     
 }
 .animacion-AsicMining{
-    margin-top: 1.2%;
-    margin-left: 750px;
+    margin-top: 1.9%;
+    margin-left: 43vw;
     position: absolute;
-    width: 300px;
+    width: 25vw;
     justify-content: center;
     align-items: center;
     z-index: 999;
@@ -93,29 +93,50 @@
 }
 @media only screen and (max-width:1500px){
     .animacion-AsicMining{
-        margin-top: 1.6%;
+        margin-top: 2.5%;
         margin-left: 620px;
-        width: 380px;
+        width: 28vw;
     }
-    .animacion-WebHosting{
+    /* .animacion-WebHosting{
         margin-top: 1.6%;
         margin-left: 640px;
         width: 5%;
+    } */
+}
+
+@media only screen and (max-width:1450px){
+    .animacion-AsicMining{
+        margin-top: 2.5%;
+        margin-left: 570px;
+        width: 28vw;
     }
 }
+
 @media only screen and (max-width:1350px){
     
     .animacion-WebHosting{
-        margin-top: 2.2%;
-        margin-left: 640px;
-        width: 4.5%
+        margin-top: 2%;
+        margin-left: 10.5%;
+        width: 35vw;
     }
-    .animacion-AsicMining{
+    /* .animacion-AsicMining{
         margin-top: 1.4%;
         margin-left: 650px;
         width: 350px;
-    }
+    } */
 }
+
+@media only screen and (max-width:1250px){
+
+    .animacion-AsicMining{
+        margin-top: 2.5%;
+        margin-left: 500px;
+        width: 30vw;
+    }
+
+}
+
+
 @media only screen and (max-width:550px){
     .animacion-mundo{
         display: none;

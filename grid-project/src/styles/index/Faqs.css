@@ -90,6 +90,78 @@
    margin-right: -160px;
  }
 
+ .container-nuevoFaqs{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0c1317d9;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+ }
+
+ .faqs-grid{
+    display: grid;
+    width: 50%;
+   
+   
+ }
+ 
+    
+    
+ 
+ .faqs-normal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    margin-left: 30px;
+    font-family: rouben;
+    width: 100%;
+    font-size:1.7rem;
+    color: rgba(255, 255, 255, 0.603);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.661);
+    height: 6vw;
+    cursor: pointer;
+ }
+ .faqs-select{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+    margin-left: 30px;
+    font-family: rouben;
+    width: 100%;
+    font-size:1.8rem;
+    background: linear-gradient(225deg,#fff,#36B079);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid white;
+    height: 6vw;
+    cursor: pointer;
+ }
+
+ .faqs-respuesta{
+    display: flex;
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    font-family: rouben;
+    font-size: 1.2rem;
+    color: white;
+ }
+
+ .faqs-ilu{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 45vh;
+    margin-left: auto;
+ }
+
+
  @media  only screen and (max-width:1300px){
     .faqs-container{
         display: flex;

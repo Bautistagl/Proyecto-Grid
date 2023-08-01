@@ -233,6 +233,7 @@
         margin-bottom: 5%;
     }
     .faqs-normal{
+        display: flex;
         height: 100%;
         font-size: 1rem;
         width: 100%;

@@ -229,19 +229,20 @@
         align-items: center;
         font-size: 1rem;
         margin: 0;
-        margin-top: 10%;
-        margin-bottom: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .faqs-normal{
         display: flex;
+        
         height: 100%;
         font-size: 1rem;
         width: 100%;
         align-items: center;
         font-weight: lighter;
         margin: 0;
-        margin-top: 10%;
-        margin-bottom: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .content{
         font-size: 12px;

@@ -199,6 +199,7 @@
         height: 20vh;
     }
     .faqs-grid{
+        display: grid;
         grid-template-columns: auto auto ;
         height: 100%;
         width: 90%;
@@ -220,7 +221,7 @@
     .container-nuevoFaqs{
         display: flex;
         flex-direction: column;
-        height: 100%;
+       
     }
     .faqs-select{
         width: 100%;

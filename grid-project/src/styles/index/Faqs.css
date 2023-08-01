@@ -191,6 +191,13 @@
         align-self: center;
         
     }
+    .faqs-ilu{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        height: 20vh;
+    }
     .faqs-grid{
         grid-template-columns: auto auto ;
         height: 100%;

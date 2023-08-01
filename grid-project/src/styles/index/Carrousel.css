@@ -68,10 +68,12 @@
         margin-bottom: 10%;
     }
     .textosCar{
+        display: flex;
        margin-top: 35%;
         margin-left: 5%;
         margin-right: auto;
         height: auto;
+        margin-bottom: 50px;
     }
     .tituloCar{
         font-family: rouben;

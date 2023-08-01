@@ -12,9 +12,9 @@ const ContactForm = () => {
         <div className='contact-form'>
             <input className='contact-input' placeholder='Name / Company'></input>
             <input className='contact-input' placeholder='Email'></input>
+            <input className='contact-input' placeholder='What type of application want to host?'></input>
             <input className='contact-input-description' placeholder={`Write us your suggestions and ideas, let's talk`}></input>
             <div className='contenedorFlex2'>
-
             <button className='boton-contact-form'>  Send</button>
             <button className='boton-contact-form'> <Link href='https://cal.com/bautista-gonzalez-lazo-g8xn68'> Book a demo </Link> </button>
           

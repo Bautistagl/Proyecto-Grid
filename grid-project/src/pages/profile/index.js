@@ -9,6 +9,7 @@ import {UserData} from '../../Data'
 import {LineData} from '../../DataLine'
 import LineChart from "@/components/LineChart";
 import Charts from "@/components/Charts";
+import Link from "next/link";
 const DynamicNavbar = dynamic(()=>import("../../commons/SideNavbar"),
   {
     ssr:false,
@@ -79,7 +80,7 @@ export default function LoggedLogin() {
       <div> 
 
          <input placeholder="Search..." className="input-proyecto" />
-         <button className='button-proyecto'> Add New... </button>
+         <button className='button-proyecto'> <Link href='/profile/newApplication'> Add New... </Link>  </button>
          <div className={ visible ? "logged-home-cards" : 'logged-home-cards-sin-sidebar'}  > 
          <Cards
          titulo='primer-proyecto-grid'

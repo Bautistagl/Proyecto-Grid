@@ -89,7 +89,7 @@ const FirstPart = () => {
         At [Grid Mine], we are passionate about supporting the decentralized nature of cryptocurrencies and empowering individuals and businesses to participate in the Bitcoin network with ease and confidence.
       </div>
     </div>
-    <Image style={{marginTop:'auto',marginBottom:'auto'}} width={400} height={400} alt='' src='/iconoGrid3.png'/>
+    <Image style={{marginTop:'auto',marginBottom:'auto'}} width={300} height={400} alt='' src='/serverSVG.svg'/>
         </div>
     </div>
 <div className='aboutUs-final'>

@@ -64,6 +64,7 @@ ul{
  
 }
 
+
 .footer-parrafo{
   padding: 10px 10px;
   width: 320px;
@@ -147,7 +148,9 @@ ul{
     margin-left: 5%;
     
 }
-
+.boton-contact-form{
+  height: 40%;
+}
 .footer-parrafo{
   display: flex;
  justify-content: center;
@@ -192,9 +195,10 @@ ul{
     "columna-ecosystem columna-discover"
     "columna-explore columna-community";
   margin-bottom: 4%;
-  margin-left: 20px;
-  margin-right: 0px !important;
-  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+ 
+  width: 100%;
 }
 
 
@@ -213,7 +217,8 @@ ul{
   margin-top: 10%;
   width: 50%;
   padding: 0.1rem;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 0.8rem;
 }
 li{

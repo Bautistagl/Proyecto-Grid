@@ -1,0 +1,55 @@
+.contenedor-flex-only{
+    display: flex;
+}
+.div-newApp{
+    font-size: 1.8rem;
+    font-family: rouben ;
+    color: white;
+    margin: 10px;
+}
+
+
+.span-newApp{
+    font-family: rouben ;
+    color: white;
+    margin: 10px;
+}
+.span-newApp2{
+    font-family: rouben ;
+    color: rgba(255, 255, 255, 0.713);
+    margin: 10px;
+}
+.contenedor-newApp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+  
+}
+
+.input-newApp{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgb(39, 39, 39);
+    border: 2px solid grey;
+}
+.card-newApp{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 380px;
+    background-color: #0c1317d9;
+    border-radius: 5px;
+    border: 2px solid grey;
+    margin-left: 10px;
+    
+    justify-content: center;
+    text-align: center;
+}
+.icon-card-newApp{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}

@@ -33,7 +33,7 @@ function Navbar() {
   return (
     <>
       <nav className={`navbar ${isSticky ? 'sticky' : ''}  `}>
-        <Link href="/">
+        <Link className='a-mobile' href="/">
           <img className="navbar-logo" src="/gridLogo1.png" />
         </Link>
         <div>

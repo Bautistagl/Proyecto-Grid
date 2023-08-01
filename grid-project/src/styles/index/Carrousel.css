@@ -76,7 +76,7 @@
     .tituloCar{
         font-family: rouben;
         font-size: 16px;
-        width: 280px;
+        width: 90%;
         font-weight: 500;
         
         color:white ;
@@ -88,7 +88,7 @@
     font-family: rouben ligth;
     font-size: 12px;
     margin-top: 5%;
-    width: 280px;
+    width: 90%;
     color: white;
 }
 .card-contenedor{

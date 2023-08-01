@@ -43,8 +43,26 @@ const Segundo = () => {
           77 geographic location
         </div>
       </div>
+
+
+      <div 
+         
+      className="textosMobile">
+        <div className="tituloSegundo">
+          <span
+          className="primeraParte"
+          >
+            {' '}
+            Flux provides a global cloud network{' '}
+          </span>
+        </div>
+        <div className="subtituloSegundo">
+          Regions: North America, Europe, Asia, South America, Africa, Oceania
+          77 geographic location
+        </div>
+      </div>
       <img className="fotoSegundo" src={'/mapa.png'} alt="" />
-      <div className='animacion-mundo' ref={container} > </div>
+      {/* <div className='animacion-mundo' ref={container} > </div> */}
     </section>
   );
 };

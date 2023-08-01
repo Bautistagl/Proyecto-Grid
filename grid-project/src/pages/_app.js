@@ -16,6 +16,7 @@ import "../styles/commons/CardFaqs2.css"
 import "../styles/buyProduct.css"
 import "../styles/Billing/Billing.css"
 import "../styles/aboutUs/aboutUs.css"
+import "../styles/newApplication/newApplication.css"
 
 
 

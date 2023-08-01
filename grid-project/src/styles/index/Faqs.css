@@ -221,7 +221,7 @@
     .container-nuevoFaqs{
         display: flex;
         flex-direction: column;
-       
+        height: 1000px;
     }
     .faqs-select{
         width: 100%;

@@ -192,25 +192,48 @@
  
   }
 
-  @media only screen and (max-width: 500px) {
-
+  @media only screen and (max-width: 550px) {
+   .contenedor-login{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+   }
+   .textos-login div{
+      display: none;
+   }
+   .textos-login span{
+      display: none;
+   }
+   .textos-login h1{
+      display: flex;
+      font-size: 1.5rem;
+      justify-content: center;
+   }
+   .github-login{
+      width: 90%;
+   }
+   .login-separador{
+      display: flex;
+      width: 90%;
+   }
    .login-title{
       display: flex;
       width: 100%;
+      font-size: 1.2rem;
       justify-content: center;
       align-items: center;
    }
    .login-form{
-      width: 80%;
+      margin-top: 20px;
   }
   .login-submit{
-   width: 250px;
+   width: 100%;
 }
 .login-input{
-   width: 250px;
+   width: 90%;
 }
 .member-login{
-   width: 250px;
+   width: 100%;
  }
 
   }

@@ -234,7 +234,7 @@
     }
     .faqs-normal{
         display: flex;
-        
+        background-color: white;
         height: 100%;
         font-size: 1rem;
         width: 100%;

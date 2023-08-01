@@ -10,7 +10,7 @@ const NewApplicationj = () => {
             <div className='div-newApp'> Deploy a new application</div>
          </div>
          <span className='span-newApp'> Application name </span>
-         <span className='span-newApp2'> Lowercase letters, numbers, and "-" only. </span>
+         <span className='span-newApp2'> Lowercase letters, numbers, and - only. </span>
          <input className='input-newApp' placeholder='ex: grid-project'/>
          
 

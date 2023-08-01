@@ -219,7 +219,7 @@
     .container-nuevoFaqs{
         display: flex;
         flex-direction: column;
-        height: 50%;
+        height: 100%;
     }
     .faqs-select{
         width: 100%;

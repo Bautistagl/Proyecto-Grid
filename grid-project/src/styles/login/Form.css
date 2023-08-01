@@ -198,6 +198,9 @@
       flex-direction: column;
       width: 90%;
    }
+   .doble-contenedor{
+      width: 90%;
+   }
    .textos-login div{
       display: none;
    }
@@ -227,13 +230,14 @@
       margin-top: 20px;
   }
   .login-submit{
-   width: 100%;
+   width: 86vw;
 }
 .login-input{
    width: 90%;
 }
 .member-login{
    width: 100%;
+   margin-bottom: 20px;
  }
 
   }

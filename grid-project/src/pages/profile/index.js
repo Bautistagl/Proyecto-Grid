@@ -59,7 +59,7 @@ export default function LoggedLogin() {
         </>  }
         <div>s</div>
       <Paginacion  anterior="Home" links="/profile"  />
-      <div className="contenedor-titulos-hosting-click-shared">
+      {/* <div className="contenedor-titulos-hosting-click-shared">
         <span
           className={`spanHosting-clickeable-shared${selected === 0 ? 'focus' : ''}`}
           onClick={() => toggle(0)}>
@@ -71,12 +71,8 @@ export default function LoggedLogin() {
           {' '}
           Web Hosting
         </span>
-      </div>
-      { selected === 0 ? 
-      <>
-        <Charts/>
-      </>
-      : 
+      </div> */}
+   
       <div> 
 
          <input placeholder="Search..." className="input-proyecto" />
@@ -127,10 +123,6 @@ export default function LoggedLogin() {
          <div style={{opacity:'0'}}>.</div>
          </div>
       </div>
-
-      }
-   
-
       </div>
     )
   }

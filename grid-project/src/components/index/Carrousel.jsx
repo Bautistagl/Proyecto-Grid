@@ -86,7 +86,7 @@ export default class SimpleSlider extends Component {
           </div>
         
         </Slider>
-        <section className="card-contenedor">
+        {/* <section className="card-contenedor">
           <div
             className={
               this.state.currentSlide === 0 ? 'card3-selected' : 'card3'
@@ -102,7 +102,7 @@ export default class SimpleSlider extends Component {
             <div className="titulo-card">Game Servers</div>
           </div>
          
-        </section>
+        </section> */}
       </section>
     );
   }

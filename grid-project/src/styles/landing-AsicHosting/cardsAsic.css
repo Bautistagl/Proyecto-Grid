@@ -102,4 +102,18 @@
       margin-top: 10%;
     }
 
+    @media only screen and (max-width: 550px) {
+
+      .cardsAsicContainer{
+        grid-template-columns: auto;
+        height: 100%;
+      }
+      .cardsAsicContainer span{
+        display: none;
+      }
+      .cardAsic{
+        margin: 20px;
+      }
+    }
+
   }

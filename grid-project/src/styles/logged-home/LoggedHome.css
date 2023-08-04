@@ -24,13 +24,13 @@
   }
   .logged-home-cards{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 35% 35%;
     margin-top: 50px;
     background-color: #1e2b3193;
     justify-content: center;
     border-radius: 10px;
     margin-left: 300px;
-    margin-right: 100px;
+    
     width: 65%;
     
   }
@@ -38,7 +38,7 @@
     display: grid;
     justify-content: center;
     margin-left: 300px;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: 25% 25% 25% ;
     margin-bottom: 200px;
     background-color: #1e2b3193;
     width: 75%;

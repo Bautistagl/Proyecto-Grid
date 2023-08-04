@@ -1,5 +1,5 @@
 .infoSecurity-container{
-    width: 100%;
+   min-height: 100vh;
 }
 
 
@@ -27,7 +27,7 @@
 .infoSecurity-permisos{
     
     width: 30vw;
-   margin-left: 8vw;
+  
   
 }
 .infoSecurity-renglones-permisos{
@@ -56,12 +56,11 @@
 }
 .permisos-container-security{
     
-    display: flex;
-    width: 90vw;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-     margin-left: auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    
+   
+    margin-left: 300px;
 }
 .infoSecurity-boton{
     display: flex;
@@ -71,8 +70,5 @@
     font-weight: lighter;
 }
 @media only screen and (max-width: 1200px) {
-    .permisos-container-security{
-     
-        margin-left: auto;
-    }
+ 
 }

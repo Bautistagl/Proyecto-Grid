@@ -1,14 +1,14 @@
 .card-proyecto{
     background-color: black;
-    height: 200px;
-  
+    height: 220px;
+    width: 95%;
     margin-top: 50px;
     border: 2px solid rgba(255, 255, 255, 0.465);
     border-radius: 5px;
     cursor: pointer;
     color: white;
-    margin-left: 60px;
-    margin-right: 60px;
+    /* margin-left: 60px;
+    margin-right: 60px; */
 }
 .contenedor-flex-proyecto{
     display: flex;

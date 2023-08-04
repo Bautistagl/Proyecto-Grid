@@ -11,7 +11,7 @@ const SharedInfo = () => {
       <div> s</div>
       <Paginacion anterior="Settings" links="/profile" titulo="Billing" />
 
-      <div className="infoShared-titulo"> Shared Account</div>
+      <div style={{marginLeft:'300px'}} className="infoShared-titulo"> Shared Account</div>
       <div className="contenedor-titulos-hosting-click-shared">
         <span
           className={`spanHosting-clickeable-shared${

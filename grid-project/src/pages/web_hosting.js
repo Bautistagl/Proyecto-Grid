@@ -46,7 +46,7 @@ export default function WebHosting() {
        src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
        <CardsHosting/>
-       <PrimerFaqs/>
+       {/* <PrimerFaqs/> */}
    <ContactForm/>
    <Footer/>
     </div>

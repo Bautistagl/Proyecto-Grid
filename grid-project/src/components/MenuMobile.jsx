@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const MenuMobile = () => {
@@ -8,7 +9,7 @@ const MenuMobile = () => {
 
          <div className='item-mobile'> 
          <div className='circulo'>  <img className='icono-mobile' alt='' src='/webMobile.png'/> </div>
-            <div className='subtitulo-mobile' > Web Hosting </div>
+            <div className='subtitulo-mobile' > <Link href='/web_hosting'> Web Hosting </Link>  </div>
 
         </div>
         <div className='item-mobile'> 

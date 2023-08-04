@@ -14,6 +14,7 @@
    
    
 }
+
 .cardHostingPremium{
     display: flex;
     flex-direction: column;
@@ -330,9 +331,11 @@
   .nueva-card-hosting{
     display: flex;
     flex-direction: column;
-    height: 600px;
-    width: 450px;
-    background: #0c1317;
+    height: 700px;
+    width: 550px;
+    background: url('/fondoGlass2.svg');
+    background-size: cover;
+    
     border-radius: 10px;
     margin: 20px;
   }
@@ -342,7 +345,7 @@
     flex-direction: column;
     height: 600px;
     width: 450px;
-    background: #0c1317;
+    background: url('/fondoGlass2.svg');
     border-radius: 10px;
     margin: 20px;
   }
@@ -361,13 +364,17 @@
     background: linear-gradient(-55deg,#fff,#36B079);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
     .contenedor-nuevas h2{
         display: flex;
-        width: 90%;
-        margin-left: 25px;
-        margin-top: 5px;
+        width: 80%;
+        margin-left: auto;
         margin-right: auto;
+      
+        margin-top: 5px;
+      
         font-family: rouben ;
         font-weight: lighter;
         font-size: 1.8rem;
@@ -384,6 +391,7 @@
   }
 
   .primer-span{
+   
     margin-bottom: 30px;
   }
 
@@ -391,6 +399,9 @@
     display: grid;
     justify-content: center;
     grid-template-columns: auto auto ;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .linea-separadora{
     display: flex;
@@ -406,8 +417,9 @@
     color: rgba(255, 255, 255, 0.714);
     font-family: rouben ligth;
     margin-top: 15px;
-    width: 95%;
+    width: 80%;
     margin-left: auto;
+    margin-right: auto;
     
   }
   .boton-nuevas{
@@ -415,7 +427,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 60px;
     width: 50%;
     background-color: #36B079;
   }

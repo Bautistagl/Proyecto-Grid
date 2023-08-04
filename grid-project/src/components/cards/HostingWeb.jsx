@@ -52,23 +52,7 @@ const HostingWeb = () => {
 </div>
 
     <NuevasCardsHosting/>
-    {/* <div className='contact-container'> 
-            <div className='contact-texts'> 
 
-      
-            <div className='contact-titulo2'> Enterprise</div>
-            <div className='contact-subtitulo3'> 
-                 For companies running at scale.
-            </div>
-            <div className='contact-subtitulo3'> 
-                 Get volume discount along with enterprise-grade support and features
-            </div>
-            <div className='contact-subtitulo2'> Volume Discount Available</div>
-            <div className='contact-subtitulo2'> Starting at 40 vCPU, 80GB RAM</div>
-            <button className='contact-button2'>Contact Us</button>
-             </div>
-          
-        </div> */}
 
         <div className='aboutUs-final2'>
 

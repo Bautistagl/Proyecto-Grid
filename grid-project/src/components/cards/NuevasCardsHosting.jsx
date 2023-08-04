@@ -3,6 +3,7 @@ import React from 'react';
 const NuevasCardsHosting = () => {
   return (
     <div className="contenedor-nuevas">
+   
       <div className="nueva-card-hosting">
         <h1> Web Hosting</h1>
         <span className='primer-span'>

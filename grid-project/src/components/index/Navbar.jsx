@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import MenuMobile from '../MenuMobile';
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
@@ -80,117 +81,8 @@ function Navbar() {
           <button className="boton-landing">Register</button>
         </Link>
       </nav>
+      {menu ? <MenuMobile/> : ''}
 
-      <div className={`menu-navbar ${menu ? 'show' : ''}`}>
-        <ul className="menu-items">
-         
-          <div className="menu-title" onClick={() => toggle()}>
-            {' '}
-            Products
-            <span className="hamburger-span">
-              {selected === true ? (
-                <img className="hamburger-cerrado" src={'/cerrado.png'} />
-              ) : (
-                <img className="hamburger-abierto" src={'/abierto.png'} />
-              )}
-            </span>
-          </div>
-          <div className={selected === true ? 'producto show' : 'noshow'}>
-            <div className="productos">
-              <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-              <div className="descripcion-productos">
-                <span className="titulo-productos"> Cloud Hosting </span>
-                <span className="subtitulo-productos">
-                  {' '}
-                  Una descripcion un poco mas larga paraq ver{' '}
-                </span>
-              </div>
-            </div>
-            <div className="productos">
-              <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-              <div className="descripcion-productos">
-                <span className="titulo-productos"> VPS </span>
-                <span className="subtitulo-productos">
-                  {' '}
-                  Una descripcion un poco mas larga paraq ver{' '}
-                </span>
-              </div>
-            </div>
-            <div className="productos">
-              <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-              <div className="descripcion-productos">
-                <Link href="/web_hosting">
-                  <span className="titulo-productos"> Web Hosting </span>
-                </Link>
-                <span className="subtitulo-productos">
-                  {' '}
-                  Una descripcion un poco mas larga paraq ver{' '}
-                </span>
-              </div>
-            </div>
-            <div className="productos">
-              <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-              <div className="descripcion-productos">
-                <span className="titulo-productos"> Game Servers </span>
-                <span className="subtitulo-productos">
-                  {' '}
-                  Una descripcion un poco mas larga paraq ver{' '}
-                </span>
-              </div>
-            </div>
-            <div className="productos">
-              <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-              <div className="descripcion-productos">
-                <span className="titulo-productos"> VPN </span>
-                <span className="subtitulo-productos">
-                  {' '}
-                  Una descripcion un poco mas larga paraq ver{' '}
-                </span>
-              </div>
-            </div>
-            <div className="productos">
-              <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-              <div className="descripcion-productos">
-                <span className="titulo-productos"> Fan Cooling Mobile </span>
-                <span className="subtitulo-productos">
-                  {' '}
-                  Una descripcion un poco mas larga paraq ver{' '}
-                </span>
-              </div>
-            </div>
-            <div className="productos">
-              <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-              <div className="descripcion-productos">
-                <Link href="/asic_mining">
-                  <span className="titulo-productos"> Asic Mining </span>
-                </Link>
-                <span className="subtitulo-productos">
-                  {' '}
-                  Una descripcion un poco mas larga paraq ver{' '}
-                </span>
-              </div>
-            </div>
-            <div className="productos">
-              <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-              <div className="descripcion-productos">
-                <Link href="/immersion_cooling">
-                  <span className="titulo-productos">
-                    {' '}
-                    Immersion Cooling Mining{' '}
-                  </span>
-                </Link>
-                <span className="subtitulo-productos">
-                  {' '}
-                  Una descripcion un poco mas larga paraq ver{' '}
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="menu-title"> Solutions </div>
-          <div className="menu-title"> <Link href='/aboutUs' > About Us </Link> </div>
-          <div className="menu-title">  <Link href='https://cal.com/bautista-gonzalez-lazo-g8xn68' > Contact </Link> </div>
-        </ul>
-      </div>
       <div
         className={`container-productos ${dropdown ? 'show' : ''} ${
           isSticky ? 'sticky' : ''
@@ -228,21 +120,7 @@ function Navbar() {
             </span>
           </div>  
         </div>
-        {/* <div className="productos">
-          <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-          <div className="descripcion-productos">
-            <Link href="/immersion_cooling">
-              <span className="titulo-productos">
-                {' '}
-                Immersion Cooling Mining{' '}
-              </span>
-            </Link>
-            <span className="subtitulo-productos">
-              {' '}
-              Una descripcion un poco mas larga paraq ver{' '}
-            </span>
-          </div>
-        </div> */}
+     
       </div>
 
 

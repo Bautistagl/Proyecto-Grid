@@ -9,6 +9,7 @@ import Faqs from "@/components/index/Faqs";
 import ContactForm from "@/components/index/ContactForm";
 import Footer from "@/components/index/Footer";
 import FaqsIndex from "@/components/FaqsIndex";
+import MenuMobile from "@/components/MenuMobile";
 
 
 
@@ -33,6 +34,7 @@ export default function Home() {
 
     <DynamicNavbar/>
    <DynamicCarrousel/>
+  
    <Segundo
    
    

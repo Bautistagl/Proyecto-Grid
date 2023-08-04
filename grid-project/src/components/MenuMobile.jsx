@@ -4,7 +4,7 @@ import React from 'react'
 const MenuMobile = () => {
   return (
     <div className='menuMobileContainer'>
-        <span className='titulo-mobile'> PRODUCTS </span>
+        <span  className='titulo-mobile'> PRODUCTS </span>
         <div className='categorias-mobile'> 
 
          <div className='item-mobile'> 
@@ -18,7 +18,7 @@ const MenuMobile = () => {
 
         </div>
         </div>
-        <span className='titulo-mobile'> WHY CHOOSE US? </span>
+        <span style={{marginTop:'20px'}} className='titulo-mobile'> WHY CHOOSE US? </span>
         <div className='categorias-mobile'> 
 
         <div className='item-mobile'> 
@@ -37,7 +37,7 @@ const MenuMobile = () => {
 
         </div>
         </div>
-        <span className='titulo-mobile'> CONTACT </span>
+        <span style={{marginTop:'20px'}} className='titulo-mobile'> CONTACT </span>
         <div style={{marginBottom:'50px'}} className='categorias-mobile'> 
 
          <div className='item-mobile'> 

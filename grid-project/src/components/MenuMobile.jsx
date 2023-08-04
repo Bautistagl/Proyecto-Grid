@@ -50,7 +50,7 @@ const MenuMobile = () => {
 
         </div>
         <div style={{marginTop:'10px'}} className='item-mobile'> 
-        <div  className='circulo'>  <img className='icono-mobile' alt='' src='/aboutUsMobile.png'/> </div>
+        <div  className='circulo'>  <img className='icono-mobile' alt='' src='/discordMobile.png'/> </div>
             <div className='subtitulo-mobile' > Join our discord </div>
 
         </div>

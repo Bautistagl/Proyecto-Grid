@@ -14,7 +14,7 @@ const MenuMobile = () => {
         </div>
         <div className='item-mobile'> 
         <div className='circulo'>  <img className='icono-mobile' alt='' src='/gameMobile2.png'/> </div>
-            <div className='subtitulo-mobile' > <Link href='asic_mining' > Game Servers</Link> Game Servers </div>
+            <div className='subtitulo-mobile' > <Link href='asic_mining' > Game Servers</Link>  </div>
 
         </div>
         </div>

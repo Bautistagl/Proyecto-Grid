@@ -30,7 +30,7 @@ const MenuMobile = () => {
             <div className='subtitulo-mobile' > About us </div>
 
         </div>
-        <div style={{marginTop:'20px'}} className='item-mobile'> 
+        <div style={{marginTop:'10px'}} className='item-mobile'> 
         <div className='circulo'>  <img className='icono-mobile' alt='' src='/blogMobile2.png'/> </div>
             <div  className='subtitulo-mobile' > Blog </div>
 
@@ -49,7 +49,7 @@ const MenuMobile = () => {
             <div className='subtitulo-mobile' > Book a demo </div>
 
         </div>
-        <div style={{marginTop:'20px'}} className='item-mobile'> 
+        <div style={{marginTop:'10px'}} className='item-mobile'> 
         <div  className='circulo'>  <img className='icono-mobile' alt='' src='/aboutUsMobile.png'/> </div>
             <div className='subtitulo-mobile' > Join our discord </div>
 

@@ -331,11 +331,11 @@
   .nueva-card-hosting{
     display: flex;
     flex-direction: column;
-    height: 750px;
+    height: 700px;
     width: 550px;
-    /* background: url('/fondoGlass2.svg');
-    background-size: cover; */
-    background-color: #0c1317;
+    background: url('/fondoGlass2.svg');
+    background-size: cover;
+    /* background-color: #0c1317; */
     border-radius: 20px;
     margin: 20px;
   }
@@ -343,9 +343,10 @@
   .nueva-card-hosting2{
     display: flex;
     flex-direction: column;
-    height: 750px;
-    width: 450px;
-    background-color: #0c1317;
+    height: 700px;
+    width: 550px;
+    background: url('/fondoGlass2.svg');
+    background-size: cover;
     border-radius: 20px;
     margin: 20px;
   }
@@ -490,6 +491,9 @@
     font-size: 1.5rem;
     font-weight: lighter;
   
+}
+.contenedor-flex2{
+    display: flex;
 }
 
 

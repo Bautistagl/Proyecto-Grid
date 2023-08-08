@@ -53,7 +53,7 @@ const HostingWeb = () => {
     <h3> Get volume discount along with enterprise-grade support and features</h3>
     <h3> Volume Discount Available</h3>
     
-    <div className='contenedor-flex'> 
+    <div className='contenedor-flex2'> 
 
     <button className='botones-aboutUs' > Contact Us </button>
     <button className='botones-aboutUs2'> Book a Demo </button>

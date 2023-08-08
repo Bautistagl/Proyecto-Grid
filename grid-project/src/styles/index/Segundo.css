@@ -1,21 +1,13 @@
-.contenedorSegundo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 12%;
-    margin-right: 150px;
-    height: 500px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-}
+
 .textos{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin-top: 0%;
-    margin-left: -250px;
+    width: 80%;
+    margin-top: 0;
+    margin-right: auto;
     opacity: 0;
+    height: 500px;
+
   
 }
 .textosMobile{
@@ -32,9 +24,9 @@
     width: 60%;
     font-weight: 500;
     margin-bottom: 2%;
-    /* background: linear-gradient(225deg,#fff,#36B079);
+    background: linear-gradient(225deg,#fff,#36B079);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
     
    
 }

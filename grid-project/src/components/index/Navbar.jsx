@@ -54,15 +54,7 @@ function Navbar() {
 
         <ul className="nav-items">
           
-          <div onClick={() => {
-            setDropdown(!dropdown)
-            setDropdown2(false)
-          
-          }} className="nav-title">
-            {' '}
-            Products
-            <img className="downNavbar" src="/downNavbar.png" alt="" />
-          </div>
+         
           <div onClick={() => {
             setDropdown2(!dropdown2)
             setDropdown(false)

@@ -93,20 +93,19 @@
  .container-nuevoFaqs{
     display: flex;
     width: 80%;
-    margin-left: auto;
     margin-right: auto;
     /* background-color: #0c1317d9; */
-    
     margin-top: 50px;
     margin-bottom: 200px;
     border-radius: 10px;
+    opacity: 0;
  }
 
  .faqs-grid{
-    display: grid;
-    width: 50%;
-   
-   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
  }
  
     
@@ -114,12 +113,11 @@
  
  .faqs-normal{
     display: flex;
-    justify-content: center;
-    text-align: center;
+   justify-content: flex-start;
     
-    margin-left: 30px;
+
     font-family: rouben;
-    width: 100%;
+    width: 90%;
     font-size:1.5rem;
     color: rgba(255, 255, 255, 0.603);
     /* border-bottom: 2px solid rgba(255, 255, 255, 0.661); */
@@ -129,6 +127,8 @@
     font-weight: lighter;
     letter-spacing: 0px;
     transition: letter-spacing 0.2s ease;
+    z-index: 9999;
+    
  }
  .faqs-normal:hover{
     letter-spacing: 1px;
@@ -139,16 +139,13 @@
  }
  .faqs-select{
     display: flex;
-    justify-content: center;
-    text-align: center;
+
    
-    margin-left: 30px;
+   
     font-family: rouben;
-    width: 100%;
+    width: 90%;
     font-size:1.5rem;
-    background: linear-gradient(225deg,#fff,#36B079);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
     /* border-bottom: 2px solid white; */
     height: 6vw;
     cursor: pointer;
@@ -163,7 +160,7 @@
     width: 90%;
     margin-top: -40px;
     margin-bottom: auto;
-    margin-left: auto;
+   
     font-family: rouben;
     font-size: 1.2rem;
     color: white;
@@ -177,7 +174,7 @@
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
-    height: 45vh;
+    height: 35vh;
     margin-left: auto;
  }
  @keyframes fadeIn {

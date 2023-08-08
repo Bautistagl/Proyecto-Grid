@@ -7,7 +7,7 @@ const Banner = ({ title, subtitle, imageSource, producto, buttonText1, buttonTex
   return (
    
         <div className="textosBanner">
-          <div className="producto-principal"> {producto}</div>
+       
           <div className="tituloBanner">{title}</div>
           <div className="subtituloBanner">{subtitle}</div>
         <div className="container-botones">

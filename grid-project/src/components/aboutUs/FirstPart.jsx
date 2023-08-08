@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-import CardsAbout from './CardsAbout';
+
 
 const FirstPart = () => {
   return (
@@ -58,7 +58,7 @@ const FirstPart = () => {
 
       </div>
      
-        <CardsAbout/>
+        
       
     <h2> Grid Mine</h2>
         <div className='contenedor-flex'> 

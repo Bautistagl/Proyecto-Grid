@@ -1,6 +1,16 @@
 import React, { useState } from 'react'
+import { useInView } from 'react-intersection-observer';
 
 const FaqsIndex = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Animation triggers only once
+    threshold: 0.7, // Percentage of element visibility to trigger the animation
+  });
+  const fadeInStylesLeft = {
+    opacity: 1,
+    transform: 'translateX(12%)',
+    transition: 'opacity 1s ease-in-out, transform 1s ease-in-out',
+  };
 
     const [faq,setFaq] = useState(false)
     const [faq1,setFaq1] = useState(false)
@@ -38,7 +48,10 @@ const FaqsIndex = () => {
     }
 
   return (
-    <div className='container-nuevoFaqs'>
+    <div 
+    ref={ref}
+    style={inView ? fadeInStylesLeft : {}}  
+    className='container-nuevoFaqs'>
     <div className='faqs-grid'>
      
 

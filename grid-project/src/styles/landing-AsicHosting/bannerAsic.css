@@ -15,8 +15,7 @@
 .textosBanner{
     justify-content: center;
     align-content: center;
-    margin-top: 10%;
-    
+    margin-top: 20%;
     width: 100%;
 }
 .banner-container{
@@ -41,9 +40,9 @@
 }
 .tituloBanner{
     font-family: rouben;
-    font-size: 3rem;
+    font-size: 3.5rem;
     width: 100%;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 3%;
     color:white ;
     margin-top: 10%;
@@ -54,12 +53,11 @@
 }
 .ilustracion-bannerGrande{
     display: flex;
-    
     width: 100%;
-   height: 60%;
-   margin-top: 12%;
-   margin-bottom: auto;
-   margin-left: 5%;
+    height: 60%;
+    margin-top: 20%;
+    margin-bottom: auto;
+    margin-left: 5%;
    
  }
  .ilustracion-bannerChica{

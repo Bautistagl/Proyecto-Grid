@@ -5,11 +5,11 @@ import { useInView } from 'react-intersection-observer';
 const Segundo = () => {
   const [ref2, inView2] = useInView({
     triggerOnce: true, // Animation triggers only once
-    threshold: 1, // Percentage of element visibility to trigger the animation
+    threshold: 0.8, // Percentage of element visibility to trigger the animation
   });
   const fadeInStylesLeft = {
     opacity: 1,
-    transform: 'translateX(100px)',
+    transform: 'translateX(12%)',
     transition: 'opacity 3s ease-in-out, transform 1s ease-in-out',
   };
   

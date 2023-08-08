@@ -1,7 +1,11 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const NewApplicationj = () => {
+  const [selected, setSelected] = useState(0);
+  const toggle = (i) => {
+      return setSelected(i);
+    };
   return (
     <>
     <div className='contenedor-newApp' >
@@ -31,6 +35,45 @@ const NewApplicationj = () => {
          <span className='span-newApp2'> Deploy a container from an image registry. </span>
          </div>
          </div>
+         <span style={{marginTop:'40px'}} className='span-newApp'> Application services </span>
+         <div className='webCard-newApp'>
+          <div className='titulo-webCard'>
+            <div className='contenedor-flex-only'>
+          <img className='icon-webCard' alt='' src='/downNavbar.png'/>
+          <img className='icon-webCard' alt='' src='/web.png'/>
+          <span> web </span>
+            </div>
+          </div>
+          <div className='opciones-webCard'>
+          <div style={{marginLeft:'0px',width:'100%'}} className="contenedor-titulos-hosting-click-shared">
+        <span
+          className={`spanHosting-clickeable-shared${selected === 0 ? 'focus' : ''}`}
+          onClick={() => toggle(0)}>
+            Main
+        </span>
+        <span
+          className={`spanHosting-clickeable-shared${selected === 1 ? 'focus' : ''}`}
+          onClick={() => toggle(1)}>
+          {' '}
+          Resources
+        </span>
+        <span
+          className={`spanHosting-clickeable-shared${selected === 2 ? 'focus' : ''}`}
+          onClick={() => toggle(2)}>
+          {' '}
+          Advanced
+        </span>
+        </div>
+        <span style={{display:'flex',margin:'20px'}} className='span-newApp2'> Start command  </span>
+        <input  style={{display:'flex',margin:'20px'}} className='input-newApp' placeholder='npm start'/>
+
+        <span style={{display:'flex',margin:'20px'}} className='span-newApp2'> Container port  </span>
+        <input style={{display:'flex',margin:'20px'}} className='input-newApp' placeholder='3000'/>
+          </div>
+
+
+         </div>
+
     </div>
 
     </>

@@ -1,4 +1,4 @@
-import Guarantee from '@/commons/Guarantee';
+
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 

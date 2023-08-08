@@ -1,5 +1,7 @@
 .contenedor-flex-only{
     display: flex;
+    
+
 }
 .div-newApp{
     font-size: 1.8rem;
@@ -52,4 +54,34 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+}
+.icon-webCard{
+    height: 20px;
+    margin: 25px 10px;
+
+}
+.titulo-webCard{
+    background-color: #0c1317;
+    width: 50%;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.509);
+    border-left: 1px solid rgba(255, 255, 255, 0.509);
+    border-right: 1px solid rgba(255, 255, 255, 0.509);
+    
+}
+.titulo-webCard span{
+    color: white;
+    margin-top: 22px;
+    font-family: rouben;
+    font-size: 1.2rem;
+}
+.opciones-webCard{
+    background-color: #0c1317d9;
+    height: 300px;
+    width: 50%;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.509);
 }

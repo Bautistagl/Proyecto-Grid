@@ -42,7 +42,7 @@ const CardsHosting = () => {
           <CardsFeatures
           titulo="No Experience"
           parrafo="Descubre la libertad de tener un sitio web sin preocuparte por la tecnología. Con Grid, nos encargamos de todo, incluso si no estás familiarizado con las nuevas tecnologías descentralizadas. Hacemos que el alojamiento web sea sin estrés y accesible para todos, brindándote una experiencia fácil y confiable en el mundo de la descentralización. "
-          foto="/support.png"
+          foto="/easy.png"
         />
       
       </div>

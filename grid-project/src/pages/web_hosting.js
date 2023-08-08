@@ -3,8 +3,6 @@ import ContactForm from "@/components/index/ContactForm";
 import Footer from "@/components/index/Footer";
 import Banner from "@/components/landing-AsicHosting/Banner";
 
-import PrimerFaqs from "@/components/landing-AsicHosting/PrimerFaqs";
-import CardsAsic from "@/components/landing-AsicHosting/CardsAsic";
 import CardsHosting from "@/commons/CardsHosting";
 import { useInView } from "react-intersection-observer";
 

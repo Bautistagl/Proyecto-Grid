@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
-import CardBusinessWeb from '../cardHostingWeb/CardBusinessWeb';
-import CardSingleWeb from '../cardHostingWeb/CardSingleWeb';
-import CardPremiumWeb from '../cardHostingWeb/CardPremiumWeb';
-import CardStarterWord from '../cardHostingWordpress/CardStarterWord';
-import CardSingleWord from '../cardHostingWordpress/CardSingleWord';
-import CardBusinessWord from '../cardHostingWordpress/CardBusinessWord';
-import CardProWord from '../cardHostingWordpress/CardProWord';
-import Link from 'next/link';
+
 import Paginacion from '@/commons/Paginacion';
 import dynamic from 'next/dynamic';
 import NuevasCardsHosting from './NuevasCardsHosting';

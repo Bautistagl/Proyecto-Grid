@@ -2,7 +2,7 @@ import Paginacion from '@/commons/Paginacion';
 import React, { useState } from 'react';
 
 const SharedInfo = () => {
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(1);
   const toggle = (i) => {
     return setSelected(i);
   };
@@ -13,13 +13,7 @@ const SharedInfo = () => {
 
       <div style={{marginLeft:'300px'}} className="infoShared-titulo"> Shared Account</div>
       <div className="contenedor-titulos-hosting-click-shared">
-        <span
-          className={`spanHosting-clickeable-shared${
-            selected === 0 ? 'focus' : ''
-          }`}
-          onClick={() => toggle(0)}>
-          Asic Hosting
-        </span>
+       
         <span
           className={`spanHosting-clickeable-shared${
             selected === 1 ? 'focus' : ''

@@ -97,7 +97,7 @@ const FirstPart = () => {
     <h1> Ready to get started or have questions?</h1>
     <h3> Set up your free account today or contact a sales consultant to learn more.</h3>
     
-    <div className='contenedor-flex'> 
+    <div className='contenedor-flex2'> 
 
     <button className='botones-aboutUs' > Create Account </button>
     <button className='botones-aboutUs2'> Book a Demo </button>

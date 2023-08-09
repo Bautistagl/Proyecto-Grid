@@ -60,9 +60,10 @@
     .fotoSegundo{
         display: flex;
         margin-left: 50px;
-        width: 45%;
+        width: 80%;
         z-index: 0;
         margin-right: 70px;
+        margin-bottom: 50px;
     }
     .textosMobile{
         display: flex;
@@ -91,11 +92,15 @@
         width: 100%;
         margin: 0;
         height: 350px;
-        margin-top: 150px;
+        margin-top: 50px;
         
         
        
    
+    }
+    .cardsAsicContainer h1{
+        font-size: 1.4rem !important;
+        width: 100%;
     }
     .primeraParte{
         display: flex;
@@ -103,20 +108,20 @@
         text-align: center;
         color: #36B079;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 1.8rem;
         width: 100%;
         margin-top: 50px;
         z-index: 999;
         
     }
-    .fotoSegundo{
+    /* .fotoSegundo{
         height: 95%;
         z-index: 0;
         width: 80%;
         margin: 0;
         margin-left: 8%;
     
-    }
+    } */
     .subtituloSegundo{
         display: flex;
        margin-left: auto;
@@ -130,13 +135,11 @@
         
     }
     .tituloSegundo{
-        font-size: 22rem;
-        display: flex;
-        font-family: rouben;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 2%;
-        
+        font-size: 1.8rem;
+      width: 100%;
+    }
+    .titulo-asic{
+        font-size: 1.8rem !important;
     }
 
 }

@@ -7,7 +7,7 @@ const Cards = ({titulo,link,push,ultimaFecha}) => {
        <Link href='/profile/proyecto'>
     <div className='card-proyecto'>
         <div className='contenedor-flex-proyecto'> 
-        <img alt='' src='/iconoGrid3.png' className='icono-proyecto'/>
+        <img alt='' src='/google.png' className='icono-proyecto'/>
         <div className='main-titulos-proyecto'>
             <span> {titulo}</span>
             <h2> {link}</h2>

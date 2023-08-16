@@ -57,8 +57,11 @@ const MenuMobile = () => {
         </div>
         </div>
         
-            
+            <div className='only-flex'>
 
+                 <button> <Link href='/login'> Login  </Link> </button>
+                 <button> <Link href='/register'> Register  </Link> </button>
+            </div>
     </div>
   )
 }

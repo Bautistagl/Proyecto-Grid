@@ -50,9 +50,9 @@
   }
   .input-proyecto{
     margin-top: 30px;
-    margin-left: 400px;
+    margin-left: 300px;
     height: 40px;
-    width: 48%;
+    width: 50%;
     border-radius: 5px;
     background-color: black;
     color: white;
@@ -165,4 +165,69 @@
     margin-left: 300px;
     margin-bottom: 100px;
     width: 68%;
+  }
+
+
+  .contenedor-before{
+    display: flex;
+    flex-direction: column;
+    background-color: #1e2b31c9;
+    margin-top: 20px;
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 300px;
+  }
+  .contenedor-before h1{
+    display: flex;
+    color: white;
+    font-family: rouben ligth;
+    font-size: 1.8rem;
+    margin: auto;
+
+  }
+  .contenedor-before button{
+    width: 30%;
+    background-color: #36B079;
+    margin: auto;
+  }
+  .contenedor-before span{
+    display: flex;
+    color: rgba(255, 255, 255, 0.618);
+    font-family: rouben ligth;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+
+  .contenedor-hostingBought{
+    display: flex;
+    background-color: #1e2b3193;
+    height: 700px;
+    width: 40%;
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+  @media only screen and (max-width: 550px) {
+
+    .logged-home-component{
+      min-width: 10vw;
+    }
+    .logged-home-cards{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      background-color: transparent;
+      justify-content: center;
+      border-radius: 10px;
+      margin: auto;
+      width: auto;
+    }
+    .probando-index{
+      margin-top: 50px;
+      background-color: transparent;
+      border-radius: 10px;
+      margin-left: 0px;
+      margin-bottom: 100px;
+      width: 100%;
+    }
   }

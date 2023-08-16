@@ -1,7 +1,10 @@
 .contenedor-flex-only{
     display: flex;
-    
-
+}
+.contenedor-flex-only2{
+    display: flex;
+    width: 80%;
+    margin: auto;
 }
 .div-newApp{
     font-size: 1.8rem;
@@ -12,12 +15,13 @@
 
 
 .span-newApp{
-    font-family: rouben ;
+    font-family: rouben  ;
+    font-size: 1.2rem;
     color: white;
     margin: 10px;
 }
 .span-newApp2{
-    font-family: rouben ;
+    font-family: rouben ligth ;
     color: rgba(255, 255, 255, 0.713);
     margin: 10px;
 }
@@ -43,11 +47,17 @@
     width: 380px;
     background-color: #0c1317d9;
     border-radius: 5px;
-    border: 2px solid grey;
+    border: 3px solid transparent;
     margin-left: 10px;
-    
+    cursor: pointer;
     justify-content: center;
     text-align: center;
+}
+.card-newApp:active{
+    border: 3px solid #36B079;
+}
+.card-newApp:hover{
+    border: 3px solid #36B079;
 }
 .icon-card-newApp{
     display: flex;
@@ -84,4 +94,94 @@
     border-end-end-radius: 10px;
     border-end-start-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.509);
+}
+.button-newApp{
+    display: flex;
+    background-color: #0c1317d9;
+    border: 3px solid transparent;
+    width: 30%;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    font-family: rouben ligth;
+}
+.button-newApp:hover{
+    border: 3px solid #36B079;
+    background-color: #0c1317d9;
+    box-shadow: none;
+
+}
+.modal-newApp{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    margin: 300px;
+    background-color: #0c1317;
+    border-radius: 10px;
+    border: 2px solid #36B079;
+    height: 350px;
+    width: 500px;
+    z-index: 9999;
+}
+.modal-newApp h1{
+    color: white;
+    font-family: rouben ligth;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.modal-newApp span{
+    color: rgba(255, 255, 255, 0.83);
+    font-family: rouben ligth;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    margin-left: 20px;
+  
+}
+.modal-newApp select{
+    display: flex;
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    background-color: #222b31;
+    border: 2px solid #36B079 !important;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    margin: 20px;
+    font-family: rouben;
+    letter-spacing: 0.5px;
+}
+.modal-newApp input{
+    display: flex;
+    width: 78%;
+    height: 30px;
+    padding: 5px;
+    background-color: #222b31;
+    border: 2px solid #36B079 !important;
+    color: white;
+    border-radius: 5px;
+    border:none;
+    margin: 20px;
+    font-family: rouben;
+    letter-spacing: 0.5px;
+}
+.modal-newApp button{
+    display: flex;
+    margin: auto;
+    width: 35%;
+    font-family: rouben ligth;
+    font-weight: lighter;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    background-color: #36B079;
+}
+.modal-newApp img{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 250px;
+    width: 15px;
+    height: 15px;
 }

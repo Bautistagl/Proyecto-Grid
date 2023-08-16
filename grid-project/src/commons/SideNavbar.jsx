@@ -1,3 +1,4 @@
+import SidebarMobile from '@/components/SidebarMobile';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
@@ -6,10 +7,12 @@ const SideNavbar = () => {
 
   const[visible, setVisible] = useState(true)
   const [selected, setSelected] = useState(false);
+  const [menu,setMenu] = useState(false)
 
   const toggleSideBar = () => {
      return setVisible(!visible)
   }
+
 
   const toggle = () => {
     
@@ -74,7 +77,16 @@ const SideNavbar = () => {
         
       <button className='logout-sidebar'> Logout </button>
       </ul>
+          <img alt='' src='/gridLogo1.png' className='sidebar-grid' />
+
+          
+          {menu === false ? (
+            <img onClick={()=>setMenu(true)} className="sidebar-menu-mobile" src={'/menu.png'} />
+          ) : (
+            <img onClick={()=>setMenu(false)} className="sidebar-menu-mobile" src={'/menuCerrado.png'} />
+          )}
     </nav>
+           {menu ?  <SidebarMobile/> : ''}
     </>
   );
 };

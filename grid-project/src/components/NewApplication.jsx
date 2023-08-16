@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
+import ModalNewApp from './ModalNewApp';
 
 const NewApplicationj = () => {
   const [selected, setSelected] = useState(0);
+  const [modal,setModal] =useState(false)
   const toggle = (i) => {
       return setSelected(i);
     };
@@ -36,6 +38,28 @@ const NewApplicationj = () => {
          </div>
          </div>
          <span style={{marginTop:'40px'}} className='span-newApp'> Application services </span>
+         <button onClick={()=>setModal(true)} className='button-newApp'> + Add a new service </button>
+         {modal ? 
+         
+         <div className='modal-newApp'>
+         <div className='contenedor-flex2'> 
+         <h1> Add a new service </h1>
+         <img onClick={()=>{setModal(false)}} style={{cursor:'pointer'}} alt='' src='/menuCerrado.png'/>
+         </div>
+         <span>Select a service type:</span>
+         <div className='contenedor-flex2'>
+       
+         <select>
+             <option> Web </option>
+             <option> Worker</option>
+             <option> Cron Job</option>
+         </select>
+         </div>
+         <span>Name this service:</span>
+         <input placeholder='ex:my-service'/>
+         <button onClick={()=>{setModal(false)}}> + Add service </button>
+     </div>
+         : ''}
          <div className='webCard-newApp'>
           <div className='titulo-webCard'>
             <div className='contenedor-flex-only'>

@@ -11,9 +11,12 @@
 .contact-section{
     display: flex;
     height: 100%;
-    border-bottom: 2px #36B079 solid;
-    width: 100%;
+   
+    width: 98%;
     background-color: #0c1317d9;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .contact-form{
     display: grid;

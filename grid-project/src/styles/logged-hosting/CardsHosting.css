@@ -537,5 +537,83 @@
 
         margin-left: 0;
     }
+    
 }
+@media only screen and (max-width: 550px) {
+    .contenedor-nuevas{
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+   
+    }
+    .tituloPrincipal-hosting{
+        display: flex;
+        font-size: 1.7rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedor-nuevas h1{
+        font-size: 1.8rem;
+    }
+    .contenedor-nuevas h2{
+        font-size: 1.5rem;
+    }
+    .contenedor-nuevas span{
+        font-size: 0.9rem;
+    }
+    .nueva-card-hosting{
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        width: 90%;
+        background: url('/fondoGlass2.svg');
+        background-size: cover;
+        /* background-color: #0c1317; */
+        border-radius: 20px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .nueva-card-hosting2{
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        width: 90%;
+        background: url('/fondoGlass2.svg');
+        background-size: cover;
+        border-radius: 20px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .aboutUs-final2{
+        display: flex;
+        flex-direction: column;
+        background-color: #0c1317;
+        width: 80%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+      }
+      .aboutUs-final2 h1{
+        font-size: 1.5rem;
 
+      }
+      .aboutUs-final2 h3{
+        color: rgba(255, 255, 255, 0.738);
+        font-size: 1.2rem;
+      }
+      .botones-aboutUs2{
+        font-size: 0.8rem;
+      }
+      .botones-aboutUs{
+        font-size: 0.8rem;
+      }
+      .boton-nuevas{
+        margin-top: 30px;
+      }
+
+}

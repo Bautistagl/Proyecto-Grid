@@ -37,11 +37,7 @@ function Navbar() {
         <Link className='a-mobile' href="/">
           <img className="navbar-logo" src="/gridLogo1.png" />
         </Link>
-        <div>
-          <Link href="/login">
-            <img className="login-navbar" src="/login.png" alt="login" />
-          </Link>
-        </div>
+       
 
         <div onClick={() => toggleMenu()} className="hamburguer-navbar">
           {' '}

@@ -31,7 +31,7 @@ const HostingWeb = () => {
     <>
       
       <div>s</div>
-      <Paginacion anterior="Services" links="/profile" titulo="Web Hosting" />
+      
       <div className='probando-index'>
     <div style={{opacity:'0'}}>.</div>
       <div className="tituloPrincipal-hosting">

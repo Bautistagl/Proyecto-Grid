@@ -77,7 +77,7 @@ const InfoPersonal = () => {
     : ""
       }
    
-    <div>s</div>
+    <div style={{opacity:'0'}}>.</div>
     </div>
      </>
   )

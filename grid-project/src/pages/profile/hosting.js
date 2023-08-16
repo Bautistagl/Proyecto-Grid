@@ -1,5 +1,7 @@
 
 import MenuNavbar from "@/commons/MenuNavbar";
+import Paginacion from "@/commons/Paginacion";
+import HostingBought from "@/components/HostingBought";
 import HostingWeb from "@/components/cards/HostingWeb";
 import dynamic from "next/dynamic";
 import { useState } from "react";
@@ -24,7 +26,10 @@ export default function LoggedHosting() {
           <div className="boton-sidebar-ocultar" onClick={()=>{ toggleSideBar()}}> <img className="icon-ocultar" alt="" src='/equal2.png'/> </div>
           <DynamicNavbar/>
         </>  }
+        <div style={{opacity:'0'}}>.</div>
+        <Paginacion anterior="Services" links="/profile" titulo="Web Hosting" />
       <HostingWeb/>
+        {/* <HostingBought/> */}
       
       
       

@@ -10,6 +10,7 @@ import {LineData} from '../../DataLine'
 import LineChart from "@/components/LineChart";
 import Charts from "@/components/Charts";
 import Link from "next/link";
+import BeforeBuy from "@/components/BeforeBuy";
 const DynamicNavbar = dynamic(()=>import("../../commons/SideNavbar"),
   {
     ssr:false,
@@ -59,24 +60,15 @@ export default function LoggedLogin() {
         </>  }
         <div>s</div>
       <Paginacion  anterior="Home" links="/profile"  />
-      {/* <div className="contenedor-titulos-hosting-click-shared">
-        <span
-          className={`spanHosting-clickeable-shared${selected === 0 ? 'focus' : ''}`}
-          onClick={() => toggle(0)}>
-            Asic Hosting
-        </span>
-        <span
-          className={`spanHosting-clickeable-shared${selected === 1 ? 'focus' : ''}`}
-          onClick={() => toggle(1)}>
-          {' '}
-          Web Hosting
-        </span>
-      </div> */}
    
       <div> 
+            <div className="contenedor-flex-only2">
 
          <input placeholder="Search..." className="input-proyecto" />
+         <button className="new-button" > +</button>
+            </div>
          <button className='button-proyecto'> <Link href='/profile/newApplication'> Add New... </Link>  </button>
+         {/* <BeforeBuy/> */}
          <div className={ visible ? "logged-home-cards" : 'logged-home-cards-sin-sidebar'}  > 
          <Cards
          titulo='primer-proyecto-grid'

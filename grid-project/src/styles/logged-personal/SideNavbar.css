@@ -125,6 +125,12 @@ margin-left: -10px;
 .dropdown-asicHosting{
     display: none;
 }
+.sidebar-grid{
+    display: none;
+}
+.sidebar-menu-mobile{
+    display: none;
+}
 
 @media only screen and (max-width: 1400px) {
   
@@ -141,4 +147,93 @@ margin-left: -10px;
     margin-right: auto;
     justify-content: center;
     margin-top: 40px;
+}
+
+@media only screen and (max-width: 550px) {
+    .sideNavbar{
+        display: flex;
+        width: 100vw;
+        height: 60px !important;
+        min-height: 0px;
+    }
+    .sideNavbar ul{
+        display: none;
+    }
+    .sidebar-grid{
+        display: flex;
+        height: 70px;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-top: -7px;
+    }
+    .icon-ocultar{
+        display: none;
+    }
+    .input-proyecto{
+        display: flex;
+        margin-right: 10px;
+        margin-left: 0px !important;
+        margin-top: 50px;
+        height: 50px;
+        width: 100% ;
+        border: 1px solid rgba(128, 128, 128, 0.56);
+    }
+ 
+    .guia-paginacion{
+        display: none !important;
+    }
+    .sidebar-menu-mobile{
+        display: flex;
+        height: 25px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .contenedor-before{
+        display: flex;
+        margin: auto;
+        width: 80%;
+        height: 230px !important;
+        margin-top: 30px;
+    }
+    .contenedor-before h1{
+        font-size: 1.3rem;
+        margin: 0;
+        margin: auto;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+    }
+    .contenedor-before span{
+        font-size: 0.9rem;
+        margin: 0;
+        margin: auto;
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+    }
+    .contenedor-before button{
+        display: flex;
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .new-button{
+        display: inline-block;
+        height: 50px;
+        margin-top: 50px;
+        font-size: 1.5rem;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        padding: 0;
+        width: 30%;
+        margin-right: 0px;
+    }
+    /* .mobile-before{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 !important;
+    } */
 }

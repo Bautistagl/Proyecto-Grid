@@ -75,42 +75,38 @@ export default function LoggedLogin() {
          link='primer-proyecto-grid.grid.app'
          push='esto es lo que diria el push'
          ultimaFecha='10d ago via Github'
-         icono='/iconoGrid3.png'
+         
          />
           <Cards
          titulo='segundo-proyecto-grid'
          link='segundo-proyecto-grid.grid.app'
          push='Main features'
          ultimaFecha='10d ago via Github'
-         icono='/iconoGrid3.png'
+         
          />
           <Cards
          titulo='tercer-proyecto-grid'
          link='tercer-proyecto-grid.grid.app'
          push='Login and register'
          ultimaFecha='10d ago via Github'
-         icono='/iconoGrid3.png'
          />
           <Cards
          titulo='cuarto-proyecto-grid'
          link='cuarto-proyecto-grid.grid.app'
          push='Home and landing'
          ultimaFecha='10d ago via Github'
-         icono='/iconoGrid3.png'
          />
           <Cards
          titulo='quinto-proyecto-grid'
          link='quinto-proyecto-grid.grid.app'
          push='Mobile view'
          ultimaFecha='10d ago via Github'
-         icono='/iconoGrid3.png'
          />
           <Cards
          titulo='sexto-proyecto-grid'
          link='sexto-proyecto-grid.grid.app'
          push='esto es lo que diria el push'
          ultimaFecha='10d ago via Github'
-         icono='/iconoGrid3.png'
          />
          <div style={{opacity:'0'}}>.</div>
          </div>

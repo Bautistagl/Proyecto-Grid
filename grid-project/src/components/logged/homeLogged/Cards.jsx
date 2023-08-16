@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Cards = ({titulo,link,push,ultimaFecha,icono}) => {
+const Cards = ({titulo,link,push,ultimaFecha}) => {
   return (
     <div>
        <Link href='/profile/proyecto'>
     <div className='card-proyecto'>
         <div className='contenedor-flex-proyecto'> 
-        <img alt='' src={icono} className='icono-proyecto'/>
+        <img alt='' src='/iconoGrid3.png' className='icono-proyecto'/>
         <div className='main-titulos-proyecto'>
             <span> {titulo}</span>
             <h2> {link}</h2>

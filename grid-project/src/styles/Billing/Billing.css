@@ -16,6 +16,9 @@
     background-color: #dbf3d7;
     
 }
+.billing-mobile{
+    display: none;
+}
 .billing-options{
     display: flex;
     background-color: white;
@@ -73,6 +76,9 @@
         margin-left: 0;
         width: 100%;
         
+    }
+    .container-general-billing{
+        display: none;
     }
     .billing-options{
         margin-left: 0;

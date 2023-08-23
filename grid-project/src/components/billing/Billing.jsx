@@ -59,7 +59,7 @@ const BillingInfo = () => {
           <button> None</button>
         </div>
       </div>
-      {/* <div className="container-general-billing">
+      <div className="container-general-billing">
         
         <BillingForms
           titulo='Invoice Type'
@@ -88,11 +88,11 @@ const BillingInfo = () => {
         <BillingForms
         titulo='Applied funds'
         op1="este es el calendario" />
-      </div> */}
-      {/* <div className='contenedor-invoices'> 
+      </div>
+      <div className='contenedor-invoices'> 
         <span> Looks like you dont have any outstanding invoices currently </span>
       
-      </div> */}
+      </div>
     </div>
   );
 };

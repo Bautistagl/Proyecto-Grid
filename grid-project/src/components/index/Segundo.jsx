@@ -9,7 +9,7 @@ const Segundo = () => {
   });
   const fadeInStylesLeft = {
     opacity: 1,
-    transform: 'translateX(12%)',
+    transform: 'translateX(12.4%)',
     transition: 'opacity 3s ease-in-out, transform 1s ease-in-out',
   };
   

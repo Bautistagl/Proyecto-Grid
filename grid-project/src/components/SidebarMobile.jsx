@@ -9,8 +9,7 @@ const SidebarMobile = () => {
         <div> bautistagonzalezlazo@gmail.com</div>
         <div> <Link href='/profile'> Home </Link></div>
         <div> <Link href='/profile/hosting'> Deploy </Link></div>
-        <div> <Link href='/profile/ssl'> Email </Link></div>
-        <div> <Link href='/profile/ssl'> Dominios </Link></div>
+  
         <div> <Link href='/profile/billing'> Billing </Link></div>
         <span style={{marginTop:'20px'}} className='titulo-mobile'>Resources </span>
         <div> <Link href='/profile/ssl'> Account Settings </Link></div>

@@ -16,7 +16,7 @@ const Footer = () => {
                       </div>
                       <div className='redes-footer'>
               <a href='//www.linkedin.com'>
-              <img className='icon-redes' src={"/linkedin.png"}/>
+              <img style={{marginLeft:'0px'}} className='icon-redes' src={"/linkedin.png"}/>
               </a>
             
               <a href='//www.discord.com'>
@@ -30,8 +30,8 @@ const Footer = () => {
                 <img className='icon-redes' src={"/instagram.png"}/>
               </a>
            </div>
-           <button style={{marginTop:'30px'}}> Contact us! </button>
-           <button > Support Center</button>
+           <button style={{marginTop:'30px',backgroundColor: '#36B079'}}> Contact us! </button>
+           <button style={{marginTop:'30px',backgroundColor: '#36B079'}} > Support Center</button>
 
          </div>
       

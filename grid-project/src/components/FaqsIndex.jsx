@@ -8,7 +8,7 @@ const FaqsIndex = () => {
   });
   const fadeInStylesLeft = {
     opacity: 1,
-    transform: 'translateX(12%)',
+    transform: 'translateX(12.5%)',
     transition: 'opacity 1s ease-in-out, transform 1s ease-in-out',
   };
 

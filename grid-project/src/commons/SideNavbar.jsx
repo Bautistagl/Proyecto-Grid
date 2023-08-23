@@ -28,7 +28,7 @@ const SideNavbar = () => {
    
       <ul className='sideNavbar-ul'>
         <Link href="/">
-      <img className='icono-sideBar-grid' src='/gridLogo1.png'/>
+      <img className='icono-sideBar-grid' src='/gridCorregido.png'/>
         </Link>
       <Link href="/profile">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar2' src='/homeDark.png'/>  Home</li>
@@ -37,17 +37,6 @@ const SideNavbar = () => {
         <Link href="/profile/hosting">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconDeploy.png'/>  Deploy</li>
         </Link>
-        <Link href="/profile/ssl">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconMail3.png'/> Email</li>
-        </Link>
-        <Link href="/profile/ssl">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconDom3.png'/>  Dominios</li>
-        </Link>
-        {/* <Link href="/profile/immersion-dashboard">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconCool.png'/>  Immersion Cooling</li>
-        </Link> */}
-       
-        {/* <li className='sideNavbar-li' onClick={()=> toggle()}><img className='icon-sideNavbar' src='/iconAsic2.png'/>  Asic Hosting <span> <img className='icon-sideNavbarAsicHosting' src='/abierto.png' alt=''/> </span></li> */}
         
         <div className={`dropdown-asicHosting ${selected === true ? 'selected' : ''}  `} > 
 

@@ -12,7 +12,7 @@ const InfoPersonal = () => {
     <div style={{opacity:'0'}}>.</div>
     <Paginacion anterior="Settings" links="/profile" titulo="Billing" />
     <div className='probando-index'>
-    <div style={{opacity:'0'}}>.</div>
+ 
     <div className="infoShared-titulo"> Account Information</div>
     
     <div className="contenedor-titulos-hosting-click-shared2">

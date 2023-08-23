@@ -19,9 +19,9 @@
 }
 .icon-ocultar{
     display: flex;
-    height: 35px;
-    width: 35px;
-    margin-top: -66px;
+    height: 30px;
+    width: 30px;
+    margin-top: -75px;
     margin-left: 20px;
 }
 .boton-sidebar-mostrar{
@@ -96,10 +96,10 @@ margin-left: -10px;
     
 }
 .icono-sideBar-grid{
-    height: 80px;
-    width: 200px;
+    height: 55px;
+    width: 165px;
     margin-top: 10%;
-    margin-left: -10px;
+    margin-left: 22px;
 }
 
 .li-asicHosting{
@@ -173,7 +173,7 @@ margin-left: -10px;
         display: flex;
         margin-right: 10px;
         margin-left: 0px !important;
-        margin-top: 50px;
+        margin-top: 70px;
         height: 50px;
         width: 100% ;
         border: 1px solid rgba(128, 128, 128, 0.56);
@@ -195,6 +195,7 @@ margin-left: -10px;
         height: 230px !important;
         margin-top: 30px;
     }
+   
     .contenedor-before h1{
         font-size: 1.3rem;
         margin: 0;
@@ -221,7 +222,7 @@ margin-left: -10px;
     .new-button{
         display: inline-block;
         height: 50px;
-        margin-top: 50px;
+        margin-top: 70px;
         font-size: 1.5rem;
         justify-content: center;
         text-align: center;

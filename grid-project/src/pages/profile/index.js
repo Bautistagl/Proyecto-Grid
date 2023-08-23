@@ -65,10 +65,10 @@ export default function LoggedLogin() {
             <div className="contenedor-flex-only2">
 
          <input placeholder="Search..." className="input-proyecto" />
-         <button className="new-button" > +</button>
+         <button className="new-button" > <Link href='/profile/newApplication'> + </Link>  </button>
             </div>
          <button className='button-proyecto'> <Link href='/profile/newApplication'> Add New... </Link>  </button>
-         {/* <BeforeBuy/> */}
+         <BeforeBuy/>
          <div className={ visible ? "logged-home-cards" : 'logged-home-cards-sin-sidebar'}  > 
          <Cards
          titulo='primer-proyecto-grid'

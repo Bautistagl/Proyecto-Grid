@@ -33,7 +33,33 @@ const BillingInfo = () => {
           Automatic Payments
         </span>
       </div>
-      <div className="container-general-billing">
+      <div className='billing-mobile'>
+        <div className='billing-titulo-mobile'> Invoice Type</div>
+        <div className='billing-buttons'>
+          <button> All </button>
+          <button> Web Hosting </button>
+          <button> Email</button>
+          <button> Hardware</button>
+          <button> Asic Hosting</button>
+        </div>
+
+        <div className='billing-titulo-mobile'> Due Date</div>
+        <div className='billing-buttons'>
+          <button> $0 - 1,000 </button>
+          <button> $1,000 - 10,000 </button>
+          <button> 10,000 - 100,000</button>
+          <button> More than $100,000</button>
+        </div>
+        <div className='billing-titulo-mobile'> Amount</div>
+        <div className='billing-buttons'>
+          <button> All </button>
+          <button> Credits </button>
+          <button> Wallet</button>
+          <button> Both</button>
+          <button> None</button>
+        </div>
+      </div>
+      {/* <div className="container-general-billing">
         
         <BillingForms
           titulo='Invoice Type'
@@ -62,11 +88,11 @@ const BillingInfo = () => {
         <BillingForms
         titulo='Applied funds'
         op1="este es el calendario" />
-      </div>
-      <div className='contenedor-invoices'> 
+      </div> */}
+      {/* <div className='contenedor-invoices'> 
         <span> Looks like you dont have any outstanding invoices currently </span>
       
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -2,11 +2,14 @@
 .navbar{
   position: fixed;
     background:#0c1317d9 ;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    z-index: 1000; 
+    height: 6vh;
     width: 100%;
+  margin: 0 auto; /* Centrar la navbar horizontalmente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  z-index: 1000;
 
     
   
@@ -28,25 +31,36 @@
 .navbar-logo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 12vw;
-    margin-left: 80%;
+    
 }
 
 .nav-items{
-    display: flex;
-    width: 60%;
-    justify-content: center;
-    align-self: center;
-    margin-left: 5%;
-    margin-right: -7%;
-}
+  width: 80%;
+  margin: 0 auto; /* Centrar la navbar horizontalmente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+    
+    
+}
+.un-contenedor{
+  display: flex;
+}
+.login-register{
+  display: flex;
+  justify-content:flex-end;
+  align-self: center;
+  
+
+}
 .nav-title{
   display: flex;
     font-size: 1rem;
     font-family: rouben;
-    margin-left: 3%;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     color: white;
     padding: 25px 25px;
@@ -241,10 +255,11 @@
    display: none;
   }
   .boton-landing{
-    margin-left: 40%;
+    margin-right: 0px;
+    background-color: #36B079;
   }
   .boton-landing1{
-    margin-left: 40%;
+    background-color: #36B079;
   }
   .downNavbar{
     height: 20px;

@@ -34,23 +34,24 @@ function Navbar() {
   return (
     <>
       <nav className={`navbar ${isSticky ? 'sticky' : ''}  `}>
-        <Link className='a-mobile' href="/">
-          <img className="navbar-logo" src="/gridLogo1.png" />
-        </Link>
+       
        
 
-        <div onClick={() => toggleMenu()} className="hamburguer-navbar">
+
+        <div className="nav-items">
+        {/* <div onClick={() => toggleMenu()} className="hamburguer-navbar">
           {' '}
           {menu === false ? (
             <img className="hamburger-logo" src={'/menu.png'} />
           ) : (
             <img className="hamburger-logoCerrado" src={'/menuCerrado.png'} />
           )}{' '}
-        </div>
+        </div> */}
+        <Link href="/">
+          <img className="navbar-logo" src="/gridCorregido.png" />
+        </Link>
+         <div className='un-contenedor'>
 
-        <ul className="nav-items">
-          
-         
           <div onClick={() => {
             setDropdown2(!dropdown2)
             setDropdown(false)
@@ -58,16 +59,19 @@ function Navbar() {
             }} className="nav-title"> Why choose us?
           <img className="downNavbar" src="/downNavbar.png" alt="" />
            </div>
-          
           <div className="nav-title"> Contact </div>  
           <div className="nav-title"> <Link href='https://cal.com/bautista-gonzalez-lazo-g8xn68' > Book a demo </Link> </div> 
-        </ul>
+         </div>
+          <div  className='login-register'>
+
         <Link href="/login">
           <button className="boton-landing1">Login</button>
         </Link>
         <Link href="register">
           <button className="boton-landing">Register</button>
         </Link>
+          </div>
+        </div>
       </nav>
       {menu ? <MenuMobile/> : ''}
 

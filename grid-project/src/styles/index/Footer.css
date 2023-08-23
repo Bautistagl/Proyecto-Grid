@@ -10,7 +10,7 @@
     background: #0c1317;
     
     z-index: 0;
-    width: 70%;
+    width: 80%;
     
     margin-right: auto !important;
     margin-left: auto !important;
@@ -36,7 +36,7 @@ a{
 .columnas {
   color: white;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: 40% auto auto auto auto;
   margin-bottom: 4%;
 }
 ul{
@@ -44,15 +44,16 @@ ul{
   font-family: rouben ligth;
 }
 .columna {
-  padding: 1rem;
+ 
   justify-content: center;
   align-items: center;
   text-align: flex-start;
   font-family: rouben;
   font-size: 1.2rem;
+  margin-top: 50px;
 }
 .columna-principal {
-  padding: 1rem;
+ 
   justify-content: center;
   align-items: center;
   text-align: flex-start;
@@ -60,24 +61,24 @@ ul{
   font-size: 1.1rem;
   grid-column: 1 / 2;
   margin-left: 0px !important;
-
+  margin-top: 50px;
  
 }
 
 
 .footer-parrafo{
-  padding: 10px 10px;
+  padding: 10px 0px;
   width: 320px;
   color: whitead;
 }
 .redes-footer{
   display: flex;
-  justify-content: flex-start;
+  
   
 }
 .icon-redes{
   height: 25px;
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 .boton-footer{
   border-style: none;

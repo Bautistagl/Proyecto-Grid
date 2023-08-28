@@ -322,7 +322,7 @@
     .container-nuevoFaqs{
         display: flex;
         flex-direction: column;
-        min-height: 400px;
+      
         margin-bottom: 50px;
         
 

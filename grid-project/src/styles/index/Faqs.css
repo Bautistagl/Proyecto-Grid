@@ -108,7 +108,7 @@
  
  .contenedor-borde{
     border-bottom: 4px solid white;
-    min-height: 120px;
+   
     
  }
  
@@ -298,36 +298,32 @@
         color: white;
      }   
      .respuesta-shown{
-        height: auto;
+        height: 100%;
         max-height: 9999px;
         overflow: hidden;
         transition: all 1s cubic-bezier(1,0,1,0);
         display: flex;
-       
-      
         margin-bottom: auto;
-       
         font-family: rouben;
         font-size: 0.8rem;
         color: white;
      } 
      .contenedor-borde{
         border-bottom: 3px solid white;
-      
-       min-height: 0px !important;
+       
+       
         
      }
     .container-nuevoFaqs{
         display: flex;
         flex-direction: column;
-      
+        
         margin-bottom: 50px;
         
 
     }
     .faqs-select{
         width: 100%;
-      
         font-size: 1rem;
         margin: 0;
         margin-top: 10px;

@@ -224,6 +224,7 @@
         width: 100%;
     }
     .span-landing-selected{
+        font-family: rouben;
         font-size: 1rem;
         margin: 5px;
     }

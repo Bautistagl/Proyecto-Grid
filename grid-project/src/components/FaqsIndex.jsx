@@ -48,10 +48,12 @@ const FaqsIndex = () => {
     }
 
   return (
-    <div 
-    ref={ref}
-    style={inView ? fadeInStylesLeft : {}}  
-    className='container-nuevoFaqs'>
+    // <div 
+    // ref={ref}
+    // style={inView ? fadeInStylesLeft : {}}  
+    // className='container-nuevoFaqs'>
+      <>
+
     <div className='faqs-grid'>
      
         <div className= 'contenedor-borde'> 
@@ -95,11 +97,12 @@ const FaqsIndex = () => {
         </div>
        
            </div>
-    </div>
+      </div>
+    {/* </div> */}
         
      {/* <img alt='' src='faqsIlu.svg' className='faqs-ilu'/>  */}
       
-    </div>
+    </>
   )
 }
 

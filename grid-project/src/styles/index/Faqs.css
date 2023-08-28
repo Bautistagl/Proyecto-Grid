@@ -261,13 +261,12 @@
         height: 20vh;
     }
     .faqs-grid{
-        display: grid;
-        grid-template-columns:  auto ;
         height: 100%;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 5%;
+        margin-bottom: 50px;
     }
     /* .faqs-respuesta{
         display: flex;
@@ -304,7 +303,7 @@
      } 
      .contenedor-borde{
         border-bottom: 3px solid white;
-       
+       height: 100%;
        
         
      }
@@ -313,7 +312,7 @@
         flex-direction: column;
         
         margin-bottom: 50px;
-        
+        transition: none;
 
     }
     .faqs-select{

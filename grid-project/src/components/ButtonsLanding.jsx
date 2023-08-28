@@ -48,7 +48,7 @@ const ButtonsLanding = () => {
           <div className="parrafo-features-landing">
             Discover the freedom of having a website without the need for
             expertise or DevOps. With Grid, we handle everything, streamlining
-            both transitions. Even if you're unfamiliar with new decentralized
+            both transitions. Even if you&apos;re unfamiliar with new decentralized
             technologies, we make web hosting stress-free and accessible for
             everyone, offering a straightforward and dependable experience in
             the realm of decentralization.

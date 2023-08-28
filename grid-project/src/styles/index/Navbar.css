@@ -413,9 +413,12 @@
     }
     
     .nav-items {
+      display: flex;
+      flex-direction: row;
+      /* margin-top: 300px; */
+    }
+    .un-contenedor{
       display: none;
-      flex-direction: column;
-      margin-top: 300px;
     }
     
     .nav-item {
@@ -426,7 +429,7 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      height: 3rem;
+      height: rem;
       margin-left: 10px;
   }
   .container-productos{

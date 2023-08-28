@@ -13,6 +13,7 @@ import MenuMobile from "@/components/MenuMobile";
 import Banner from "@/components/landing-AsicHosting/Banner";
 import { useInView } from "react-intersection-observer";
 import CardsHosting from "@/commons/CardsHosting";
+import ButtonsLanding from "@/components/ButtonsLanding";
 
 
 
@@ -50,7 +51,8 @@ export default function Home() {
          style={inView ? fadeInStylesLeft : {}}
        src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
-       <CardsHosting/>
+       {/* <CardsHosting/> */}
+       <ButtonsLanding/>
   
    <Segundo/>
    <Powered/>

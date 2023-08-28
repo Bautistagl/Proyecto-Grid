@@ -7,8 +7,6 @@
     margin-right: auto;
     opacity: 0;
     height: 500px;
-
-  
 }
 .textosMobile{
     display: none;
@@ -16,8 +14,67 @@
 .fotoSegundo{
   display: none;
 }
+.button-landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 650px;
+    width: 100%;
+    margin-right: 10%;
+   
+}
 
-
+.parrafo-features-landing{
+    display: flex;
+    color: white;
+    font-size: 1.5rem;
+    width: 90%;
+    font-family: rouben;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+}
+.contenedor-features{
+   height: 150px;
+}
+.linea{
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff67;
+    background-image: none;
+    transition: width .2s;
+}
+.linea-selected{
+    height: 2px;
+    background-color: #fff;
+    background-image: none;
+    width: 70%;
+    transition: width .5s;
+}
+.span-landing{
+    font-family: rouben ligth ;
+    color: white;
+    font-size: 2.5rem;
+    /* border-top: 3px solid rgba(255, 255, 255, 0.541); */
+    margin-right: 100px;
+    cursor: pointer;
+}
+.parrafo-landing{
+    display: flex;
+    
+    margin: 0px !important;
+}
+.span-landing-selected{
+    font-family: rouben ligth ;
+    color: white;
+    font-size: 2.5rem;
+    /* border-top: 3px solid white; */
+    margin-right: 100px;
+    background: linear-gradient(225deg, #fff 5%, #36B079 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
 .tituloSegundo{
     font-family: rouben;
     font-size: 3.5rem;
@@ -27,8 +84,7 @@
     background: linear-gradient(225deg,#fff,#36B079);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-   
+
 }
 .subtituloSegundo{
     font-family: rouben ligth;
@@ -81,7 +137,7 @@
    
        
     }
-  
+   
     
     .contenedorSegundo{
         display: flex;

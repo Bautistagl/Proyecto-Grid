@@ -39,17 +39,18 @@ function Navbar() {
 
 
         <div className="nav-items">
-        {/* <div onClick={() => toggleMenu()} className="hamburguer-navbar">
+      
+        <Link href="/">
+          <img className="navbar-logo" src="/gridCorregido.png" />
+        </Link>
+        <div onClick={() => toggleMenu()} className="hamburguer-navbar">
           {' '}
           {menu === false ? (
             <img className="hamburger-logo" src={'/menu.png'} />
           ) : (
             <img className="hamburger-logoCerrado" src={'/menuCerrado.png'} />
           )}{' '}
-        </div> */}
-        <Link href="/">
-          <img className="navbar-logo" src="/gridCorregido.png" />
-        </Link>
+        </div>
          <div className='un-contenedor'>
 
           <div onClick={() => {

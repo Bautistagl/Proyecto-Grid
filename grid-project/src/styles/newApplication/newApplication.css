@@ -6,6 +6,11 @@
     width: 80%;
     margin: auto;
 }
+.contenedor-flex-only3{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
 .div-newApp{
     font-size: 1.8rem;
     font-family: rouben ;
@@ -18,17 +23,27 @@
     font-family: rouben  ;
     font-size: 1.2rem;
     color: white;
-    margin: 10px;
+    margin: 10px 0px;
 }
 .span-newApp2{
     font-family: rouben ligth ;
     color: rgba(255, 255, 255, 0.713);
-    margin: 10px;
+    margin: 10px 10px;
 }
 .contenedor-newApp{
     display: flex;
+    margin-bottom: 50px;
     flex-direction: column;
-    margin-left: 320px;
+    margin-left: 280px;
+    margin-top: 30px;
+    color: #fff;
+    
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 65%;
+    border-radius: 15px;
+   
+    backdrop-filter: blur(10px);
   
 }
 
@@ -36,7 +51,7 @@
     height: 30px;
     width: 200px;
     border-radius: 5px;
-    margin-left: 10px;
+   
     background-color: rgb(39, 39, 39);
     border: 2px solid grey;
 }
@@ -48,7 +63,7 @@
     background-color: #0c1317d9;
     border-radius: 5px;
     border: 3px solid transparent;
-    margin-left: 10px;
+   
     cursor: pointer;
     justify-content: center;
     text-align: center;
@@ -94,13 +109,14 @@
     border-end-end-radius: 10px;
     border-end-start-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.509);
+    margin-bottom: 50px;
 }
 .button-newApp{
     display: flex;
     background-color: #0c1317d9;
     border: 3px solid transparent;
     width: 30%;
-    margin-left: 10px;
+   
     margin-bottom: 50px;
     font-family: rouben ligth;
 }
@@ -109,6 +125,12 @@
     background-color: #0c1317d9;
     box-shadow: none;
 
+}
+.boton-deploy{
+    display: flex;
+    width: 10%;
+    background-color:#36B079;
+    margin: 0px !important;
 }
 .modal-newApp{
     display: flex;
@@ -184,4 +206,41 @@
     margin-left: 250px;
     width: 15px;
     height: 15px;
+}
+@media only screen and (max-width:550px){
+    .contenedor-mobile-button{
+        width: 100%;
+    }
+    .contenedor-flex-only3{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .span-landing{
+        display: flex;
+        font-size: 1rem;
+        margin: 5px;
+        width: 100%;
+    }
+    .span-landing-selected{
+        font-size: 1rem;
+        margin: 5px;
+    }
+    .button-landing{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        margin: 0px !important;
+    }
+    .contenedor-features{
+        height: 70px;
+    }
+    .linea-selected{
+        width: 95%;
+    }
+    .parrafo-features-landing{
+        font-size: 1rem;
+        width: 100%;
+    }
 }

@@ -347,6 +347,7 @@
     }
     .only-flex{
       display: flex;
+      margin-top: 40%;
       
     }
     .menuMobileContainer2{

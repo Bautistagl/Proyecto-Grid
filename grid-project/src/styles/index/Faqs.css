@@ -113,23 +113,20 @@
  }
  
  .respuesta{
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: all 1s cubic-bezier(0,1,0,1);
+    /* transition: all 1s cubic-bezier(0,1,0,1); */
     display: flex;
-   
-  
     margin-bottom: auto;
-   
     font-family: rouben;
     font-size: 1.2rem;
     color: white;
  }   
  .respuesta-shown{
-    height: auto;
+    height: 100%;
     max-height: 9999px;
-    overflow: hidden;
-    transition: all 1s cubic-bezier(1,0,1,0);
+    /* overflow: hidden;
+    transition: all 1s cubic-bezier(1,0,1,0); */
     display: flex;
    
   
@@ -285,23 +282,20 @@
     } */
 
     .respuesta{
-        max-height: 0;
+       
         overflow: hidden;
-        transition: all 1s cubic-bezier(0,1,0,1);
+        transition: none;
         display: flex;
-       
-      
-        margin-bottom: auto;
-       
+        margin: 0px;
         font-family: rouben;
         font-size: 0.8rem;
         color: white;
      }   
      .respuesta-shown{
         height: 100%;
-        max-height: 9999px;
-        overflow: hidden;
-        transition: all 1s cubic-bezier(1,0,1,0);
+        
+        overflow:auto;
+        transition: none;
         display: flex;
         margin-bottom: auto;
         font-family: rouben;

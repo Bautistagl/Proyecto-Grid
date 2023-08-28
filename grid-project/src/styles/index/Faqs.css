@@ -161,26 +161,17 @@
     
  }
  
- .faqs-select:hover{
-  
-    letter-spacing: 1px;
- }
+
  .faqs-select{
     display: flex;
-
-   
-   
     font-family: rouben;
     width: 90%;
     font-size:1.5rem;
     color: white;
-
-    
     cursor: pointer;
     text-transform: uppercase;
-    
-    letter-spacing: 0px;
-    transition: letter-spacing 0.2s ease;
+   
+  
  }
 
  /* .faqs-respuesta{
@@ -304,7 +295,7 @@
         display: flex;
         margin-bottom: auto;
         font-family: rouben;
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: white;
      } 
      .contenedor-borde{
@@ -330,7 +321,7 @@
     }
     .faqs-normal{
         display: flex;
-       justify-content: center;
+      
        align-items: center;
         font-family: rouben;
         width: 100%;

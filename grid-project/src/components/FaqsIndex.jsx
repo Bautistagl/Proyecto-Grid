@@ -97,15 +97,8 @@ const FaqsIndex = () => {
            </div>
     </div>
         
-
-
-
-
-
-
-     <img alt='' src='faqsIlu.svg' className='faqs-ilu'/> 
-       
-
+     {/* <img alt='' src='faqsIlu.svg' className='faqs-ilu'/>  */}
+      
     </div>
   )
 }

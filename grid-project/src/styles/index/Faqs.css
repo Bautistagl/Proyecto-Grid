@@ -93,11 +93,9 @@
  .container-nuevoFaqs{
     display: flex;
     width: 80%;
-    margin-right: auto;
     /* background-color: #0c1317d9; */
     margin-top: 50px;
     margin-bottom: 200px;
-    border-radius: 10px;
     opacity: 0;
  }
 
@@ -315,7 +313,7 @@
      } 
      .contenedor-borde{
         border-bottom: 3px solid white;
-       height: 100%;
+      
        min-height: 0px !important;
         
      }
@@ -337,16 +335,20 @@
     }
     .faqs-normal{
         display: flex;
-       
-      
-        font-size: 1rem;
+       justify-content: center;
+       align-items: center;
+        font-family: rouben;
         width: 100%;
-    
-       
-        margin: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+        font-size:1rem;
+        color: rgba(255, 255, 255, 0.603);
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: lighter;
+        letter-spacing: 0px;
+        transition: none;
+        z-index: 9999;
+        
+     }
     .content{
         font-size: 12px;
     }

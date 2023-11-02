@@ -344,11 +344,40 @@
     display: flex;
     flex-direction: column;
     height: 700px;
-    width: 550px;
-    background: url('/fondoGlass2.svg');
-    background-size: cover;
+    width: 500px;
+    /* background: url('/fondoGlass2.svg');
+    background-size: cover; */
     border-radius: 20px;
     margin: 20px;
+    margin-top: 35px;
+  }
+  .nueva-card-hosting2 span{
+    color: white !important;
+  }
+  .titulo-card-nueva{
+    color: white !important;
+    font-size: 2.5rem;
+    font-family: rouben !important;
+
+  }
+  .primera-parte-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #36B079;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .nueva-card-botones{
+    display: flex;
+    margin: 10px auto;
+   
+  }
+  .nueva-card-botones button{
+    background-color: white;
+    color: black;
+    margin: 10px 5px;
+    border-radius: 50px;
   }
   .contenedor-nuevas{
       display: flex;
@@ -403,6 +432,18 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .grid-features-hosting2{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto ;
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-end-start-radius: 15px;
+    border-end-end-radius: 15px;
   }
   .linea-separadora{
     display: flex;

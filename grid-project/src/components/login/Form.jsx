@@ -23,12 +23,8 @@ function Form() {
     </div>
     <form className="login-form" onSubmit={handleSubmit}>
       <h2 className="login-title">Login to your Grid Mine account</h2>
-      <div className='github-login'> <img className='login-icono' alt='' src='/github.png'/> <span> Log in with GitHub</span></div>
-      <div className="login-separador">
-        <hr className="separator" />{' '}
-        <span className="letra-separador"> o </span>{' '}
-        <hr className="separator" />
-      </div>
+     
+     
       
       <input
         placeholder="Email"

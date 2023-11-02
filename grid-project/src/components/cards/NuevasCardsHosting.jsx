@@ -5,7 +5,7 @@ const NuevasCardsHosting = () => {
     <div className="contenedor-nuevas">
    
       <div className="nueva-card-hosting">
-        <h1> Web Hosting</h1>
+        <h1> Run Application</h1>
         <span className='primer-span'>
           Pay per use and scale indefenitely on metered billing. Does not
           include cost of the underlying cloud provider.
@@ -25,18 +25,25 @@ const NuevasCardsHosting = () => {
            
 
         </div>
-        <button className='boton-nuevas'> Select</button>
+        <button className='boton-nuevas'> Continue Setup</button>
       </div>
       <div className="nueva-card-hosting2">
-        <h1> Game Servers</h1>
+       <div className='primera-parte-card'>
+
+        <span className='titulo-card-nueva'> Start Saving Now</span>
         <span className='primer-span'>
-          Pay per use and scale indefenitely on metered billing. Does not
-          include cost of the underlying cloud provider.
+          Estimate the cost of your application on different cloud providers
         </span>
-        <h2> $6  <div className='falso-span'> per month </div>  GB RAM </h2>
-        <h2> $13 <div className='falso-span'> per month </div> vCPU </h2>
-        <div className='linea-separadora'></div>
-        <div className='grid-features-hosting'>
+        <div className='nueva-card-botones'>
+
+        <button>2 vCPU </button>
+        <button>4 vCPU </button>
+        <button>8 vCPU </button>
+        </div>
+       </div>
+       
+        {/* <div className='linea-separadora'></div> */}
+        <div className='grid-features-hosting2'>
             <span> Deploy from GitHub </span>
             <span> Unlimited Application </span>
             <span> Preview Environments </span>
@@ -47,7 +54,7 @@ const NuevasCardsHosting = () => {
             <span> Logging (7 days retention) </span>
            
         </div>
-        <button className='boton-nuevas'> Select</button>
+        {/* <button className='boton-nuevas'> Continue Setup</button> */}
       </div>
     </div>
   );

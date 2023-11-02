@@ -23,38 +23,33 @@ function Form() {
     </div>
     <form className="login-form" onSubmit={handleSubmit}>
       <h2 className="login-title">Create your Grid Mine account</h2>
-      <div className='github-login'> <img className='login-icono' alt='' src='/github.png'/> <span> Sign up with GitHub</span></div>
-      <div className="login-separador">
-        <hr className="separator" />{' '}
-        <span className="letra-separador"> o </span>{' '}
-        <hr className="separator" />
-      </div>
-      <div className='doble-contenedor'>
-      <input
-        placeholder="First name"
-        className="login-input-small"
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <input
-        placeholder="Last name"
-        className="login-input-small"
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-        
+   
+     
       
-     </div>
+      <input
+        placeholder="Username"
+        className="login-input"
+        type="email"
+        value={email}
+        
+        required
+      />
+     
+     <input
+       placeholder="Password"
+       className="login-input"
+       type="password"
+       value={password}
+       
+       required
+     />
+        <span > (Additional information)</span>
       <input
         placeholder="Company name"
         className="login-input"
         type="email"
         value={email}
-        onChange={(e) => setEmail(e.target.value)}
+    
         required
       />
       <input
@@ -62,15 +57,7 @@ function Form() {
         className="login-input"
         type="email"
         value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <input
-        placeholder="Password"
-        className="login-input"
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
+      
         required
       />
       <Link href="/profile">

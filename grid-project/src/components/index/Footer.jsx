@@ -76,9 +76,7 @@ const Footer = () => {
             <ul>
               <li>Blog </li>
              <li> Github</li>
-             <li>Brand Assets </li>
-              <li>Careers </li>
-             <li> Bug bounty</li>
+        
             </ul>
           </div>
       

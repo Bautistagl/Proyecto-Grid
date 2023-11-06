@@ -45,7 +45,7 @@ export default function Home() {
     }
   };
 
-  const ContactForm1 = React.forwardRef((props, ref) => (
+  const ContactForm1 = React.forwardRef((ref) => (
     // Renderiza el componente ContactForm y asigna la referencia al elemento principal.
     <div ref={ref}>
       <ContactForm/>

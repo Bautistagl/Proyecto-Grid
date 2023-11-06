@@ -1,9 +1,11 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
 function Form() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [view, setView] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,14 +36,14 @@ function Form() {
         onChange={(e) => setEmail(e.target.value)}
         required
       />
-      <input
-        placeholder="Password"
-        className="login-input"
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
+       <div class="input-container">
+     <input
+       placeholder="Password"
+       className="login-input"
+       type={view ? 'text' : 'password'}
+     />
+     <Image onClick={()=>{setView(!view)}} alt='' src={view ? '/hide2.png' : '/view.png'} width={25} height={25}/>
+</div>
       <Link href="/profile">
         <button className="login-submit" type="submit">
           Login

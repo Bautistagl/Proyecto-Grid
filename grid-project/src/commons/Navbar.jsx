@@ -18,7 +18,7 @@ const toggle = () => {
     <nav className='navbarLogged'>
       <div >
         <Link href="/">
-        <img className="logo-navbarLogged" src="/gridLogo1.png" alt="Logo" />
+        <img className="logo-navbarLogged" src="/gridCloud.svg" alt="Logo" />
         </Link>
       </div>
       <ul className='ul-logged'>

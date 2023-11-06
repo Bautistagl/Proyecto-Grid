@@ -28,7 +28,7 @@ const SideNavbar = () => {
    
       <ul className='sideNavbar-ul'>
         <Link href="/">
-      <img className='icono-sideBar-grid' src='/gridCorregido.png'/>
+      <img className='icono-sideBar-grid' src='/gridCloud.svg'/>
         </Link>
       <Link href="/profile">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar2' src='/homeDark.png'/>  Home</li>

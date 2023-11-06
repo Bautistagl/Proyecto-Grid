@@ -1,3 +1,4 @@
+import Guarantee from '@/commons/Guarantee';
 import Lottie from 'lottie-web'
 import React, { useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -63,6 +64,7 @@ const Segundo = () => {
       </div>
       <img className="fotoSegundo" src={'/mapa.png'} alt="" />
       {/* <div className='animacion-mundo' ref={container} > </div> */}
+      <Guarantee/>
     </section>
   );
 };

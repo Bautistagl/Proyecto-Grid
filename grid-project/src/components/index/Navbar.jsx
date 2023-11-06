@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import MenuMobile from '../MenuMobile';
-function Navbar() {
+function Navbar({ scrollToContactForm }) {
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
   const [menu, setMenu] = useState(false);
@@ -41,7 +41,7 @@ function Navbar() {
         <div className="nav-items">
       
         <Link href="/">
-          <img className="navbar-logo" src="/gridCorregido.png" />
+          <img className="navbar-logo" src="/gridCloud.svg" />
         </Link>
         <div onClick={() => toggleMenu()} className="hamburguer-navbar">
           {' '}
@@ -60,7 +60,8 @@ function Navbar() {
             }} className="nav-title"> Why choose us?
           <img className="downNavbar" src="/downNavbar.png" alt="" />
            </div>
-          <div className="nav-title"> Contact </div>  
+          <div onClick={()=>{scrollToContactForm()}} className="nav-title"> Contact </div>  
+          <div className="nav-title"> Pricing </div>  
           <div className="nav-title"> <Link href='https://cal.com/bautista-gonzalez-lazo-g8xn68' > Book a demo </Link> </div> 
          </div>
           <div  className='login-register'>

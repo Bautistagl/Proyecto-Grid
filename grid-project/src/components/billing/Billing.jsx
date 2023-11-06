@@ -26,12 +26,7 @@ const BillingInfo = () => {
           {' '}
           Payment History & Credits
         </span>
-        <span
-          className={`spanHosting-clickeable${selected === 2 ? 'focus' : ''}`}
-          onClick={() => toggle(2)}>
-          {' '}
-          Automatic Payments
-        </span>
+        
       </div>
       <div className='billing-mobile'>
         <div className='billing-titulo-mobile'> Invoice Type</div>
@@ -43,13 +38,7 @@ const BillingInfo = () => {
           <button> Asic Hosting</button>
         </div>
 
-        <div className='billing-titulo-mobile'> Due Date</div>
-        <div className='billing-buttons'>
-          <button> $0 - 1,000 </button>
-          <button> $1,000 - 10,000 </button>
-          <button> 10,000 - 100,000</button>
-          <button> More than $100,000</button>
-        </div>
+       
         <div className='billing-titulo-mobile'> Amount</div>
         <div className='billing-buttons'>
           <button> All </button>
@@ -63,20 +52,10 @@ const BillingInfo = () => {
         
         <BillingForms
           titulo='Invoice Type'
-          op1="All"
-          op2="Web Hosting"
-          op3="Email"
-          op4="Hardware"
-          op5="Asic Hosting"
+          op1="GridCloud service"
+          op2="Component Costs"
         />
-        <BillingForms
-          titulo='Due Date'
-          op1="Select a Range"
-          op2="$0 - 1,000"
-          op3="$1,000 - 10,000"
-          op4="10,000 - 100,000"
-          op5="More than $100,000"
-        />
+    
         <BillingForms
           titulo='Amount'
           op1="All"
@@ -85,9 +64,7 @@ const BillingInfo = () => {
           op4="Both"
           op5="None"
         />
-        <BillingForms
-        titulo='Applied funds'
-        op1="este es el calendario" />
+       
       </div>
       <div className='contenedor-invoices'> 
         <span> Looks like you dont have any outstanding invoices currently </span>

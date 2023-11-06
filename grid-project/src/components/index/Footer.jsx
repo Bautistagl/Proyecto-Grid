@@ -65,10 +65,8 @@ const Footer = () => {
               EXPLORE
            </div>
             <ul>
-             <li>App </li>
-             <li> Node</li>
-             <li>Miner </li>
-             <li>Buy Flux </li>
+             <li>Terms of service </li>
+             <li> Privacy policy</li>
             </ul>
          </div>
          <div  className='columna'> 

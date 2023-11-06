@@ -58,20 +58,14 @@ const ButtonsLanding = () => {
         )}
         {selected === 1 ? (
           <div className="parrafo-features-landing">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-            possimus animi sit recusandae, deleniti magni repudiandae corrupti,
-            veritatis rerum id officia, dicta eius! Dolore consequatur facilis
-            architecto unde enim! Doloribus.
+           Empower your Docker container with Grid flexible capabilities. Easily allocate resources, set environment variables, and fine-tune your networking preferences. Beneath the surface, it's your very own Docker Container, fully customizable to meet your unique requirements. Grid keeps a vigilant eye on your container, ensuring seamless scalability as your needs evolve
           </div>
         ) : (
           ''
         )}
         {selected === 2 ? (
           <div className="parrafo-features-landing">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque culpa
-            nemo alias hic soluta dolorem unde odio expedita tenetur, quos
-            excepturi illo ex ducimus quas necessitatibus pariatur. Accusantium,
-            reprehenderit ratione.
+           Thanks to Flux's distributed infrastructure, we can provide access to cost-effective computing power with an average reduction of 96.28% compared to a centralized infrastructure.
           </div>
         ) : (
           ''

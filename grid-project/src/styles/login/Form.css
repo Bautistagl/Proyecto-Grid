@@ -159,11 +159,12 @@
     font-family: rouben;
  }
  .member2-login{
-    color: #36B079;
+   font-size: 1rem !important;
+    color: #36B079 !important;
     cursor: pointer;
  }
  .member2-login:hover{
-    color: #7ce2b4;
+    color: #7ce2b4 !important;
     
  }
 

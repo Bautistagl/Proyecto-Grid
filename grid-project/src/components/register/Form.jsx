@@ -41,8 +41,8 @@ function Form() {
   return (
     <div className='contenedor-login'> 
     <div className='textos-login'> 
-    <div> Grid Mine </div>
-    <h1> Deploy and scale effortlessly with Grid Mine</h1>
+    <div> Grid Cloud </div>
+    <h1> Deploy and scale effortlessly with Grid Cloud</h1>
     <span> <img alt='' src=''/> 14 day free trial (no credit card required) </span>
     <span> <img alt='' src=''/> Generous stratup program for seed-stage companies </span>
     <span> <img alt='' src=''/> Use your AWS credits </span>
@@ -50,7 +50,7 @@ function Form() {
 
     </div>
     <form className="login-form" onSubmit={handleSubmit}>
-      <h2 className="login-title">Create your Grid Mine account</h2>
+      <h2 className="login-title">Create your Grid Cloud account</h2>
    
      
       

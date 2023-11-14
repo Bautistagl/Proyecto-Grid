@@ -14,12 +14,7 @@ const BillingInfo = () => {
 
       <div className="tituloPrincipal-hosting">Billing</div>
       <div className="contenedor-titulos-hosting-click">
-        <span
-          className={`spanHosting-clickeable${selected === 0 ? 'focus' : ''}`}
-          onClick={() => toggle(0)}>
-          {' '}
-          Outstanding Invoices{' '}
-        </span>
+      
         <span
           className={`spanHosting-clickeable${selected === 1 ? 'focus' : ''}`}
           onClick={() => toggle(1)}>

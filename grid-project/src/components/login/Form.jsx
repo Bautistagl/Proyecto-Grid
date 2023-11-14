@@ -15,16 +15,16 @@ function Form() {
   return (
     <div className='contenedor-login'> 
     <div className='textos-login'> 
-    <div> Grid Mine </div>
-    <h1> Welcome back to Grid Mine</h1>
-    <span> <img alt='' src=''/> Read the Grid Mine docs </span>
-    <span> <img alt='' src=''/> See whats new with Grid Mine </span>
+    <div> Grid Cloud </div>
+    <h1> Welcome back to Grid Cloud</h1>
+    <span> <img alt='' src=''/> Read the Grid Cloud docs </span>
+    <span> <img alt='' src=''/> See whats new with Grid Cloud </span>
     <span> <img alt='' src=''/> Join the community </span>
 
 
     </div>
     <form className="login-form" onSubmit={handleSubmit}>
-      <h2 className="login-title">Login to your Grid Mine account</h2>
+      <h2 className="login-title">Login to your Grid Cloud account</h2>
      
      
       
@@ -49,11 +49,11 @@ function Form() {
           Login
         </button>
       </Link>
-      <div className="forgot-login">Forgot your password?</div>
+      
       <div className="member-container">
         <div className="member-login">
           Not a member yet?
-          <span className="member2-login"> Choose a hosting plan </span>
+          <span className="member2-login"> Create an account </span>
           and start right now!
         </div>
       </div>

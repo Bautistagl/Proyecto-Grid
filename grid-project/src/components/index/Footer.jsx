@@ -2,14 +2,17 @@
 import React from 'react'
 
 const Footer = () => {
+  const openIntercom = () => {
+    window.Intercom('show');
+  };
   return (
     <div className='fondo-footer'>
-
+      
       <section className='container-footer'>
         <div className='columnas'> 
          <div className='columna-principal'>
             <div className='footer-titulo-principal'> 
-              GRID MINE
+              GRID CLOUD
             </div>
                     <div className='footer-parrafo'>
                     Flux is a decentralized Web3 cloud infrastructure comprised of user-operated, scalable and globally distributed computational nodes.
@@ -37,42 +40,29 @@ const Footer = () => {
       
          
          <div className='columna'> 
-            <div className='footer-titulo'>
-              ECOSYSTEM
-            </div>
+            
             <ul>
-               <li>FluxOS </li>
-               <li>Apps</li>
-               <li>FluxNodes </li>
-               <li>Flux </li>
-               <li> Parallel Mining</li>
+               <li>About </li>
+               <li>Pricing</li>
             </ul>
          </div>
          <div className='columna'> 
-            <div className='footer-titulo'>
-               DISCOVER
-            </div>
+          
             <ul>
-              <li>FluxLabs </li>
-              <li> Carbon Neutrality</li>
-              <li> Whitepaper</li>
-              <li>Roadmap</li>
-             <li>Team</li>
+              <li>Github</li>
+              <li> Docs</li>
+              <li> Blog</li>
             </ul>
          </div>
          <div className='columna'> 
-           <div className='footer-titulo'>
-              EXPLORE
-           </div>
+          
             <ul>
              <li>Terms of service </li>
              <li> Privacy policy</li>
             </ul>
          </div>
          <div  className='columna'> 
-            <div className='footer-titulo'>
-              COMMUNITY
-            </div>
+            
             <ul>
               <li>Blog </li>
              <li> Github</li>
@@ -82,7 +72,7 @@ const Footer = () => {
       
         </div>
         <div className='licencias-footer'>
-        © 2023 Grid Mine |
+        © 2023 Grid Cloud |
         <span> <a href='#'> Políticas de Privacidad  </a> </span> |
         <span> <a href='#'> Términos y condiciones  </a></span>
         </div>

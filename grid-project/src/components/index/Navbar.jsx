@@ -63,6 +63,7 @@ function Navbar({ scrollToContactForm }) {
           <div onClick={()=>{scrollToContactForm()}} className="nav-title"> Contact </div>  
           <div className="nav-title"> Pricing </div>  
           <div className="nav-title"> <Link href='https://cal.com/bautista-gonzalez-lazo-g8xn68' > Book a demo </Link> </div> 
+          <div className="nav-title"> Docs</div>  
          </div>
           <div  className='login-register'>
 

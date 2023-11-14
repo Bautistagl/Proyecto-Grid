@@ -10,7 +10,7 @@ const FirstPart = () => {
       <h1> About Grid Mine + Grid Cloud </h1>
       <div>
         {' '}
-        Founded in 2020, Grid Mine is a company committed to the vision of
+        Founded in 2020, Grid Cloud is a company committed to the vision of
         shifting the economy to a protocol governed by mathematics rather than
         politics. In a world where trust in traditional institutions has been
         eroded, we firmly believe in the transformative power of blockchain

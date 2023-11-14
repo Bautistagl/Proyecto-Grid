@@ -66,7 +66,7 @@ const SideNavbar = () => {
         
       <button className='logout-sidebar'> Logout </button>
       </ul>
-          <img alt='' src='/gridLogo1.png' className='sidebar-grid' />
+          <img alt='' src='/gridCloud.svg' className='sidebar-grid' />
 
           
           {menu === false ? (

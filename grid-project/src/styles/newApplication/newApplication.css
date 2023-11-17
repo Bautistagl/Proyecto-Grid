@@ -77,15 +77,19 @@
 }
 .card-newApp input{
     position: absolute;
-    width: 30%;
-    margin: auto;
+    left: 1;
+    width: 378px;
+    margin-left: -2px;
     margin-top: 210px;
     height: 25px;
-    background-color: transparent;
-    border: 2px solid white;
+    color: white;
+    background-color: #0c1317d9;
+    border: 2px solid #0c1317d9;
     border-radius: 5px;
-   
-    
+}
+
+.card-newApp input::placeholder{
+    color: rgba(255, 255, 255, 0.356);
 }
 .icon-card-newApp{
     display: flex;

@@ -51,7 +51,7 @@ const NewApplicationj = () => {
               {' '}
               Deploy using source from a Git repo.{' '}
             </span>
-            
+         
           </div>
           <div style={{ marginLeft: '30px' }} className="card-newApp">
             <Image
@@ -66,7 +66,7 @@ const NewApplicationj = () => {
               {' '}
               Deploy a container from an image registry.{' '}
             </span>
-            <input placeholder='Docker image namespace/repository:tag' />
+            <input  placeholder='Docker image namespace/repository:tag' />
           </div>
         </div>
        

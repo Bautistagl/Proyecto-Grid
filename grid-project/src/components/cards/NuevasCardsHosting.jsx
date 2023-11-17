@@ -1,12 +1,14 @@
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import Typed from 'typed.js';
 
 const NuevasCardsHosting = () => {
   const opciones = ["Applications", "Web Apps", "Databases"];
   const [indice, setIndice] = useState(0);
   const [selectedOption, setSelectedOption] = useState(0);
 
-
+  const el = useRef(null);
+  const typed = useRef(null)
   const options = [
     {
       title: '8 GB MEMORY / 100 GB STORAGE',
@@ -39,26 +41,35 @@ const NuevasCardsHosting = () => {
     setSelectedOption(index);
   };
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      // Calcula el próximo índice en el bucle cíclico
-      const siguienteIndice = (indice + 1) % opciones.length;
-      setIndice(siguienteIndice);
-    }, 4000);
-
-    return () => {
-      // Limpia el intervalo cuando el componente se desmonta
-      clearInterval(intervalId);
+    const options = {
+    	strings: [
+        'Run Applications',
+        'Run Web Apps',
+        'Run Databases'
+      ],
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true,
+      cursorChar: ''
     };
-  }, [indice, opciones]);
+    
+    // elRef refers to the <span> rendered below
+    typed.current = new Typed(el.current, options);
+      
+    return () => {
+      // Make sure to destroy Typed instance during cleanup
+      // to prevent memory leaks
+      typed.current.destroy();
+    }
+  }, [])
 
   return (
     <div className="contenedor-nuevas">
    
       <div className="nueva-card-hosting">
-        <h1> 
-          Run
-    {opciones[indice]}
-        </h1>
+      <div className="type-wrap">
+        <h1 ref={el}></h1>
+      </div>
         <span className='primer-span'>
         Pay per use and scale indefenitely. The cost of grid cloud includes the underlying cloud provider.
         </span>
@@ -132,14 +143,7 @@ const NuevasCardsHosting = () => {
                 </div>
 
                </div>
-            {/* <span> Deploy from GitHub </span>
-            <span> Unlimited Application </span>
-            <span> Preview Environments </span>
-            <span> Autoscaling </span>
-            <span> Jobs & Cron Jobs </span>
-            <span> Certificate Management </span>
-            <span> Monitoring (30 days retention) </span>
-            <span> Logging (7 days retention) </span> */}
+        
            
         </div>
         {/* <button className='boton-nuevas'> Continue Setup</button> */}

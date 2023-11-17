@@ -53,7 +53,9 @@ function Form() {
       <div className="member-container">
         <div className="member-login">
           Not a member yet?
+          <Link href='/register'>
           <span className="member2-login"> Create an account </span>
+          </Link>
           and start right now!
         </div>
       </div>

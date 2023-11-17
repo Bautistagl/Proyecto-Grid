@@ -60,11 +60,8 @@ const NuevasCardsHosting = () => {
     {opciones[indice]}
         </h1>
         <span className='primer-span'>
-          Pay per use and scale indefenitely on metered billing. Does not
-          include cost of the underlying cloud provider.
+        Pay per use and scale indefenitely. The cost of grid cloud includes the underlying cloud provider.
         </span>
-        <h2> $6  <div className='falso-span'> per month </div>  GB RAM </h2>
-        <h2> $13 <div className='falso-span'> per month </div> vCPU </h2>
         <div className='linea-separadora'></div>
         <div className='grid-features-hosting'>
             <span> Deploy from GitHub </span>

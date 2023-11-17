@@ -65,7 +65,9 @@ export default function LoggedLogin() {
             <div className="contenedor-flex-only2">
 
          <input placeholder="Search..." className="input-proyecto" />
-         <button className="new-button" > <Link href='/profile/newApplication'> + </Link>  </button>
+         <Link href='/profile/newApplication'> 
+         <button className="new-button" >  +   </button>
+         </Link>
             </div>
          <button className='button-proyecto'> <Link href='/profile/newApplication'> Add New... </Link>  </button>
          <BeforeBuy/>

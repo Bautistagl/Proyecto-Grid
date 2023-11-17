@@ -25,7 +25,7 @@ const NewApplicationj = () => {
         <span className="span-newApp"> Application name </span>
         <span className="span-newApp2">
           {' '}
-          Lowercase letters, numbers, and - only.{' '}
+          Only Lowercase and Uppercase letters.{' '}
         </span>
         <input className="input-newApp" placeholder="ex: grid-project" />
 
@@ -51,6 +51,7 @@ const NewApplicationj = () => {
               {' '}
               Deploy using source from a Git repo.{' '}
             </span>
+            
           </div>
           <div style={{ marginLeft: '30px' }} className="card-newApp">
             <Image
@@ -61,12 +62,14 @@ const NewApplicationj = () => {
               width={50}
             />
             <span className="span-newApp"> Docker registry </span>
-            <span className="span-newApp2">
+            <span  className="span-newApp2">
               {' '}
               Deploy a container from an image registry.{' '}
             </span>
+            <input placeholder='Docker image namespace/repository:tag' />
           </div>
         </div>
+       
         <span style={{ marginTop: '40px' }} className="span-newApp">
           {' '}
           Application services{' '}

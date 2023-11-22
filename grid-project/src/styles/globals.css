@@ -24,6 +24,14 @@ input:focus {
   border: none;
   /* Otros estilos que desees aplicar cuando el input está enfocado */
 }
+input{
+  outline: none;
+  border: none;
+}
+textarea{
+  outline: none;
+  border: none;
+}
 
 
 

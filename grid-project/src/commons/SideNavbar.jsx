@@ -3,11 +3,12 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 
-const SideNavbar = () => {
+const SideNavbar = ({abierto,setAbierto}) => {
 
   const[visible, setVisible] = useState(true)
   const [selected, setSelected] = useState(false);
   const [menu,setMenu] = useState(false)
+
 
   const toggleSideBar = () => {
      return setVisible(!visible)
@@ -65,6 +66,12 @@ const SideNavbar = () => {
         </Link>
         
       <button className='logout-sidebar'> Logout </button>
+      <div className='footer-sidebar' >
+
+      <span> Feedback </span>
+      <span> Invite a Friend</span>
+      <span onClick={()=>setAbierto(!abierto)}> Contact Support</span>
+      </div>
       </ul>
           <img alt='' src='/gridCloud.svg' className='sidebar-grid' />
 

@@ -5,6 +5,7 @@
     display: flex;
     width: 80%;
     align-items: baseline;
+    margin-bottom: -50px;
    
 }
 .contenedor-flex-only3{
@@ -149,6 +150,90 @@
     background-color:#36B079;
     margin: 0px !important;
 }
+.modal-contact{
+    position: fixed;
+    top: 10%;
+    right: 25%;
+    height: 70vh;
+    width: 700px;
+    background-color: #0c1317;
+    border-radius: 10px;
+    border: 2px solid #36B079;
+    color: white;
+    z-index: 1000;
+}
+.modal-contact h1{
+    color: white;
+    font-family: rouben ligth;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.modal-contact span{
+    color: rgba(255, 255, 255, 0.83);
+    font-family: rouben ligth;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    margin-left: 20px;
+  
+}
+.modal-contact label {
+    color: rgba(255, 255, 255, 0.83);
+    font-family: rouben ligth;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    margin-left: 20px;
+  
+}
+.modal-contact textarea {
+    width: 70%;
+    height: 10vh;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+}
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.botones-contact{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 50px;
+}
+.contact-inputs input{
+    width: 50%;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+}
+.contact-inputs textarea:focus{
+    border: 3px solid #36B079;
+}
+.contact-inputs input:focus{
+    border: 3px solid #36B079;
+}
+.modal-contact img{
+    display: flex;
+    justify-content: flex-end;
+    text-align: flex-end;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 10px;
+    border: 2px solid #36B079;
+    padding: 3px;
+    border-radius: 50%;
+}
 .modal-newApp{
     display: flex;
     flex-direction: column;
@@ -227,9 +312,9 @@
 .images-inputs input{
   width: 350px;
 
-    
-  
 }
+
+
 @media only screen and (max-width:550px){
     .contenedor-mobile-button{
         width: 100%;

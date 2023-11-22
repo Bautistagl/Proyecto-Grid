@@ -88,6 +88,21 @@ margin-left: -10px;
     cursor:default;
     margin-left: 15px;
 }
+
+.footer-sidebar{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.footer-sidebar span{
+    margin: 20px;
+    cursor: pointer;
+}
+.footer-sidebar span:hover{
+    font-family: rouben;
+    letter-spacing: 1px;
+}
+
 .titulo-servicios-sidenavbar:hover{
     color: white;
     font-weight: lighter;

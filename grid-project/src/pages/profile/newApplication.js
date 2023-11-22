@@ -25,7 +25,7 @@ export default function NewApplication ()  {
          <>
           <div className="boton-sidebar-ocultar" onClick={()=>{ toggleSideBar()}}> <img className="icon-ocultar" alt="" src='/equal2.png'/> </div>
          <DynamicNavbar/>
-        </>  }
+        </> }
         <NewApplicationj/>
         </div>
     )

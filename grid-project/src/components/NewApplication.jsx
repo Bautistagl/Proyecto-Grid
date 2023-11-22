@@ -27,7 +27,7 @@ const NewApplicationj = () => {
           {' '}
           Only Lowercase and Uppercase letters.{' '}
         </span>
-        <input className="input-newApp" placeholder="ex: grid-project" />
+        <input className="input-newApp" placeholder="ex: gridproject" />
 
         <span style={{ marginTop: '40px' }} className="span-newApp">
           {' '}

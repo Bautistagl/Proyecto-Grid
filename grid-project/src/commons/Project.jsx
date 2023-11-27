@@ -1,12 +1,15 @@
+import Link from 'next/link';
 import React, { useState } from 'react'
 
-const Project = () => {
+const Projectx = () => {
   const [selected, setSelected] = useState(0);
   const toggle = (i) => {
       return setSelected(i);
     };
   return (
    
+    <>
+    <Link href='/profile/project/events'>
     <div style={{height:'60px'}} className="titulos-home2">
       
       <span style={{marginRight:'5vw'}}>nippon</span>
@@ -23,8 +26,10 @@ const Project = () => {
       <span>4 days ago</span>
     
    </div>
+    </Link>
+    </>
     
   )
 }
 
-export default Project
+export default Projectx

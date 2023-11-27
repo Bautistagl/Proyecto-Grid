@@ -8,7 +8,7 @@
     margin-left: 20px;
   }
   .logo-navbarLogin {
-    width: 12vw;
+    width: 5vw;
     margin-top: 10px;
     margin-left: 10px;
   }
@@ -16,7 +16,7 @@
   @media only screen and (max-width: 500px) {
 
     .logo-navbarLogin {
-      width: 8rem;
+      width: 3rem;
       height: 3rem;
       margin-top: 10px;
       margin-left: 10px;

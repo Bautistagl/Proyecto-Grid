@@ -17,6 +17,7 @@ import "../styles/buyProduct.css"
 import "../styles/Billing/Billing.css"
 import "../styles/aboutUs/aboutUs.css"
 import "../styles/newApplication/newApplication.css"
+import "../styles/projectsx/ProjectData.css"
 
 
 export default function App({ Component, pageProps }) {

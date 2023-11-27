@@ -7,7 +7,7 @@ const Navbar = () => {
       <div >
         <Link href="/">
         
-        <img className="logo-navbarLogin" src="/gridCloud.svg" alt="Logo" />
+        <img className="logo-navbarLogin" src="/gridInvisible.png" alt="Logo" />
         </Link>
       </div>
     </nav>

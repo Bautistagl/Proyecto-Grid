@@ -20,7 +20,7 @@ const SharedInfo = () => {
           }`}
           onClick={() => toggle(1)}>
           {' '}
-          Hosting Web
+          Application
         </span>
       </div>
 

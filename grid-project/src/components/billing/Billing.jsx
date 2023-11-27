@@ -37,9 +37,7 @@ const BillingInfo = () => {
         <div className='billing-titulo-mobile'> Amount</div>
         <div className='billing-buttons'>
           <button> All </button>
-          <button> Credits </button>
           <button> Wallet</button>
-          <button> Both</button>
           <button> None</button>
         </div>
       </div>

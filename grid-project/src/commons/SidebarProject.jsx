@@ -47,13 +47,13 @@ const SidebarProject = ({abierto,setAbierto}) => {
        
 
 
-        <Link href="/profile/ssl">  
+        <Link href="/profile/project/headers">  
         <li  className='sideNavbar-li'>  Headers</li>
         </Link>
-        <Link href="/profile/security"> 
+        <Link href="/profile/project/preview"> 
          <li className='sideNavbar-li'>  Preview</li>
         </Link>
-        <Link href="/profile/sharedAccount"> 
+        <Link href="/profile/project/metric"> 
         <li className='sideNavbar-li'>  Metrics</li>
         </Link>
         <Link href="/profile/sharedAccount"> 

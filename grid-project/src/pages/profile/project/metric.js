@@ -1,5 +1,6 @@
 import ProjectInfo from '@/commons/ProjectInfo'
-import RedirectScreen from '@/components/projectsx/RedirectScreen'
+import MetricScreen from '@/components/projectsx/MetricScreen'
+
 import dynamic from 'next/dynamic'
 
 import { useState } from 'react'
@@ -11,7 +12,7 @@ const DynamicNavbar = dynamic(()=>import("../../../commons/SidebarProject"),
 )
 
 
-export default function Redirect ()  {
+export default function Metric ()  {
 
 
   const[visible, setVisible] = useState(true)
@@ -29,7 +30,8 @@ export default function Redirect ()  {
          <DynamicNavbar/>
         </> }
           <ProjectInfo/>
-          <RedirectScreen/>
+          <MetricScreen/>
+          
         </div>
     )
 

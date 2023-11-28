@@ -98,3 +98,38 @@
     background-color: #36B079;
     width: 20vw;
 }
+.inputs-headers{
+    display: flex;
+}
+.inputs-headers div{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: center;
+}
+.inputs-headers img{
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}
+.inputs-headers label{
+    font-family: rouben;
+}
+.inputs-headers input{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-right: 100px;
+}
+.botones-header{
+    display: flex;
+    width: 45%;
+   margin-left: auto;
+}
+.botones-header button{
+    margin: 10px;
+}

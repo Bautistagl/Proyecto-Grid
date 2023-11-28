@@ -1,6 +1,5 @@
 import ProjectInfo from '@/commons/ProjectInfo'
-import DataDeploys from '@/components/projectsx/DataDeploys'
-import EnvironmentScreen from '@/components/projectsx/EnvironmentScreen'
+import HeadersScreen from '@/components/projectsx/HeadersScreen'
 import dynamic from 'next/dynamic'
 
 import { useState } from 'react'
@@ -30,6 +29,7 @@ export default function Headers ()  {
          <DynamicNavbar/>
         </> }
           <ProjectInfo/>
+          <HeadersScreen/>
           
         </div>
     )

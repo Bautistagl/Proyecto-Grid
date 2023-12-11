@@ -530,9 +530,11 @@
   .aboutUs-final2{
     display: flex;
     flex-direction: column;
-    background-color: #0c1317;
+    background: url('/FondoEnterprise.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 70%;
-    height: 300px;
+    height: 350px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -548,6 +550,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 2.5rem;
+    margin-top: 60px;
   
    
 }
@@ -564,6 +567,20 @@
     font-size: 1.5rem;
     font-weight: lighter;
   
+}
+.aboutUs-final2 span {
+  color: white;
+
+  font-family: rouben ligth;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+ 
+
 }
 .contenedor-flex2{
     display: flex;
@@ -593,12 +610,33 @@
     .tituloBestOption{
         margin-top: -900px;
     }
+    .aboutUs-final2{
+ 
+      background: url('/FondoEnterprise.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 700px;
+     
+    }
+    .aboutUs-final2 span {
+
+      justify-content: center;
+      text-align: center;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+     
+    
+    }
     
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
 
-
+    .contenedor-flex2{
+      margin-top: 50px ;
+    }
     .contenedorCards2{
         
     }
@@ -611,7 +649,46 @@
 
         margin-left: 0;
     }
+    .contenedor-flex2{
+      margin-top: 0px ;
+    }
     
+}
+@media only screen and (max-width: 1200px) {
+
+  .aboutUs-final2 h1{
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  .contenedor-flex2{
+    margin-top: 30px ;
+  }
+  .aboutUs-final2 span{
+    font-size: 20px;
+  }
+  .aboutUs-final2 h3{
+    font-size: 18px;
+  }
+  .botones-aboutUs{
+    width: 30% !important;
+    padding: 10px;
+    
+  }
+  .botones-aboutUs2{
+    width: 30% !important;
+    padding: 10px;
+    justify-content: center;
+    
+    margin-top: auto;
+    
+  }
+  
+}
+@media only screen and (max-width:1000px){
+  .contenedor-flex2{
+    margin-top: 0px ;
+  }
 }
 @media only screen and (max-width: 550px) {
     .contenedor-nuevas{

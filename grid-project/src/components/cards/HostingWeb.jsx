@@ -50,7 +50,7 @@ const HostingWeb = () => {
         <div className='aboutUs-final2'>
 
     <h1> Enterprise</h1>
-    <h3> Get volume discount along with enterprise-grade support and features</h3>
+    <span> Get volume discount along with enterprise-grade support and features</span>
     <h3> Volume Discount Available</h3>
     
     <div className='contenedor-flex2'> 

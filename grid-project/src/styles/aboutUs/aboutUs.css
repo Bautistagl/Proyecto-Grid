@@ -98,16 +98,18 @@
 .botones-aboutUs2{
     display: flex;
    margin-right: auto;
-   width: 40%;
+   width: 20%;
    background-color: #36B079;
+   justify-content: center;
    
    
 }
 .botones-aboutUs{
     display: flex;
    margin-left: auto;
+   justify-content: center;
    background-color: #36B079;
-   width: 40%;
+   width: 20%;
 }
 .contenedor-flex{
     margin-bottom: 50px;

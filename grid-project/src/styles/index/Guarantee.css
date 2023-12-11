@@ -1,15 +1,17 @@
 .guarantee-container{
     
-    width: 35%;
-    height: 70%;
+    width: 700px;
+    height: 200px;
     border-radius: 20px;
     text-align: flex-start;
     display: flex;
     align-items: center;
-    background-color: #0c1317;
+    background: url('/FondoEnterprise.png');
+    background-size: cover;
     margin-right: auto;
     margin-left: auto;
     margin-top: -50px;
+    padding: 50px;
     /* background-image: url('../assets/guarantee5.jpg'); 
     background-size: cover;
     background-position: center center;
@@ -46,7 +48,7 @@
     font-family: rouben;    
 }
 .guarantee-texts{
-    width: 400px;
+    width: 70%;
 }
 
 .guarantee-button{
@@ -71,10 +73,27 @@
 
 }
 @media  only screen and (max-width:1300px){
-    .guarantee-container{
+    /* .guarantee-container{
     
         width: 380px;
        
+    } */
+}
+@media  only screen and (max-width:900px){
+    .guarantee-container{
+    
+        width: 580px;
+        height: 156px;
+       
+    }
+    .guarantee-titulo{
+        font-size: 1.5rem;
+    }
+    .guarantee-subtitulo{
+        font-size: 0.85rem;
+    }
+    .guarantee-button{
+        padding: 10px;
     }
 }
 @media  only screen and (max-width:550px){
@@ -86,7 +105,7 @@
         text-align: flex-start;
         display: flex;
         align-items: center;
-        background-color: white;;
+        
     }
 
     .guarantee-button{

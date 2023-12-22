@@ -1,6 +1,11 @@
 .contenedor-flex-only{
     display: flex;
 }
+.contenedor-flex-only4{
+    display: flex;
+    justify-content: center;
+    margin-top:60px ;
+}
 .contenedor-flex-only2{
     display: flex;
     width: 80%;
@@ -14,10 +19,11 @@
     margin: auto;
 }
 .div-newApp{
-    font-size: 1.8rem;
-    font-family: rouben ;
+    font-size: 1.2rem;
+    font-family: rouben ligth ;
+    letter-spacing: 1px;
     color: white;
-    margin: 10px;
+    margin: auto 10px;
 }
 
 
@@ -40,8 +46,8 @@
     margin-top: 30px;
     color: #fff;
     
-    background-color: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.1);
+    
+   
     width: 65%;
     border-radius: 15px;
    
@@ -60,28 +66,28 @@
 .card-newApp{
     display: flex;
     flex-direction: column;
-    height: 170px;
+    height: 25vh;
     width: 380px;
     background-color: #0c1317d9;
     border-radius: 5px;
-    border: 3px solid transparent;
-   
+    border: 2px solid transparent;
+    margin: 50px auto;
     cursor: pointer;
-    justify-content: center;
     text-align: center;
 }
+.icono-titulo{
+    margin-top: 10px;
+}
 .card-newApp:active{
-    border: 3px solid #36B079;
+    border: 2px solid white;
 }
 .card-newApp:hover{
-    border: 3px solid #36B079;
+    border: 2px solid white;
 }
 .card-newApp input{
-    position: absolute;
-    left: 1;
-    width: 378px;
-    margin-left: -2px;
-    margin-top: 210px;
+   
+    width: 20vw;
+    margin: auto;
     height: 25px;
     color: white;
     background-color: #0c1317d9;
@@ -133,13 +139,15 @@
     display: flex;
     background-color: #0c1317d9;
     border: 3px solid transparent;
-    width: 30%;
-   
+    width: 40% !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    justify-content: center !important;
     margin-bottom: 50px;
     font-family: rouben ligth;
 }
 .button-newApp:hover{
-    border: 3px solid #36B079;
+  
     background-color: #0c1317d9;
     box-shadow: none;
 

@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import ModalNewApp from './ModalNewApp';
+import WhatApp from './deployBoxes/WhatApp';
+import NameBox from './deployBoxes/NameBox';
+import DeployMethod from './deployBoxes/DeployMethod';
+import EnvVariables from './deployBoxes/EnvVariables';
+import PreDeploy from './deployBoxes/PreDeploy';
 
 const NewApplicationj = () => {
   const [selected, setSelected] = useState(0);
@@ -12,7 +17,7 @@ const NewApplicationj = () => {
     <>
     <div style={{opacity:'0'}}>.</div>
       <div className="contenedor-newApp">
-        <div className="contenedor-flex-only">
+        <div className="contenedor-flex-only4">
           <Image
             style={{ marginRight: '10px' }}
             alt=""
@@ -20,9 +25,16 @@ const NewApplicationj = () => {
             width={50}
             height={50}
           />
-          <div className="div-newApp"> Deploy a new application</div>
+          <div className="div-newApp"> LETS GET STARTED!</div>
         </div>
-        <span className="span-newApp"> Application name </span>
+        <WhatApp/>
+        <NameBox/>
+        <DeployMethod/>
+        <EnvVariables/>
+        <PreDeploy/>
+        <div className="div-newApp"> WERE DONE!</div>
+        <button> Deploy now</button>
+        {/* <span className="span-newApp"> Application name </span>
         <span className="span-newApp2">
           {' '}
           Only Lowercase and Uppercase letters.{' '}
@@ -77,8 +89,8 @@ const NewApplicationj = () => {
         <button onClick={() => setModal(true)} className="button-newApp">
           {' '}
           + Add a new service{' '}
-        </button>
-        {modal ? (
+        </button> */}
+        {/* {modal ? (
           <div className="modal-newApp">
             <div className="contenedor-flex2">
               <h1> Add a new service </h1>
@@ -111,8 +123,8 @@ const NewApplicationj = () => {
           </div>
         ) : (
           ''
-        )}
-        <div className="webCard-newApp">
+        )} */}
+        {/* <div className="webCard-newApp">
           <div className="titulo-webCard">
             <div className="contenedor-flex-only">
               <img className="icon-webCard" alt="" src="/downNavbar.png" />
@@ -198,7 +210,7 @@ const NewApplicationj = () => {
           {' '}
           + Add a new pre-deploy job{' '}
         </button>
-        <button className='boton-deploy'> Deploy app</button>
+        <button className='boton-deploy'> Deploy app</button> */}
       </div>
       <div style={{opacity:'0'}}>.</div>
     </>

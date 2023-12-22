@@ -17,6 +17,10 @@ import "../styles/buyProduct.css"
 import "../styles/Billing/Billing.css"
 import "../styles/aboutUs/aboutUs.css"
 import "../styles/newApplication/newApplication.css"
+import "../styles/deployBoxes/whatApp.css"
+import "../styles/deployBoxes/nameBox.css"
+import "../styles/deployBoxes/deployMethod.css"
+import "../styles/deployBoxes/envVaribales.css"
 import "../styles/projectsx/ProjectData.css"
 
 

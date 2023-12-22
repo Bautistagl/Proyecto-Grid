@@ -1,0 +1,26 @@
+.whatApp-container{
+    background-color: rgba(255, 255, 255, 0.070);
+    width: 80%;
+    border-radius:5px;
+    height: auto;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+    
+}
+.whatApp-container h2{
+    font-family: rouben ligth;
+    letter-spacing: 1px;
+    margin-bottom: 50px ;
+    margin-top: 40px;
+}
+.whatApp-container button{
+    background-color: #36B079;
+    border-radius: 13px;
+    font-weight: lighter;
+    font-family: rouben ;
+    font-size: 1rem;
+    width: 11vw;
+    padding: 5px;
+    margin-bottom: 30px;
+}

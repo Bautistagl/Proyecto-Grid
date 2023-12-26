@@ -3,6 +3,7 @@ import React from 'react'
 
 const DeployMethod = () => {
   return (
+    <>
     <div className='deployMethod-container'>
         <h2>Select a deployment method</h2>
         <span>Deploy from a Git repository or a Docker registry.</span>
@@ -45,6 +46,8 @@ const DeployMethod = () => {
           </div>
         </div>
     </div>
+    <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={30} height={30} src='/dots.png'/>
+    </>
   )
 }
 

@@ -54,6 +54,15 @@
     backdrop-filter: blur(10px);
   
 }
+.deploy-now{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color:#36B079 ;
+    margin: auto;
+}
 
 .input-newApp{
     height: 30px;
@@ -74,6 +83,53 @@
     margin: 50px auto;
     cursor: pointer;
     text-align: center;
+}
+.card-newApp2{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 380px;
+    background-color: #0c1317d9;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin: 50px auto;
+    cursor: pointer;
+    text-align: center;
+}
+.card-newApp2 label{
+    display: flex;
+    width: 20vw;
+    margin: auto;
+    font-family: rouben ligth;
+    color: rgba(255, 255, 255, 0.739);
+}
+.icono-titulo{
+    margin-top: 10px;
+}
+.card-newApp2:active{
+    border: 2px solid white;
+}
+
+.card-newApp2 input{
+   
+    width: 20vw;
+    margin: auto;
+    height: 25px;
+    color: white;
+    background-color: #0c1317d9;
+    border: 2px solid #0c1317d9;
+    border-radius: 5px;
+}
+
+.card-newApp2 input::placeholder{
+    color: rgba(255, 255, 255, 0.356);
+}
+.card-newApp label{
+    display: flex;
+    width: 20vw;
+    margin: auto;
+    font-family: rouben ligth;
+    color: rgba(255, 255, 255, 0.739);
 }
 .icono-titulo{
     margin-top: 10px;

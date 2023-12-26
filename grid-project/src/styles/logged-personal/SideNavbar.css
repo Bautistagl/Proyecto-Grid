@@ -44,7 +44,7 @@ margin-left: -10px;
 .sideNavbar-li{
     display: flex;
     align-items: center;
-    font-family: rouben;
+    font-family: rouben ligth;
     padding: 5px 5px;
     width: 90%;
     height: 40px;
@@ -84,9 +84,10 @@ margin-left: -10px;
     font-family: rouben;
     font-size: 0.8rem;
     letter-spacing: 1.5px;
+   
     font-weight: lighter;
     cursor:default;
-    margin-left: 15px;
+    margin-left: 18px !important;
 }
 
 .footer-sidebar{
@@ -115,6 +116,7 @@ margin-left: -10px;
     width: 165px;
     margin-top: 10%;
     margin-left: 22px;
+    margin-bottom: 5vh;
 }
 
 .li-asicHosting{

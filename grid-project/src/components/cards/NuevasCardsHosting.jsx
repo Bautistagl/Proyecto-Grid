@@ -70,9 +70,10 @@ const NuevasCardsHosting = () => {
       <div className="type-wrap">
         <h1 ref={el}></h1>
       </div>
-        <span className='primer-span'>
+        <span style={{marginBottom:'13vh'}} className='primer-span'>
         Pay per use and scale indefenitely. The cost of grid cloud includes the underlying cloud provider.
         </span>
+        
         <div className='linea-separadora'></div>
         <div className='grid-features-hosting'>
             <span> Deploy from GitHub </span>
@@ -101,45 +102,74 @@ const NuevasCardsHosting = () => {
         <button onClick={() => handleOptionClick(1)}>4 vCPU</button>
         <button onClick={() => handleOptionClick(2)}>8 vCPU</button>
         </div>
+        <div className='linea-separadora'></div>
 
        </div>
        
         {/* <div className='linea-separadora'></div> */}
         <div className='grid-features-hosting2'>
-            <p>{options[selectedOption].title}</p>
+            <span >{options[selectedOption].title}</span>
                <div className='marcas-hosting'>
-                <Image alt='' src='/IconoFlux.png' width={25} height={25}/>
+
+                <div style={{display:'flex',width:'8vw'}}>
+                  <div className='contenedor-icono'>
+
+                <Image alt='' src='/fluxUltimo.png' width={45} height={35}/>
+                  </div>
                 <h2>FLUX</h2>
-                <div>
+                </div>
+
+                <div style={{marginLeft:'5%'}}>
                   <p>{options[selectedOption].price}</p>
-                  <p>Includes bandwidth</p>
+                  <span>Includes bandwidth</span>
                 </div>
 
                </div>
                <div className='marcas-hosting'>
-                <Image alt='' src='/IconoFlux.png' width={25} height={25}/>
-                <h2>FLUX</h2>
-                <div>
+
+                <div style={{display:'flex',width:'8vw'}}>
+                  <div className='contenedor-icono'>
+
+                <Image alt='' src='/googleCloud.png' width={45} height={30}/>
+                  </div>
+                <h2>GOOGLE </h2>
+                </div>
+
+                <div style={{marginLeft:'5%'}}>
                   <p>{options[selectedOption].price1}</p>
-                  <p>Includes bandwidth</p>
+                  <span>Includes bandwidth</span>
                 </div>
 
                </div>
                <div className='marcas-hosting'>
-                <Image alt='' src='/IconoFlux.png' width={25} height={25}/>
-                <h2>FLUX</h2>
-                <div>
+
+                <div style={{display:'flex',width:'8vw'}}>
+                  <div className='contenedor-icono'>
+
+                <Image alt='' src='/awsLogo.png' width={45} height={30}/>
+                  </div>
+                <h2>AWS</h2>
+                </div>
+
+                <div style={{marginLeft:'5%'}}>
                   <p>{options[selectedOption].price2}</p>
-                  <p>Includes bandwidth</p>
+                  <span>Includes bandwidth</span>
                 </div>
 
                </div>
                <div className='marcas-hosting'>
-                <Image alt='' src='/IconoFlux.png' width={25} height={25}/>
-                <h2>FLUX</h2>
-                <div>
+
+                <div style={{display:'flex',width:'8vw'}}>
+                  <div className='contenedor-icono'>
+
+                <Image alt='' src='/azure.png' width={45} height={25}/>
+                  </div>
+                <h2>AZURE</h2>
+                </div>
+
+                <div style={{marginLeft:'5%'}}>
                   <p>{options[selectedOption].price3}</p>
-                  <p>Includes bandwidth</p>
+                  <span>Includes bandwidth</span>
                 </div>
 
                </div>

@@ -233,15 +233,9 @@
     height: 15px;
     justify-content: center;
     align-content: center;
-    margin-top: 0.4%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin: auto 10px;
 }
-.titulo-guia-paginacion{
-    color:white;
 
-    
-}
 .titulo-guia-paginacion:hover{
     color: #9cefca
 }
@@ -333,8 +327,10 @@
     flex-direction: column;
     height: 700px;
     width: 550px;
-    background: url('/fondoGlass2.svg');
-    background-size: cover;
+    /* background: url('/fondoClaro.svg');
+    background-size: cover; */
+    background-color: rgba(255, 255, 255, 0.070);
+    border: 2px solid grey;
     /* background-color: #0c1317; */
     border-radius: 20px;
     margin: 20px;
@@ -344,12 +340,14 @@
     display: flex;
     flex-direction: column;
     height: 700px;
-    width: 500px;
-    /* background: url('/fondoGlass2.svg');
+    width: 550px;
+    /* background: url('/fondoOpaco.svg');
     background-size: cover; */
+     background-color: rgba(48, 45, 45, 0.554);
+     border: 2px solid grey;
     border-radius: 20px;
     margin: 20px;
-    margin-top: 35px;
+   
   }
   .nueva-card-hosting2 span{
     color: white !important;
@@ -363,7 +361,7 @@
   .primera-parte-card{
     display: flex;
     flex-direction: column;
-    background-color: #36B079;
+    margin-top: 13%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
@@ -371,11 +369,14 @@
   .nueva-card-botones{
     display: flex;
     margin: 10px auto;
+    margin-top: 0%;
+    height: 7vh;
+ 
    
   }
   .nueva-card-botones button{
-    background-color: white;
-    color: black;
+    background-color: #36B079;
+    color: white;
     margin: 10px 5px;
     border-radius: 50px;
   }
@@ -396,7 +397,12 @@
 
   height: 100px;
   width: 100%;
-  margin-left: 10%;
+  margin-left: 10%; 
+  margin-top: 7%;
+
+}
+.type-wrap h1{
+  
 }
 @keyframes typedjsBlink{
   50% { opacity: 0.0; }
@@ -457,7 +463,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: auto auto ;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -465,17 +471,42 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    border-end-start-radius: 15px;
-    border-end-end-radius: 15px;
+    align-content: center;
+    margin: auto;
+    margin-top:5%;
+    width:90%;
+    height: auto;
+
+   
+  }
+  .grid-features-hosting2 p{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3px;
   }
   .marcas-hosting{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto ;
+    gap: 10%;
+    margin-bottom: 5px;
+  }
+  .contenedor-icono{
     display: flex;
+    width: 50px;
+  }
+  .marcas-hosting img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-right: 10px;
+    
+  }
+  .marcas-hosting h2{
+    margin: auto;
+    font-size: 1.2rem;
+    
+    -webkit-text-fill-color: white;
   }
   .linea-separadora{
     display: flex;
@@ -484,7 +515,7 @@
     margin-bottom: 10px;
     margin-top: 10px;
     border: 1px solid rgba(255, 255, 255, 0.494);
-    width: 90%;
+    width: 80%;
   }
 
   .contenedor-nuevas span{
@@ -501,7 +532,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 120px;
+    margin-top: 20px;
     width: 50%;
     background-color: #36B079;
   }
@@ -731,7 +762,7 @@
         flex-direction: column;
         height: 650px;
         width: 90%;
-        background: url('/fondoGlass2.svg');
+        background: url('/fondoOpaco.svg');
         background-size: cover;
         border-radius: 20px;
         margin: 0px;

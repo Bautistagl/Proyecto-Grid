@@ -28,28 +28,20 @@ const SideNavbar = ({abierto,setAbierto}) => {
     <nav className={ visible ? 'sideNavbar' : 'sideNavbar-noVisible'}>
    
       <ul className='sideNavbar-ul'>
-        <Link href="/">
+        <Link href="/profile">
       <img className='icono-sideBar-grid' src='/gridCloud.svg'/>
         </Link>
       <Link href="/profile">  
-        <li className='sideNavbar-li'><img className='icon-sideNavbar2' src='/homeDark.png'/>  Home</li>
+        <li style={{marginBottom:'3vh'}} className='sideNavbar-li'><img className='icon-sideNavbar2' src='/homeDark.png'/>  Home </li>
         </Link>
         <li className='titulo-servicios-sidenavbar'> SERVICES </li>
         <Link href="/profile/hosting">  
         <li className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconDeploy.png'/>  Deploy</li>
         </Link>
         
-        <div className={`dropdown-asicHosting ${selected === true ? 'selected' : ''}  `} > 
-
-        <ul >
-        <Link href="/profile/asicHosting">  
-          <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/serversDark.png' alt=''/> My Miners </li>
-          </Link>
-          <li className='li-asicHosting'> <img className='icon-sideNavbarAsicHosting' src='/invoiceDark.png' alt=''/>  Billing</li>  
-         </ul>
-        </div>
+      
         <Link href="/profile/billing">  
-        <li  className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconBill.png'/>  Billing</li>
+        <li style={{marginBottom:'3vh'}}  className='sideNavbar-li'><img className='icon-sideNavbar' src='/iconBill.png'/>  Billing</li>
         </Link>
         <li className='titulo-servicios-sidenavbar'> SETTINGS </li>
        
@@ -62,14 +54,11 @@ const SideNavbar = ({abierto,setAbierto}) => {
          <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/padlockDark.png'/> Security</li>
         </Link>
         <Link href="/profile/sharedAccount"> 
-        <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/groupDark.png'/> Shared Account</li>
+        <li  className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/groupDark.png'/> Shared Account</li>
         </Link>
         
-      <button className='logout-sidebar'> Logout </button>
+      <button style={{marginTop:'7vh'}} className='logout-sidebar'> Logout </button>
       <div className='footer-sidebar' >
-
-      <span> Feedback </span>
-      <span> Invite a Friend</span>
       <span onClick={()=>setAbierto(!abierto)}> Contact Support</span>
       </div>
       </ul>

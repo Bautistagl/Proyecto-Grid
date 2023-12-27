@@ -56,6 +56,9 @@ const SideNavbar = ({abierto,setAbierto}) => {
         <Link href="/profile/sharedAccount"> 
         <li  className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/groupDark.png'/> Shared Account</li>
         </Link>
+        <Link href="/profile/integration"> 
+        <li  className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/integration.png'/> Integrations</li>
+        </Link>
         
       <button style={{marginTop:'7vh'}} className='logout-sidebar'> Logout </button>
       <div className='footer-sidebar' >

@@ -24,3 +24,22 @@
     padding: 5px;
     margin-bottom: 30px;
 }
+
+.integration-container{
+    background-color: rgba(255, 255, 255, 0.284);
+    width: 60%;
+    border-radius:5px;
+    height: auto;
+    margin: 50px auto;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+.integration-container img{
+    margin: 10px;
+}
+
+.integration-container:hover{
+    border: 3px solid rgba(255, 255, 255, 0.518);
+}

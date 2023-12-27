@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic'
 import NewApplicationj from '@/components/NewApplication'
 import { useState } from 'react'
 import Paginacion from '@/commons/Paginacion'
+import Image from 'next/image'
 const DynamicNavbar = dynamic(()=>import("../../commons/SideNavbar"),
   {
     ssr:false,
@@ -10,7 +11,7 @@ const DynamicNavbar = dynamic(()=>import("../../commons/SideNavbar"),
 )
 
 
-export default function NewApplication ()  {
+export default function Integration ()  {
 
 
   const[visible, setVisible] = useState(true)
@@ -28,8 +29,19 @@ export default function NewApplication ()  {
          <DynamicNavbar/>
         </> }
         <div style={{opacity:'0'}}>.</div>
-        <Paginacion anterior="Services" links="/profile" titulo="Deploy new app" />
-        <NewApplicationj/>
+        <Paginacion anterior="Settings" links="/profile" titulo="Integrations" />
+        <div className='integration-container'>
+        <Image alt='' src='/dockerf.png' width={100} height={40}/>
+       
+        </div>
+        <div className='integration-container'>
+        <Image alt='' src='/slack.png' width={100} height={40}/>
+        
+        </div>
+        <div  className='integration-container'>
+        <Image alt='' src='/githubL.png' width={100} height={50}/>
+        
+        </div>
         </div>
     )
 

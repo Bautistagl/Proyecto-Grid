@@ -15,6 +15,7 @@ import { useInView } from "react-intersection-observer";
 import CardsHosting from "@/commons/CardsHosting";
 import ButtonsLanding from "@/components/ButtonsLanding";
 import React, { useRef } from "react";
+import NuevoFaqs from "@/components/NuevoFaqs";
 
 
 
@@ -73,7 +74,7 @@ export default function Home() {
   
    <Segundo/>
    <Powered/>
-   <FaqsIndex/>
+   <NuevoFaqs/>
    <ContactForm1 ref={contactFormRef}/>
    <Footer/>
     </div>

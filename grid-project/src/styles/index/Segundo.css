@@ -31,7 +31,8 @@
     width: 90%;
     font-family: rouben;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto;   
+    animation: fadeInFromRightAnimation 1s ease-in-out;
   
 }
 .contenedor-features{
@@ -75,6 +76,24 @@
     -webkit-text-fill-color: transparent;
     cursor: pointer;
 }
+
+.span-landing-selected2{
+    font-family: rouben  ;
+    color: white;
+    font-size: 2rem;
+    /* border-top: 3px solid white; */
+    margin-right: 100px;
+   
+    cursor: pointer;
+}
+.span-landing2{
+    font-family: rouben ligth ;
+    color: white;
+    font-size: 2rem;
+    /* border-top: 3px solid rgba(255, 255, 255, 0.541); */
+    margin-right: 100px;
+    cursor: pointer;
+}
 .tituloSegundo{
     font-family: rouben;
     font-size: 3.5rem;
@@ -108,6 +127,16 @@
         transform: translateY(-10px);
     }
 }
+@keyframes fadeInFromRightAnimation {
+    from {
+      opacity: 0;
+      transform: translateX(150px); /* o el valor que desees para la distancia de la animación */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 
 @media only screen and (max-width: 550px) {

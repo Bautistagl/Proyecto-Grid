@@ -26,14 +26,23 @@
 
 .parrafo-features-landing{
     display: flex;
+    flex-direction: column;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 90%;
-    font-family: rouben;
-    margin-top: auto;
-    margin-bottom: auto;   
+    font-family: rouben ligth;
+    margin: auto; 
+    background-color: rgba(255, 255, 255, 0.264);
+    
+    /* background-color: #0c1317; */
+    border-radius: 20px;
+    padding: 20px;
     animation: fadeInFromRightAnimation 1s ease-in-out;
   
+}
+.parrafo-features-landing img{
+    display: flex;
+    margin: auto;
 }
 .contenedor-features{
    height: 150px;

@@ -71,7 +71,7 @@ const NuevasCardsHosting = () => {
         <h1 ref={el}></h1>
       </div>
         <span style={{marginBottom:'13vh'}} className='primer-span'>
-        Pay per use and scale indefenitely. The cost of grid cloud includes the underlying cloud provider.
+      The cost of grid cloud doesnt include the underlying cloud provider.
         </span>
         
         <div className='linea-separadora'></div>
@@ -92,10 +92,10 @@ const NuevasCardsHosting = () => {
       <div className="nueva-card-hosting2">
        <div className='primera-parte-card'>
 
-        <span className='titulo-card-nueva'> Start Saving Now</span>
-        <span className='primer-span'>
+        <span className='titulo-card-nueva'>  Cost Estimator</span>
+        {/* <span className='primer-span'>
           Estimate the cost of your application on different cloud providers
-        </span>
+        </span> */}
         <div className='nueva-card-botones'>
 
         <button onClick={() => handleOptionClick(0)}>2 vCPU</button>

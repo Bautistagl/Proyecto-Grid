@@ -5,53 +5,54 @@ const CardsHosting = () => {
   const cardsContainerRef = useRef(null);
   const [isAnimated, setIsAnimated] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const containerTop = cardsContainerRef.current.offsetTop;
-      const containerBottom =
-        containerTop + cardsContainerRef.current.offsetHeight;
-      const windowBottom = window.pageYOffset + window.innerHeight;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const containerTop = cardsContainerRef.current.offsetTop;
+  //     const containerBottom =
+  //       containerTop + cardsContainerRef.current.offsetHeight;
+  //     const windowBottom = window.pageYOffset + window.innerHeight;
 
-      if (
-        windowBottom > containerTop &&
-        window.pageYOffset < containerBottom &&
-        !isAnimated
-      ) {
-        cardsContainerRef.current.classList.add('fade-in');
-        setIsAnimated(true);
-      }
-    };
+  //     if (
+  //       windowBottom > containerTop &&
+  //       window.pageYOffset < containerBottom &&
+  //       !isAnimated
+  //     ) {
+  //       cardsContainerRef.current.classList.add('fade-in');
+  //       setIsAnimated(true);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isAnimated]);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, [isAnimated]);
   return (
-    <>
-      <div className="titulo-asic"> Best features</div>
-      <div className="cardsAsicContainer" ref={cardsContainerRef}>
+    <div>
+      <div className="titulo-asic"> Anything that runs on the cloud can be run on grid cloud</div>
+      <div className="subtituloBanner2">Deploy in seconds to runonflux cloud from a Git repo using buildpacks or a dockerfile</div>
+      <div className="cardsAsicContainer" >
         <CardsFeatures 
-
-          titulo="Censorship Resistance"
-          parrafo=" Decentralized web hosting is censorship-resistant, meaning that it cannot be easily shut down or censored by a single entity. Since the data is stored across a distributed network, there is no central point of control, making it difficult for governments or other authorities to control or restrict access to information. This ensures that content remains accessible and protected from censorship, even in countries with strict censorship laws."
-          foto="/lowCost.png"
+          foto="/awsLogo.png"
         />
           <CardsFeatures
-          titulo="Low Cost"
-          parrafo="Our decentralized web hosting solution powered by Run on Flux infrastructure offers affordable hosting options for individuals and businesses of all sizes. By leveraging the decentralized architecture of Run on Flux, we can offer cost-effective solutions that can fit any budget. With our pay-as-you-go pricing model, you only pay for the resources you use, giving you the flexibility to scale up or down as your needs change. Experience high-quality web hosting at a low cost with our decentralized solution on the reliable Run on Flux network"
-          foto="/support.png"
+          foto="/Azure.png"
         />
-       
-
           <CardsFeatures
-          titulo="No Experience"
-          parrafo="Descubre la libertad de tener un sitio web sin preocuparte por la tecnología. Con Grid, nos encargamos de todo, incluso si no estás familiarizado con las nuevas tecnologías descentralizadas. Hacemos que el alojamiento web sea sin estrés y accesible para todos, brindándote una experiencia fácil y confiable en el mundo de la descentralización. "
-          foto="/easy.png"
+          foto="/dockerM.png"
+        />
+           <CardsFeatures 
+          foto="/jsLogo.png"
+        />
+          <CardsFeatures
+          foto="/mySqlLogo.png"
+        />
+          <CardsFeatures
+          foto="/pythLogo.svg"
         />
     
       
       </div>
       
-    </>
+    </div>
   );
 };
 

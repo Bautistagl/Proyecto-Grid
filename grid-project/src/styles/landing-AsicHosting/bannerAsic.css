@@ -38,6 +38,14 @@
     width: 85%;
     color: white;
 }
+.subtituloBanner2{
+    display: flex;
+    font-family: rouben ligth;
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    justify-content: center;
+}
 .tituloBanner{
     font-family: rouben;
     font-size: 3.5rem;
@@ -84,6 +92,85 @@
  .boton-create-asic2{
     background-color: #0c1317;
  }
+ .itemMigration{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: auto;
+ }
+ .itemMigration span{
+    color: white;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 100%;
+    width: 10px;
+    margin: auto;
+
+ }
+ .itemMigration div{
+    display: flex;
+  justify-content: center;
+  text-align: center;
+ 
+  color: white;
+  opacity: 1;
+  font-family: rouben;
+  font-size: 2rem;
+  width: 60%;
+
+  margin: auto;
+  
+ }
+ .itemMigration p{
+    display: flex;
+    font-family: rouben ligth;
+    font-size: 16px;
+    width: 60%;
+   color: rgba(255, 255, 255, 0.702);
+    margin: auto;
+   text-align: center;
+ }
+ .migration-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background-color: #0c131787;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    height: auto;
+    color: white;
+    border: 2px solid white;
+ }
+ .migration-form h1{
+    font-family: rouben;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+ }
+ .migration-form label{
+    font-family: rouben ligth;
+    font-size: 0.9rem;
+    margin: 10px auto;
+ }
+ .migration-form input{
+    height: 25px;
+    border-radius: 10px;
+    padding: 10px;
+ }
+ .migration-form button{
+    margin:auto;
+    margin-top: 30px;
+    background-color: #36B079;
+ }
+ .faded {
+    
+  backdrop-filter: blur(10px);
+  
+   
+  }
+
  @media only screen and (max-width:1500px){
 /*     
     .ilustracion-bannerGrande{

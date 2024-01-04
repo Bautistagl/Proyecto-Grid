@@ -6,7 +6,7 @@ const NuevoFaqs = () => {
 
   return (
     <div className="contenedor-mobile-button">
-      <div className="titulo-asic"> Best features</div>
+      <div className="titulo-asic"> FAQS</div>
       <div style={{ marginTop: '10px' }} className="contenedor-flex-only3">
         <div className="button-landing">
           <div className="contenedor-features">

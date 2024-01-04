@@ -1,26 +1,26 @@
-export const UserData = [
+export const UserData2 = [
     {
         id:1,
         year: 'FLUX',
-        btcGain: '5.20',
+        btcGain: '9.25',
         userLost: 545,
     },
     {
         id:2,
         year:'AWS',
-        btcGain: '79.92',
+        btcGain: '135.85',
         userLost: 545,
     },
     {
         id:3,
         year: 'AZURE',
-        btcGain: '116.80',
+        btcGain: '233.60',
         userLost: 343,
     },
     {
         id:4,
         year: 'GOOGLE CLOUD',
-        btcGain: '176.76',
+        btcGain: '323.51',
         userLost: 343,
     },
 

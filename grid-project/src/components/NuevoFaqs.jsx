@@ -61,7 +61,7 @@ const NuevoFaqs = () => {
         </div>
 
         {selected === 0 ? (
-          <div className="parrafo-features-landing">
+          <div className="parrafo-features-landing2">
             <Image alt='' src='/iluFaqs.svg' height={500} width={500}/>
           </div>
         ) : (

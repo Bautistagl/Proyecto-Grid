@@ -60,10 +60,10 @@ function Navbar({ scrollToContactForm }) {
             }} className="nav-title"> Why choose us?
           <img className="downNavbar" src="/downNavbar.png" alt="" />
            </div>
-          <div onClick={()=>{scrollToContactForm()}} className="nav-title"> Contact </div>  
-          <div className="nav-title"> Pricing </div>  
+          <div className="nav-title"> <Link href='/solutions'> Solutions </Link> </div>  
+          <div className="nav-title"><Link href='/pricing'> Pricing </Link> </div>  
           <div className="nav-title"> <Link href='https://cal.com/bautista-gonzalez-lazo-g8xn68' > Book a demo </Link> </div> 
-          <div className="nav-title"> Docs</div>  
+          <div onClick={()=>{scrollToContactForm()}} className="nav-title"> Contact </div>  
          </div>
           <div  className='login-register'>
 

@@ -1,5 +1,5 @@
 import Paginacion from '@/commons/Paginacion';
-import BarChart from '@/components/BarChart';
+import BarChart from '@/components/solutions/BarChart';
 import Cards from '@/components/logged/homeLogged/Cards';
 import Home from '@/components/logged/homeLogged/Home';
 import dynamic from 'next/dynamic';
@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { UserData } from '../../Data';
 import { LineData } from '../../DataLine';
 import LineChart from '@/components/LineChart';
-import Charts from '@/components/Charts';
+import Charts from '@/components/solutions/Charts';
 import Link from 'next/link';
 import BeforeBuy from '@/components/BeforeBuy';
 import Project from '@/commons/Project';

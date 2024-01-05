@@ -5,9 +5,9 @@ import Banner from "@/components/landing-AsicHosting/Banner";
 
 import CardsHosting from "@/commons/CardsHosting";
 import { useInView } from "react-intersection-observer";
-import BarChart from "@/components/BarChart";
-import Charts from "@/components/Charts";
-import Migration from "@/components/Migration";
+import BarChart from "@/components/solutions/BarChart";
+import Charts from "@/components/solutions/Charts";
+import Migration from "@/components/solutions/Migration";
 
 
 

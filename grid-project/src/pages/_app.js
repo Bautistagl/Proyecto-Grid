@@ -23,6 +23,8 @@ import "../styles/deployBoxes/deployMethod.css"
 import "../styles/deployBoxes/envVaribales.css"
 import "../styles/deployBoxes/newServices.css"
 import "../styles/projectsx/ProjectData.css"
+import "../styles/pricing/pricing.css"
+import "../styles/blog/blog.css"
 
 
 export default function App({ Component, pageProps }) {

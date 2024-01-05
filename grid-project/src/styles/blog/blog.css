@@ -1,0 +1,127 @@
+.article-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.article{
+    display: flex;
+    width: 40vw;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.070);
+    height: 300px;
+}
+.article2{
+    display: flex;
+    width: 95vw;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.070);
+    height: 400px; 
+    margin: auto;
+}
+.article3{
+    display: flex;
+    width: 30vw;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.070);
+    height: 300px; 
+    margin: auto;
+}
+.article2 img{
+    display: flex;
+    margin: auto;
+    width: 40vw;
+}
+
+
+
+.article-container h2{
+    font-family: rouben;
+    color: white;
+    width: 40vw;
+    margin: 20px auto;
+}
+
+.article-container2 h2{
+    font-family: rouben;
+    color: white;
+    width: 30vw;
+    margin: 20px auto;
+}
+
+.article img{
+    display: flex;
+    margin: auto;
+    width: 20vw;
+}
+.grid-articles{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+}
+.datos-articulos{
+    display: flex;
+    width: 40vw;
+    margin: auto;
+
+}
+.datos-articulos img{
+    border-radius: 50px;
+    margin: auto 10px;
+}
+.datos-articulos h3{
+    font-family: rouben ligth;
+    color: white;
+}
+.datos-articulos span{
+    font-family: rouben ligth;
+    color: rgba(255, 255, 255, 0.56);
+    margin: auto 10px;
+}
+
+.article-only{
+    margin-top: 100px;
+}
+.article-only h1{
+    font-family: rouben ligth;
+    color: white;
+    width: 80vw;
+    margin: 20px auto;
+    font-size: 4rem;
+
+}
+.article-only p{
+    font-family: rouben ligth;
+    color: rgba(255, 255, 255, 0.56);
+    margin: auto auto;
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.grid-articlesEx{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.datos-articulos3{
+    display: flex;
+    width: 30vw;
+    margin: auto;
+
+}
+.datos-articulos3 img{
+    border-radius: 50px;
+    margin: auto 10px;
+}
+.datos-articulos3 h3{
+    font-family: rouben ligth;
+    color: white;
+}
+.datos-articulos3 span{
+    font-family: rouben ligth;
+    color: rgba(255, 255, 255, 0.56);
+    margin: auto 10px;
+}
+.article3 img{
+    display: flex;
+    margin: auto;
+    width: 20vw;
+}

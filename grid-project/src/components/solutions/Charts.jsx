@@ -1,11 +1,11 @@
 import React from 'react'
 import BarChart from './BarChart'
-import LineChart from './LineChart'
+import LineChart from '../LineChart'
 import { useState } from 'react';
-import {UserData} from '../Data'
-import {UserData2} from '../Data2'
-import {UserData3} from '../Data3'
-import {LineData} from '../DataLine'
+import {UserData} from '../../Data'
+import {UserData2} from '../../Data2'
+import {UserData3} from '../../Data3'
+import {LineData} from '../../DataLine'
 
 const Charts = () => {
     const [userData, setUserData] = useState({

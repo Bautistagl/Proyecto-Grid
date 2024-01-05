@@ -36,7 +36,7 @@ const FirstArticle = () => {
 
       <div>
         {' '}
-        What many startups aren&apos;t aware of or don’t think about, is that many of these platforms still run on AWS (or some kind of public cloud like GCP and CloudFlare) under the hood. At the end of the day, you&apos;re still using AWS, except you're using someone else&apos;s account and are paying for it with your own money instead of the credits that you already have. Furthermore, most startups that initially deploy on these platforms end up moving to their own cloud infrastructure at some point anyway as they scale and run into constraints.
+        What many startups aren&apos;t aware of or don’t think about, is that many of these platforms still run on AWS (or some kind of public cloud like GCP and CloudFlare) under the hood. At the end of the day, you&apos;re still using AWS, except you&apos;re using someone else&apos;s account and are paying for it with your own money instead of the credits that you already have. Furthermore, most startups that initially deploy on these platforms end up moving to their own cloud infrastructure at some point anyway as they scale and run into constraints.
       </div>
 
       <div>
@@ -46,7 +46,7 @@ const FirstArticle = () => {
 
       <div>
         {' '}
-        Of course, there are more benefits that traditional PaaS&apos;s deliver, other than just the easy developer experience - infra management, workload-specific optimization, better support are some examples just to name a few. Does the platform's ability to deliver these benefits get compromised in any way if things are running in the user’s own cloud?
+        Of course, there are more benefits that traditional PaaS&apos;s deliver, other than just the easy developer experience - infra management, workload-specific optimization, better support are some examples just to name a few. Does the platform&apos;s ability to deliver these benefits get compromised in any way if things are running in the user&apos;s own cloud?
       </div>
         </div>
     

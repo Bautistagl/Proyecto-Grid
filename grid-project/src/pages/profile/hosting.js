@@ -1,7 +1,5 @@
 
-import MenuNavbar from "@/commons/MenuNavbar";
 import Paginacion from "@/commons/Paginacion";
-import HostingBought from "@/components/HostingBought";
 import HostingWeb from "@/components/cards/HostingWeb";
 import dynamic from "next/dynamic";
 import { useState } from "react";

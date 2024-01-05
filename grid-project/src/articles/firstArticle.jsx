@@ -36,7 +36,7 @@ const FirstArticle = () => {
 
       <div>
         {' '}
-        What many startups aren't aware of or don’t think about, is that many of these platforms still run on AWS (or some kind of public cloud like GCP and CloudFlare) under the hood. At the end of the day, you're still using AWS, except you're using someone else’s account and are paying for it with your own money instead of the credits that you already have. Furthermore, most startups that initially deploy on these platforms end up moving to their own cloud infrastructure at some point anyway as they scale and run into constraints.
+        What many startups aren&apos;t aware of or don’t think about, is that many of these platforms still run on AWS (or some kind of public cloud like GCP and CloudFlare) under the hood. At the end of the day, you&apos;re still using AWS, except you're using someone else&apos;s account and are paying for it with your own money instead of the credits that you already have. Furthermore, most startups that initially deploy on these platforms end up moving to their own cloud infrastructure at some point anyway as they scale and run into constraints.
       </div>
 
       <div>
@@ -46,7 +46,7 @@ const FirstArticle = () => {
 
       <div>
         {' '}
-        Of course, there are more benefits that traditional PaaS’s deliver, other than just the easy developer experience - infra management, workload-specific optimization, better support are some examples just to name a few. Does the platform's ability to deliver these benefits get compromised in any way if things are running in the user’s own cloud?
+        Of course, there are more benefits that traditional PaaS&apos;s deliver, other than just the easy developer experience - infra management, workload-specific optimization, better support are some examples just to name a few. Does the platform's ability to deliver these benefits get compromised in any way if things are running in the user’s own cloud?
       </div>
         </div>
     
@@ -66,7 +66,7 @@ const FirstArticle = () => {
 
       <div>
         {' '}
-        Porter gets you started in your own AWS account from day 1 with the same easy developer experience, so you can use your credits instead of paying out of pocket. Unbeknownst to the user, an added bonus is that we deploy your applications on the same kind of infrastructure that growth-stage companies are running so you're prepared for the eventual moment that you find PMF and need to scale. And yes, as much as this seems to be a champagne problem that early stage founders shouldn’t care about, this actually does happen in the best case outcome for your startup - and when it does, you need to scale fast.
+        Porter gets you started in your own AWS account from day 1 with the same easy developer experience, so you can use your credits instead of paying out of pocket. Unbeknownst to the user, an added bonus is that we deploy your applications on the same kind of infrastructure that growth-stage companies are running so you&apos;re prepared for the eventual moment that you find PMF and need to scale. And yes, as much as this seems to be a champagne problem that early stage founders shouldn’t care about, this actually does happen in the best case outcome for your startup - and when it does, you need to scale fast.
       </div>
 
       <div>
@@ -76,7 +76,7 @@ const FirstArticle = () => {
 
       <div>
         {' '}
-        Check out this page if you’re an early stage founder and want to better understand what we’re building.
+        Check out this page if you&apos;re an early stage founder and want to better understand what we&apos;re building.
       </div>
 
     

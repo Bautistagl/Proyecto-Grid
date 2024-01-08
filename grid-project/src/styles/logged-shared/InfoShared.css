@@ -62,7 +62,7 @@
     font-size: 1rem;
     width: 90%;
     margin-left: 300px;
-    
+
     border-bottom: 1px solid rgb(255, 255, 255);
     
 }
@@ -74,18 +74,19 @@
     font-family: rouben ;
     font-size: 1rem;
     width: 100%;
-   
+    
     
     border-bottom: 1px solid rgb(255, 255, 255);
     
 }
 .spanHosting-clickeable-shared{
     display: flex;
-    padding: 10px 10px;
-    margin-left: 1%;
+    margin-right: 10px;
+    
     color: rgba(255, 255, 255, 0.624);
     cursor: pointer;
     border-bottom: 2px solid transparent;
+    
     transition: border-bottom 0.5s ease;
 }
 .spanHosting-clickeable-shared:hover{
@@ -94,8 +95,8 @@
 }
 .spanHosting-clickeable-sharedfocus{
     display: flex;
-    padding: 10px 10px;
-    margin-left: 1%;
+    margin-right: 10px;
+    
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.5s ease;

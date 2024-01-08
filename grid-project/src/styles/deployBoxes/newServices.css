@@ -1,14 +1,20 @@
 .newServ-container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
     background-color: rgba(255, 255, 255, 0.070);
     width: 80%;
     border-radius:5px;
     height: auto;
     margin: 50px auto;
-    justify-content: center;
-    text-align: center;
     
+    
+}
+.newServ-container h2{
+    font-family: rouben ligth;
+    letter-spacing: 1px;
+    margin-bottom: 20px ;
+    margin-top: 40px;
+    width: 100% !important;
 }
 .newServ-container button{
     display: flex;
@@ -16,10 +22,10 @@
     justify-content: center;
     align-content: center;
     margin: auto;
-    padding: 0px;
-    font-size: 2rem;
-    width: 45px;
-    color: #0c1317;
+    padding: 10px 10px;
+    font-size: 1rem;
+    width: auto;
+    color: white;
     background-color: #36B079;
     height: 45px;
     border-radius: 10px;
@@ -48,4 +54,36 @@
 }
 .newServ-container label{
    margin-bottom: 5px;
+}
+.buttons-newComp{
+    display: flex;
+    margin: 5px auto 25px auto;
+}
+.buttons-newComp div{
+    font-family: rouben;
+    border-bottom: 2px solid transparent;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.buttons-newComp div:hover{
+    color: #36B079;
+}
+.data-selected{
+    font-family: rouben;
+    border-bottom: 2px solid #36B079 !important;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #36B079;
+}
+.titulo-singleComp{
+    font-family: rouben;
+    padding: 5px;
+}
+
+.save-comp{ 
+    width: 100% !important;
+    font-size: 1rem !important;
+    margin: 0px !important;
 }

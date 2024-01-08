@@ -93,7 +93,7 @@
     border-radius: 5px;
     border: 2px solid transparent;
     margin: 50px auto;
-    cursor: pointer;
+   
     text-align: center;
 }
 .card-newApp2 label{
@@ -106,9 +106,7 @@
 .icono-titulo{
     margin-top: 10px;
 }
-.card-newApp2:active{
-    border: 2px solid white;
-}
+
 
 .card-newApp2 input{
    
@@ -124,6 +122,8 @@
 .card-newApp2 input::placeholder{
     color: rgba(255, 255, 255, 0.356);
 }
+
+
 .card-newApp label{
     display: flex;
     width: 20vw;

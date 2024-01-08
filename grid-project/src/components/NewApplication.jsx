@@ -7,6 +7,7 @@ import DeployMethod from './deployBoxes/DeployMethod';
 import EnvVariables from './deployBoxes/EnvVariables';
 import PreDeploy from './deployBoxes/PreDeploy';
 import { NewServices } from './deployBoxes/NewServices';
+import { Details } from './deployBoxes/Details';
 
 const NewApplicationj = () => {
   const [selected, setSelected] = useState(0);
@@ -30,8 +31,9 @@ const NewApplicationj = () => {
         </div>
         <WhatApp/>
         <NameBox/>
-        <DeployMethod/>
+        <Details/>
         <NewServices/>
+        <DeployMethod/>
         <EnvVariables/>
         <PreDeploy/>
         <div style={{display:'flex',margin:'auto',marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WERE DONE!</div>

@@ -69,7 +69,7 @@ function Navbar({ scrollToContactForm }) {
          </div>
           <div  className='login-register'>
 
-        <Link href="/login">
+        <Link href="/zelcore">
           <button className="boton-landing1">Login</button>
         </Link>
         <Link href="register">

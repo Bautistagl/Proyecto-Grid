@@ -3,7 +3,7 @@ import BarChart from '@/components/solutions/BarChart';
 import Cards from '@/components/logged/homeLogged/Cards';
 import Home from '@/components/logged/homeLogged/Home';
 import dynamic from 'next/dynamic';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { UserData } from '../../Data';
 import { LineData } from '../../DataLine';
 import LineChart from '@/components/LineChart';
@@ -18,30 +18,23 @@ const DynamicNavbar = dynamic(() => import('../../commons/SideNavbar'), {
 });
 
 export default function LoggedLogin() {
-  // const [userData, SetUserData] = useState({
-  //   labels: UserData.map((data) => data.year),
-  //   datasets: [
-  //     {
-  //       label: 'Minado BTC',
-  //       data: UserData.map((data) => data.btcGain),
-  //       backgroundColor: ['#36B079'],
-  //       borderColor: 'white',
-  //     },
-  //   ],
-  // });
-  // const [userData2, SetUserData2] = useState({
-  //   labels: LineData.map((data) => data.year),
-  //   datasets: [
-  //     {
-  //       label: 'Valor total cuenta BTC',
-  //       data: LineData.map((data) => data.btcGain),
-  //       backgroundColor: ['#36B079'],
-  //       borderColor: 'white',
-  //     },
-  //   ],
-  // });
+  
   const [abierto,setAbierto] = useState(false)
   const [selected, setSelected] = useState(0);
+  const [loginPhrase, setLoginPhrase] = useState('');
+
+  useEffect(() => {
+    // Recuperar el valor de loginPhrase de localStorage
+    const storedData = localStorage.getItem('postData');
+    
+    if (storedData) {
+      const postData = JSON.parse(storedData);
+      // Actualizar el estado con el valor de loginPhrase
+      setLoginPhrase(postData.loginPhrase);
+    }
+  }, []);
+
+
   const toggle = (i) => {
     return setSelected(i);
   };
@@ -88,6 +81,7 @@ export default function LoggedLogin() {
           <Link href="/profile/newApplication">
             <button className="new-button"> + </button>
           </Link>
+          <span style={{color:'white'}}> {loginPhrase} </span>
         </div>
         <button className="button-proyecto">
           {' '}

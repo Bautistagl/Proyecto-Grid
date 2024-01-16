@@ -44,6 +44,7 @@ function Form() {
      />
      <Image onClick={()=>{setView(!view)}} alt='' src={view ? '/hide2.png' : '/view.png'} width={25} height={25}/>
 </div>
+
       <Link href="/profile">
         <button className="login-submit" type="submit">
           Login

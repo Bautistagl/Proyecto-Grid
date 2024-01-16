@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import axios from 'axios';
-import AuthComponent from '@/github/authComp';
+import AuthComponent from '@/github/AuthComp';
 
 const ReposPage = ({ repos }) => {
   return (

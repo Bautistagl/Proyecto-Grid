@@ -72,8 +72,9 @@ const Footer = () => {
       
         </div>
         <div className='licencias-footer'>
-        © 2023 Grid Cloud |
-        <span> <a href='#'> Políticas de Privacidad  </a> </span> |
+       
+        <span> <a href='#'>  © 2023 Grid Cloud  </a> </span>  
+        <span> <a href='#'> Políticas de Privacidad   </a> </span> 
         <span> <a href='#'> Términos y condiciones  </a></span>
         </div>
     </section>

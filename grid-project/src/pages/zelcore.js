@@ -5,7 +5,6 @@ import FormZelcore from "@/components/login/FormZelcore";
 import Link from "next/link";
 
 export default function ZelLogin() {
-  
 
   return (
     <div>

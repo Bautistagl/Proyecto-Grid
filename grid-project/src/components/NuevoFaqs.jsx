@@ -8,7 +8,7 @@ const NuevoFaqs = () => {
     <div className="contenedor-mobile-button">
       <div className="titulo-asic"> FAQS</div>
       <div style={{ marginTop: '10px' }} className="contenedor-flex-only3">
-        <div className="button-landing">
+        <div className="button-landing2">
           <div className="contenedor-features">
             <span
               onClick={() => setSelected(1)}

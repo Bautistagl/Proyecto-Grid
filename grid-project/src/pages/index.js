@@ -16,6 +16,7 @@ import CardsHosting from "@/commons/CardsHosting";
 import ButtonsLanding from "@/components/ButtonsLanding";
 import React, { useRef } from "react";
 import NuevoFaqs from "@/components/NuevoFaqs";
+import Guarantee from "@/commons/Guarantee";
 
 
 
@@ -73,6 +74,7 @@ export default function Home() {
        <ButtonsLanding/>
   
    <Segundo/>
+   <Guarantee/>
    <Powered/>
    <NuevoFaqs/>
    <ContactForm1 ref={contactFormRef}/>

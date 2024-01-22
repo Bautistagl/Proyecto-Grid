@@ -64,7 +64,7 @@ const Segundo = () => {
       </div>
       <img className="fotoSegundo" src={'/mapa.png'} alt="" />
       {/* <div className='animacion-mundo' ref={container} > </div> */}
-      <Guarantee/>
+    
     </section>
   );
 };

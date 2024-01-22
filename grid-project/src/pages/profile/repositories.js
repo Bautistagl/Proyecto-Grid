@@ -1,17 +1,59 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Link from 'next/link';
 
 
-const Repositories = ({ repos }) => {
+const RepoDetails = ({ repoContents }) => {
+  return (
+    <div style={{color:'white'}}>
+      {/* Display or use repoContents as needed */}
+      <pre>{JSON.stringify(repoContents, null, 2)}</pre>
+    </div>
+  );
+};
+
+const Repositories = ({ repos, accessToken }) => {
+
+  const [selectedRepoContents, setSelectedRepoContents] = useState(null);
+
+   // Function to fetch repository contents
+   const fetchRepoContents = async (repo) => {
+    try {
+      const response = await axios.get(`https://api.github.com/repos/${repo.owner.login}/${repo.name}/contents`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`, // Replace with your access token
+        },
+      });
+
+      setSelectedRepoContents(response.data);
+    } catch (error) {
+      console.error('Error fetching repository contents', error);
+      setSelectedRepoContents(null);
+    }
+  };
+
+  const handleRepoClick = (repo) => {
+    fetchRepoContents(repo);
+  };
+
   return (
     <div>
       <h1>Lista de Repositorios</h1>
       <ul>
         {repos.map((repo) => (
-          <li key={repo.id}>{repo.name}</li>
+          <li key={repo.id} >
+            <Link href={`https://github.com/${repo.owner.login}/${repo.name}`}>
+            {repo.name}
+            </Link>
+          </li>
         ))}
       </ul>
-      
+
+      {selectedRepoContents ? (
+        <RepoDetails repoContents={selectedRepoContents} />
+      ) : (
+        <p>Select a repository to view its contents</p>
+      )}
     </div>
   );
 };
@@ -67,7 +109,7 @@ export async function getServerSideProps(context) {
     const repos = reposResponse.data;
 
     return {
-      props: { repos },
+      props: { repos,accessToken },
     };
   } catch (error) {
     console.error('Error al obtener la lista de repositorios', error);

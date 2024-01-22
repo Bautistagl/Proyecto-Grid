@@ -120,12 +120,12 @@ ul{
 .boton-contact-form{
   display: flex;
   background-color: #36B079;
-  width: 40%;
+  width: 50%;
   font-family: rouben ligth;
   font-weight: lighter;
   justify-content: center;
   margin-left: auto;
-  
+  border-radius: 15px;
   margin-right: 0;
   margin-top: 4%;
   margin-left: 10px;
@@ -139,45 +139,53 @@ ul{
   }
   }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 650px) {
   .container-footer{
     display: flex;
-    position: absolute;
+ 
     grid-template-columns: auto;
     background: #0c1317;
     padding: 0px;
     z-index: 0;
     justify-content: flex-start;
     width: 90%;
-    margin-left: 5%;
+    margin: auto;
+    
     
 }
 .boton-contact-form{
-  height: 40%;
+ 
+  height: auto;
+  width: 40vw !important;
+  text-align: center;
+  justify-content: center;
 }
 .footer-parrafo{
   display: flex;
  justify-content: center;
- width: 70%;
+ width: 90vw;
+ text-align: center;
  align-items: center;
  align-self: center;
- font-size: 0.8rem;
- margin-bottom: 5%;
- margin-top: 5%;
- margin-left: 8%;
+ font-size: 1rem;
+  margin: auto;
   
 }
 .licencias-footer{
   display: flex ;
   justify-content: center;
- 
   font-family: 'Courier New', Courier, monospace;
   color:white;
-  margin: auto;
-  font-size: 0.4rem;
+  
+  margin-left: auto;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
   width: 100%;
-  margin-bottom: 5%;
+
 }
+.licencias-footer span{
+  margin: auto 10px;
+} 
 .footer-titulo-principal{
   font-size: 1rem;
   color: white;
@@ -192,17 +200,11 @@ ul{
 }
 .columnas {
   color: white;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "columna-principal columna-principal"
-    "columna-ecosystem columna-discover"
-    "columna-explore columna-community";
-  margin-bottom: 4%;
-  margin-left: 5%;
-  margin-right: 5%;
- 
+  display: flex;
+  flex-direction: column;
   width: 100%;
+ 
+ 
 }
 
 
@@ -218,19 +220,26 @@ ul{
   margin-bottom: 5%;
 }
 .columna {
-  margin-top: 10%;
-  width: 50%;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
   padding: 0.1rem;
   margin-left: auto;
   margin-right: auto;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.columna ul{
+  display: flex;
 }
 li{
-  font-size: 0.6rem;
-  padding: 5px 5px 5px 0px;
+  margin: auto 20px;
+  padding: 10px;
   color: whitead;
   cursor: pointer;
   width: 100%;
+  
+  border-bottom: 1px solid white;
 }
 .columna-principal {
   grid-area: columna-principal;
@@ -239,7 +248,7 @@ li{
   align-self: center;
   align-content: center;
   margin-left: 250px;
-  width: 250px;
+  width: 90vw;
   }
   .redes-footer{
     justify-content: center;

@@ -414,7 +414,8 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        margin: 0px !important;
+        width: 90%;
+      
     }
     .contenedor-features{
         height: 100px;

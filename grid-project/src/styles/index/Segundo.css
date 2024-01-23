@@ -117,7 +117,7 @@
     color: white;
     font-size: 1.3rem;
     /* border-top: 3px solid white; */
-    margin-right: 100px;
+   
    
     cursor: pointer;
 }
@@ -126,7 +126,7 @@
     color: rgba(255, 255, 255, 0.651);
     font-size: 1.3rem;
     /* border-top: 3px solid rgba(255, 255, 255, 0.541); */
-    margin-right: 100px;
+    
     cursor: pointer;
 }
 .tituloSegundo{

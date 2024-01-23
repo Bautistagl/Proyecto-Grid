@@ -8,8 +8,8 @@ const NuevoFaqs = () => {
     <div className="contenedor-mobile-button">
       <div className="titulo-asic"> FAQS</div>
       <div style={{ marginTop: '10px' }} className="contenedor-flex-only3">
-        {/* <div className="button-landing2">
-          {/* <div className="contenedor-features">
+        <div className="button-landing2">
+          <div className="contenedor-features">
             <span
               onClick={() => setSelected(1)}
               className={
@@ -58,7 +58,7 @@ const NuevoFaqs = () => {
           </div>
 
 
-        </div> */} 
+        </div>
 
         {selected === 0 ? (
           <div className="parrafo-features-landing2">

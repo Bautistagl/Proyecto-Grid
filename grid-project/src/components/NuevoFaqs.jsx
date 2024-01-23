@@ -68,7 +68,7 @@ const NuevoFaqs = () => {
           ''
         )} */}
 
-        {selected === 1 ? (
+        {/* {selected === 1 ? (
           <div className="parrafo-features-landing">
            A decentralized cloud is a cloud computing model that distributes data processing across multiple nodes worldwide, instead of relying on a centralized data center. This model provides better availability and redundancy, ensuring applications and data remain functional even if a node fails. Additionally, the decentralized cloud offers greater privacy and data security, as users can retain control of their own data.
            <Image alt='' src='/iluDes.svg' height={300} width={500}/>
@@ -101,7 +101,7 @@ const NuevoFaqs = () => {
           </div>
         ) : (
           ''
-        )}
+        )} */}
       </div>
     </div>
   );

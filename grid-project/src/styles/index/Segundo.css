@@ -279,6 +279,7 @@
       width: 100%;
     }
     .titulo-asic{
+        margin-right: 0px;
         font-size: 1.8rem !important;
     }
 

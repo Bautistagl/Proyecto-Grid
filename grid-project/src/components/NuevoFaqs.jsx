@@ -8,8 +8,8 @@ const NuevoFaqs = () => {
     <div className="contenedor-mobile-button">
       <div className="titulo-asic"> FAQS</div>
       <div style={{ marginTop: '10px' }} className="contenedor-flex-only3">
-        <div className="button-landing2">
-          <div className="contenedor-features">
+        {/* <div className="button-landing2">
+          {/* <div className="contenedor-features">
             <span
               onClick={() => setSelected(1)}
               className={
@@ -58,17 +58,17 @@ const NuevoFaqs = () => {
           </div>
 
 
-        </div>
+        </div> */} 
 
-        {/* {selected === 0 ? (
+        {selected === 0 ? (
           <div className="parrafo-features-landing2">
             <Image alt='' src='/iluFaqs.svg' height={500} width={500}/>
           </div>
         ) : (
           ''
-        )} */}
+        )}
 
-        {/* {selected === 1 ? (
+        {selected === 1 ? (
           <div className="parrafo-features-landing">
            A decentralized cloud is a cloud computing model that distributes data processing across multiple nodes worldwide, instead of relying on a centralized data center. This model provides better availability and redundancy, ensuring applications and data remain functional even if a node fails. Additionally, the decentralized cloud offers greater privacy and data security, as users can retain control of their own data.
            <Image alt='' src='/iluDes.svg' height={300} width={500}/>
@@ -101,7 +101,7 @@ const NuevoFaqs = () => {
           </div>
         ) : (
           ''
-        )} */}
+        )}
       </div>
     </div>
   );

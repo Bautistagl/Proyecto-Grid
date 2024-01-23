@@ -74,7 +74,7 @@ export default function Home() {
        <ButtonsLanding/>
   
    <Segundo/>
-   <Guarantee/>
+   {/* <Guarantee/> */}
    <Powered/>
    <NuevoFaqs/>
    <ContactForm1 ref={contactFormRef}/>

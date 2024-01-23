@@ -71,14 +71,14 @@ export default function Home() {
        src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
        {/* <CardsHosting/> */}
-       {/* <ButtonsLanding/> */}
+       <ButtonsLanding/>
   
-   {/* <Segundo/> */}
-   {/* <Guarantee/> */}
+   <Segundo/>
+   <Guarantee/>
    <Powered/>
    {/* <NuevoFaqs/> */}
    <ContactForm1 ref={contactFormRef}/>
-   {/* <Footer/> */}
+   <Footer/>
     </div>
  
       

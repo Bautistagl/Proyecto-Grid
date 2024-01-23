@@ -60,13 +60,13 @@ const NuevoFaqs = () => {
 
         </div>
 
-        {selected === 0 ? (
+        {/* {selected === 0 ? (
           <div className="parrafo-features-landing2">
             <Image alt='' src='/iluFaqs.svg' height={500} width={500}/>
           </div>
         ) : (
           ''
-        )}
+        )} */}
 
         {selected === 1 ? (
           <div className="parrafo-features-landing">

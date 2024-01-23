@@ -76,7 +76,7 @@ export default function Home() {
    {/* <Segundo/> */}
    {/* <Guarantee/> */}
    <Powered/>
-   <NuevoFaqs/>
+   {/* <NuevoFaqs/> */}
    <ContactForm1 ref={contactFormRef}/>
    {/* <Footer/> */}
     </div>

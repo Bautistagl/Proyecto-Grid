@@ -73,7 +73,7 @@ export default function Home() {
        {/* <CardsHosting/> */}
        <ButtonsLanding/>
   
-   <Segundo/>
+   {/* <Segundo/> */}
    {/* <Guarantee/> */}
    <Powered/>
    <NuevoFaqs/>

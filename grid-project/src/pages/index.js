@@ -71,7 +71,7 @@ export default function Home() {
        src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
        {/* <CardsHosting/> */}
-       <ButtonsLanding/>
+       {/* <ButtonsLanding/> */}
   
    {/* <Segundo/> */}
    {/* <Guarantee/> */}

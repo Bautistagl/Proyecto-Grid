@@ -28,6 +28,7 @@ import "../styles/deployBoxes/singleComponent.css"
 import "../styles/projectsx/ProjectData.css"
 import "../styles/pricing/pricing.css"
 import "../styles/blog/blog.css"
+import "../styles/repositories/repositories.css"
 
 
 export default function App({ Component, pageProps }) {

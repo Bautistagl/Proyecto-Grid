@@ -36,7 +36,7 @@ function Form() {
         onChange={(e) => setEmail(e.target.value)}
         required
       />
-       <div class="input-container">
+       <div className="input-container">
      <input
        placeholder="Password"
        className="login-input"

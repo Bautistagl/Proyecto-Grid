@@ -90,9 +90,10 @@ export const Details = () => {
     <>
       <div style={{ display: 'flex' }}>
         <div className="newServ-container2">
-          <h2>Details</h2>
+          <h2>Allowed Geolocations</h2>
           <div  className="card-newApp3">
            <CountrySelector/>
+           <div className='separador'> </div>
             <div className="ranges">
               <label>Instances: {values.range1}</label>
               <input

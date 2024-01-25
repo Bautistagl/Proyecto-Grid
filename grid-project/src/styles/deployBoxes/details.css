@@ -1,8 +1,8 @@
 .custom-switch {
     position: relative;
-    width: 50px;
-    height: 25px;
-    background-color: #ddd;
+    width: 40px;
+    height: 20px;
+    background-color: #dddddd62;
     border-radius: 15px;
     cursor: pointer;
     margin: auto 10px;
@@ -13,9 +13,9 @@
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
-    width: 22px;
+    width: 20px;
     height: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     transition: transform 0.4s;
   }
@@ -34,14 +34,14 @@
 
   .botonera span{
     display: flex;
-    margin: auto 10px;
+    margin: auto 10px !important;
   }
   .card-newApp3{
     display: flex;
     flex-direction: column;
     height: auto;
     width: 90%;
-    background-color: #0c1317d9;
+    
     border-radius: 5px;
     border: 2px solid transparent;
     margin: 50px auto;
@@ -64,6 +64,7 @@
   margin-right: auto;
   font-family:rouben ;
 }
+
 .geolocation h3 {
   display: flex;
   flex-direction: column;
@@ -83,25 +84,36 @@
 }
 
 .geolocation2 {
-  
-  padding: 10px;
-  margin: 10px auto;
+  display: flex;
+  padding: 5px;
+  margin: 5px auto;
   font-family:rouben ;
-  border: 2px solid gray;
-  border-radius: 10px;
-  width: 48vw;
-  background-color: #0c1317;
+  
+  border-radius: 5px;
+  width: 20vw;
+  background-color: #0c1317d9;
+}
+.geolocation2 button{
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  margin-left: auto !important;
+
+  margin-right: 3% !important;
 }
 .geolocation2 p{
+  font-weight: bold;
   display: flex;
   margin:  auto 10px;
-  min-width: 90px;
+  font-size: 0.9rem;
+  
 }
 .geolocation2 span{
   display: flex;
-  margin: auto 10px;
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+  font-size: 0.9rem;
   
-  justify-content: flex-start;
+  
 }
 
 
@@ -110,7 +122,8 @@
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.070);
   width: 80%;
-  border-radius:5px;
+  border-radius:15px;
+  border: 1px solid rgba(255, 255, 255, 0.068);
   height: auto;
   margin: 50px auto;
   justify-content: center;
@@ -162,4 +175,12 @@
 }
 .newServ-container2 label{
  margin-bottom: 5px;
+}
+
+.separador{ 
+  display: flex;
+  height: 10px;
+  border-bottom: 1px solid white;
+  width: 100%;
+  margin:  50px auto;
 }

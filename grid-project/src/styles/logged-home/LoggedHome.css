@@ -232,7 +232,14 @@
     margin-left: 300px;
     margin-top: 50px;
   }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 1000px) {
+    .logged-home-component-sin-sidebar{
+ 
+      min-width: 140vw;
+     
+    }
+  }
+  @media only screen and (max-width: 790px) {
 
     .logged-home-component{
       min-width: 10vw;

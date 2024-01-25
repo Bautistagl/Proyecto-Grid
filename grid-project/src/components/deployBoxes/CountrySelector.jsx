@@ -98,26 +98,13 @@ const CountrySelector = () => {
     
       return (
         <>
-          <div className='geolocation'>
-            <h3>Allowed Geolocation </h3>
+        <div style={{display:'flex'}}> 
+
+          
+          
             <div className='geolocation'>
-            {selections.map((selection, index) => (
-              <div className='geolocation2' key={index}>
-                <div style={{display:'flex'}}>
-
-                <p >Continent: </p>
-                <span> {continents[(selection.continent)-1].name} </span>
-                </div>
-
-                <div style={{display:'flex'}}>
-                <p>Country: </p>
-                <span>   {selection.country} </span>
-                </div>
-               
-              </div>
-            ))}
-          </div>
-            <label>Select Continent:</label>
+            <h3>+ Add geolocation </h3>
+            <label>Continent:</label>
             <select onChange={handleContinentChange} value={selectedContinent || ''}>
               <option value="" disabled>Select a continent</option>
               {continents.map(continent => (
@@ -127,7 +114,7 @@ const CountrySelector = () => {
     
             {selectedContinent && selectedContinent !== '1' && (
               <div>
-                <label>Select Country:</label>
+                <label> Country:</label>
                 <select onChange={handleCountryChange} value={selectedCountry || ''}>
                   <option value="" disabled>Select a country</option>
                   {countriesByContinent[selectedContinent].map(country => (
@@ -138,15 +125,14 @@ const CountrySelector = () => {
             )}
             <button onClick={handleAddSelection}>+</button>
           </div>
-
-
           <div className='geolocation'>
-            <h3>Forbidden Geolocation </h3>
-            <div className='geolocation'>
-            {selections2.map((selection, index) => (
-              <div className='geolocation2' key={index}>
-                <div style={{display:'flex'}}>
+            <h3>My allowed geolocations </h3>
 
+            {selections.map((selection, index) => (
+              <div className='geolocation2' key={index}>
+                <div>
+
+                <div style={{display:'flex'}}>
                 <p >Continent: </p>
                 <span> {continents[(selection.continent)-1].name} </span>
                 </div>
@@ -155,11 +141,24 @@ const CountrySelector = () => {
                 <p>Country: </p>
                 <span>   {selection.country} </span>
                 </div>
-               
+                </div>
+                <button >-</button>
               </div>
             ))}
           </div>
-            <label>Select Continent:</label>
+        </div>
+
+
+            <h2>Forbidden Geolocation </h2>
+
+
+          <div style={{display:'flex'}}> 
+
+            <div className='geolocation'>
+          
+              <h3>+ Add geolocation</h3>
+
+            <label>Continent:</label>
             <select onChange={handleContinentChange2} value={selectedContinent2 || ''}>
               <option value="" disabled>Select a continent</option>
               {continents.map(continent => (
@@ -169,7 +168,7 @@ const CountrySelector = () => {
     
             {selectedContinent2 && selectedContinent2 !== '1' && (
               <div>
-                <label>Select Country:</label>
+                <label> Country:</label>
                 <select onChange={handleCountryChange2} value={selectedCountry2 || ''}>
                   <option value="" disabled>Select a country</option>
                   {countriesByContinent[selectedContinent2].map(country => (
@@ -179,7 +178,38 @@ const CountrySelector = () => {
               </div>
             )}
             <button onClick={handleAddSelection2}>+</button>
+            
+            </div>
+            
+
+            <div className='geolocation'>
+            <h3>My Forbidden geolocations </h3>
+
+            {selections2.map((selection, index) => (
+              <div className='geolocation2' key={index}>
+                <div>
+
+                <div style={{display:'flex'}}>
+                <p >Continent: </p>
+                <span> {continents[(selection.continent)-1].name} </span>
+                </div>
+
+                <div style={{display:'flex'}}>
+                <p>Country: </p>
+                <span>   {selection.country} </span>
+                </div>
+                </div>
+                <button >-</button>
+              </div>
+            ))}
+
+
+
           </div>
+          </div>
+
+            
+         
     
           
         </>

@@ -26,7 +26,7 @@ export default function LoggedHosting() {
         </>  }
         <div style={{opacity:'0'}}>.</div>
         <Paginacion anterior="Services" links="/profile" titulo="Setup Application" />
-      <HostingWeb/>
+        <HostingWeb/>
         {/* <HostingBought/> */}
       
       

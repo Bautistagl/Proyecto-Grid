@@ -194,14 +194,14 @@
     font-family: rouben ;
     font-size: 1.4rem;
     width: 100%;
-
+    margin: autoa;
     border-bottom: 2px solid rgba(255, 255, 255, 0.31);
     
 }
 .spanHosting-clickeable{
     display: flex;
     padding: 10px 10px;
-    margin-left: 5%;
+   
     cursor: pointer;
     color: rgba(255, 255, 255, 0.798);
     border-bottom: 2px solid transparent;
@@ -223,7 +223,7 @@
 .guia-paginacion{
     display: flex;
     color: white;
-    margin-left: 300px;
+    margin-left: 50px;
     font-family: rouben;
     font-size: 1.2rem;
     margin-top: 1%;

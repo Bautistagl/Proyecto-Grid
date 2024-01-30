@@ -7,9 +7,10 @@
     margin-top:60px ;
 }
 .contenedor-flex-only2{
-    display: flex;
+
     width: 80%;
     align-items: baseline;
+    
     margin-bottom: -50px;
    
 }
@@ -39,16 +40,16 @@
     margin: 10px 10px;
 }
 .contenedor-newApp{
-    display: flex;
+    position: relative;
     margin-bottom: 50px;
     flex-direction: column;
-    margin-left: 280px;
+    margin-left: 0px;
     margin-top: 30px;
     color: #fff;
     
     
    
-    width: 65%;
+    width: 85vw;
     border-radius: 15px;
    
     backdrop-filter: blur(10px);
@@ -88,13 +89,16 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 25vw;
-    background-color: #0c1317d9;
+    width: 100%;
+   
     border-radius: 5px;
     border: 2px solid transparent;
     margin: 50px auto;
    
     text-align: center;
+}
+.card-newApp2 select{
+    background-image: linear-gradient(to right, #797979, #0c1317);
 }
 .card-newApp2 label{
     display: flex;
@@ -114,7 +118,7 @@
     margin: auto;
     height: 25px;
     color: white;
-    background-color: #0c1317d9;
+    background-color: transparent;
     border: 2px solid #0c1317d9;
     border-radius: 5px;
 }

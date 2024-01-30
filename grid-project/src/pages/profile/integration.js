@@ -32,32 +32,14 @@ export default function Integration({ storedToken }) {
 
   return (
     <div
-      className={
-        visible ? 'logged-home-component' : 'logged-home-component-sin-sidebar'
-      }>
+      className= 'logged-home-component'>
       
         
-      {!visible ? (
-        <button
-          onClick={() => {
-            toggleSideBar();
-          }}
-          className="boton-sidebar-mostrar">
-          <img className="icon-mostrar" alt="" src="/abrir-side.png" />
-        </button>
-      ) : (
-        <>
-          <div
-            className="boton-sidebar-ocultar"
-            onClick={() => {
-              toggleSideBar();
-            }}>
-            {' '}
-            <img className="icon-ocultar" alt="" src="/equal2.png" />{' '}
-          </div>
+      
+      <div style={{display:'flex',flexDirection:'row'}}>
           <DynamicNavbar />
-        </>
-      )}
+      <div style={{width:'100%'}}>
+
       <div style={{ opacity: '0' }}>.</div>
       <Paginacion anterior="Settings" links="/profile" titulo="Integrations" />
 
@@ -97,6 +79,8 @@ export default function Integration({ storedToken }) {
             
     
        
+      </div>
+      </div>
       </div>
     </div>
   );

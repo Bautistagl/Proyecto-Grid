@@ -5,6 +5,7 @@ const WhatApp = () => {
   return (
     <>
     <div className='whatApp-container'>
+      <div style={{opacity:'0'}}>.</div>
         <h2> What are you looking to deploy? </h2>
         <div style={{margin:'20px auto'}}>
             <button>Application</button>

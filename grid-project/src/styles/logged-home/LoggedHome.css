@@ -26,8 +26,8 @@
     display: grid;
     margin-top: 50px;
     border-radius: 10px;
-    margin-left: 300px;
-    width: 65%;
+    margin-left: 50px;
+    width: 85%;
   }
   .logged-home-cards-sin-sidebar{
     display: grid;
@@ -45,9 +45,9 @@
   }
   .input-proyecto{
     margin-top: 30px;
-    margin-left: 300px;
+    margin-left: 50px;
     height: 40px;
-    width: 50%;
+    width: 65%;
     border-radius: 5px;
     background-color: black;
     color: white;
@@ -162,34 +162,23 @@
     border-radius: 50px; */
   }
 
-  .logged-home-component-sin-sidebar{
-    background-image: url("../../../public/fondoFinal7.svg");
-    background-size: cover;
-    min-height: 100vh;
-    min-width: 120vw;
-    transform: translateX(-240px); 
-    transition: transform 1s ease-in-out
-  }
+ 
   .logged-home-component{
     background-image: url("../../../public/fondoFinal7.svg");
     background-size: cover;
     min-height: 100vh;
-    min-width: 115vw;
-    transform: translateX(0px); 
-    transition: transform 1s ease-in-out
+    min-width: 100vw;
+ 
   }
   .blureado{
     filter: blur(5px);
   }
 
   .probando-index{
-   
     margin-top: 50px;
-    /* background-color: #1e2b31c9; */
     border-radius: 10px;
-    margin-left: 300px;
     margin-bottom: 100px;
-    width: 68%;
+    width: 100%;
   }
 
 
@@ -232,13 +221,7 @@
     margin-left: 300px;
     margin-top: 50px;
   }
-  @media only screen and (max-width: 1000px) {
-    .logged-home-component-sin-sidebar{
- 
-      min-width: 140vw;
-     
-    }
-  }
+
   @media only screen and (max-width: 790px) {
 
     .logged-home-component{

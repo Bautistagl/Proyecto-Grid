@@ -3,13 +3,16 @@ import React from 'react'
 
 const InfoSecurity = () => {
     return (
-        <> 
+      
         
     <div className='infoSecurity-container'> 
     <div> s</div>
+    <div style={{marginLeft:'-50px'}}>
+
     <Paginacion anterior="Settings" links="/profile" titulo="Billing" />
-    <div style={{marginLeft:'300px'}} className="infoShared-titulo"> Two factor authentication</div>
-      <div className='permisos-container-security'> 
+    </div>
+    <div  className="infoShared-titulo"> Two factor authentication</div>
+ 
 
     <div className='infoSecurity-permisos'>
     <div className='infoSecurity-titulo-container'> <img className='infoSecurity-iconoPrincipal' src='/telefono.png'/> Metodo de autenticacion de la aplicacion </div>
@@ -20,8 +23,8 @@ const InfoSecurity = () => {
     </div>
    
       </div>
-    </div>
-        </>
+
+       
   )
 }
 

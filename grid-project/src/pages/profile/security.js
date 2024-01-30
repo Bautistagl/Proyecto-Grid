@@ -17,15 +17,12 @@ export default function Security  ()  {
   return (
     <>
    <div className="container-Security" >
-      <div className={ visible ? "logged-home-component" : "logged-home-component-sin-sidebar"}>
-      {!visible ? <button 
-        onClick={()=>{toggleSideBar()}}
-        className="boton-sidebar-mostrar"><img className="icon-mostrar" alt="" src='/abrir-side.png'/></button> :
-         <>
-          <div className="boton-sidebar-ocultar" onClick={()=>{ toggleSideBar()}}> <img className="icon-ocultar" alt="" src='/equal2.png'/> </div>
+      <div className="logged-home-component" >
+        <div style={{display:'flex',flexDirection:'row'}}>
+
          <DynamicNavbar/>
-        </>  }
-      <InfoSecurity/>
+         <InfoSecurity/>
+        </div>
          </div>
       </div>
     </>

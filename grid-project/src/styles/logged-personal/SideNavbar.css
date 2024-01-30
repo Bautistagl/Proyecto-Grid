@@ -1,37 +1,15 @@
 
 .sideNavbar{
-    min-height: 100vh;
+    min-height: 110vh;
     height: 100%;
-    position:fixed;
+
+    position:sticky;
     top: 0;
-    width: 240px;
+    width: 280px;
     background-color: #0c1317;
     z-index: 10;
 }
-.boton-sidebar-ocultar{
-    position: fixed;
-    justify-content: flex-start;
-    margin-left:180px;
-    margin-top: 115px;
-    width: 35px;
-    z-index: 9999;
-    cursor: pointer;
-}
-.icon-ocultar{
-    display: flex;
-    height: 30px;
-    width: 30px;
-    margin-top: -75px;
-    margin-left: 20px;
-}
-.boton-sidebar-mostrar{
-    position: fixed;
-    height: 80px;
-    width: 50px;
-    margin-left: 240px;
-    margin-top: 370px;
-   
-}
+
 .icon-mostrar{
 height: 30px;
 margin-left: -10px;
@@ -192,9 +170,7 @@ margin-left: -10px;
         margin-left: 20px;
         
     }
-    .icon-ocultar{
-        display: none;
-    }
+  
     .input-proyecto{
         display: flex;
         margin-right: 10px;

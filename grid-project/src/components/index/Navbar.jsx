@@ -15,7 +15,7 @@ function Navbar({ scrollToContactForm }) {
     }
     setSelected(true);
   };
-  
+
   const toggleMenu = () => {
     setMenu(!menu);
     setSelected(false);
@@ -34,110 +34,78 @@ function Navbar({ scrollToContactForm }) {
   return (
     <>
       <nav className={`navbar ${isSticky ? 'sticky' : ''}  `}>
-       
-       
-
-
         <div className="nav-items">
-      
-        <Link href="/">
-          <img className="navbar-logo" src="/gridCloud.svg" />
-        </Link>
-        <div onClick={() => toggleMenu()} className="hamburguer-navbar">
-          {' '}
-          {menu === false ? (
-            <img className="hamburger-logo" src={'/menu.png'} />
-          ) : (
-            <img className="hamburger-logoCerrado" src={'/menuCerrado.png'} />
-          )}{' '}
-        </div>
-         <div className='un-contenedor'>
+          <Link href="/">
+            <img className="navbar-logo" src="/gridCloud.svg" />
+          </Link>
+          <div onClick={() => toggleMenu()} className="hamburguer-navbar">
+            {' '}
+            {menu === false ? (
+              <img className="hamburger-logo" src={'/menu.png'} />
+            ) : (
+              <img className="hamburger-logoCerrado" src={'/menuCerrado.png'} />
+            )}{' '}
+          </div>
+          <div className="un-contenedor">
+            <div
+              onClick={() => {
+                setDropdown2(!dropdown2);
+                setDropdown(false);
+              }}
+              className="nav-title">
+              {' '}
+              Why choose us?
+              <img className="downNavbar" src="/downNavbar.png" alt="" />
+            </div>
+            
+           
+            <div className="nav-title">
+              <Link href="/blog"> Blog </Link>{' '}
+            </div>
 
-          <div onClick={() => {
-            setDropdown2(!dropdown2)
-            setDropdown(false)
-
-            }} className="nav-title"> Why choose us?
-          <img className="downNavbar" src="/downNavbar.png" alt="" />
-           </div>
-          <div className="nav-title"> <Link href='/solutions'> Solutions </Link> </div>  
-          <div className="nav-title"><Link href='/pricing'> Pricing </Link> </div>  
-          <div className="nav-title"><Link href='/blog'> Blog </Link> </div>  
-          
-          <div className="nav-title"> <Link href='https://cal.com/bautista-gonzalez-lazo-g8xn68' > Book a demo </Link> </div> 
-          <div onClick={()=>{scrollToContactForm()}} className="nav-title"> Contact </div>  
-         </div>
-          <div  className='login-register'>
-
-        <Link href="/zelcore">
-          <button className="boton-landing1">Login</button>
-        </Link>
-        <Link href="register">
-          <button className="boton-landing">Register</button>
-        </Link>
+            <div className="nav-title">
+              {' '}
+              <Link href="https://cal.com/bautista-gonzalez-lazo-g8xn68">
+                {' '}
+                Book a demo{' '}
+              </Link>{' '}
+            </div>
+            <div
+              onClick={() => {
+                scrollToContactForm();
+              }}
+              className="nav-title">
+              {' '}
+              Contact{' '}
+            </div>
+          </div>
+          <div className="login-register">
+            <Link href="/zelcore">
+              <button className="boton-landing1">Login</button>
+            </Link>
+            <Link href="register">
+              <button className="boton-landing">Register</button>
+            </Link>
           </div>
         </div>
       </nav>
-      {menu ? <MenuMobile/> : ''}
+      {menu ? <MenuMobile /> : ''}
 
-      <div
-        className={`container-productos ${dropdown ? 'show' : ''} ${
-          isSticky ? 'sticky' : ''
-        }`}
-        onMouseOver={() => {
-          setDropdown(true)
-          setDropdown2(false)
-        }}
-        onMouseLeave={() => setDropdown(false)}>
-      
-       
-        <div className="productos">
-          <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-          <div className="descripcion-productos">
-            <Link href="/web_hosting">
-              <span className="titulo-productos"> Web Hosting </span>
-            </Link>
-            <span className="subtitulo-productos">
-              {' '}
-              Una descripcion un poco mas larga paraq ver{' '}
-            </span>
-          </div>
-        </div>
      
-     
-        <div className="productos">
-          <img alt="" className="logo-productos" src={'/cloudIcon.png'} />
-          <div className="descripcion-productos">
-            <Link href="/asic_mining">
-              <span className="titulo-productos"> Game Servers </span>
-            </Link>
-            <span className="subtitulo-productos">
-              {' '}
-              Una descripcion un poco mas larga paraq ver{' '}
-            </span>
-          </div>  
-        </div>
-     
-      </div>
-
-
-
 
       <div
         className={`container-productos ${dropdown2 ? 'show' : ''} ${
           isSticky ? 'sticky' : ''
         }`}
         onMouseOver={() => {
-          setDropdown2(true)
-          setDropdown(false)
+          setDropdown2(true);
+          setDropdown(false);
         }}
         onMouseLeave={() => setDropdown2(false)}>
-      
-       
         <div className="productos">
           <img alt="" className="logo-productos" src={'/solution.png'} />
           <div className="descripcion-productos">
-            <Link href="/web_hosting">
+            <Link href="/solutions">
               <span className="titulo-productos"> Solutions </span>
             </Link>
             <span className="subtitulo-productos">
@@ -146,30 +114,25 @@ function Navbar({ scrollToContactForm }) {
             </span>
           </div>
         </div>
-     
-     
+
         <div className="productos">
           <img alt="" className="logo-productos" src={'/aboutUs.png'} />
           <div className="descripcion-productos">
-          
-          <Link href="/aboutUs">
-              <span className="titulo-productos"> About us </span>
+            <Link href="/pricing">
+              <span className="titulo-productos"> Pricing </span>
             </Link>
-            
+
             <span className="subtitulo-productos">
               {' '}
               Una descripcion undsadsa poco mas larga paraqas ver{' '}
             </span>
-          </div>  
+          </div>
         </div>
         <div className="productos">
           <img alt="" className="logo-productos" src={'/blog.png'} />
           <div className="descripcion-productos">
-            
-              <Link href="/immersion_cooling">
-              <span className="titulo-productos">
-                Blog
-              </span>
+            <Link href="/aboutUs">
+              <span className="titulo-productos">About us</span>
             </Link>
             <span className="subtitulo-productos">
               {' '}
@@ -178,7 +141,6 @@ function Navbar({ scrollToContactForm }) {
           </div>
         </div>
       </div>
-      
     </>
   );
 }

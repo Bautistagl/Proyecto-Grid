@@ -1,11 +1,12 @@
 .newServ-container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     background-color: rgba(255, 255, 255, 0.070);
     width: 80%;
-    border-radius:5px;
     height: auto;
     margin: 50px auto;
+    border-radius:15px;
+    border: 1px solid rgba(255, 255, 255, 0.068);
     
     
 }
@@ -27,6 +28,7 @@
     width: auto;
     color: white;
     background-color: #36B079;
+    
     height: 45px;
     border-radius: 10px;
     margin-bottom: 30px;

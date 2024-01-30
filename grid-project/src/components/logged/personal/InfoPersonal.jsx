@@ -8,7 +8,7 @@ const InfoPersonal = () => {
         return setSelected(i);
       };
   return (
-     <>
+     <div style={{width:'100%'}}>
     <div style={{opacity:'0'}}>.</div>
     <Paginacion anterior="Settings" links="/profile" titulo="Billing" />
     <div className='probando-index'>
@@ -64,7 +64,7 @@ const InfoPersonal = () => {
    
     <div style={{opacity:'0'}}>.</div>
     </div>
-     </>
+     </div>
   )
 }
 

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
-import ModalNewApp from './ModalNewApp';
 import WhatApp from './deployBoxes/WhatApp';
 import NameBox from './deployBoxes/NameBox';
 import DeployMethod from './deployBoxes/DeployMethod';
@@ -38,7 +37,18 @@ const NewApplicationj = () => {
         <PreDeploy/>
         <div style={{display:'flex',margin:'auto',marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WERE DONE!</div>
         <button className='deploy-now'> Deploy now</button>
-        {/* <span className="span-newApp"> Application name </span>
+        
+      </div>
+      <div style={{opacity:'0'}}>.</div>
+    </>
+  );
+};
+
+export default NewApplicationj;
+
+
+
+{/* <span className="span-newApp"> Application name </span>
         <span className="span-newApp2">
           {' '}
           Only Lowercase and Uppercase letters.{' '}
@@ -215,10 +225,3 @@ const NewApplicationj = () => {
           + Add a new pre-deploy job{' '}
         </button>
         <button className='boton-deploy'> Deploy app</button> */}
-      </div>
-      <div style={{opacity:'0'}}>.</div>
-    </>
-  );
-};
-
-export default NewApplicationj;

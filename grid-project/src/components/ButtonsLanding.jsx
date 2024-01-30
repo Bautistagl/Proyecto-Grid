@@ -39,7 +39,7 @@ const ButtonsLanding = () => {
                 selected === 2 ? 'span-landing-selected' : 'span-landing'
               }>
               {' '}
-              Low cost infrastructure{' '}
+              Decentralization{' '}
             </span>
             <div className={selected === 2 ? 'linea-selected' : 'linea'}> </div>
           </div>

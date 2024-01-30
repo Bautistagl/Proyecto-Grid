@@ -19,17 +19,15 @@ export default function NewApplication ()  {
   }
 
     return (
-        <div className={ visible ? "logged-home-component" : "logged-home-component-sin-sidebar"}>
-         {!visible ? <button 
-        onClick={()=>{toggleSideBar()}}
-        className="boton-sidebar-mostrar"><img className="icon-mostrar" alt="" src='/abrir-side.png'/></button> :
-         <>
-          <div className="boton-sidebar-ocultar" onClick={()=>{ toggleSideBar()}}> <img className="icon-ocultar" alt="" src='/equal2.png'/> </div>
+        <div className= "logged-home-component">
+          <div style={{display:'flex',flexDirection:'row'}}>
+
          <DynamicNavbar/>
-        </> }
-        <div style={{opacity:'0'}}>.</div>
-        <Paginacion anterior="Services" links="/profile" titulo="Deploy new app" />
+       
+        {/* <div style={{opacity:'0'}}>.</div>
+        <Paginacion anterior="Services" links="/profile" titulo="Deploy new app" /> */}
         <NewApplicationj/>
+          </div>
         </div>
     )
 

@@ -12,7 +12,7 @@ const BillingForms = ({ titulo,op1, op2, op3, op4, op5 }) => {
 
   return (
     <div className="container-opciones-billing">
-        <span> {titulo} </span>
+        <span style={{margin:'auto',textAlign:'center',justifyContent:'center'}}> {titulo} </span>
       <div
         className="billing-options"
         onClick={()=>setSelected(!selected)}
@@ -20,6 +20,9 @@ const BillingForms = ({ titulo,op1, op2, op3, op4, op5 }) => {
           borderStartStartRadius: '5px',
           borderStartEndRadius: '5px',
           borderRadius:'5px',
+          justifyContent:'center',
+          textAlign:'center'
+          
         }}>
             {opcion === "" ? `${op1}` : `${opcion}` }
       </div>

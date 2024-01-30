@@ -25,7 +25,7 @@ const SidebarProject = ({abierto,setAbierto}) => {
   }
   return (
     <>
-    <nav className={ visible ? 'sideNavbar' : 'sideNavbar-noVisible'}>
+    <nav className='sideNavbar' >
    
       <ul className='sideNavbar-ul'>
         <Link href="/">

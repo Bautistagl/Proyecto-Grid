@@ -8,7 +8,7 @@ const BillingInfo = () => {
     return setSelected(i);
   };
   return (
-    <div>
+    <div style={{width:'100%'}}>
       <div>s</div>
       <Paginacion  anterior="Services" links="/profile" titulo="Billing" />
 
@@ -23,7 +23,7 @@ const BillingInfo = () => {
         </span>
         
       </div>
-      <div className='billing-mobile'>
+      {/* <div className='billing-mobile'>
         <div className='billing-titulo-mobile'> Invoice Type</div>
         <div className='billing-buttons'>
           <button> All </button>
@@ -40,7 +40,7 @@ const BillingInfo = () => {
           <button> Wallet</button>
           <button> None</button>
         </div>
-      </div>
+      </div> */}
       <div className="container-general-billing">
         
         <BillingForms

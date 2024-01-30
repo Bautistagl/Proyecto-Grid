@@ -6,7 +6,10 @@ import { DataComponent } from './DataComponent'
 export const NewServices = () => {
   const [option,setOption] = useState('')
   const [database,setDatabase] = useState('')
-  
+  const [selected, setSelected] = useState(0);
+  const toggle = (i) => {
+    return setSelected(i);
+  };
   const handleSelectChange = (e) => {
     setOption(e.target.value);
   };
@@ -16,7 +19,7 @@ export const NewServices = () => {
     <div style={{display:'flex'}}>
     <div className='newServ-container'>
 
-            <div style={{ marginLeft: '30px',height:'40vh' }} className="card-newApp2">
+            <div  className="card-newApp2">
             <div className='icono-titulo'>
 
           
@@ -38,16 +41,42 @@ export const NewServices = () => {
               <div  className={database === 'mysql' ? 'data-selected' : '' }onClick={()=>setDatabase('mysql')}> MySQL</div>
 
               </div> : ''}
-            <label  > Name this component</label>
+            <label  > Name this service</label>
             <input  placeholder='Ex: my-service' />
+            <div className="contenedor-titulos-hosting-click-shared2">
+            <span
+              style={{ marginLeft: '42px' }}
+              className={`spanHosting-clickeable-shared${
+                selected === 0 ? 'focus' : ''
+              }`}
+              onClick={() => toggle(0)}>
+              General
+            </span>
+            <span
+              className={`spanHosting-clickeable-shared${
+                selected === 1 ? 'focus' : ''
+              }`}
+              onClick={() => toggle(1)}>
+              {' '}
+              Resources
+            </span>
+            <span
+              className={`spanHosting-clickeable-shared${
+                selected === 2 ? 'focus' : ''
+              }`}
+              onClick={() => toggle(2)}>
+              {' '}
+              Advanced
+            </span>
+          </div>
             <button> + </button>
           </div>
           
-    <div style={{display:'flex',flexDirection:'column'}}>
+    {/* <div style={{display:'flex',flexDirection:'column'}}>
 
     <DataComponent />
     <WebComponent/>
-    </div>
+    </div> */}
 
 
 

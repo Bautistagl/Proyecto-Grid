@@ -18,14 +18,11 @@ export default function Billing() {
  }
     return (
       <div className="logged-hosting-component">
-      {!visible ? <button 
-        onClick={()=>{toggleSideBar()}}
-        className="boton-sidebar-mostrar"><img className="icon-mostrar" alt="" src='/abrir-side.png'/></button> :
-         <>
-          <div className="boton-sidebar-ocultar" onClick={()=>{ toggleSideBar()}}> <img className="icon-ocultar" alt="" src='/hide.png'/> </div>
+       <div style={{display:'flex',flexDirection:'row'}}>
+
          <DynamicNavbar/>
-        </>  }
-      <BillingInfo/>
+        <BillingInfo/>
+       </div>
       
       
       

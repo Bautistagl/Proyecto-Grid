@@ -5,27 +5,18 @@ import React, { useState } from 'react';
 
 const SideNavbar = ({abierto,setAbierto}) => {
 
-  const[visible, setVisible] = useState(true)
+
   const [selected, setSelected] = useState(false);
   const [menu,setMenu] = useState(false)
 
 
-  const toggleSideBar = () => {
-     return setVisible(!visible)
-  }
 
 
-  const toggle = () => {
-    
-    if(selected === false) {
-      
-      return setSelected(true)
-    }
-    setSelected(false)
-  }
+
+  
   return (
     <>
-    <nav className={ visible ? 'sideNavbar' : 'sideNavbar-noVisible'}>
+    <nav className= 'sideNavbar'>
    
       <ul className='sideNavbar-ul'>
         <Link href="/profile">

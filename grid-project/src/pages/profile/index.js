@@ -41,7 +41,9 @@ export default function LoggedLogin() {
               <Paginacion anterior="Home" links="/profile" />
                   <div className='titulos-dashboard'>
                     <h2> My components </h2>
-                    <button> + New component</button>
+                    <button> <Link href='/profile/newApplication'> + New component</Link> </button>
+                    
+                    
 
                   </div>
                   <div className='grid-components'>

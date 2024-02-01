@@ -168,6 +168,7 @@
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
+    
  
   }
   .blureado{
@@ -220,6 +221,108 @@
     width: 40%;
     margin-left: 300px;
     margin-top: 50px;
+  }
+
+  .titulos-dashboard{
+    display: flex;
+    width: 80%;
+    margin-top: 50px;
+    height: 40px;
+    margin-bottom: 50px;
+    
+  }
+  .titulos-dashboard h2{
+    font-family: rouben;
+    color: white;
+    margin: auto 0;
+  }
+  .titulos-dashboard button{
+    margin-left: auto;
+    border-radius: 15px;
+  }
+
+  .ComponentCard{
+    display: flex;
+    flex-direction: column;
+    height: auto ;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.070);
+    width: 95%;
+  }
+  .first {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.628);
+    font-size: 0.9rem;
+  }
+  .second{
+    display: flex;
+    color: white;
+    font-family: rouben ligth;
+    width: 85%;
+    margin: auto;
+    margin-top: -5%;
+   
+  }
+  .second img{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .second h3{
+    margin-left: 2%;
+    margin-right: 5%;
+  }
+  .third{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 0.9rem;
+    width: 85%;
+    margin: auto;
+  }
+  .third span, .fourth span{
+    font-weight: bold;
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    letter-spacing: 0.5px;
+
+  
+  }
+  .third p, .fourth p{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: lighter;
+    margin-left: 5px;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 0.738);
+    
+  }
+
+  .fourth{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 0.9rem;
+    width: 93%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+  }
+  .fourth span{
+    display: flex;
+    margin-left: auto;
+  }
+
+  .grid-components{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    width: 80%;
   }
 
   @media only screen and (max-width: 790px) {

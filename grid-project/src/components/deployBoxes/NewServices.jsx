@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { WebComponent } from './WebComponent'
 import { DataComponent } from './DataComponent'
+import ComponentSelector from './ComponentSelector'
 
 export const NewServices = () => {
   const [option,setOption] = useState('')
@@ -16,7 +17,7 @@ export const NewServices = () => {
 
   return (
     <>
-    <div style={{display:'flex'}}>
+   
     <div className='newServ-container'>
 
             <div  className="card-newApp2">
@@ -25,7 +26,8 @@ export const NewServices = () => {
           
             <span  className="span-newApp"> + Add a new component </span>
             </div>
-            <label  >
+            <ComponentSelector/>
+            {/* <label  >
               {' '}
               Select a service type:{' '}
             </label>
@@ -70,7 +72,7 @@ export const NewServices = () => {
             </span>
           </div>
             <button> + </button>
-          </div>
+           */}
           
     {/* <div style={{display:'flex',flexDirection:'column'}}>
 
@@ -79,10 +81,10 @@ export const NewServices = () => {
     </div> */}
 
 
-
+</div>
     </div>
   
-    </div>
+    
     <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={30} height={30} src='/dots.png'/>
     </>
   )

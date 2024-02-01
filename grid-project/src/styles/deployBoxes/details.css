@@ -61,7 +61,7 @@
 .geolocation {
   display: flex;
   flex-direction: column;
-  margin-right: auto;
+  margin: auto;
   font-family:rouben ;
 }
 
@@ -73,7 +73,7 @@
 }
 .geolocation select{
   display: flex;
-  width: 50vw;
+  width: 20vw;
   background-image: linear-gradient(to right, #797979, #0c1317);
 }
 .geolocation label{
@@ -115,6 +115,33 @@
   font-size: 0.9rem;
   
   
+}
+
+.geolocation3 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 0;
+  font-family:rouben ;
+}
+
+.geolocation3 h3 {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  font-family:rouben ;
+}
+.geolocation3 select{
+  display: flex;
+  width: 20vw;
+  background-image: linear-gradient(to right, #797979, #0c1317);
+}
+.geolocation3 label{
+  display: flex;
+  margin-right: auto;
+  margin-left: 0;
+  margin-bottom: 10px;
+  justify-content: flex-start;
 }
 
 

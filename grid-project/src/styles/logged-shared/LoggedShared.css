@@ -13,13 +13,3 @@
     font-weight: normal;
     font-style: normal;
   } 
-  .container-sideNavbar-infoShared{
-    display: flex;
-  }
-  
-  .container-Shared{
-    background-image: url("../../../public/fondo_pagina4.svg");
-    background-attachment: fixed;
-    background-size:cover;
-    height: 100%;
-  }

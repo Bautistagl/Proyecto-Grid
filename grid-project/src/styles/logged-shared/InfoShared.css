@@ -68,13 +68,14 @@
 .contenedor-titulos-hosting-click-shared2{
     display: flex;
     color: white;
-    text-align: center;
-    justify-content:center;
+    text-align: start;
+    justify-content:flex-start;
 
     font-family: rouben ;
     font-size: 1rem;
-    width: 70%;
-    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+
     
     
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -82,8 +83,8 @@
 }
 .spanHosting-clickeable-shared{
     display: flex;
-    margin: auto;
-    
+    margin: auto 10px;
+    margin-bottom: 10px !important;
     color: rgba(255, 255, 255, 0.624);
     cursor: pointer;
     border-bottom: 2px solid transparent;
@@ -96,8 +97,8 @@
 }
 .spanHosting-clickeable-sharedfocus{
     display: flex;
-    margin: auto;
-    
+    margin: auto 10px;
+    margin-bottom: 10px !important;
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.5s ease;

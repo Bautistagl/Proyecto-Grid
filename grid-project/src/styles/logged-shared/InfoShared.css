@@ -73,9 +73,10 @@
 
     font-family: rouben ;
     font-size: 1rem;
-    width: 100%;
+    width: 90%;
     margin-bottom: 20px;
-
+    margin-left: auto;
+    margin-right: auto;
     
     
     border-bottom: 1px solid rgb(255, 255, 255);

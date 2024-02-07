@@ -322,7 +322,65 @@
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
+  }
+
+  .contents-index{
+    display: grid;
+    grid-template-columns: 80% 20%;
+  }
+
+  .filter-index{
+    display: flex;
+    flex-direction: column;
+    margin-top:70px;
+    letter-spacing: 0.5px;
+  }
+  .filter-index span{
+      color: rgba(255, 255, 255, 0.704);
+      font-size: 1.1rem;
+      margin-top: 30px;
+  }
+  .filter-index select{
+    display: flex;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-family: rouben ;
+    color: white;
+    background-image: linear-gradient(to right,#2a8b5f, #092217 );
+    padding: 5px;
+  }
+  .filter-index input{
+    width: 60%;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  .filter-index p{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 50px;
+    
+  }
+  .checkbox-filter{
+    display: flex;
+    
+    width: auto;
+  }
+  .checkbox-filter input{
+    width: auto !important;
+  }
+  .checkbox-filter label{
+    color: rgba(255, 255, 255, 0.704);
+    font-size: 0.9rem;
+    font-family: rouben ligth;
+    width: 100% ;
+    margin-right: auto;
+    margin-left: 0px;
+    
   }
 
   @media only screen and (max-width: 790px) {

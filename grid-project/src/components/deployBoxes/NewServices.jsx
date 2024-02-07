@@ -24,61 +24,11 @@ export const NewServices = () => {
             <div className='icono-titulo'>
 
           
-            <span  className="span-newApp"> + Add a new component </span>
+            <h2 style={{marginTop:'0px'}} > Components </h2>
+           
             </div>
             <ComponentSelector/>
-            {/* <label  >
-              {' '}
-              Select a service type:{' '}
-            </label>
-            <select onChange={handleSelectChange} value={option}>
-            <option value='web'>Web</option>
-            <option value='application'>Cronjob</option>
-            <option value='databases'>Databases</option>
-            </select>
-              {option == 'databases' ? 
-              <div className='buttons-newComp'>
-              <div className={database === 'sql' ? 'data-selected' : '' } onClick={()=>setDatabase('sql')}> SQL</div>
-              <div  className={database === 'mongodb' ? 'data-selected' : '' } onClick={()=>setDatabase('mongodb')}> MongoDB</div>
-              <div  className={database === 'mysql' ? 'data-selected' : '' }onClick={()=>setDatabase('mysql')}> MySQL</div>
-
-              </div> : ''}
-            <label  > Name this service</label>
-            <input  placeholder='Ex: my-service' />
-            <div className="contenedor-titulos-hosting-click-shared2">
-            <span
-              style={{ marginLeft: '42px' }}
-              className={`spanHosting-clickeable-shared${
-                selected === 0 ? 'focus' : ''
-              }`}
-              onClick={() => toggle(0)}>
-              General
-            </span>
-            <span
-              className={`spanHosting-clickeable-shared${
-                selected === 1 ? 'focus' : ''
-              }`}
-              onClick={() => toggle(1)}>
-              {' '}
-              Resources
-            </span>
-            <span
-              className={`spanHosting-clickeable-shared${
-                selected === 2 ? 'focus' : ''
-              }`}
-              onClick={() => toggle(2)}>
-              {' '}
-              Advanced
-            </span>
-          </div>
-            <button> + </button>
-           */}
-          
-    {/* <div style={{display:'flex',flexDirection:'column'}}>
-
-    <DataComponent />
-    <WebComponent/>
-    </div> */}
+           
 
 
 </div>

@@ -50,8 +50,9 @@ const SideNavbar = ({abierto,setAbierto}) => {
         <Link href="/profile/integration"> 
         <li  className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/integration.png'/> Integrations</li>
         </Link>
-        
+        <Link href={'/'}>
       <button style={{marginTop:'7vh'}} className='logout-sidebar'> Logout </button>
+        </Link>
       <div className='footer-sidebar' >
       <span onClick={()=>setAbierto(!abierto)}> Contact Support</span>
       </div>

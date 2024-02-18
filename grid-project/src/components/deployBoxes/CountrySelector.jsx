@@ -93,6 +93,22 @@ const CountrySelector = () => {
           setSelectedCountry2(null);
         }
       };
+
+      const handleDelete = (indexToRemove) => {
+        setSelections(prevSelections => {
+          const updatedSelections = [...prevSelections];
+          updatedSelections.splice(indexToRemove, 1);
+          return updatedSelections;
+        });
+      };
+
+      const handleDelete2 = (indexToRemove) => {
+        setSelections2(prevSelections => {
+          const updatedSelections = [...prevSelections];
+          updatedSelections.splice(indexToRemove, 1);
+          return updatedSelections;
+        });
+      };
     
     
     
@@ -130,6 +146,7 @@ const CountrySelector = () => {
 
             {selections.map((selection, index) => (
               <div className='geolocation2' key={index}>
+                {console.log(selections)}
                 <div>
 
                 <div style={{display:'flex'}}>
@@ -142,7 +159,7 @@ const CountrySelector = () => {
                 <span>   {selection.country} </span>
                 </div>
                 </div>
-                <button >-</button>
+                <button onClick={()=> handleDelete(index)} style={{margin:'auto 20px auto auto '}} >-</button>
               </div>
             ))}
           </div>
@@ -177,7 +194,7 @@ const CountrySelector = () => {
                 </select>
               </div>
             )}
-            <button onClick={handleAddSelection2}>+</button>
+            <button  onClick={handleAddSelection2}>+</button>
             
             </div>
             
@@ -199,7 +216,7 @@ const CountrySelector = () => {
                 <span>   {selection.country} </span>
                 </div>
                 </div>
-                <button >-</button>
+                <button onClick={()=> handleDelete2(index)} style={{margin:'auto 20px auto auto '}} >-</button>
               </div>
             ))}
 

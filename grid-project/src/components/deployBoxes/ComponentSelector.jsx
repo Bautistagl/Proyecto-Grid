@@ -106,6 +106,13 @@ const ComponentSelector = () => {
   const handleGeneral = () => {};
   const handleResources = () => {};
   const handleAddSelection = () => {
+
+    if (!selectedContinent || !name) {
+      // Aquí puedes mostrar un mensaje de error o tomar alguna otra acción
+      alert("Please select a service type and provide a name.");
+      return;
+    }
+
     const newIndex = selections.length + 1;
     const newSelection = {
       continent: selectedContinent,
@@ -277,12 +284,145 @@ const ComponentSelector = () => {
                     placeholder="Ex: npm start"
                   />
 
-                  <label> Container Port</label>
+                  <label> Ports</label>
                   <input
                     value={port}
                     onChange={(e) => setPort(e.target.value)}
                     placeholder="Ex: 3000"
                   />
+                </>
+              ) : (
+                ''
+              )}
+              {selected === 1 ? (
+                <>
+                  <div className="ranges">
+                    <label>CPU: {values.range1}</label>
+                    <input
+                      type="range"
+                      name="range1"
+                      min="3"
+                      max="100"
+                      step="1"
+                      value={values.range1}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="ranges">
+                    <label>RAM: {values2.range1}</label>
+                    <input
+                      type="range"
+                      name="range1"
+                      min="100"
+                      max="1000"
+                      step="50"
+                      value={values2.range1}
+                      onChange={handleChange2}
+                    />
+                  </div>
+                  <div className="ranges">
+                    <label>SSD: {values3.range1}</label>
+                    <input
+                      type="range"
+                      name="range1"
+                      min="256"
+                      max="1024"
+                      step="256"
+                      value={values3.range1}
+                      onChange={handleChange3}
+                    />
+                  </div>
+                </>
+              ) : (
+                ''
+              )}
+            </div>
+          )}
+          {selectedContinent && selectedContinent === '3' && (
+            <div>
+              <div className="contenedor-titulos-hosting-click-shared2">
+                <span
+                  style={{ marginLeft: '3%' }}
+                  className={`spanHosting-clickeable-shared${
+                    selected === 0 ? 'focus' : ''
+                  }`}
+                  onClick={() => toggle(0)}>
+                  General
+                </span>
+                <span
+                  className={`spanHosting-clickeable-shared${
+                    selected === 1 ? 'focus' : ''
+                  }`}
+                  onClick={() => toggle(1)}>
+                  {' '}
+                  Resources
+                </span>
+                <span
+                  className={`spanHosting-clickeable-shared${
+                    selected === 2 ? 'focus' : ''
+                  }`}
+                  onClick={() => toggle(2)}>
+                  {' '}
+                  Advanced
+                </span>
+              </div>
+              {selected === 0 ? (
+                <>
+                  <label> Start Command</label>
+                  <input
+                    value={command}
+                    onChange={(e) => setCommand(e.target.value)}
+                    placeholder="Ex: npm start"
+                  />
+
+                  <label> Ports</label>
+                  <input
+                    value={port}
+                    onChange={(e) => setPort(e.target.value)}
+                    placeholder="Ex: 3000"
+                  />
+                </>
+              ) : (
+                ''
+              )}
+              {selected === 1 ? (
+                <>
+                  <div className="ranges">
+                    <label>CPU: {values.range1}</label>
+                    <input
+                      type="range"
+                      name="range1"
+                      min="3"
+                      max="100"
+                      step="1"
+                      value={values.range1}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="ranges">
+                    <label>RAM: {values2.range1}</label>
+                    <input
+                      type="range"
+                      name="range1"
+                      min="100"
+                      max="1000"
+                      step="50"
+                      value={values2.range1}
+                      onChange={handleChange2}
+                    />
+                  </div>
+                  <div className="ranges">
+                    <label>SSD: {values3.range1}</label>
+                    <input
+                      type="range"
+                      name="range1"
+                      min="256"
+                      max="1024"
+                      step="256"
+                      value={values3.range1}
+                      onChange={handleChange3}
+                    />
+                  </div>
                 </>
               ) : (
                 ''
@@ -393,23 +533,107 @@ const ComponentSelector = () => {
                         )}
                       </div>
                     )}
-                      {selection.continent === '2' && (
+                    {selection.continent === '2' && (
                       <div>
                         {selection.selectedSpan === 'general' && (
                           <div>
-                             <label style={{marginLeft:'15px'}}> Start Command</label>
-                  <input
-                    
-                          style={{width:'90%',backgroundColor:"#0c1317"}}
-                    placeholder={selection.command}
-                  />
+                            <label style={{ marginLeft: '15px' }}>
+                              {' '}
+                              Start Command
+                            </label>
+                            <input
+                              style={{
+                                width: '90%',
+                                backgroundColor: '#0c1317',
+                              }}
+                              placeholder={selection.command}
+                            />
 
-                  <label style={{marginLeft:'15px'}}> Container Port</label>
-                  <input
-                   
-                   style={{width:'90%',backgroundColor:"#0c1317"}}
-                    placeholder={selection.port}
-                  />
+                            <label style={{ marginLeft: '15px' }}>
+                              {' '}
+                              Ports
+                            </label>
+                            <input
+                              style={{
+                                width: '90%',
+                                backgroundColor: '#0c1317',
+                              }}
+                              placeholder={selection.port}
+                            />
+                            <button className="save-changes">
+                              {' '}
+                              Save Changes
+                            </button>
+                          </div>
+                        )}
+
+                        {selection.selectedSpan === 'resources' && (
+                          <div>
+                            <div className="ranges">
+                              <label>CPU: {selection.cpu}</label>
+                              <input
+                                type="range"
+                                name="range1"
+                                min="3"
+                                max="100"
+                                step="1"
+                              />
+                            </div>
+                            <div className="ranges">
+                              <label>RAM: {selection.ram}</label>
+                              <input
+                                type="range"
+                                name="range1"
+                                min="100"
+                                max="1000"
+                                step="50"
+                              />
+                            </div>
+                            <div className="ranges">
+                              <label>SSD: {selection.ssd}</label>
+                              <input
+                                type="range"
+                                name="range1"
+                                min="256"
+                                max="1024"
+                                step="256"
+                              />
+                            </div>
+                            <button className="save-changes">
+                              {' '}
+                              Save Changes
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {selection.continent === '3' && (
+                      <div>
+                        {selection.selectedSpan === 'general' && (
+                          <div>
+                            <label style={{ marginLeft: '15px' }}>
+                              {' '}
+                              Start Command
+                            </label>
+                            <input
+                              style={{
+                                width: '90%',
+                                backgroundColor: '#0c1317',
+                              }}
+                              placeholder={selection.command}
+                            />
+
+                            <label style={{ marginLeft: '15px' }}>
+                              {' '}
+                              Ports
+                            </label>
+                            <input
+                              style={{
+                                width: '90%',
+                                backgroundColor: '#0c1317',
+                              }}
+                              placeholder={selection.port}
+                            />
                             <button className="save-changes">
                               {' '}
                               Save Changes

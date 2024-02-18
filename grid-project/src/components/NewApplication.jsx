@@ -7,13 +7,15 @@ import EnvVariables from './deployBoxes/EnvVariables';
 import PreDeploy from './deployBoxes/PreDeploy';
 import { NewServices } from './deployBoxes/NewServices';
 import { Details } from './deployBoxes/Details';
+import PayApp from './deployBoxes/PayApp';
 
 const NewApplicationj = () => {
-  const [selected, setSelected] = useState(0);
-  const [modal, setModal] = useState(false);
-  const toggle = (i) => {
-    return setSelected(i);
+  const [completedSteps, setCompletedSteps] = useState([]);
+  
+  const handleCompleteStep = (step) => {
+    setCompletedSteps(prevSteps => [...prevSteps, step]);
   };
+
   return (
     <>
     <div style={{opacity:'0'}}>.</div>
@@ -28,14 +30,15 @@ const NewApplicationj = () => {
           />
           <div className="div-newApp"> LETS GET STARTED!</div>
         </div>
-        <WhatApp/>
-        <NameBox/>
-        <Details/>
-        <NewServices/>
-        <DeployMethod/>
-        <EnvVariables/>
-        <PreDeploy/>
-        <div style={{display:'flex',margin:'auto',marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WERE DONE!</div>
+         <WhatApp onNextStep={() => handleCompleteStep(1)} />
+      {completedSteps.includes(1) && <NameBox onNextStep={() => handleCompleteStep(2)} />}
+      {completedSteps.includes(2) && <Details onNextStep={() => handleCompleteStep(3)} />}
+      {completedSteps.includes(3) && <NewServices onNextStep={() => handleCompleteStep(4)} />}
+      {completedSteps.includes(4) && <DeployMethod onNextStep={() => handleCompleteStep(5)} />}
+      {completedSteps.includes(5) && <EnvVariables onNextStep={() => handleCompleteStep(6)} />}
+      {completedSteps.includes(6) && <PreDeploy />}
+      <PayApp/>
+        <div style={{ marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WERE DONE!</div>
         <button className='deploy-now'> Deploy now</button>
         
       </div>

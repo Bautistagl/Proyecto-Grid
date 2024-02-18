@@ -6,7 +6,7 @@ import Botonera from '@/commons/Botonera';
 import CountrySelector from './CountrySelector';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
-export const Details = () => {
+export const Details = ({onNextStep}) => {
   const [values, setValues] = useState({
     range1: 3,
     range2: 100,
@@ -15,7 +15,7 @@ export const Details = () => {
   const [duration, setDuration] = useState(1);
   const handleChange = (e) => {
     const { name, value } = e.target;
-    const delay = 200;
+    const delay = 0;
     setTimeout(() => {
       setValues({
         ...values,
@@ -121,9 +121,11 @@ export const Details = () => {
             <Botonera titulo="Static IP" />
             <Botonera titulo="Enterprise Application" />
           </div>
+        <button className='boton-continue' onClick={()=>onNextStep()}>Continue</button>
         </div>
         {/* <WebComponent/> */}
       </div>
+
       <Image
         style={{ display: 'flex', justifyContent: 'center', margin: 'auto' }}
         alt=""

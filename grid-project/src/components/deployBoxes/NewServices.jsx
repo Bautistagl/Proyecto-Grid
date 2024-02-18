@@ -4,7 +4,7 @@ import { WebComponent } from './WebComponent'
 import { DataComponent } from './DataComponent'
 import ComponentSelector from './ComponentSelector'
 
-export const NewServices = () => {
+export const NewServices = ({onNextStep}) => {
   const [option,setOption] = useState('')
   const [database,setDatabase] = useState('')
   const [selected, setSelected] = useState(0);
@@ -29,7 +29,7 @@ export const NewServices = () => {
             </div>
             <ComponentSelector/>
            
-
+            <button className='boton-continue' onClick={()=>onNextStep()}>Continue</button>
 
 </div>
     </div>

@@ -74,7 +74,9 @@
 .geolocation select{
   display: flex;
   width: 20vw;
-  background-image: linear-gradient(to right, #797979, #0c1317);
+  background-image: linear-gradient(to left, #355245, #9cada5);
+  font-family: rouben ligth;
+  font-size: 0.8rem;
 }
 .geolocation label{
   display: flex;

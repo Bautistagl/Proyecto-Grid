@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Paginacion from '@/commons/Paginacion';
 import dynamic from 'next/dynamic';
 import NuevasCardsHosting from './NuevasCardsHosting';
+import ContactForm from '../index/ContactForm';
 
 
 
@@ -46,8 +47,8 @@ const HostingWeb = () => {
 
     <NuevasCardsHosting/>
 
-
-        <div className='aboutUs-final2'>
+    <ContactForm/>
+        {/* <div className='aboutUs-final2'>
 
     <h1> Enterprise</h1>
     <span> Get volume discount along with enterprise-grade support and features</span>
@@ -59,7 +60,7 @@ const HostingWeb = () => {
     <button className='botones-aboutUs2'> Book a Demo </button>
     </div>
     
-</div>
+</div> */}
 
 
       <div style={{opacity:'0'}}>.</div>

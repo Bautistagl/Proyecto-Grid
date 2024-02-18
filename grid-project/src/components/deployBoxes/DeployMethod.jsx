@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const DeployMethod = () => {
+const DeployMethod = ({onNextStep}) => {
   return (
     <>
     <div className='deployMethod-container'>
@@ -45,6 +45,7 @@ const DeployMethod = () => {
             <input  placeholder='Docker image namespace/repository:tag' />
           </div>
         </div>
+          <button style={{margin:'auto',marginBottom:'30px'}} className='boton-continue' onClick={()=>onNextStep()}>Continue</button>
     </div>
     <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={30} height={30} src='/dots.png'/>
     </>

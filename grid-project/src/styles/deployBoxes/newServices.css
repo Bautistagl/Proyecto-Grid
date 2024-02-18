@@ -23,12 +23,11 @@
     justify-content: center;
     align-content: center;
     margin: auto;
-    padding: 10px 10px;
-    font-size: 1rem;
-    width: auto;
-    color: white;
+    padding: 0px;
+    font-size: 2rem;
+    width: 45px;
+    color: #0c1317;
     background-color: #36B079;
-    
     height: 45px;
     border-radius: 10px;
     margin-bottom: 30px;

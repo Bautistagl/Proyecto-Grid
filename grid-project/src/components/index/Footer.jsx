@@ -1,7 +1,8 @@
 
+import Link from 'next/link';
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({ scrollToContactForm }) => {
   const openIntercom = () => {
     window.Intercom('show');
   };
@@ -15,7 +16,7 @@ const Footer = () => {
               GRID CLOUD
             </div>
                     <div className='footer-parrafo'>
-                    Flux is a decentralized Web3 cloud infrastructure comprised of user-operated, scalable and globally distributed computational nodes.
+                    Grid Cloud is a decentralized Web3 cloud infrastructure comprised of user-operated, scalable and globally distributed computational nodes.
                       </div>
                       <div className='redes-footer'>
               <a href='//www.linkedin.com'>
@@ -33,7 +34,9 @@ const Footer = () => {
                 <img className='icon-redes' src={"/instagram.png"}/>
               </a>
            </div>
-           <button style={{marginTop:'30px',backgroundColor: '#36B079'}}> Contact us! </button>
+           <button  onClick={() => {
+                scrollToContactForm();
+              }} style={{marginTop:'30px',backgroundColor: '#36B079'}}> Contact us! </button>
            <button style={{marginTop:'30px',backgroundColor: '#36B079'}} > Support Center</button>
 
          </div>
@@ -42,8 +45,12 @@ const Footer = () => {
          <div className='columna'> 
             
             <ul>
+              <Link href='/aboutUs'>
                <li>About </li>
+              </Link>
+              <Link href='/pricing'>
                <li>Pricing</li>
+              </Link>
             </ul>
          </div>
          <div className='columna'> 
@@ -51,7 +58,9 @@ const Footer = () => {
             <ul>
               <li>Github</li>
               <li> Docs</li>
+              <Link href='/blog'>
               <li> Blog</li>
+              </Link>
             </ul>
          </div>
          <div className='columna'> 

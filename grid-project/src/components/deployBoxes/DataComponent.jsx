@@ -15,7 +15,7 @@ export const DataComponent = () => {
     
       const handleChange = (e) => {
         const { name, value } = e.target;
-        const delay = 200;
+        const delay = 0;
         setTimeout(() => {
             setValues({
               ...values,

@@ -21,7 +21,7 @@
     margin-bottom: 100px;
     border: 2px solid transparent;
     border-image: linear-gradient(to right, white, gray, transparent) 1;
-    
+    margin-top: 100px;
     border-radius: 15px;
     -webkit-mask: /*4*/
     linear-gradient(#fff 0 0) padding-box, 

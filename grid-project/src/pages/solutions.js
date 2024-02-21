@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import ContactForm from "@/components/index/ContactForm";
 import Footer from "@/components/index/Footer";
 import Banner from "@/components/landing-AsicHosting/Banner";
 
@@ -8,6 +7,8 @@ import { useInView } from "react-intersection-observer";
 import BarChart from "@/components/solutions/BarChart";
 import Charts from "@/components/solutions/Charts";
 import Migration from "@/components/solutions/Migration";
+import React, { useRef } from "react";
+import ContactForm from "@/components/index/ContactForm";
 
 
 
@@ -18,8 +19,24 @@ const DynamicNavbar = dynamic(()=>import("../components/index/Navbar"),
   }
 )
 
-
 export default function Solutions() {
+  const contactFormRef = useRef(null);
+  
+  const scrollToContactForm = () => {
+    if (contactFormRef.current) {
+      contactFormRef.current.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
+  
+  const ContactForm1 = React.forwardRef((props, ref) => (
+    // Renderiza el componente ContactForm y asigna la referencia al elemento principal.
+    <div ref={ref}>
+      <ContactForm/>
+    </div>
+  ));
+  ContactForm1.displayName = 'ContactForm1';
 
   const [ref, inView] = useInView({
     triggerOnce: true, // Animation triggers only once
@@ -34,7 +51,7 @@ export default function Solutions() {
     <>
     <div className="container-homePrincipal"> 
 
-    <DynamicNavbar/>
+    <DynamicNavbar scrollToContactForm={scrollToContactForm}/>
     <div className="banner-container">
     <Banner
     producto='Web Hosting'
@@ -50,8 +67,8 @@ export default function Solutions() {
      
         <Charts/>
         <Migration/>
-   <ContactForm/>
-   <Footer/>
+   <ContactForm1 ref={contactFormRef}/>
+   <Footer scrollToContactForm={scrollToContactForm}/>
     </div>
  
       

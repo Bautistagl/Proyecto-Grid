@@ -69,7 +69,7 @@ const ComponentSelector = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    const delay = 200;
+    const delay = 0;
     setTimeout(() => {
       setValues({
         ...values,
@@ -80,7 +80,7 @@ const ComponentSelector = () => {
 
   const handleChange2 = (e) => {
     const { name, value } = e.target;
-    const delay = 200;
+    const delay = 0;
     setTimeout(() => {
       setValues2({
         ...values2,
@@ -91,7 +91,7 @@ const ComponentSelector = () => {
 
   const handleChange3 = (e) => {
     const { name, value } = e.target;
-    const delay = 200;
+    const delay = 0;
     setTimeout(() => {
       setValues3({
         ...values3,
@@ -135,6 +135,13 @@ const ComponentSelector = () => {
     setValues2({ range1: 3, range2: 100, range3: 1 });
     setValues3({ range1: 3, range2: 100, range3: 1 });
     setSelected(0);
+  };
+  const handleDelete = (indexToRemove) => {
+    setSelections(prevSelections => {
+      const updatedSelections = [...prevSelections];
+      updatedSelections.splice(indexToRemove, 1);
+      return updatedSelections;
+    });
   };
 
   return (
@@ -442,6 +449,7 @@ const ComponentSelector = () => {
                   <p> {continents[selection.continent - 1].name}: </p>
                   <span> {selection.name}</span>
                   <Image
+                    
                     onClick={() => handleToggle(index)}
                     src={
                       selection.expanded ? '/upArrow.png' : '/downNavbar.png'
@@ -450,6 +458,14 @@ const ComponentSelector = () => {
                     width={selection.expanded ? 15 : 20}
                     height={selection.expanded ? 15 : 20}
                   />
+                   <Image
+                     onClick={()=> handleDelete(index)}
+                    src= '/delete.png' 
+                    alt=""
+                    width={20}
+                    height={20}
+                  />
+                
                 </div>
 
                 {selection.expanded && (
@@ -479,7 +495,7 @@ const ComponentSelector = () => {
                     </div>
                     {selection.continent === '1' && (
                       <div>
-                        {selection.selectedSpan === 'general' && (
+                        {selection.selectedSpan === 'general' || !selection.selectedSpan && (
                           <div>
                             <select style={{ width: '90%' }}>
                               <option value="SQL">SQL</option>
@@ -535,7 +551,7 @@ const ComponentSelector = () => {
                     )}
                     {selection.continent === '2' && (
                       <div>
-                        {selection.selectedSpan === 'general' && (
+                        {selection.selectedSpan === 'general'|| !selection.selectedSpan  && (
                           <div>
                             <label style={{ marginLeft: '15px' }}>
                               {' '}
@@ -608,8 +624,8 @@ const ComponentSelector = () => {
                       </div>
                     )}
                     {selection.continent === '3' && (
-                      <div>
-                        {selection.selectedSpan === 'general' && (
+                      <div> 
+                        {selection.selectedSpan === 'general' || !selection.selectedSpan && (
                           <div>
                             <label style={{ marginLeft: '15px' }}>
                               {' '}

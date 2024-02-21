@@ -5,13 +5,13 @@ import React from 'react'
 const ContactForm = () => {
   return (
     <>
+    <>.</>
     <section className='contact-section'> 
-
     <div className='contact-container2' >
       <div className='titulos-contact'>
 
-        <div className='contact-titulo'> I am a company </div>
-        <div className='contact-subtitulo'> WANT TO BECOME A PARTNER?</div>
+        <div className='contact-titulo'> Contact </div>
+        {/* <div className='contact-subtitulo'> WANT TO BECOME A PARTNER?</div> */}
        
       </div>
         <div className='contact-form'>
@@ -24,6 +24,7 @@ const ContactForm = () => {
                     <option value="Help Needed">Help Needed</option>
                     <option value="Feature Request">Feature Request</option>
                     <option value="Bug Report">Bug Report</option>
+                    <option value="Enterprise Aplication">Enterprise Aplication</option>
                   </select>
             <div className='contenedorFlex2'>
             <button className='boton-contact-form'>  SEND</button>

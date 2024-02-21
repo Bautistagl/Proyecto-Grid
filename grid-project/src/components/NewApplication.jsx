@@ -36,10 +36,14 @@ const NewApplicationj = () => {
       {completedSteps.includes(3) && <NewServices onNextStep={() => handleCompleteStep(4)} />}
       {completedSteps.includes(4) && <DeployMethod onNextStep={() => handleCompleteStep(5)} />}
       {completedSteps.includes(5) && <EnvVariables onNextStep={() => handleCompleteStep(6)} />}
-      {completedSteps.includes(6) && <PreDeploy />}
-      <PayApp/>
+      {completedSteps.includes(6) && <PreDeploy onNextStep={() => handleCompleteStep(7)} />}
+      {completedSteps.includes(7) &&  <PayApp onNextStep={() => handleCompleteStep(8)} />}
+      {completedSteps.includes(8) &&  <>
         <div style={{ marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WERE DONE!</div>
         <button className='deploy-now'> Deploy now</button>
+        </>}
+     
+        
         
       </div>
       <div style={{opacity:'0'}}>.</div>

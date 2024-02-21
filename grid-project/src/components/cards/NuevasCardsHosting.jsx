@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 
@@ -87,15 +88,18 @@ const NuevasCardsHosting = () => {
            
 
         </div>
+        <Link href='/profile/newApplication'>
         <button className='boton-nuevas'> Continue Setup</button>
+        </Link>
       </div>
       <div className="nueva-card-hosting2">
        <div className='primera-parte-card'>
 
-        <span className='titulo-card-nueva'>  Cost Estimator</span>
-        {/* <span className='primer-span'>
-          Estimate the cost of your application on different cloud providers
-        </span> */}
+        <span className='titulo-card-nueva'> Cloud Cost Estimator</span>
+
+        <span className='primer-span'>
+        These costs are from the underlying cloud provider(Flux)
+        </span>
         <div className='nueva-card-botones'>
 
         <button onClick={() => handleOptionClick(0)}>2 vCPU</button>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const PayApp = () => {
+const PayApp = ({onNextStep}) => {
   return (
     <>
     <section style={{marginTop:'30px'}} className='contact-section'> 
@@ -40,9 +40,9 @@ const PayApp = () => {
             
         </div>
 
-
     </div>
     </section>
+        <button onClick={()=>onNextStep()}> Continue</button>
     <div style={{opacity:'0'}}>.</div>
     </>
   )

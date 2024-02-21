@@ -74,7 +74,7 @@ export default function Home() {
    <Powered/>
    <NuevoFaqs/>
    <ContactForm1 ref={contactFormRef}/>
-   <Footer/>
+   <Footer scrollToContactForm={scrollToContactForm}/>
     </div>
  
       

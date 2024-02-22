@@ -58,7 +58,7 @@ export default function Home() {
     <div className="banner-container">
     <Banner
         scrollToContactForm={scrollToContactForm}
-        title='Deploy everywhere, at any time.'
+        title='Just focus on building.'
         subtitle='Grid simplifies the deployment of your applications to a decentralized cloud, allowing you to get started with just a few clicks. As your projects expand, grid gives you the freedom to adapt your infrastructure to your exact needs, ensuring a scalable and customizable environment.'
       />
        <img 

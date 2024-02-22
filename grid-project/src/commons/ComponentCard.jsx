@@ -1,9 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const ComponentCard = () => {
   return (
     <div className='ComponentCard'>
+        <Link href='/profile/project/notifications'>
         <div className='first'>
             <span>Active</span>
             <span>Deployed</span>
@@ -23,6 +25,7 @@ const ComponentCard = () => {
             <span> Last deployed: <p> 4 days ago</p></span>
 
         </div>
+        </Link>
 
     </div>
   )

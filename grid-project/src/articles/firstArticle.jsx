@@ -15,7 +15,7 @@ const FirstArticle = () => {
         <span> 5 min read</span>
         </div>
         <div className='article2'>
-            <Image alt='' src='/gridCloud.svg' height={200} width={400}/>
+            <Image alt='' src='/gridCloud2.svg' height={200} width={400}/>
         </div>
         <div className="container-aboutUs">
       <h1> About Grid Mine + Grid Cloud </h1>

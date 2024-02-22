@@ -20,7 +20,7 @@ const SideNavbar = ({abierto,setAbierto}) => {
    
       <ul className='sideNavbar-ul'>
         <Link href="/profile">
-      <img className='icono-sideBar-grid' src='/gridCloud.svg'/>
+      <img className='icono-sideBar-grid' src='/gridCloud2.svg'/>
         </Link>
       <Link href="/profile">  
         <li style={{marginBottom:'3vh'}} className='sideNavbar-li'><img className='icon-sideNavbar2' src='/homeDark.png'/>  Home </li>
@@ -57,7 +57,7 @@ const SideNavbar = ({abierto,setAbierto}) => {
       <span onClick={()=>setAbierto(!abierto)}> Contact Support</span>
       </div>
       </ul>
-          <img alt='' src='/gridCloud.svg' className='sidebar-grid' />
+          <img alt='' src='/gridCloud2.svg' className='sidebar-grid' />
 
           
           {menu === false ? (

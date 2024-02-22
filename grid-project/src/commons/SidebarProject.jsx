@@ -29,7 +29,7 @@ const SidebarProject = ({abierto,setAbierto}) => {
    
       <ul className='sideNavbar-ul'>
         <Link href="/">
-      <img className='icono-sideBar-grid' src='/gridCloud.svg'/>
+      <img className='icono-sideBar-grid' src='/gridCloud2.svg'/>
         </Link>
       <Link href="/profile/project/events">  
         <li className='sideNavbar-li'>  Events</li>
@@ -67,7 +67,7 @@ const SidebarProject = ({abierto,setAbierto}) => {
       <span onClick={()=>setAbierto(!abierto)}> Contact Support</span>
       </div>
       </ul>
-          <img alt='' src='/gridCloud.svg' className='sidebar-grid' />
+          <img alt='' src='/gridCloud2.svg' className='sidebar-grid' />
 
           
           {menu === false ? (

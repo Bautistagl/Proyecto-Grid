@@ -7,7 +7,7 @@ const ArticleEx = ({title,foto,author,date,time}) => {
     <div className='article-container2'>
             <Link style={{margin:'auto'}} href='/articles/firstBlog'>
         <div className='article3'>
-            <Image alt='' src='/gridCloud.svg' height={200} width={300}/>
+            <Image alt='' src='/gridCloud2.svg' height={200} width={300}/>
         </div>
             </Link>
         <h2> {title}</h2>

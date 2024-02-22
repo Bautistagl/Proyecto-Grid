@@ -1,6 +1,6 @@
 import DeployedNavbar from '@/commons/DeployedNavbar'
 import ProjectInfo from '@/commons/ProjectInfo'
-import EnvironmentScreen from '@/components/projectsx/EnvironmentScreen'
+import ActivityScreen from '@/components/projectsx/ActivityScreen'
 import dynamic from 'next/dynamic'
 
 import { useState } from 'react'
@@ -26,7 +26,7 @@ export default function Activity ()  {
           <ProjectInfo/>
           <DeployedNavbar/>
 
-          <EnvironmentScreen/>
+          <ActivityScreen/>
             </div>
                    </div>
       

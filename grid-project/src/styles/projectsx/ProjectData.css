@@ -1,16 +1,23 @@
 
 .projectDataContainer{
-    width: 50%;
+    width: 90%;
     color: white;
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.data-project{
+    display: flex;
+    align-items: center;
 }
 
 .data-project h3,p,span  {
     margin:  10px 0px;
     font-family: rouben ligth;
+    margin: auto 10px;
   
 }
 .data-project span{
@@ -27,19 +34,13 @@
     height: 15px;
     width: 15px;
 }
-.botones-project{
+.branch-project{
     display: flex;
-    
-    margin-left: auto;
 }
-.botones-project button{
-    background-color: #36B079;
-    height: 30%;
-    justify-content: center;
-    align-content: center;
-    margin: auto ;
-    
+.branch-project div{
+    margin: auto 10px;
 }
+
 .dataDeployContainer{
     display: flex;
     flex-direction: column;
@@ -132,4 +133,128 @@
 }
 .botones-header button{
     margin: 10px;
+}
+
+.notification-screen{
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.070);
+    color: white;
+    margin: auto;
+    font-family: rouben ligth;
+    border-radius: 5px;
+   
+}
+.activity-box{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.070);
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.notification-screen h3{
+    padding: 15px;
+    margin: 0px;
+}
+.notification-screen span{
+    display: flex;
+   width: 90%;
+    padding: 15px;
+    margin: 0px;
+}
+
+.activity-ul {
+    color: white;
+    display: flex;
+    margin: auto 10px;
+    
+}
+.activity-ul span{
+    width: 100%;
+    font-size: 0.8rem;
+}
+.circle2{
+    width: 7px;
+    height: 7px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0px;
+}
+.activity-section{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    
+}
+.activity-titles{
+    display: flex;
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+.activity-titles p{
+    font-size: 0.9rem;
+}
+.activity-titles span{
+    margin-left: auto;
+    margin-right: 5%;
+    font-size: 0.9rem;
+    color: #ffffffa6;
+}
+.activity-status{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+   
+}
+.activity-status span{
+    color: #36B079;
+    font-size: 0.9rem;
+    margin: auto 10px;
+}
+.activity-status img{
+    margin: auto 0px;
+}
+
+
+.activity-status button{
+    display: flex;
+    background-color: #0c131776;
+    padding: 3px;;
+    font-size: 0.8rem;
+    font-family: rouben ligth;
+    letter-spacing: 1px;
+    
+    
+}
+.activity-details{
+    display: flex;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    
+}
+.activity-details span{
+    font-size: 0.9rem;
+}
+.activity-details img{
+    display: flex;
+    margin: auto 10px; 
+}
+.activity-details p{
+    font-size: 0.8rem;
+    margin-left: 0px;
+    color: #36B079;
+}
+
+.activity-details button{
+    display: flex;
+    background-color: #0c131776;
+    font-size: 0.8rem;
+    font-family: rouben ligth;
+    padding: 3px;
+    letter-spacing: 1px;
+    margin-left: 0px !important;
+  
+
 }

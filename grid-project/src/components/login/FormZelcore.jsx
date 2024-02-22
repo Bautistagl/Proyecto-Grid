@@ -12,41 +12,41 @@ function FormZelcore() {
   const [signature,setSignature] = useState('')
   const [postResponse, setPostResponse] = useState(null);
 
-  const handlePostRequest = async () => {
-    try {
-      if (!apiData || !apiData.data) {
-        console.error('Error: apiData is null or does not contain data.');
-        return;
-      }
+  // const handlePostRequest = async () => {
+  //   try {
+  //     if (!apiData || !apiData.data) {
+  //       console.error('Error: apiData is null or does not contain data.');
+  //       return;
+  //     }
 
-      const apiUrl = 'https://api.runonflux.io/id/verifylogin';
-      const postData = {
-        loginPhrase: apiData.data,
-        zelid: zelId,
-        signature: signature
-      };
+  //     const apiUrl = 'https://api.runonflux.io/id/verifylogin';
+  //     const postData = {
+  //       loginPhrase: apiData.data,
+  //       zelid: zelId,
+  //       signature: signature
+  //     };
 
-      const response = await axios.post(apiUrl, postData, {
-        headers: {
-          'Content-Type': 'text/plain',
-        },
-      });
-      if (response.data && response.data.status == 'success') {
-        // Save postData to localStorage
-        localStorage.setItem('postData', JSON.stringify(postData));
+  //     const response = await axios.post(apiUrl, postData, {
+  //       headers: {
+  //         'Content-Type': 'text/plain',
+  //       },
+  //     });
+  //     if (response.data && response.data.status == 'success') {
+  //       // Save postData to localStorage
+  //       localStorage.setItem('postData', JSON.stringify(postData));
   
-        // Redirect the user to the /profile/ page
-        window.location.href = '/profile';
-      }
-      else { 
-        console.log(response)
-      }
+  //       // Redirect the user to the /profile/ page
+  //       window.location.href = '/profile';
+  //     }
+  //     else { 
+  //       console.log(response)
+  //     }
 
-      setPostResponse(response.data);
-    } catch (error) {
-      console.error('Error making POST request:', error);
-    }
-  };
+  //     setPostResponse(response.data);
+  //   } catch (error) {
+  //     console.error('Error making POST request:', error);
+  //   }
+  // };
 
   useEffect(() => {
     const apiUrl = 'https://api.runonflux.io/id/loginphrase';
@@ -122,10 +122,11 @@ function FormZelcore() {
       </Link>
 
 
-     
-        <button onClick={handlePostRequest} disabled={!apiData || !apiData.data} className="login-submit" type="submit">
+        <Link href='/profile'>
+        <button className="login-submit" type="submit">
           Login
         </button>
+        </Link>
   
       
       <div className="member-container">

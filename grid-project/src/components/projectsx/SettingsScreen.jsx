@@ -18,7 +18,7 @@ const SettingsScreen = () => {
         </div>
 
         <div className='notification-screen'>
-            <h3>Export "nippon"</h3>
+            <h3>Export &quot;nippon&quot;</h3>
             
             <span >Export this application as Grid Cloud YAML.</span>
             <button style={{margin:'10px'}}> Export</button>
@@ -26,7 +26,7 @@ const SettingsScreen = () => {
 
         </div>
         <div className='notification-screen'>
-            <h3>Delete "nippon"</h3>
+            <h3>Delete &quot;nippon&quot;</h3>
             
             <span >Delete this application and all of its resources.</span>
             <button className='delete'> Delete</button>

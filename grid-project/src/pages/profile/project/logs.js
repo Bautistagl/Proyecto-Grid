@@ -1,8 +1,8 @@
 import DeployedNavbar from '@/commons/DeployedNavbar'
 import ProjectInfo from '@/commons/ProjectInfo'
-import DataDeploys from '@/components/projectsx/DataDeploys'
-import EnvironmentScreen from '@/components/projectsx/EnvironmentScreen'
-import NotificationScreen from '@/components/projectsx/NotificationScreen'
+import ActivityScreen from '@/components/projectsx/ActivityScreen'
+import LogsScreen from '@/components/projectsx/LogsScreen'
+import OverviewScreen from '@/components/projectsx/OverviewScreen'
 import dynamic from 'next/dynamic'
 
 import { useState } from 'react'
@@ -12,7 +12,7 @@ const DynamicNavbar = dynamic(() => import('../../../commons/SideNavbar'), {
   });
 
 
-export default function Notifications ()  {
+export default function Logs ()  {
 
 
   const[visible, setVisible] = useState(true)
@@ -28,7 +28,7 @@ export default function Notifications ()  {
           <ProjectInfo/>
           <DeployedNavbar/>
 
-          <NotificationScreen/>
+          <LogsScreen/>
             </div>
                    </div>
       

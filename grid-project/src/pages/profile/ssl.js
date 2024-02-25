@@ -1,4 +1,3 @@
-import SideNavbar from "@/commons/SideNavbar";
 import InfoPersonal from "@/components/logged/personal/InfoPersonal"
 import dynamic from "next/dynamic";
 import { useState } from "react";

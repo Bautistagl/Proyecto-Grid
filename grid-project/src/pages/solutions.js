@@ -1,10 +1,8 @@
 import dynamic from "next/dynamic";
 import Footer from "@/components/index/Footer";
 import Banner from "@/components/landing-AsicHosting/Banner";
-
 import CardsHosting from "@/commons/CardsHosting";
 import { useInView } from "react-intersection-observer";
-import BarChart from "@/components/solutions/BarChart";
 import Charts from "@/components/solutions/Charts";
 import Migration from "@/components/solutions/Migration";
 import React, { useRef } from "react";

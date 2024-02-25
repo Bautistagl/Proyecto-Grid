@@ -4,13 +4,9 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 function FormZelcore() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [view, setView] = useState(false)
   const [apiData, setApiData] = useState(null);
   const [zelId,setZelId] = useState('')
   const [signature,setSignature] = useState('')
-  const [postResponse, setPostResponse] = useState(null);
 
   // const handlePostRequest = async () => {
   //   try {
@@ -73,6 +69,15 @@ function FormZelcore() {
     <span> <img alt='' src=''/> Read the Grid Cloud docs </span>
     <span> <img alt='' src=''/> See whats new with Grid Cloud </span>
     <span> <img alt='' src=''/> Join the community </span>
+    
+        <div className="member-login">
+          Not a member yet?
+          <Link href='/register'>
+          <span className="member2-login"> Create an account </span>
+          </Link>
+          and start right now!
+        </div>
+     
    
 
     </div>
@@ -83,8 +88,9 @@ function FormZelcore() {
      
       <div style={{display:'flex',flexDirection:'column'}}>
 
-      <label style={{color:'white',marginTop:'30px'}}> Message</label>
+      <label style={{fontFamily:'rouben',color:'white',marginTop:'30px',marginLeft:'auto',marginRight:'auto'}}> Message</label>
       <input
+      style={{marginLeft:'auto',marginRight:'auto'}}
         placeholder={apiData ?  apiData.data : ''}
         className="login-input"
         value={apiData ?  apiData.data : ''}
@@ -94,8 +100,9 @@ function FormZelcore() {
       </div>
 
       <div style={{display:'flex',flexDirection:'column'}}> 
-      <label style={{color:'white',marginTop:'30px'}}> Address</label>
+      <label style={{fontFamily:'rouben',color:'white',marginTop:'30px',marginLeft:'auto',marginRight:'auto'}}> Address</label>
      <input
+      style={{marginLeft:'auto',marginRight:'auto'}}
        placeholder="Insert ZellID or Bitcoin address"
        className="login-input"
        value={zelId}
@@ -106,8 +113,9 @@ function FormZelcore() {
 
      <div style={{display:'flex',flexDirection:'column'}}>
 
-     <label style={{color:'white',marginTop:'30px'}}> Signature</label>
+     <label style={{fontFamily:'rouben',color:'white',marginTop:'30px',marginLeft:'auto',marginRight:'auto'}}> Signature</label>
       <input
+        style={{marginLeft:'auto',marginRight:'auto'}}
        placeholder="Insert Signature"
        className="login-input"
        value={signature}
@@ -115,29 +123,23 @@ function FormZelcore() {
 
        
      />
+     
+     <button className="login-submit" type="submit">
+        <Link href='/profile'>
+          Login
+        </Link>
+        </button>
      </div>
       </div>
+      
       <Link href={`zel:?action=sign&message=${apiData ? apiData.data : ''}&icon=https%3A%2F%2Fraw.githubusercontent.com%2Frunonflux%2Fflux%2Fmaster%2FzelID.svg&callback=http://localhost:3000/api/post`}>
        <Image alt='' src='zelID.svg' height={50} width={50} />
       </Link>
 
 
-        <Link href='/profile'>
-        <button className="login-submit" type="submit">
-          Login
-        </button>
-        </Link>
   
       
-      <div className="member-container">
-        <div className="member-login">
-          Not a member yet?
-          <Link href='/register'>
-          <span className="member2-login"> Create an account </span>
-          </Link>
-          and start right now!
-        </div>
-      </div>
+    
     
     </div>
   );

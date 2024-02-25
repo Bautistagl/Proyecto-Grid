@@ -1,6 +1,5 @@
 import DeployedNavbar from '@/commons/DeployedNavbar'
 import ProjectInfo from '@/commons/ProjectInfo'
-import ActivityScreen from '@/components/projectsx/ActivityScreen'
 import OverviewScreen from '@/components/projectsx/OverviewScreen'
 import dynamic from 'next/dynamic'
 

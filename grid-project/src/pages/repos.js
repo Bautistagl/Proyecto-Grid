@@ -1,7 +1,7 @@
 import axios from 'axios';
 import AuthComponent from '@/github/AuthComp';
-import { useEffect, useState } from 'react';
-import RepoDetails from '@/github/RepoDetails';
+import { useState } from 'react';
+
 
 const ReposPage = ({ repos }) => {
 

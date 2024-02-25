@@ -2,9 +2,9 @@ import Paginacion from '@/commons/Paginacion';
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Project from '@/commons/Project';
 import ModalContact from '@/commons/ModalContact';
 import ComponentCard from '@/commons/ComponentCard';
+import ComponentCard2 from '@/commons/ComponentCard2';
 const DynamicNavbar = dynamic(() => import('../../commons/SideNavbar'), {
   ssr: false,
   loading: () => <p> Im f</p>,
@@ -38,79 +38,73 @@ export default function LoggedLogin() {
           <div style={{ display: 'flex', flexDirection: 'row' }}>
             <DynamicNavbar abierto={abierto} setAbierto={setAbierto} />
             <div
-              style={{ width: '100%', marginLeft: '100px', marginRight: 'auto' }}>
+              style={{
+                width: '100%',
+                marginLeft: '100px',
+                marginRight: 'auto',
+              }}>
               <Paginacion anterior="Home" links="/profile" />
-              <div className='contents-index'>
+              <div className="contents-index">
+                <div style={{ width: '100%' }}>
+                  <div className="titulos-dashboard">
+                    <h2> My components </h2>
+                    <button>
+                      {' '}
+                      <Link href="/profile/newApplication">
+                        {' '}
+                        + New component
+                      </Link>{' '}
+                    </button>
+                  </div>
+                  <div className="grid-components">
+                    <ComponentCard />
+                    <ComponentCard2 />
+                  </div>
+                </div>
+                <div style={{display:'flex'}}>
+                  <div className='separador-horizontal'></div>
 
-              <div style={{width:'100%'}}>
 
-              <div className="titulos-dashboard">
-                <h2> My components </h2>
-                <button>
-                  {' '}
-                  <Link href="/profile/newApplication">
-                    {' '}
-                    + New component
-                  </Link>{' '}
-                </button>
-              </div>
-              <div className="grid-components">
-                <ComponentCard />
-                <ComponentCard />
-              </div>
-              </div>
-              <div className='filter-index'>
-              
-            <span> Sort by: </span>
-            <select >
+
+                <div className="filter-index">
+                  <span> Sort by: </span>
+                  <select>
                     <option value="Lates">Latest</option>
                     <option value="Active">Active</option>
                     <option value="Failed">Failed</option>
                   </select>
-                  <span > Search: </span>
-                  <input/>
+                  <span> Search: </span>
+                  <input />
                   <p> Filters</p>
                   <span> Show:</span>
-                  <div className='checkbox-filter'>
-
-                  <input 
-                   type='checkbox'/>
-                   <label>Active</label>
+                  <div className="checkbox-filter">
+                    <input type="checkbox" />
+                    <label>Active</label>
                   </div>
-                  <div className='checkbox-filter'>
-
-<input 
- type='checkbox'/>
- <label>Suspended</label>
-</div>
-<div className='checkbox-filter'>
-
-<input 
- type='checkbox'/>
- <label>All</label>
-</div>
-
-<span> Status:</span>
-                  <div className='checkbox-filter'>
-
-                  <input 
-                   type='checkbox'/>
-                   <label>Deployed</label>
+                  <div className="checkbox-filter">
+                    <input type="checkbox" />
+                    <label>Suspended</label>
                   </div>
-                  <div className='checkbox-filter'>
+                  <div className="checkbox-filter">
+                    <input type="checkbox" />
+                    <label>All</label>
+                  </div>
 
-<input 
- type='checkbox'/>
- <label>Failed to deploy</label>
-</div>
-<div className='checkbox-filter'>
-
-<input 
- type='checkbox'/>
- <label>All</label>
-</div>
-
-              </div>
+                  <span> Status:</span>
+                  <div className="checkbox-filter">
+                    <input type="checkbox" />
+                    <label>Deployed</label>
+                  </div>
+                  <div className="checkbox-filter">
+                    <input type="checkbox" />
+                    <label>Failed to deploy</label>
+                  </div>
+                  <div className="checkbox-filter">
+                    <input type="checkbox" />
+                    <label>All</label>
+                  </div>
+                </div>
+                </div>
               </div>
             </div>
           </div>

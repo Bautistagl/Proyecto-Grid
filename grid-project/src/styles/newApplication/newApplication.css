@@ -18,6 +18,8 @@
     display: flex;
     width: 80%;
     margin: auto;
+    margin-top: 80px;
+    margin-bottom: 15vh;
 }
 .div-newApp{
     font-size: 1.2rem;

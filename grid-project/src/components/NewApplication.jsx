@@ -21,27 +21,21 @@ const NewApplicationj = () => {
     <div style={{opacity:'0'}}>.</div>
       <div className="contenedor-newApp">
         <div className="contenedor-flex-only4">
-          <Image
-            style={{ marginRight: '10px' }}
-            alt=""
-            src="/iconNewApp2.png"
-            width={50}
-            height={50}
-          />
+        
           <div className="div-newApp"> LETS GET STARTED!</div>
         </div>
-         <WhatApp onNextStep={() => handleCompleteStep(1)} />
-      {completedSteps.includes(1) && <NameBox onNextStep={() => handleCompleteStep(2)} />}
-      {completedSteps.includes(2) && <Details onNextStep={() => handleCompleteStep(3)} />}
-      {completedSteps.includes(3) && <NewServices onNextStep={() => handleCompleteStep(4)} />}
-      {completedSteps.includes(4) && <DeployMethod onNextStep={() => handleCompleteStep(5)} />}
-      {completedSteps.includes(5) && <EnvVariables onNextStep={() => handleCompleteStep(6)} />}
-      {completedSteps.includes(6) && <PreDeploy onNextStep={() => handleCompleteStep(7)} />}
-      {completedSteps.includes(7) &&  <PayApp onNextStep={() => handleCompleteStep(8)} />}
-      {completedSteps.includes(8) &&  <>
+         <NameBox onNextStep={() => handleCompleteStep(1)} />
+      {completedSteps.includes(1) && <Details onNextStep={() => handleCompleteStep(2)} />}
+      {completedSteps.includes(2) && <NewServices onNextStep={() => handleCompleteStep(3)} />}
+      {completedSteps.includes(3) && <DeployMethod onNextStep={() => handleCompleteStep(4)} />}
+      {completedSteps.includes(4) && <EnvVariables onNextStep={() => handleCompleteStep(5)} />}
+      {completedSteps.includes(5) && <PreDeploy onNextStep={() => handleCompleteStep(6)} />}
+      {completedSteps.includes(6) && <PayApp onNextStep={() => handleCompleteStep(7)} />}
+      {completedSteps.includes(7) &&  <>
         <div style={{ marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WERE DONE!</div>
         <button className='deploy-now'> Deploy now</button>
         </>}
+     
      
         
         

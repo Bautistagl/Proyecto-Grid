@@ -124,11 +124,10 @@ ul{
   font-family: rouben ligth;
   font-weight: lighter;
   justify-content: center;
-  margin-left: auto;
   border-radius: 15px;
-  margin-right: 0;
+  font-size: 0.8rem;
   margin-top: 4%;
-  margin-left: 10px;
+ 
 
 
 }

@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
-import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Paginacion from '@/commons/Paginacion';
 import { parse } from 'cookie';

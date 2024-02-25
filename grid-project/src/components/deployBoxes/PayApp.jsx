@@ -6,7 +6,7 @@ import React from 'react'
 const PayApp = ({onNextStep}) => {
   return (
     <>
-    <section style={{marginTop:'30px'}} className='contact-section'> 
+ 
 
     <div  className='contact-container2' >
       <div className='titulos-contact'>
@@ -41,7 +41,7 @@ const PayApp = ({onNextStep}) => {
         </div>
 
     </div>
-    </section>
+   
         <button onClick={()=>onNextStep()}> Continue</button>
     <div style={{opacity:'0'}}>.</div>
     </>

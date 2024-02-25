@@ -42,13 +42,13 @@ const SideNavbar = ({abierto,setAbierto}) => {
         <li  className='sideNavbar-li'><img className='icon-sideNavbar2' src='/userDark.png'/>  Account settings</li>
         </Link>
         <Link href="/profile/security"> 
-         <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/padlockDark.png'/> Security</li>
+         <li className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/padlock2.png'/> Security</li>
         </Link>
         <Link href="/profile/sharedAccount"> 
         <li  className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/groupDark.png'/> Shared Account</li>
         </Link>
         <Link href="/profile/integration"> 
-        <li  className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/integration.png'/> Integrations</li>
+        <li  className='sideNavbar-li'> <img className='icon-sideNavbar2' src='/name.png'/> Integrations</li>
         </Link>
         <Link href={'/'}>
       <button style={{marginTop:'7vh'}} className='logout-sidebar'> Logout </button>

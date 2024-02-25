@@ -4,6 +4,7 @@ import React from 'react'
 const DeployMethod = ({onNextStep}) => {
   return (
     <>
+      <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={30} height={30} src='/dots.png'/>
     <div className='deployMethod-container'>
         <h2>Select a deployment method</h2>
         <span>Deploy from a Git repository or a Docker registry.</span>
@@ -47,7 +48,7 @@ const DeployMethod = ({onNextStep}) => {
         </div>
           <button style={{margin:'auto',marginBottom:'30px'}} className='boton-continue' onClick={()=>onNextStep()}>Continue</button>
     </div>
-    <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={30} height={30} src='/dots.png'/>
+  
     </>
   )
 }

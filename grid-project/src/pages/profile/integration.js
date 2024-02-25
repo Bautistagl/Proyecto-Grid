@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
-import NewApplicationj from '@/components/NewApplication';
-import { useEffect, useState } from 'react';
+
+import { useState } from 'react';
 import Paginacion from '@/commons/Paginacion';
 import Image from 'next/image';
 import { parse } from 'cookie';

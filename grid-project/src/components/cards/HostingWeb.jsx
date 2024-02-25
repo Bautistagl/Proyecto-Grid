@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Paginacion from '@/commons/Paginacion';
+
 import dynamic from 'next/dynamic';
 import NuevasCardsHosting from './NuevasCardsHosting';
 import ContactForm from '../index/ContactForm';

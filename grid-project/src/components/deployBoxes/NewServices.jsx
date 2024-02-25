@@ -17,7 +17,7 @@ export const NewServices = ({onNextStep}) => {
 
   return (
     <>
-   
+   <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={30} height={30} src='/dots.png'/>
     <div className='newServ-container'>
 
             <div  className="card-newApp2">
@@ -35,7 +35,7 @@ export const NewServices = ({onNextStep}) => {
     </div>
   
     
-    <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={30} height={30} src='/dots.png'/>
+    
     </>
   )
 }

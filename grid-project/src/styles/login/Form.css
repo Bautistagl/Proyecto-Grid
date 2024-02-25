@@ -136,10 +136,11 @@
     align-items: center;
     padding: 15px 15px;
     height: 45px;
-    margin-right: 0;
     border-radius: 5px;
     font-family: rouben;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .forgot-login{
@@ -152,9 +153,11 @@
     color: #7ce2b4;
 }
  .member-login{
-   text-align: center;
+   text-align: start;
     width: 100%;
     margin-top: 5%;
+    font-size: 1rem !important;
+    font-weight: lighter !important;
     color: white;
     font-family: rouben;
  }

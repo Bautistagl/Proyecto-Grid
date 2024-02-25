@@ -1,13 +1,19 @@
 .contact-container2{
-    display: flex;
-    flex-direction: row;
+
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.070);
+        width: 80%;
+        border-radius:15px;
+        border: 1px solid rgba(255, 255, 255, 0.068);
+        height: auto;
+        margin: 50px auto;
+        justify-content: center;
+        text-align: center;
+      
+
+        
    
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     
 }
 
@@ -34,6 +40,8 @@
 .contact-form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 5vh auto;
     width: 40vw;
     
@@ -42,14 +50,14 @@
 .contact-form label{
     color: white;
     font-family: rouben;
-    margin-left: 35%;
+    
     margin-top: 20px;
     margin-bottom: -10px;
 }
 
 .contact-input{
     border-style: none;
-    margin-left: auto;
+   
     margin-top: 2%;
    width:60% ;
     height: 2.5vh;
@@ -67,7 +75,7 @@
 .contact-input-description{
     
     border-style: none;
-    margin-left: auto;
+    
     margin-top: 2%;
     width:60% ;
     height: 90px;
@@ -83,7 +91,7 @@
     
     margin-top: 2%;
     width:65% ;
-    margin-left: auto;
+   
     border-radius: 15px;
     background: #303030;
     color: rgba(255, 255, 255, 0.4);
@@ -131,13 +139,13 @@
     
 }
 .contact-titulo{
-    justify-content: flex-start;
-    align-self: flex-start;
+
     display: flex;
     font-family: rouben;
     font-size: 4.5rem;
     width: 100%;
-    margin-left: 60px;
+    justify-content: center;
+    text-align: ce;
     color: white;
 }
 .contact-titulo2{
@@ -152,8 +160,9 @@
 .contenedorFlex2{
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    width: 68%;
+    align-content: center;
+    align-items: center;
+    width: 60%;
     margin-bottom: 20px;
 
 }

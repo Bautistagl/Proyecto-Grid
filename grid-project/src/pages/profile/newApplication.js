@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic'
 import NewApplicationj from '@/components/NewApplication'
 import { useState } from 'react'
-import Paginacion from '@/commons/Paginacion'
 const DynamicNavbar = dynamic(()=>import("../../commons/SideNavbar"),
   {
     ssr:false,

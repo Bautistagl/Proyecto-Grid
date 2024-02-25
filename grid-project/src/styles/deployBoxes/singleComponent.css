@@ -46,14 +46,17 @@
     flex-direction: column;
 }
 .ranges label{
-   margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+
 }
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
     cursor: pointer;
-    width: 90%;
+   
     border: none;
 
   }

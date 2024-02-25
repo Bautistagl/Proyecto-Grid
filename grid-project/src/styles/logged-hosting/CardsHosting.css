@@ -226,7 +226,7 @@
     
     font-family: rouben;
     font-size: 1.2rem;
-    margin-top: 1%;
+    margin-top: 35px;
 }
 .icono-guia-paginacion{
     display: flex;
@@ -235,7 +235,9 @@
     align-content: center;
     margin: auto 10px;
 }
-
+.titulo-guia-paginacion{
+  margin-left: 0px;
+}
 .titulo-guia-paginacion:hover{
     color: #9cefca
 }

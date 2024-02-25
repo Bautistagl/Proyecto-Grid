@@ -88,12 +88,19 @@ export const Details = ({onNextStep}) => {
 
   return (
     <>
+     <Image
+        style={{ display: 'flex', justifyContent: 'center', margin: 'auto' }}
+        alt=""
+        width={30}
+        height={30}
+        src="/dots.png"
+      />
       <div style={{ display: 'flex' }}>
         <div className="newServ-container2">
           <h2>Allowed Geolocations</h2>
           <div  className="card-newApp3">
            <CountrySelector/>
-           <div className='separador'> </div>
+    
             <div className="ranges">
               <label>Instances: {values.range1}</label>
               <input
@@ -126,13 +133,7 @@ export const Details = ({onNextStep}) => {
         {/* <WebComponent/> */}
       </div>
 
-      <Image
-        style={{ display: 'flex', justifyContent: 'center', margin: 'auto' }}
-        alt=""
-        width={30}
-        height={30}
-        src="/dots.png"
-      />
+     
     </>
   );
 };

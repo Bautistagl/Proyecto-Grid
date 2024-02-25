@@ -1,7 +1,6 @@
 import DeployedNavbar from '@/commons/DeployedNavbar'
 import ProjectInfo from '@/commons/ProjectInfo'
 import BuildSettScreen from '@/components/projectsx/BuildSettScreen'
-import EnvironmentScreen from '@/components/projectsx/EnvironmentScreen'
 import dynamic from 'next/dynamic'
 
 import { useState } from 'react'

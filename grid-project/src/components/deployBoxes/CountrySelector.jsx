@@ -120,14 +120,18 @@ const CountrySelector = () => {
           
             <div className='geolocation'>
             <h3>+ Add geolocation </h3>
+            <div style={{display:'flex'}}>
+              <div>
             <label>Continent:</label>
+                
             <select onChange={handleContinentChange} value={selectedContinent || ''}>
               <option value="" disabled>Select a continent</option>
               {continents.map(continent => (
                 <option key={continent.id} value={continent.id}>{continent.name}</option>
               ))}
             </select>
-    
+                 
+
             {selectedContinent && selectedContinent !== '1' && (
               <div>
                 <label> Country:</label>
@@ -139,14 +143,16 @@ const CountrySelector = () => {
                 </select>
               </div>
             )}
-            <button onClick={handleAddSelection}>+</button>
+              </div>
+            <button className='geo-button' onClick={handleAddSelection}>+</button>
+                  </div>
           </div>
-          <div className='geolocation'>
+          <div className='geolocation4'>
             <h3>My allowed geolocations </h3>
 
             {selections.map((selection, index) => (
               <div className='geolocation2' key={index}>
-                {console.log(selections)}
+               
                 <div>
 
                 <div style={{display:'flex'}}>
@@ -174,8 +180,9 @@ const CountrySelector = () => {
             <div className='geolocation'>
           
               <h3>+ Add geolocation</h3>
-
-            <label>Continent:</label>
+                <div style={{display:'flex'}}>
+                  <div>
+                  <label>Continent:</label>
             <select onChange={handleContinentChange2} value={selectedContinent2 || ''}>
               <option value="" disabled>Select a continent</option>
               {continents.map(continent => (
@@ -194,12 +201,17 @@ const CountrySelector = () => {
                 </select>
               </div>
             )}
-            <button  onClick={handleAddSelection2}>+</button>
+
+                  </div>
+                  <button className='geo-button' onClick={handleAddSelection2}>+</button>
+                </div>
+           
+         
             
             </div>
             
 
-            <div className='geolocation'>
+            <div className='geolocation4'>
             <h3>My Forbidden geolocations </h3>
 
             {selections2.map((selection, index) => (
@@ -216,7 +228,7 @@ const CountrySelector = () => {
                 <span>   {selection.country} </span>
                 </div>
                 </div>
-                <button onClick={()=> handleDelete2(index)} style={{margin:'auto 20px auto auto '}} >-</button>
+                <button  onClick={()=> handleDelete2(index)} style={{margin:'auto 20px auto auto '}} >-</button>
               </div>
             ))}
 

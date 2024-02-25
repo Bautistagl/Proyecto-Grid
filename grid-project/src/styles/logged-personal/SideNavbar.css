@@ -24,12 +24,11 @@ margin-left: -10px;
     align-items: center;
     font-family: rouben ligth;
     padding: 5px 5px;
-    width: 90%;
-    height: 40px;
+    width: 70%;
+    height: 26px;
     margin-left: 10px !important;
-    margin-right: 0 !important;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-radius: 10px;
 }
 .sideNavbar-li:hover{
@@ -46,21 +45,22 @@ margin-left: -10px;
     height: 20px;
 }
 .icon-sideNavbar{
-    height: 25px;
+    height: 16px;
     margin-right: 15px;
     margin-left: 5px;
 
 }
 .icon-sideNavbar2{
-    height: 25px;
+    height:16px;
+    
     margin-right: 15px;
     margin-left: 5px;
 }
 
 .titulo-servicios-sidenavbar{
-    color: white;
+    color: #36B079;
     font-family: rouben;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: 1.5px;
    
     font-weight: lighter;
@@ -92,7 +92,7 @@ margin-left: -10px;
 .icono-sideBar-grid{
     height: 55px;
     width: 165px;
-    margin-top: 10%;
+    margin-top: 20px;
     margin-left: 22px;
     margin-bottom: 5vh;
 }
@@ -145,7 +145,7 @@ margin-left: -10px;
 
 .logout-sidebar{
     display: flex;
-    width: 90%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;

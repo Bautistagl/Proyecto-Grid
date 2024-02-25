@@ -1,8 +1,6 @@
 import DeployedNavbar from '@/commons/DeployedNavbar'
 import ProjectInfo from '@/commons/ProjectInfo'
-import ActivityScreen from '@/components/projectsx/ActivityScreen'
 import LogsScreen from '@/components/projectsx/LogsScreen'
-import OverviewScreen from '@/components/projectsx/OverviewScreen'
 import dynamic from 'next/dynamic'
 
 import { useState } from 'react'

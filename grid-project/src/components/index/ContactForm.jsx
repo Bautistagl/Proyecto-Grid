@@ -6,14 +6,14 @@ const ContactForm = () => {
   return (
     <>
     <>.</>
-    <section className='contact-section'> 
+
     <div className='contact-container2' >
-      <div className='titulos-contact'>
+     
 
         <div className='contact-titulo'> Contact </div>
         {/* <div className='contact-subtitulo'> WANT TO BECOME A PARTNER?</div> */}
        
-      </div>
+     
         <div className='contact-form'>
             <input className='contact-input' placeholder='Name / Company'></input>
             <input className='contact-input' placeholder='Email'></input>
@@ -35,7 +35,7 @@ const ContactForm = () => {
 
 
     </div>
-    </section>
+   
     <div style={{opacity:'0'}}>.</div>
     </>
   )

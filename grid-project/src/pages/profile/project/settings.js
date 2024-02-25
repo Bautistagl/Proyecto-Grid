@@ -1,7 +1,5 @@
 import DeployedNavbar from '@/commons/DeployedNavbar'
 import ProjectInfo from '@/commons/ProjectInfo'
-import BuildSettScreen from '@/components/projectsx/BuildSettScreen'
-import EnvironmentScreen from '@/components/projectsx/EnvironmentScreen'
 import SettingsScreen from '@/components/projectsx/SettingsScreen'
 import dynamic from 'next/dynamic'
 

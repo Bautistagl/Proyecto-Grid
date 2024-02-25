@@ -1,7 +1,6 @@
 import DeployedNavbar from '@/commons/DeployedNavbar'
 import ProjectInfo from '@/commons/ProjectInfo'
-import DataDeploys from '@/components/projectsx/DataDeploys'
-import EnvironmentScreen from '@/components/projectsx/EnvironmentScreen'
+
 import NotificationScreen from '@/components/projectsx/NotificationScreen'
 import dynamic from 'next/dynamic'
 

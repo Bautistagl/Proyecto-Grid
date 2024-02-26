@@ -6,7 +6,7 @@ const NameBox = ({onNextStep}) => {
     <>
     
     <div className='nameBox-container'>
-        <h2>What is the name of your application?</h2>
+        <h3>What is the name of your application?</h3>
         <span> Only lowercase and uppercase letters.</span>
         <input placeholder='ex:gridproject'/>
         <button onClick={()=>onNextStep()}>Continue</button>

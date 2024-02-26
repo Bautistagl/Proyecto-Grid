@@ -12,7 +12,7 @@ const WhatApp = ({onNextStep}) => {
             <button onClick={()=>{onNextStep()}}>Database</button>
         </div>
     </div>
-    <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={30} height={30} src='/dots.png'/>
+    <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={25} height={25} src='/dot.png'/>
     </>
   )
 }

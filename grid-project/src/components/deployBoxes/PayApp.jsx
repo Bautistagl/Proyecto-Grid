@@ -10,15 +10,15 @@ const PayApp = ({onNextStep}) => {
 
     <div  className='contact-container2' >
       <div className='titulos-contact'>
-        <div style={{marginTop:'-30px'}}>
-      <Botonera titulo="I agree with Terms of Service" />
-        </div>
-        <div style={{marginTop:'20px',marginBottom:'-30px'}} className='contact-subtitulo'>Register App</div>
+       
+      
+     
+        <h1>Register App</h1>
         <div className='iconos-register'>
-            <Image alt='' src='\zelID.svg' width={70} height={70}/>
-            <Image alt='' src='/walletconnect.svg' width={70} height={70}/>
-            <Image alt='' src='/sspLogo.svg' width={70} height={70}/>
-            <Image alt='' src='/metamask.svg' width={70} height={70}/>
+            <Image alt='' src='/zelID.svg' width={50} height={50}/>
+            <Image alt='' src='/walletconnect.svg' width={50} height={50}/>
+            <Image alt='' src='/sspLogo.svg' width={50} height={50}/>
+            <Image alt='' src='/metamask.svg' width={50} height={50}/>
             
 
         </div>
@@ -37,7 +37,7 @@ const PayApp = ({onNextStep}) => {
             <button className='boton-contact-form'> Register App</button>
           
             </div>
-            
+            <Botonera titulo="I agree with Terms of Service" />
         </div>
 
     </div>

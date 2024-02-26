@@ -31,7 +31,9 @@
   .custom-switch.off .circle {
     transform: translate(0%, -50%); /* Move the circle to the left when the switch is off */
   }
-
+  .botonera{
+    margin-top: 20px;
+  }
   .botonera span{
     display: flex;
     margin: auto 10px !important;
@@ -44,7 +46,7 @@
     
     border-radius: 5px;
     border: 2px solid transparent;
-    margin: 50px auto;
+    margin: -20px auto;
     padding: 20px;
    
     text-align: center;
@@ -81,7 +83,14 @@
   flex-direction: column;
   margin-right: auto;
   font-family:rouben ;
- 
+ color: white;
+}
+.geolocation h4 {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  font-family:rouben ;
+ color: white;
 }
 .geolocation select{
   display: flex;
@@ -188,11 +197,12 @@
 }
 
 
-.geolocation4 h3 {
+.geolocation4 h4 {
   display: flex;
   width: 20vw;
   flex-direction: column;
   margin-right: auto;
+  color: white;
   font-family:rouben ;
 }
 .geolocation4 select{
@@ -220,17 +230,21 @@
   border-radius:15px;
   border: 1px solid rgba(255, 255, 255, 0.068);
   height: auto;
-  margin: 50px auto;
+  margin: 30px auto;
   justify-content: center;
   text-align: center;
   
 }
-.newServ-container2 h2{
+.newServ-container2 h3{
   font-family: rouben ligth;
   letter-spacing: 1px;
   margin-bottom: 20px ;
   margin-top: 40px;
   width: 100% !important;
+}
+.newServ-container2 h4{
+  font-family: rouben;
+ color: white;
 }
 .newServ-container2 button{
   display: flex;

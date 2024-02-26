@@ -99,7 +99,7 @@
    
     border-radius: 5px;
     border: 2px solid transparent;
-    margin: 50px auto;
+    margin: 20px auto;
    
     text-align: center;
 }
@@ -207,8 +207,9 @@
     border-radius: 5px !important;
     text-align: center !important;
     justify-content: center !important;
-    margin-bottom: 50px;
+    margin-bottom: 0px !important;
     font-family: rouben ligth;
+  
 }
 .button-newApp:hover{
   

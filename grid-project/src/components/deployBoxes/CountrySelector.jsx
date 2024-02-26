@@ -119,7 +119,7 @@ const CountrySelector = () => {
           
           
             <div className='geolocation'>
-            <h3>+ Add geolocation </h3>
+            <h4>+ Add geolocation </h4>
             <div style={{display:'flex'}}>
               <div>
             <label>Continent:</label>
@@ -148,7 +148,7 @@ const CountrySelector = () => {
                   </div>
           </div>
           <div className='geolocation4'>
-            <h3>My allowed geolocations </h3>
+            <h4>My allowed geolocations: </h4>
 
             {selections.map((selection, index) => (
               <div className='geolocation2' key={index}>
@@ -172,14 +172,14 @@ const CountrySelector = () => {
         </div>
 
 
-            <h2>Forbidden Geolocation </h2>
+            <h3>Forbidden Geolocation </h3>
 
 
           <div style={{display:'flex'}}> 
 
             <div className='geolocation'>
           
-              <h3>+ Add geolocation</h3>
+              <h4>+ Add geolocation</h4>
                 <div style={{display:'flex'}}>
                   <div>
                   <label>Continent:</label>
@@ -212,7 +212,7 @@ const CountrySelector = () => {
             
 
             <div className='geolocation4'>
-            <h3>My Forbidden geolocations </h3>
+            <h4>My Forbidden geolocations: </h4>
 
             {selections2.map((selection, index) => (
               <div className='geolocation2' key={index}>

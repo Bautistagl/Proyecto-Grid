@@ -91,16 +91,17 @@ export const Details = ({onNextStep}) => {
      <Image
         style={{ display: 'flex', justifyContent: 'center', margin: 'auto' }}
         alt=""
-        width={30}
-        height={30}
-        src="/dots.png"
+        width={25}
+        height={25}
+        src="/dot.png"
       />
       <div style={{ display: 'flex' }}>
         <div className="newServ-container2">
-          <h2>Allowed Geolocations</h2>
-          <div  className="card-newApp3">
+          <h3>Allowed Geolocations</h3>
+          <div   className="card-newApp3">
            <CountrySelector/>
-    
+            <div style={{marginTop:'50px'}}>
+
             <div className="ranges">
               <label>Instances: {values.range1}</label>
               <input
@@ -128,6 +129,7 @@ export const Details = ({onNextStep}) => {
             <Botonera titulo="Static IP" />
             <Botonera titulo="Enterprise Application" />
           </div>
+            </div>
         <button className='boton-continue' onClick={()=>onNextStep()}>Continue</button>
         </div>
         {/* <WebComponent/> */}

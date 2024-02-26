@@ -4,16 +4,19 @@
     border-radius:15px;
     border: 1px solid rgba(255, 255, 255, 0.068);
     height: auto;
-    margin: 50px auto;
+    margin: 30px auto;
     justify-content: center;
     text-align: center;
     
 }
-.deployMethod-container h2{
+.deployMethod-container h3{
     font-family: rouben ligth;
     letter-spacing: 1px;
     margin-bottom: 20px ;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+.deployMethod-container span{
+  color: rgba(255, 255, 255, 0.747);
 }
 
 .card {

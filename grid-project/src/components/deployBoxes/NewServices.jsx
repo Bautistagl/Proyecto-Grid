@@ -17,14 +17,14 @@ export const NewServices = ({onNextStep}) => {
 
   return (
     <>
-   <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={30} height={30} src='/dots.png'/>
+   <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={25} height={25} src='/dot.png'/>
     <div className='newServ-container'>
 
             <div  className="card-newApp2">
             <div className='icono-titulo'>
 
           
-            <h2 style={{marginTop:'0px'}} > Components </h2>
+            <h3 style={{marginTop:'0px'}} > Components </h3>
            
             </div>
             <div  className="card-newApp3">

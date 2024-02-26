@@ -129,13 +129,13 @@
 
 
 .titulos-contact{
-    display: flex;
-    height: 100%;
-    margin-left: 0;
-    flex-direction: column;
-    margin-bottom: auto;
-    margin-right: auto;
-    margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        font-family: rouben ligth;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 90%;
     
 }
 .contact-titulo{
@@ -197,12 +197,11 @@
 
 
 .iconos-register{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
+    display: flex;
     margin: auto;
-    margin-top: 30%;
-    margin-left: 60px;
+}
+.iconos-register img{
+    margin: 20px;
 }
 @media only screen and (max-width:1500px){
     

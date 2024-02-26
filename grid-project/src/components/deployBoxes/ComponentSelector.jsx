@@ -148,7 +148,7 @@ const ComponentSelector = () => {
     <>
       <div style={{ display: 'flex', width: '100%', margin: 'auto' }}>
         <div className="geolocation">
-          <h3>+ Add a component </h3>
+          <h4>+ Add a component </h4>
           <label>Select a service type:</label>
           <select
             onChange={handleContinentChange}
@@ -442,7 +442,7 @@ const ComponentSelector = () => {
           <button onClick={handleAddSelection}>+</button>
         </div>
         <div className="geolocation4">
-          <h3>My Components </h3>
+          <h4>My Components </h4>
 
           {selections.map((selection, index) => (
             <div className="geolocation2" key={index}>

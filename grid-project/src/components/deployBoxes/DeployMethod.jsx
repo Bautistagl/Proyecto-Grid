@@ -7,12 +7,12 @@ const DeployMethod = ({ onNextStep }) => {
       <Image
         style={{ display: 'flex', justifyContent: 'center', margin: 'auto' }}
         alt=""
-        width={30}
-        height={30}
-        src="/dots.png"
+        width={25}
+        height={25}
+        src="/dot.png"
       />
       <div className="deployMethod-container">
-        <h2>Select a deployment method</h2>
+        <h3>Select a deployment method</h3>
         <span>Deploy from a Git repository or a Docker registry.</span>
         <div className="contenedor-flex-only">
           <div className="card-newApp">

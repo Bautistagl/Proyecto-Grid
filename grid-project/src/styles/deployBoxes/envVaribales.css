@@ -6,16 +6,16 @@
     border-radius:15px;
     border: 1px solid rgba(255, 255, 255, 0.068);
     height: auto;
-    margin: 50px auto;
+    margin: 30px auto;
     justify-content: center;
     text-align: center;
     
 }
-.envVar-container h2{
+.envVar-container h3{
     font-family: rouben ligth;
     letter-spacing: 1px;
     margin-bottom: 20px ;
-    margin-top: 40px;
+    margin-top: 30px;
     width: 100% !important;
 }
 .envVar-container span{
@@ -24,13 +24,14 @@
 .envVar-container p{
     font-family: rouben ligth !important;
     color: rgba(255, 255, 255, 0.829);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 .envVar-container button{
     margin: auto;
     width: 12vw;
     border-radius: 15px;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 .botonAdd{
     

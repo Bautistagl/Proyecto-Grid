@@ -122,8 +122,14 @@ function FormZelcore() {
        onChange={(e) => setSignature(e.target.value)}
 
        
-     />
-     
+     /> 
+     <div className='link-zelcore'>
+
+       <Link href={`zel:?action=sign&message=${apiData ? apiData.data : ''}&icon=https%3A%2F%2Fraw.githubusercontent.com%2Frunonflux%2Fflux%2Fmaster%2FzelID.svg&callback=http://localhost:3000/api/post`}>
+       <Image alt='' src='zelID.svg' height={50} width={50} />
+      </Link>
+     </div>
+      
      <button className="login-submit" type="submit">
         <Link href='/profile'>
           Login
@@ -132,9 +138,7 @@ function FormZelcore() {
      </div>
       </div>
       
-      <Link href={`zel:?action=sign&message=${apiData ? apiData.data : ''}&icon=https%3A%2F%2Fraw.githubusercontent.com%2Frunonflux%2Fflux%2Fmaster%2FzelID.svg&callback=http://localhost:3000/api/post`}>
-       <Image alt='' src='zelID.svg' height={50} width={50} />
-      </Link>
+    
 
 
   

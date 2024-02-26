@@ -47,12 +47,12 @@ export default function LoggedLogin() {
               <div className="contents-index">
                 <div style={{ width: '100%' }}>
                   <div className="titulos-dashboard">
-                    <h2> My components </h2>
+                    <h2> My Applications </h2>
                     <button>
                       {' '}
                       <Link href="/profile/newApplication">
                         {' '}
-                        + New component
+                        + New Application
                       </Link>{' '}
                     </button>
                   </div>

@@ -27,7 +27,10 @@ export const NewServices = ({onNextStep}) => {
             <h2 style={{marginTop:'0px'}} > Components </h2>
            
             </div>
+            <div  className="card-newApp3">
+
             <ComponentSelector/>
+            </div>
            
             <button className='boton-continue' onClick={()=>onNextStep()}>Continue</button>
 

@@ -55,7 +55,7 @@ function Form() {
       
       <input
         placeholder="Username"
-        className="login-input"
+        className="register-input"
         type="email"
         
         
@@ -65,7 +65,7 @@ function Form() {
      <input
      style={{borderEndStartRadius:'0px',borderEndEndRadius:'0px'}}
        placeholder="Password"
-       className="login-input"
+       className="register-input"
        value={password}
        onChange={handlePasswordChange}
        type={view ? 'text' : 'password'}
@@ -77,7 +77,7 @@ function Form() {
         <span > (Additional information)</span>
       <input
         placeholder="Company name"
-        className="login-input"
+        className="register-input"
         type="email"
         
     
@@ -85,7 +85,7 @@ function Form() {
       />
       <input
         placeholder="Email"
-        className="login-input"
+        className="register-input"
         type="email"
        
       

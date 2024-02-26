@@ -1,5 +1,8 @@
 .contenedor-flex-only{
     display: flex;
+    width: 90%;
+    margin: auto;
+   
 }
 .contenedor-flex-only4{
     display: flex;
@@ -100,9 +103,7 @@
    
     text-align: center;
 }
-.card-newApp2 select{
-    background-image: linear-gradient(to right, #797979, #0c1317);
-}
+
 .card-newApp2 label{
     display: flex;
     width: 20vw;
@@ -117,8 +118,8 @@
 
 .card-newApp2 input{
    
-    width: 20vw;
-    margin: auto;
+    width: 14.5vw;
+    margin-right: auto;
     height: 25px;
     color: white;
     background-color: transparent;

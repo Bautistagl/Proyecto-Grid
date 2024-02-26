@@ -181,6 +181,13 @@
     margin-bottom: auto;
     margin-right: 0px;
 }
+.circle1{
+    width: 4px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: auto 5px;
+}
 .circle3{
     width: 7px;
     height: 7px;
@@ -368,6 +375,33 @@
   .input-with-image img{
         margin: auto;
   }
+
+  .input-with-image2 {
+    display: flex;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.100);
+    border-radius: 5px;
+   
+    color: white;
+    height: 30px;
+    width: 25vw;
+    border-radius: 10px;
+ 
+  }
+  .input-with-image2 input {
+    background-color: transparent;
+    color: white;
+
+  }
+  .input-with-image2 input::placeholder {
+
+    color: white;
+
+  }
+  .input-with-image2 img{
+        margin: auto;
+        margin-right: 10px;
+  }
   
 .input-builds{
     display: flex;
@@ -404,6 +438,27 @@
    background-color: #36B079;
 
 }
+
+.build-button{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.build-button button{
+   background-color: #36B079;
+   margin: 0px;
+   width: 50%;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    letter-spacing: 0px;
+   border-radius: 10px;
+  
+
+}
 .delete{
     background-color: rgb(197, 64, 64);
     border:1px solid rgb(197, 64, 64);
@@ -426,4 +481,169 @@
     display: flex;
     margin: auto;
     
+}
+
+.titulos-repo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.build-button2{
+    display: flex;
+    width: 100%;
+    
+    margin-right: auto;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.build-button2 span{
+    margin-left: 0px;
+}
+
+.repo-git{
+    display: flex;
+    background-color: transparent;
+    width: 90%;
+    margin: 5px auto;
+    justify-content: flex-start;
+    height: 35px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+.repo-git img{
+    margin: auto 5px;
+}
+.repo-git:hover{
+   
+    background-color: rgba(255, 255, 255, 0.253)
+}
+
+.repo-build{
+    display: flex;
+    background-color: transparent;
+    width: 90%;
+    margin: 5px auto;
+    justify-content: flex-start;
+    height: 35px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+.repo-build span{
+   color: white !important;
+}
+.repo-build img{
+    margin: auto 5px;
+}
+.repo-build:hover{
+   
+    background-color: rgba(255, 255, 255, 0.253)
+}
+
+.repo-selected{
+    display: flex;
+    width: 85%;
+    margin: 5px auto;
+    background-color: #0c1317d9;
+    height: 40px;
+    border-radius: 5px;
+    
+}
+.repo-selected h5{
+    display: flex;
+    margin: auto 5px;
+    font-family: rouben ligth;
+    font-size: 0.9rem;
+}
+.repo-selected span{
+    display: flex;
+    font-size: 0.9rem;
+   
+}
+.repo-selected p{
+    display: flex;
+    margin-left: auto;
+    color: #36B079;
+    font-family: rouben;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #36B079;
+    cursor: pointer;
+   
+}
+
+.repo-path{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 30px auto;
+    font-family: rouben ligth;
+}
+.repo-path span{
+    color: rgba(255, 255, 255, 0.641);
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+}
+.repo-path label{
+    margin-right: auto;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+    
+}
+.repo-path input{
+    background-color: transparent;
+    height: 20px;
+    border: 1px solid white;
+    border-radius:10px;
+    color: white;
+    padding: 5px;
+
+}
+.repo-path input::placeholder{
+  color: rgba(255, 255, 255, 0.666);
+    
+}
+
+.buildpack-window{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.213);
+    border-radius: 10px;
+    padding: 5%;
+    font-family: rouben ligth;
+}
+.buildpack-window select{
+    height: 30px;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: rouben;
+}
+
+.buildpack-window label{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.buildpack-window div{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.buildpack-window span{
+    color: rgba(255, 255, 255, 0.721);
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
 }

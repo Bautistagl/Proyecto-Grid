@@ -146,7 +146,7 @@ margin-left: -10px;
 .logout-sidebar{
     display: flex;
     width: 70%;
-    margin-left: auto;
+    margin-left: 15px;
     margin-right: auto;
     justify-content: center;
     margin-top: 40px;

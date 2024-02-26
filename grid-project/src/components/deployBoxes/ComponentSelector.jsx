@@ -173,7 +173,7 @@ const ComponentSelector = () => {
             <div>
               <div className="contenedor-titulos-hosting-click-shared2">
                 <span
-                  style={{ marginLeft: '3%' }}
+             
                   className={`spanHosting-clickeable-shared${
                     selected === 0 ? 'focus' : ''
                   }`}
@@ -286,6 +286,7 @@ const ComponentSelector = () => {
                 <>
                   <label> Start Command</label>
                   <input
+                  style={{display:'flex'}}
                     value={command}
                     onChange={(e) => setCommand(e.target.value)}
                     placeholder="Ex: npm start"
@@ -293,6 +294,7 @@ const ComponentSelector = () => {
 
                   <label> Ports</label>
                   <input
+                    style={{display:'flex'}}
                     value={port}
                     onChange={(e) => setPort(e.target.value)}
                     placeholder="Ex: 3000"
@@ -439,7 +441,7 @@ const ComponentSelector = () => {
 
           <button onClick={handleAddSelection}>+</button>
         </div>
-        <div className="geolocation3">
+        <div className="geolocation4">
           <h3>My Components </h3>
 
           {selections.map((selection, index) => (
@@ -470,7 +472,7 @@ const ComponentSelector = () => {
 
                 {selection.expanded && (
                   <>
-                    <div className="contenedor-titulos-hosting-click-shared2">
+                    <div className="contenedor-titulos-hosting-click-shared3">
                       <span
                         className={`spanHosting-clickeable-shared${
                           selection.selectedSpan === 'general' ? ' focus' : ''

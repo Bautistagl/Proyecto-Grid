@@ -49,16 +49,23 @@ const DeployMethod = ({ onNextStep }) => {
             <input placeholder="Docker image namespace/repository:tag" />
           </div>
         </div>
-        <div>
-            <h2>Build settings</h2>
-            <span style={{color:'rgba(255, 255, 255, 0.686)',fontSize:'0.9rem'}}> Specify your GitHub repository. </span>
-            <div className='build-button'>
+        {/* <div>
+          <h2>Build settings</h2>
+          <span
+            style={{ color: 'rgba(255, 255, 255, 0.686)', fontSize: '0.9rem' }}>
+            {' '}
+            Specify your GitHub repository.{' '}
+          </span>
+          <div className="build-button">
+            <button>
+              {' '}
+              <Image alt="" src="/github.png" height={15} width={15} /> Install
+              the GridCloud app
+            </button>
+          </div>
+        </div>
 
-<button >  <Image alt='' src='/github.png' height={15} width={15}/> Install the GridCloud app</button>
-</div>
-          </div> 
-
-         <div className="repos-github">
+        <div className="repos-github">
           <div className="titulos-repo">
             <div className="build-button2">
               <span>
@@ -68,51 +75,46 @@ const DeployMethod = ({ onNextStep }) => {
               </span>
             </div>
             <div className="input-with-image2">
-                    <input placeholder='Search '/>
-                    <Image alt='' src='/searc.png' height={15} width={15}/>
-                </div>
+              <input placeholder="Search " />
+              <Image alt="" src="/searc.png" height={15} width={15} />
+            </div>
           </div>
-          <div className='repo-git'>
-          <Image alt="" src="/github.png" height={20} width={20} />
-          <span> GridClient/repo-01</span>
+          <div className="repo-git">
+            <Image alt="" src="/github.png" height={20} width={20} />
+            <span> GridClient/repo-01</span>
           </div>
-          <div className='repo-git'>
-          <Image alt="" src="/github.png" height={20} width={20} />
-          <span> GridClient/repo-02</span>
+          <div className="repo-git">
+            <Image alt="" src="/github.png" height={20} width={20} />
+            <span> GridClient/repo-02</span>
           </div>
-          <div className='repo-git'>
-          <Image alt="" src="/github.png" height={20} width={20} />
-          <span> GridClient/repo-03</span>
+          <div className="repo-git">
+            <Image alt="" src="/github.png" height={20} width={20} />
+            <span> GridClient/repo-03</span>
           </div>
-          <div className='repo-git'>
-          <Image alt="" src="/github.png" height={20} width={20} />
-          <span> GridClient/repo-04</span>
+          <div className="repo-git">
+            <Image alt="" src="/github.png" height={20} width={20} />
+            <span> GridClient/repo-04</span>
           </div>
-        
         </div>
-        <div className='repo-selected'>
-          <div className='circle1' > </div>
+        <div className="repo-selected">
+          <div className="circle1"> </div>
           <h5> GitHub repository:</h5>
           <span> gridClient/repo-01</span>
           <p> Change </p>
         </div>
-        <div className='repo-selected'>
-          <div className='circle1' > </div>
+        <div className="repo-selected">
+          <div className="circle1"> </div>
           <h5> GitHub branch:</h5>
           <span> main</span>
           <p> Change </p>
         </div>
-        <div className='repo-path' >
-
-        <span> Specify your application root path.</span>
-        <label> Application root path:</label>
-          <input
-          
-            placeholder="./"
-          />
+        <div className="repo-path">
+          <span> Specify your application root path.</span>
+          <label> Application root path:</label>
+          <input placeholder="./" />
         </div>
 
-        <div className='buildpack-window'>
+        <div className="buildpack-window">
           <label>Build Method:</label>
           <select>
             <option>Buildpacks</option>
@@ -127,14 +129,87 @@ const DeployMethod = ({ onNextStep }) => {
           </select>
 
           <div> Buildpacks:</div>
-          <span> The following buildpacks were detected at your applications root path. You can also manually add, remove, or re-order buildpacks here</span>
-          <div className='repo-build'>
-          <Image alt="" src="/github.png" height={20} width={20} />
-          <span> NodeJS</span>
-          <Image style={{marginLeft:'auto'}} alt="" src="/delete3.png" height={16} width={16} />
+          <span>
+            {' '}
+            The following buildpacks were detected at your applications root
+            path. You can also manually add, remove, or re-order buildpacks here
+          </span>
+          <div className="repo-build">
+            <Image alt="" src="/github.png" height={20} width={20} />
+            <span> NodeJS</span>
+            <Image
+              style={{ marginLeft: 'auto' }}
+              alt=""
+              src="/delete3.png"
+              height={14}
+              width={14}
+            />
           </div>
-          
+          <button> +Add buildpacks</button>
         </div>
+        <div className="card">
+          <h2> Buildpack Configuration</h2>
+          <label> Selected buildpacks:</label>
+          <div className="repo-build">
+            <Image alt="" src="/node-js.png" height={20} width={20} />
+            <span> NodeJS</span>
+            <Image
+              style={{ marginLeft: 'auto' }}
+              alt=""
+              src="/plus2.png"
+              height={14}
+              width={14}
+            />
+          </div>
+
+          <label>Available buildpacks:</label>
+          <div className="repo-build">
+            <Image alt="" src="/node-js.png" height={20} width={20} />
+            <span> NodeJS</span>
+            <Image
+              style={{ marginLeft: 'auto' }}
+              alt=""
+              src="/plus2.png"
+              height={14}
+              width={14}
+            />
+          </div>
+          <div className="repo-build">
+            <Image alt="" src="/node-js.png" height={20} width={20} />
+            <span> NodeJS</span>
+            <Image
+              style={{ marginLeft: 'auto' }}
+              alt=""
+              src="/plus2.png"
+              height={14}
+              width={14}
+            />
+          </div>
+          <div className="repo-build">
+            <Image alt="" src="/node-js.png" height={20} width={20} />
+            <span> NodeJS</span>
+            <Image
+              style={{ marginLeft: 'auto' }}
+              alt=""
+              src="/plus2.png"
+              height={14}
+              width={14}
+            />
+          </div>
+
+          <label> Custom buildpacks</label>
+          <span>
+            {' '}
+            You may also add buildpacks by directly providing their GitHub links
+            or links to ZIP files that contain the buildpack source code.
+          </span>
+          <label> GitHub or ZIP URL : </label>
+          <div>
+            <input />
+            <button className="boton-config"> + </button>
+          </div>
+          <button> Done</button>
+        </div> */}
         <button
           style={{ margin: 'auto', marginBottom: '30px' }}
           className="boton-continue"
@@ -142,8 +217,6 @@ const DeployMethod = ({ onNextStep }) => {
           Continue
         </button>
       </div>
-
-      
     </>
   );
 };

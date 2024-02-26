@@ -30,7 +30,7 @@ function Form() {
       
       <input
         placeholder="Email"
-        className="login-input"
+        className="register-input"
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
@@ -39,7 +39,7 @@ function Form() {
        <div className="input-container">
      <input
        placeholder="Password"
-       className="login-input"
+       className="register-input"
        type={view ? 'text' : 'password'}
      />
      <Image onClick={()=>{setView(!view)}} alt='' src={view ? '/hide2.png' : '/view.png'} width={25} height={25}/>

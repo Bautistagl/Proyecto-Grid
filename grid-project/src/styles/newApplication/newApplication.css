@@ -387,6 +387,14 @@
 
 }
 
+.no-docker{
+    background-color: rgba(255, 255, 255, 0.100);
+    width: 85%;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+
 
 @media only screen and (max-width:650px){
     .contenedor-mobile-button{

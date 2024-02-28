@@ -7,7 +7,7 @@
         border-radius:15px;
         border: 1px solid rgba(255, 255, 255, 0.068);
         height: auto;
-        margin: 50px auto;
+        margin: 30px auto;
         justify-content: center;
         text-align: center;
       
@@ -53,6 +53,23 @@
     
     margin-top: 20px;
     margin-bottom: -10px;
+}
+
+.contact-form2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+  
+}
+.contact-form2 label{
+    color: white;
+    font-family: rouben;
+    margin: auto;
+    
 }
 
 .contact-input{
@@ -198,11 +215,60 @@
 
 .iconos-register{
     display: flex;
-    margin: auto;
+    margin-top: auto;
+    justify-content: center;
 }
 .iconos-register img{
-    margin: 20px;
+    margin:  auto 20px;
 }
+
+.contact-input2 {
+    border-style: none;
+    margin-top: 2%;
+   width:60% ;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    /* border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, white, gray, transparent) 1; */
+    border-radius: 15px;
+}
+.contact-input2:focus {
+    border-style: none;
+    margin-top: 2%;
+   width:60% ;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid white;
+    
+    padding: 10px 20px;
+    /* border: 2px solid transparent;
+    border-image: linear-gradient(to bottom, white, gray, transparent) 1; */
+    border-radius: 15px;
+}
+.contact-input2::placeholder {
+    color: rgba(255, 255, 255, 0.567);
+}
+.inputs-registerApp{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    width: 90%;
+    margin: 20px auto;
+   
+}
+.item-registerApp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
 @media only screen and (max-width:1500px){
     
 

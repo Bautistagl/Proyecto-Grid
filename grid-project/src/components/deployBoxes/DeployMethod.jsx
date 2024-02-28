@@ -49,7 +49,7 @@ const DeployMethod = ({ onNextStep }) => {
             <input placeholder="Docker image namespace/repository:tag" />
           </div>
         </div>
-        {/* <div>
+        <div>
           <h2>Build settings</h2>
           <span
             style={{ color: 'rgba(255, 255, 255, 0.686)', fontSize: '0.9rem' }}>
@@ -209,7 +209,53 @@ const DeployMethod = ({ onNextStep }) => {
             <button className="boton-config"> + </button>
           </div>
           <button> Done</button>
-        </div> */}
+        </div>
+
+
+        <div>
+        <h3>Image settings</h3>
+        <span>Specify your image URL</span>
+        <div className="input-with-image3">
+              <input placeholder="Search images " />
+              <Image alt="" src="/searc.png" height={15} width={15} />
+            </div>
+            <div className='no-docker'>
+              <div style={{opacity:'0'}}>.</div>
+              <p style={{marginTop:'30px',marginBottom:'15px'}}>No linked images found</p>
+              <p style={{marginBottom:'30px'}}> Configure linked image registries, or provide the URL of a public image (e.g. "nginx") to continue.</p>
+              <div style={{opacity:'0'}}>.</div>
+            </div>
+            <div className="repo-git2">
+            <Image alt="" src="/plus2.png" height={10} width={10} />
+            <span> Use image URL: 'prueba'</span>
+          </div>
+        <div className="repo-selected">
+          <div className="circle1"> </div>
+          <h5> Image URL:</h5>
+          <span> prueba</span>
+          <p> Change </p>
+        </div>
+        <span >Specify your image tag</span>
+        <div className="input-with-image3">
+              <input placeholder="Search tags " />
+              <Image alt="" src="/searc.png" height={15} width={15} />
+            </div>
+            <div className='no-docker'>
+            <div style={{opacity:'0'}}>.</div>
+              <p style={{marginTop:'30px',marginBottom:'30px'}}>Please specify a tag.</p>
+              <div style={{opacity:'0'}}>.</div>
+            </div>
+            <div className="repo-git2">
+            <Image alt="" src="/plus2.png" height={10} width={10} />
+            <span> Use tag: 'prueba'</span>
+          </div>
+            <div className="repo-selected">
+          <div className="circle1"> </div>
+          <h5> Image tag:</h5>
+          <span> prueba</span>
+          <p> Change </p>
+        </div>
+        </div>
         <button
           style={{ margin: 'auto', marginBottom: '30px' }}
           className="boton-continue"

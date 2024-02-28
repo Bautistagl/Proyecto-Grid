@@ -524,6 +524,26 @@
     background-color: rgba(255, 255, 255, 0.253)
 }
 
+.repo-git2{
+    display: flex;
+    background-color: transparent;
+    width: 85%;
+    margin: 5px auto;
+    justify-content: flex-start;
+    height: 35px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+.repo-git2 img{
+    margin: auto 5px;
+}
+.repo-git2:hover{
+   
+    background-color: rgba(255, 255, 255, 0.253)
+}
+
 .repo-build{
     display: flex;
     background-color: transparent;
@@ -663,3 +683,33 @@
     margin-left: 10px !important;
 
 }
+
+.input-with-image3 {
+    display: flex;
+   
+    background-color: rgba(255, 255, 255, 0.100);
+    border-radius: 5px;
+   
+    color: white;
+    height: 30px;
+    width: 85%;
+    border-radius: 5px;
+    margin: 40px auto auto auto;
+ 
+  }
+  .input-with-image3 input {
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+
+  }
+  .input-with-image3 input::placeholder {
+
+    color: white;
+
+  }
+  .input-with-image3 img{
+        margin: auto;
+        margin-right: 10px;
+  }
+  

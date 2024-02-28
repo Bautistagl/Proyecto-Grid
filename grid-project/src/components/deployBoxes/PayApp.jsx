@@ -7,37 +7,56 @@ const PayApp = ({onNextStep}) => {
   return (
     <>
  
-
+ <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={25} height={25} src='/dot.png'/>
     <div  className='contact-container2' >
       <div className='titulos-contact'>
        
       
      
         <h1>Register App</h1>
-        <div className='iconos-register'>
-            <Image alt='' src='/zelID.svg' width={50} height={50}/>
-            <Image alt='' src='/walletconnect.svg' width={50} height={50}/>
-            <Image alt='' src='/sspLogo.svg' width={50} height={50}/>
-            <Image alt='' src='/metamask.svg' width={50} height={50}/>
+      
+       
+      </div>
+        <div className='contact-form2'>
+          <div className='inputs-registerApp'> 
+            <div className='item-registerApp'>
+            <label> Message</label>
+            <input className='contact-input2' placeholder='Messagge'/>
+            </div>
+            <div className='item-registerApp'>
+            <label>Address</label>
+            <input className='contact-input2' placeholder='Insert ZellId or Bitcoin address'/>
+            </div>
+
+          </div>
+
+          <div className='inputs-registerApp'>
+          <div className='item-registerApp'>
+          <label>Signature</label>
+            <input className='contact-input2' placeholder='Insert Signature'/>
+          </div>
+          <div className='iconos-register'>
+            <Image alt='' src='/zelID.svg' width={40} height={40}/>
+            <Image alt='' src='/walletconnect.svg' width={40} height={40}/>
+            <Image alt='' src='/sspLogo.svg' width={40} height={40}/>
+            <Image alt='' src='/metamask.svg' width={40} height={40}/>
             
 
         </div>
-       
-      </div>
-        <div className='contact-form'>
-            <label> Message</label>
-            <input className='contact-input' placeholder='Messagge'/>
-            <label>Address</label>
-            <input className='contact-input' placeholder='Insert ZellId or Bitcoin address'/>
+
+
+          </div>
+
+
+
           
-            <label>Signature</label>
-            <input className='contact-input' placeholder='Insert Signature'/>
+           
           
+            <Botonera titulo="I agree with Terms of Service" />
             <div className='contenedorFlex2'>
             <button className='boton-contact-form'> Register App</button>
           
             </div>
-            <Botonera titulo="I agree with Terms of Service" />
         </div>
 
     </div>

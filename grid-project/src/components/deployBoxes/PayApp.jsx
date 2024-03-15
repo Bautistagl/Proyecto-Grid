@@ -1,11 +1,11 @@
 import Botonera from '@/commons/Botonera'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-const PayApp = ({onNextStep}) => {
+const PayApp = forwardRef(({ onNextStep }, ref) => {
   return (
-    <>
+    <div ref={ref}>
  
  <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={25} height={25} src='/dot.png'/>
     <div  className='contact-container2' >
@@ -13,7 +13,7 @@ const PayApp = ({onNextStep}) => {
        
       
      
-        <h1>Register App</h1>
+        <h1>Deploy</h1>
       
        
       </div>
@@ -54,7 +54,7 @@ const PayApp = ({onNextStep}) => {
           
             <Botonera titulo="I agree with Terms of Service" />
             <div className='contenedorFlex2'>
-            <button className='boton-contact-form'> Register App</button>
+            <button className='boton-contact-form'> Deploy</button>
           
             </div>
         </div>
@@ -63,8 +63,8 @@ const PayApp = ({onNextStep}) => {
    
         <button onClick={()=>onNextStep()}> Continue</button>
     <div style={{opacity:'0'}}>.</div>
-    </>
+    </div>
   )
-}
+})
 
 export default PayApp

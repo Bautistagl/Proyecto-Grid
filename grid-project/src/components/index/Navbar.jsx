@@ -36,7 +36,7 @@ function Navbar({ scrollToContactForm }) {
       <nav className={`navbar ${isSticky ? 'sticky' : ''}  `}>
         <div className="nav-items">
           <Link href="/">
-            <img className="navbar-logo" src="/gridCloud2.svg" />
+            <img className="navbar-logo" src="/probando.svg" />
           </Link>
           <div onClick={() => toggleMenu()} className="hamburguer-navbar">
             {' '}
@@ -57,7 +57,9 @@ function Navbar({ scrollToContactForm }) {
               Why choose us?
               <img className="downNavbar" src="/downNavbar.png" alt="" />
             </div>
-            
+            <div className="nav-title">
+              <Link href="/pricing"> Pricing </Link>{' '}
+            </div>
            
             <div className="nav-title">
               <Link href="/blog"> Blog </Link>{' '}
@@ -115,19 +117,7 @@ function Navbar({ scrollToContactForm }) {
           </div>
         </div>
 
-        <div className="productos">
-          <img alt="" className="logo-productos" src={'/aboutUs.png'} />
-          <div className="descripcion-productos">
-            <Link href="/pricing">
-              <span className="titulo-productos"> Pricing </span>
-            </Link>
-
-            <span className="subtitulo-productos">
-              {' '}
-              Una descripcion undsadsa poco mas larga paraqas ver{' '}
-            </span>
-          </div>
-        </div>
+    
         <div className="productos">
           <img alt="" className="logo-productos" src={'/blog.png'} />
           <div className="descripcion-productos">

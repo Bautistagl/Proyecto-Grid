@@ -38,7 +38,9 @@ export default function Integration({ storedToken }) {
       
       <div style={{display:'flex',flexDirection:'row'}}>
           <DynamicNavbar />
-      <div style={{width:'100%'}}>
+      <div style={{width: '100%',
+                marginLeft: '100px',
+                marginRight: 'auto'}}>
 
       <div style={{ opacity: '0' }}>.</div>
       <Paginacion anterior="Settings" links="/profile" titulo="Integrations" />

@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-const DeployMethod = ({ onNextStep }) => {
+const DeployMethod = forwardRef(({ onNextStep }, ref) => {
   return (
-    <>
+    <div ref={ref}>
       <Image
         style={{ display: 'flex', justifyContent: 'center', margin: 'auto' }}
         alt=""
@@ -263,8 +263,8 @@ const DeployMethod = ({ onNextStep }) => {
           Continue
         </button>
       </div>
-    </>
+    </div>
   );
-};
+});
 
 export default DeployMethod;

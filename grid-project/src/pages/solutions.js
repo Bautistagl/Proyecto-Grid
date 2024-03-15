@@ -1,12 +1,12 @@
 import dynamic from "next/dynamic";
 import Footer from "@/components/index/Footer";
-import Banner from "@/components/landing-AsicHosting/Banner";
-import CardsHosting from "@/commons/CardsHosting";
+
 import { useInView } from "react-intersection-observer";
 import Charts from "@/components/solutions/Charts";
 import Migration from "@/components/solutions/Migration";
 import React, { useRef } from "react";
 import ContactForm from "@/components/index/ContactForm";
+import SolutionCard from "@/components/solutions/SolutionCard";
 
 
 
@@ -50,7 +50,7 @@ export default function Solutions() {
     <div className="container-homePrincipal"> 
 
     <DynamicNavbar scrollToContactForm={scrollToContactForm}/>
-    <div className="banner-container">
+    {/* <div className="banner-container">
     <Banner
     producto='Web Hosting'
         title='Seamlessly transition from any cloud provider.'
@@ -60,11 +60,16 @@ export default function Solutions() {
          ref={ref}
          style={inView ? fadeInStylesLeft : {}}
        src="/ilustracion-webHosting.svg" alt="" className="ilustracion-bannerGrande" />
-       </div>
-       <CardsHosting/>
-     
+       </div> */}
+       <div style={{opacity:'0'}}>.</div>
+       <SolutionCard/>
+      
+        <div > 
+          
         <Charts/>
+        </div>
         <Migration/>
+        
    <ContactForm1 ref={contactFormRef}/>
    <Footer scrollToContactForm={scrollToContactForm}/>
     </div>

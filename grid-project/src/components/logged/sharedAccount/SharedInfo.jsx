@@ -11,7 +11,7 @@ const SharedInfo = () => {
       <div> s</div>
       <Paginacion anterior="Settings" links="/profile" titulo="Billing" />
 
-      <div  className="infoShared-titulo"> Shared Account</div>
+      <div style={{marginTop:'50px'}} className="infoShared-titulo"> Shared Account</div>
       <div className="contenedor-titulos-hosting-click-shared">
        
         <span
@@ -27,7 +27,7 @@ const SharedInfo = () => {
       <div className="contenedor-nuevo-shared">
         <div> Share Project</div>
         <span> Generate a project invite for another user </span>
-        <input className="input-shared2" placeholder="ex: mrp@porter.run" />
+        <input className="input-shared2" placeholder="ex: hello@ongrid.run" />
         <span> Specify a role for this user</span>
         <div className='botones-shared'>
 

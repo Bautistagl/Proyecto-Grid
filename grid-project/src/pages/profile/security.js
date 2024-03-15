@@ -19,9 +19,14 @@ export default function Security  ()  {
    <div className="container-Security" >
       <div className="logged-home-component" >
         <div style={{display:'flex',flexDirection:'row'}}>
+          <DynamicNavbar/>
+        <div style={{  width: '100%',
+                marginLeft: '100px',
+                marginRight: 'auto',}}>
 
-         <DynamicNavbar/>
+                <div style={{opacity:'0'}}>.</div>
          <InfoSecurity/>
+                </div>
         </div>
          </div>
       </div>

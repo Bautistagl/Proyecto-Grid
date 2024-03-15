@@ -16,9 +16,13 @@ export default function LoggedSSL() {
     return (
       <div className="logged-home-component" >
           <div style={{display:'flex',flexDirection:'row'}}>
-
          <DynamicNavbar/>
+         <div style={{  width: '100%',
+                marginLeft: '100px',
+                marginRight: 'auto',}}>
+  <div style={{opacity:'0'}}>.</div>
          <InfoPersonal/>
+                </div>
           </div>
       
          </div>

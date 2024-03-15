@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ItemMigration = ({number,title,subtitle}) => {
+const ItemMigration3 = ({number,title,subtitle}) => {
   return (
-    <div className='itemMigration uno'>
+    <div className='itemMigration tres'>
         <span>{number} </span>
         <div>{title}</div>
         <p>{subtitle}</p>
@@ -10,4 +10,4 @@ const ItemMigration = ({number,title,subtitle}) => {
   )
 }
 
-export default ItemMigration
+export default ItemMigration3

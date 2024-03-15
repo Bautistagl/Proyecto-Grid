@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-const EnvVariables = ({onNextStep}) => {
+const EnvVariables = forwardRef(({ onNextStep }, ref) => {
   return (
-    <>
+    <div ref={ref}>
         <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={25} height={25} src='/dot.png'/>
     <div className='envVar-container'>
         <h3>Environment variables <p>(optional) </p></h3>
@@ -12,8 +12,8 @@ const EnvVariables = ({onNextStep}) => {
         <button  onClick={()=>onNextStep()}> Continue</button>
     </div>
 
-    </>
+    </div>
   )
-}
+})
 
 export default EnvVariables

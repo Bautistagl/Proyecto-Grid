@@ -19,9 +19,7 @@
     background-size: cover;
     height: 110vh;
   }
-  .contenedor-charts{
-    margin-left: -240px;
-  }
+ 
   .logged-home-cards{
     display: grid;
     margin-top: 50px;
@@ -57,10 +55,12 @@
     font-weight: bold;
   }
   .chart-asic-hosting{
-   
-    margin-left: 320px;
-    width: 600px;
+ 
+    margin-left: 25vw;
+    margin-right: 25vw;
+    width: 50vw;
   }
+ 
   .chart-line-asic-hosting{
     
     margin-left: 320px;
@@ -70,11 +70,10 @@
   .contenedor-general-charts{
     display: flex;
     margin-top: 50px;
-    background-color: #1e2b31c9;
+    background-color:transparent;
     border-radius: 10px;
-    margin-left: 300px;
-    margin-right: 100px;
-    width: 75%;
+    margin: auto;
+    width: 80%;
   }
 
   .contenedor-hardware{

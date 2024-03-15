@@ -1,12 +1,12 @@
 
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState,forwardRef } from 'react';
 
 import Botonera from '@/commons/Botonera';
 import CountrySelector from './CountrySelector';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
-export const Details = ({onNextStep}) => {
+export const Details = forwardRef(({ onNextStep }, ref) => {
   const [values, setValues] = useState({
     range1: 3,
     range2: 100,
@@ -87,7 +87,7 @@ export const Details = ({onNextStep}) => {
   };
 
   return (
-    <>
+    <div ref={ref}>
      <Image
         style={{ display: 'flex', justifyContent: 'center', margin: 'auto' }}
         alt=""
@@ -136,6 +136,6 @@ export const Details = ({onNextStep}) => {
       </div>
 
      
-    </>
+    </div>
   );
-};
+});

@@ -7,11 +7,11 @@ const InfoSecurity = () => {
         
     <div className='infoSecurity-container'> 
     <div> s</div>
-    <div style={{marginLeft:'-50px'}}>
+    <div >
 
     <Paginacion anterior="Settings" links="/profile" titulo="Billing" />
     </div>
-    <div  className="infoShared-titulo"> Two factor authentication</div>
+    <div style={{marginTop:'50px'}}  className="infoShared-titulo"> Two factor authentication</div>
  
 
     <div className='infoSecurity-permisos'>

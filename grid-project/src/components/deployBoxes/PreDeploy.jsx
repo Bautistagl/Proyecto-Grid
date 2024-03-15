@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-const PreDeploy = ({onNextStep}) => {
+const PreDeploy = forwardRef(({ onNextStep }, ref) => {
   return (
-    <>
+    <div ref={ref}>
     <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={25} height={25} src='/dot.png'/>
     <div className='envVar-container'>
     <h3>Pre-Deploy job <p>(optional) </p></h3>
@@ -13,8 +13,8 @@ const PreDeploy = ({onNextStep}) => {
     
 </div>
 
-    </>
+    </div>
   )
-}
+})
 
 export default PreDeploy

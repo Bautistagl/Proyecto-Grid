@@ -19,9 +19,12 @@ export default function LoggedHosting() {
       <div className= "logged-home-component">
         <div  style={{display:'flex',flexDirection:'row'}}> 
           <DynamicNavbar/>
-        <div style={{width:'100%'}}>
+        <div style={{  width: '100%',
+                marginLeft: '100px',
+                marginRight: 'auto',}}>
 
         <div style={{opacity:'0'}}>.</div>
+
         <Paginacion anterior="Services" links="/profile" titulo="Setup Application" />
         <HostingWeb/>
         </div>

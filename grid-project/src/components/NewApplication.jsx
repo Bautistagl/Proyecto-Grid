@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import WhatApp from './deployBoxes/WhatApp';
 import NameBox from './deployBoxes/NameBox';
 import DeployMethod from './deployBoxes/DeployMethod';
@@ -11,9 +10,36 @@ import PayApp from './deployBoxes/PayApp';
 
 const NewApplicationj = () => {
   const [completedSteps, setCompletedSteps] = useState([]);
-  
+  const [activeStep, setActiveStep] = useState(null);
+  const nameRef = useRef(null);
+  const detailsRef = useRef(null);
+  const servicesRef = useRef(null);
+  const deployRef = useRef(null);
+  const envRef = useRef(null);
+  const preDeployRef = useRef(null);
+  const payRef = useRef(null);
+
+  useEffect(() => {
+    if (activeStep === 1) {
+      nameRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (activeStep === 2) {
+      detailsRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (activeStep === 3) {
+      servicesRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (activeStep === 4) {
+      deployRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (activeStep === 5) {
+      envRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (activeStep === 6) {
+      preDeployRef.current.scrollIntoView({ behavior: 'smooth' });
+    } else if (activeStep === 7) {
+      payRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [activeStep]);
+
   const handleCompleteStep = (step) => {
     setCompletedSteps(prevSteps => [...prevSteps, step]);
+    setActiveStep(step + 1);
   };
 
   return (
@@ -21,24 +47,19 @@ const NewApplicationj = () => {
     <div style={{opacity:'0'}}>.</div>
       <div className="contenedor-newApp">
         <div className="contenedor-flex-only4">
-        
-          <div className="div-newApp"> LETS GET STARTED!</div>
+          <div className="div-newApp"> LET'S GET STARTED!</div>
         </div>
-         <NameBox onNextStep={() => handleCompleteStep(1)} />
-      {completedSteps.includes(1) && <Details onNextStep={() => handleCompleteStep(2)} />}
-      {completedSteps.includes(2) && <NewServices onNextStep={() => handleCompleteStep(3)} />}
-      {completedSteps.includes(3) && <DeployMethod onNextStep={() => handleCompleteStep(4)} />}
-      {completedSteps.includes(4) && <EnvVariables onNextStep={() => handleCompleteStep(5)} />}
-      {completedSteps.includes(5) && <PreDeploy onNextStep={() => handleCompleteStep(6)} />}
-      {completedSteps.includes(6) && <PayApp onNextStep={() => handleCompleteStep(7)} />}
-      {completedSteps.includes(7) &&  <>
-        <div style={{ marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WERE DONE!</div>
-        <button className='deploy-now'> Deploy now</button>
+        <NameBox onNextStep={() => handleCompleteStep(1)} />
+        {completedSteps.includes(1) && <Details onNextStep={() => handleCompleteStep(2)} ref={detailsRef} />}
+        {completedSteps.includes(2) && <NewServices onNextStep={() => handleCompleteStep(3)} ref={servicesRef} />}
+        {completedSteps.includes(3) && <DeployMethod onNextStep={() => handleCompleteStep(4)} ref={deployRef} />}
+        {completedSteps.includes(4) && <EnvVariables onNextStep={() => handleCompleteStep(5)} ref={envRef} />}
+        {completedSteps.includes(5) && <PreDeploy onNextStep={() => handleCompleteStep(6)} ref={preDeployRef} />}
+        {completedSteps.includes(6) && <PayApp onNextStep={() => handleCompleteStep(7)} ref={payRef} />}
+        {completedSteps.includes(7) &&  <>
+          <div style={{ marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WE'RE DONE!</div>
+          <button className='deploy-now'> Deploy now</button>
         </>}
-     
-     
-        
-        
       </div>
       <div style={{opacity:'0'}}>.</div>
     </>
@@ -46,7 +67,6 @@ const NewApplicationj = () => {
 };
 
 export default NewApplicationj;
-
 
 
 {/* <span className="span-newApp"> Application name </span>

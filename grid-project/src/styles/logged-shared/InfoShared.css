@@ -10,7 +10,7 @@
 .contenedor-nuevo-shared{
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    
     margin-top: 50px;
   
 }
@@ -60,7 +60,7 @@
     font-family: rouben ;
     font-size: 1rem;
     width: 90%;
-    margin-left: 50px;
+    
 
     border-bottom: 1px solid rgb(255, 255, 255);
     
@@ -173,7 +173,7 @@
     
     font-family: rouben;
     font-size: 3rem;
-    margin-left: 50px;
+   
     margin-top: 10px;
     margin-bottom: 3%;
 }

@@ -35,7 +35,7 @@ const HostingWeb = () => {
       
       <div className='probando-index'>
     <div style={{opacity:'0'}}>.</div>
-      <div className="tituloPrincipal-hosting">
+      <div style={{marginLeft:'-100px'}} className="tituloPrincipal-hosting">
         {' '}
        Choose your deploy service{' '}
       </div>

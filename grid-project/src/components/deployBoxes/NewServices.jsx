@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { forwardRef, useState } from 'react'
 import { WebComponent } from './WebComponent'
 import { DataComponent } from './DataComponent'
 import ComponentSelector from './ComponentSelector'
 
-export const NewServices = ({onNextStep}) => {
+export const NewServices = forwardRef(({ onNextStep }, ref) => {
   const [option,setOption] = useState('')
   const [database,setDatabase] = useState('')
   const [selected, setSelected] = useState(0);
@@ -16,7 +16,7 @@ export const NewServices = ({onNextStep}) => {
   };
 
   return (
-    <>
+    <div ref={ref}>
    <Image style={{display:'flex',justifyContent:'center',margin:'auto'}} alt='' width={25} height={25} src='/dot.png'/>
     <div className='newServ-container'>
 
@@ -39,7 +39,7 @@ export const NewServices = ({onNextStep}) => {
   
     
     
-    </>
+    </div>
   )
-}
+})
 

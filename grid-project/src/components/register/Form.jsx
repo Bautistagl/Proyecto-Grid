@@ -51,16 +51,15 @@ function Form() {
     <form className="login-form" onSubmit={handleSubmit}>
       <h2 className="login-title">Create your Grid Cloud account</h2>
    
-     
-      
       <input
-        placeholder="Username"
+        placeholder="Email"
         className="register-input"
         type="email"
-        
-        
        
+      
+        required
       />
+    
      <div className="input-container">
      <input
      style={{borderEndStartRadius:'0px',borderEndEndRadius:'0px'}}
@@ -83,14 +82,7 @@ function Form() {
     
         required
       />
-      <input
-        placeholder="Email"
-        className="register-input"
-        type="email"
-       
-      
-        required
-      />
+  
       <Link href="/profile">
         <button className="login-submit" type="submit">
           Continue

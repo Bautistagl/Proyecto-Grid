@@ -15,5 +15,5 @@ const EnvVariables = forwardRef(({ onNextStep }, ref) => {
     </div>
   )
 })
-
+EnvVariables.displayName = 'EnvVariables';
 export default EnvVariables

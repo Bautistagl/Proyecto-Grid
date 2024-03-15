@@ -266,5 +266,5 @@ const DeployMethod = forwardRef(({ onNextStep }, ref) => {
     </div>
   );
 });
-
+DeployMethod.displayName = 'DeployMethod';
 export default DeployMethod;

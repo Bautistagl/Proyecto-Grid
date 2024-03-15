@@ -4,7 +4,7 @@ import { WebComponent } from './WebComponent'
 import { DataComponent } from './DataComponent'
 import ComponentSelector from './ComponentSelector'
 
-export const NewServices = forwardRef(({ onNextStep }, ref) => {
+ const NewServices = forwardRef(({ onNextStep }, ref) => {
   const [option,setOption] = useState('')
   const [database,setDatabase] = useState('')
   const [selected, setSelected] = useState(0);
@@ -42,4 +42,7 @@ export const NewServices = forwardRef(({ onNextStep }, ref) => {
     </div>
   )
 })
+
+NewServices.displayName = 'NewServices';
+export default NewServices
 

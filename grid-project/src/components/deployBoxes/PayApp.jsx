@@ -66,5 +66,5 @@ const PayApp = forwardRef(({ onNextStep }, ref) => {
     </div>
   )
 })
-
+PayApp.displayName = 'PayApp';
 export default PayApp

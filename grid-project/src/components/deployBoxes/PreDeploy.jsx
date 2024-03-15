@@ -16,5 +16,5 @@ const PreDeploy = forwardRef(({ onNextStep }, ref) => {
     </div>
   )
 })
-
+PreDeploy.displayName = 'PreDeploy';
 export default PreDeploy

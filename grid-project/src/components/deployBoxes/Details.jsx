@@ -6,7 +6,7 @@ import Botonera from '@/commons/Botonera';
 import CountrySelector from './CountrySelector';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
-export const Details = forwardRef(({ onNextStep }, ref) => {
+const Details = forwardRef(({ onNextStep }, ref) => {
   const [values, setValues] = useState({
     range1: 3,
     range2: 100,
@@ -139,3 +139,6 @@ export const Details = forwardRef(({ onNextStep }, ref) => {
     </div>
   );
 });
+
+Details.displayName = 'Details';
+export default Details

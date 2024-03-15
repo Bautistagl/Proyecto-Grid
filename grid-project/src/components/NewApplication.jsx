@@ -47,7 +47,7 @@ const NewApplicationj = () => {
     <div style={{opacity:'0'}}>.</div>
       <div className="contenedor-newApp">
         <div className="contenedor-flex-only4">
-          <div className="div-newApp"> LET'S GET STARTED!</div>
+          <div className="div-newApp"> LET&apos;S GET STARTED!</div>
         </div>
         <NameBox onNextStep={() => handleCompleteStep(1)} />
         {completedSteps.includes(1) && <Details onNextStep={() => handleCompleteStep(2)} ref={detailsRef} />}
@@ -57,7 +57,7 @@ const NewApplicationj = () => {
         {completedSteps.includes(5) && <PreDeploy onNextStep={() => handleCompleteStep(6)} ref={preDeployRef} />}
         {completedSteps.includes(6) && <PayApp onNextStep={() => handleCompleteStep(7)} ref={payRef} />}
         {completedSteps.includes(7) &&  <>
-          <div style={{ marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WE'RE DONE!</div>
+          <div style={{ marginBottom:'30px',fontWeight:'bold'}} className="div-newApp"> WE&apos;RE DONE!</div>
           <button className='deploy-now'> Deploy now</button>
         </>}
       </div>

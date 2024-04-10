@@ -106,23 +106,24 @@ export async function getServerSideProps(context) {
   const storedToken = parse(context.req.headers.cookie || '').githubAccessToken;
 
   if (storedToken) {
-    // Si hay un accessToken en las cookies, usa ese para obtener la lista de repositorios
     try {
-      const reposResponse = await axios.get('https://api.github.com/user/repos', {
+      // Obtener información del usuario
+      const userResponse = await axios.get('https://api.github.com/user', {
         headers: {
           Authorization: `Bearer ${storedToken}`,
         },
       });
-
-      const repos = reposResponse.data;
-
+  
+      // Extraer el nombre de usuario del objeto de respuesta
+      const username = userResponse.data.login;
+  
       return {
-        props: { repos },
+        props: { username },
       };
     } catch (error) {
-      console.error('Error al obtener la lista de repositorios', error);
+      console.error('Error al obtener la información del usuario', error);
       return {
-        props: { repos: [] },
+        props: { username: null },
       };
     }
   }
@@ -133,56 +134,56 @@ export async function getServerSideProps(context) {
   // Si no hay código de autorización, redirige a la página de autorización de GitHub
   if (!code) {
     const CLIENT_ID = 'Iv1.4c4e4dcaca465cb4';
-    const REDIRECT_URI = 'http://localhost:3000/repos';
-    const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=repos`;
-
+    const REDIRECT_URI = 'https://www.ongrid.run/repos';
+    const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=user`;
+  
     // Redirige al usuario a la página de autorización de GitHub
     context.res.writeHead(302, { Location: AUTH_URL });
     context.res.end();
     return { props: {} };
   }
-
+  
   try {
     // Utiliza el código de autorización para obtener el token de acceso
     const CLIENT_ID = 'Iv1.4c4e4dcaca465cb4';
     const CLIENT_SECRET = '4067558e0ad02b61718229a88176b7362afa1bb7';
-    const REDIRECT_URI = 'http://localhost:3000/profile/repositories';
-
+    const REDIRECT_URI = 'https://www.ongrid.run/profile/repositories';
+  
     const params = {
       client_id: CLIENT_ID,
       client_secret: CLIENT_SECRET,
       code: code,
       redirect_uri: REDIRECT_URI,
     };
-
+  
     const response = await axios.post('https://github.com/login/oauth/access_token', null, {
       params: params,
       headers: {
         Accept: 'application/json',
       },
     });
-
+  
     const accessToken = response.data.access_token;
-
+  
     // Guarda el nuevo accessToken en las cookies
     context.res.setHeader('Set-Cookie', `githubAccessToken=${accessToken}; Path=/; SameSite=None; Secure; HttpOnly`);
-
-    // Utiliza el token de acceso para obtener la lista de repositorios del usuario autenticado
-    const reposResponse = await axios.get('https://api.github.com/user/repos', {
+  
+    // Utiliza el token de acceso para obtener la información del usuario autenticado
+    const userResponse = await axios.get('https://api.github.com/user', {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
     });
-
-    const repos = reposResponse.data;
-
+  
+    const username = userResponse.data.login;
+  
     return {
-      props: { repos },
+      props: { username },
     };
   } catch (error) {
-    console.error('Error al obtener la lista de repositorios', error);
+    console.error('Error al obtener la información del usuario', error);
     return {
-      props: { repos: [] },
+      props: { username: null },
     };
   }
 }

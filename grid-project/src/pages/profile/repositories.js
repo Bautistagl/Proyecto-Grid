@@ -133,7 +133,7 @@ export async function getServerSideProps(context) {
 
   // Si no hay código de autorización, redirige a la página de autorización de GitHub
   if (!code) {
-    const CLIENT_ID = 'Iv1.4c4e4dcaca465cb4';
+    const CLIENT_ID = 'Iv1.dc11b1e22135af26';
     const REDIRECT_URI = 'https://www.ongrid.run/repos';
     const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=user`;
   
@@ -145,8 +145,8 @@ export async function getServerSideProps(context) {
   
   try {
     // Utiliza el código de autorización para obtener el token de acceso
-    const CLIENT_ID = 'Iv1.4c4e4dcaca465cb4';
-    const CLIENT_SECRET = '4067558e0ad02b61718229a88176b7362afa1bb7';
+    const CLIENT_ID = 'Iv1.dc11b1e22135af26';
+    const CLIENT_SECRET = '921ae413f1c27dba4711650d8a9937a09d8561b5';
     const REDIRECT_URI = 'https://www.ongrid.run/profile/repositories';
   
     const params = {

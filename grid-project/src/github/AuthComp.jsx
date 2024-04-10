@@ -5,8 +5,8 @@ const AuthComponent = () => {
   const router = useRouter();
 
   const handleLoginClick = () => {
-    const CLIENT_ID = 'Iv1.4c4e4dcaca465cb4';
-    const REDIRECT_URI = 'http://localhost:3000/profile/repositories';
+    const CLIENT_ID = 'Iv1.dc11b1e22135af26';
+    const REDIRECT_URI = 'https://www.ongrid.run/profile/repositories';
     const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=repos`;
 
     // Redirigir al usuario a la página de autorización de GitHub

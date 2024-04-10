@@ -5,17 +5,9 @@ import Paginacion from '@/commons/Paginacion';
 import { parse } from 'cookie';
 
 
-const RepoDetails = ({ repoContents }) => {
-  
-  return (
-    <div style={{color:'white'}}>
-      {/* Display or use repoContents as needed */}
-      <pre>{JSON.stringify(repoContents, null, 2)}</pre>
-    </div>
-  );
-};
 
-const Repositories = ({ repos }) => {
+
+const Repositories = ({username,data}) => {
 
 
  
@@ -25,17 +17,12 @@ const Repositories = ({ repos }) => {
     loading: () => <p> Im f</p>,
   });
 
-  const [selectedRepoContents, setSelectedRepoContents] = useState(null);
-  const itemsPerPage = 10;
-  const [currentPage, setCurrentPage] = useState(1);
-  const [accessToken, setAccessToken] = useState('');
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentRepos = repos.slice(indexOfFirstItem, indexOfLastItem);
 
-  const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
+
+
+  const [accessToken, setAccessToken] = useState('');
+
+
 
    // Function to fetch repository contents
    const fetchRepoContents = async (repo) => {
@@ -54,9 +41,6 @@ const Repositories = ({ repos }) => {
     }
   };
 
-  const handleRepoClick = (repo) => {
-    fetchRepoContents(repo);
-  };
   const toggle = (i) => {
     return setSelected(i);
   };
@@ -64,12 +48,12 @@ const Repositories = ({ repos }) => {
   const toggleSideBar = () => {
     return setVisible(!visible);
   };
-  
+ 
 
   return (
     <div>
        <div className= "logged-home-component">
- 
+        {console.log(data)}
          <DynamicNavbar/>
      
         <div style={{opacity:'0'}}>.</div>
@@ -78,25 +62,12 @@ const Repositories = ({ repos }) => {
     <div className='contenedor-repositories'>
 
       <h1>Lista de Repositorios</h1>
-      {currentRepos.map((repo) => (
-          <li key={repo.id}>{repo.name}</li>
-        ))}
-         <div>
-        {Array.from({ length: Math.ceil(repos.length / itemsPerPage) }, (_, index) => (
-          <button key={index + 1} onClick={() => paginate(index + 1)}>
-            {index + 1}
-          </button>
-        ))}
+      <h1>Username: {username}aa</h1>
       </div>
 
-      {selectedRepoContents ? (
-        <RepoDetails repoContents={selectedRepoContents} />
-      ) : (
-        <p>Select a repository to view its contents</p>
-      )}
     </div>
     </div>
-    </div>
+  
    
   );
 };
@@ -116,9 +87,10 @@ export async function getServerSideProps(context) {
   
       // Extraer el nombre de usuario del objeto de respuesta
       const username = userResponse.data.login;
+      const data = userResponse
   
       return {
-        props: { username },
+        props: { username,data },
       };
     } catch (error) {
       console.error('Error al obtener la información del usuario', error);

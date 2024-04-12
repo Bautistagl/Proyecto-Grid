@@ -1,16 +1,6 @@
-.banner-section{
-    height: 100%;
 
-  
-}
 
-.producto-principal{
-    color: white;
-    font-family: rouben;
-    font-size: 26px;
-    margin-bottom: -4%;
-    margin-top: 3%;
-}
+
 
 .textosBanner{
     justify-content: center;
@@ -26,14 +16,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.banner-container2{
-    display: flex;
-    flex-direction: column;
-    height: 700px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .banner-container3{
     display: flex;
     flex-direction: column;
@@ -43,10 +26,6 @@
     margin-right: auto;
 }
 
-.primeraParteBanner{
-    color: #36B079;
-    font-weight: bold;
-}
 
 .subtituloBanner{
     font-family: rouben ligth;
@@ -103,30 +82,14 @@
     margin-left: 5%;
    
  }
- .ilustracion-bannerChica{
-    display: flex;
-    justify-content: flex-end;
-    width: 550px;
-   height: 400px;
-   margin-top: 250px;
-   margin-bottom: auto;
-   margin-left: 8%;
-   
- }
+
 
  .container-botones{
     display: flex;
     margin-top: 50px;
-   
     margin-bottom: 100px;
  }
- .boton-create-asic{
-    background-color:#36B079;
-    height: 50px;
- }
- .boton-create-asic2{
-    background-color: #0c1317;
- }
+
 
  .itemMigration{
     position:relative;
@@ -210,22 +173,16 @@
     background-color: #36B079;
  }
  .faded {
-    
   backdrop-filter: blur(10px);
-  
-   
   }
 
   .uno {
     top: 10px;
     left:-270px;
-    
   }
   
   .dos {
     top: -30px; /* Ajusta esta cantidad para posicionar la segunda tarjeta */
-   
-    
   }
   
   .tres {
@@ -243,22 +200,7 @@
     margin-top: -230px;
   }
 
- @media only screen and (max-width:1500px){
-/*     
-    .ilustracion-bannerGrande{
-       width: 500px;
-     } */
-     
-    
 
- }
-
- @media only screen and (max-width:1250px){
-
-    /* .ilustracion-bannerGrande{
-        width: 400px;
-      } */
- }
 
  @media only screen and (max-width:650px){
     .ilustracion-bannerGrande{
@@ -289,10 +231,5 @@
         margin: 0 !important;
         font-size: 1rem;
     }
-    .producto-principal{
-        display: flex;
-        font-size: 2.5rem;
-        justify-content: center;
-       
-    }
+
  }

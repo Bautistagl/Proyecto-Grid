@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 import Footer from "@/components/index/Footer";
-
 import { useInView } from "react-intersection-observer";
 import Charts from "@/components/solutions/Charts";
 import Migration from "@/components/solutions/Migration";

@@ -18,9 +18,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 100%;
-  
-   
+    width: 100%; 
 }
 .button-landing2{
     display: flex;
@@ -108,11 +106,6 @@
     align-items: center;
     height: 50%;
     cursor: pointer;
-}
-.parrafo-landing{
-    display: flex;
-    
-    margin: 0px !important;
 }
 .span-landing-selected{
     display: flex !important;
@@ -247,16 +240,9 @@
         width: 90%;
         margin: auto;
         height: 350px;
-        
-        
-        
-       
-   
+
     }
-    .cardsAsicContainer h1{
-        font-size: 1.4rem !important;
-        width: 100%;
-    }
+
     .primeraParte{
         display: flex;
         justify-content: center;
@@ -269,14 +255,7 @@
         z-index: 999;
         
     }
-    /* .fotoSegundo{
-        height: 95%;
-        z-index: 0;
-        width: 80%;
-        margin: 0;
-        margin-left: 8%;
-    
-    } */
+
     .subtituloSegundo{
         display: flex;
        margin-left: auto;
@@ -303,16 +282,5 @@
     .textos{
         width: 100%;
         margin-top: 10%;
-
-      
-       
     }
 }
-/* @media only screen and (max-width: 1450px) {
-
-    .tituloSegundo{
-      
-        font-size: 3rem;
-       
-    }
-} */

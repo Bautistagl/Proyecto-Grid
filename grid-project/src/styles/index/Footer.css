@@ -80,23 +80,7 @@ ul{
   height: 25px;
   margin: 10px 10px;
 }
-.boton-footer{
-  border-style: none;
-  border: 2px solid white;
-  display: flex;
-  margin-top: 5%;
-  height: 10%;
-  background: #0c1317;
-  color:white;
-  width: 100%;
-  border-radius: 3px;
-  font-family: rouben ligth ;
-  font-size: 0.9rem;
-  align-content: center;
-  justify-content: center;
-  cursor: pointer;
- 
-}
+
 
 .footer-titulo-principal{
   font-size: 1.3rem;
@@ -207,17 +191,7 @@ ul{
 }
 
 
-.boton-footer{
-  
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  height: 15%;
-  margin-left: 14.5%;
-  width: 70%;
-  font-size: 0.8rem;
-  margin-bottom: 5%;
-}
+
 .columna {
   display: flex;
   flex-direction: row;

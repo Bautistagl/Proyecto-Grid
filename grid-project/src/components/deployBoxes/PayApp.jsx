@@ -46,12 +46,6 @@ const PayApp = forwardRef(({ onNextStep }, ref) => {
 
 
           </div>
-
-
-
-          
-           
-          
             <Botonera titulo="I agree with Terms of Service" />
             <div className='contenedorFlex2'>
             <button className='boton-contact-form'> Deploy</button>

@@ -33,6 +33,7 @@ const ComponentSelector = () => {
   };
 
   const handleSpanSelect = (index, selectedSpan) => {
+   
     setSelections((prevSelections) => {
       const updatedSelections = prevSelections.map((selection, i) => {
         if (i === index) {
@@ -108,7 +109,7 @@ const ComponentSelector = () => {
   const handleAddSelection = () => {
 
     if (!selectedContinent || !name) {
-      // Aquí puedes mostrar un mensaje de error o tomar alguna otra acción
+  
       alert("Please select a service type and provide a name.");
       return;
     }
@@ -124,7 +125,7 @@ const ComponentSelector = () => {
       ram: values2.range1,
       ssd: values3.range1,
       index: newIndex,
-      expanded: false, // Por defecto, la selección no está expandida
+      expanded: false, 
     };
 
     setSelections([...selections, newSelection]);
@@ -499,6 +500,7 @@ const ComponentSelector = () => {
                       <div>
                         {selection.selectedSpan === 'general' || !selection.selectedSpan && (
                           <div>
+                          
                             <select style={{ width: '90%' }}>
                               <option value="SQL">SQL</option>
                               <option value="MongoDB">MongoDB</option>

@@ -144,6 +144,10 @@
   margin: auto 10px auto auto ;
   cursor: pointer;
 }
+
+.geolocation2 input{
+  margin: auto;
+}
 .save-changes{
   margin: auto !important;
   margin-bottom: 10px !important;
@@ -209,7 +213,7 @@
   display: flex;
   width: 15vw !important;
   margin-right: auto !important;
-  margin-left: 0px !important;
+
   font-family: rouben ligth;
   font-size: 0.8rem;
 }

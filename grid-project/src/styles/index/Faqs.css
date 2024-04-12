@@ -6,10 +6,6 @@
     margin: auto;
     margin-left: 12%;
     margin-right: 12%;
-    /* background-image: url('../assets/backgroundNube1.jpg'); 
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; */
 
 }
 .faqs-titulo{
@@ -29,15 +25,7 @@
     justify-content: center;
     color: white;
 }
-.faqs{
-    justify-content: center;
-    align-items: center;
-}
 
-.faqs-icon{
-    height: 400px;
-    margin-left: 15%;
-}
 
 
 .accordion{
@@ -49,55 +37,17 @@
    
 }
 
-.item{
-    background-color: #0c1317;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
 
-.title{
-    color: white;
-   background-color: #0c1317;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    font-family: rouben ligth;
-    font-size: 0.8rem;
-}
-.title.show{
-    color: #36B079;
-    
-}
 
-.content {
-    font-family: rouben;
-    color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 1.1s cubic-bezier(0,1,0,1);
-}
-.content.show{
-    font-family: rouben;
-    height: auto;
-    max-height: 9999px;
-    transition: all 1.1s cubic-bezier(1,0,1,0);
-}
+
+
 
 .guarantee{
    margin-top: 5%;
    margin-right: -160px;
  }
 
- .container-nuevoFaqs{
-    display: flex;
-    width: 80%;
-    /* background-color: #0c1317d9; */
-    margin-top: 50px;
-    margin-bottom: 200px;
-    opacity: 0;
- }
+
 
  .faqs-grid{
     display: flex;
@@ -150,12 +100,9 @@
     width: 90%;
     font-size:1.5rem;
     color: rgba(255, 255, 255, 0.603);
-    /* border-bottom: 2px solid rgba(255, 255, 255, 0.661); */
-
     cursor: pointer;
     text-transform: uppercase;
     font-weight: lighter;
-
     letter-spacing: 0px;
     z-index: 9999;
     
@@ -174,19 +121,6 @@
   
  }
 
- /* .faqs-respuesta{
-    display: flex;
-    width: 90%;
-    margin-top: -40px;
-    margin-bottom: auto;
-   
-    font-family: rouben;
-    font-size: 1.2rem;
-    color: white;
-    animation: slide-up 0.6s ;
-
- 
- } */
 
 
  .faqs-ilu{
@@ -265,17 +199,7 @@
         margin-top: 5%;
         margin-bottom: 50px;
     }
-    /* .faqs-respuesta{
-        display: flex;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        justify-content: center;
-        text-align: center;
-        font-size: 0.8rem;
-    } */
+
 
     .respuesta{
        
@@ -304,14 +228,6 @@
        
         
      }
-    .container-nuevoFaqs{
-        display: flex;
-        flex-direction: column;
-        
-        margin-bottom: 50px;
-        transition: none;
-
-    }
     .faqs-select{
         width: 100%;
         font-size: 1rem;

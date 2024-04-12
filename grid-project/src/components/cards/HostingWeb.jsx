@@ -1,18 +1,8 @@
 import React, { useState } from 'react';
-
-
-import dynamic from 'next/dynamic';
 import NuevasCardsHosting from './NuevasCardsHosting';
 import ContactForm from '../index/ContactForm';
 
 
-
-const DynamicNavbar = dynamic(()=>import("../../commons/SideNavbar"),
-  {
-    ssr:false,
-    loading: () => <p> Im f</p>
-  }
-)
 
 const HostingWeb = () => {
   const [selected, setSelected] = useState(0);

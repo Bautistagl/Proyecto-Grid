@@ -4,8 +4,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 
 const NuevasCardsHosting = () => {
-  const opciones = ["Applications", "Web Apps", "Databases"];
-  const [indice, setIndice] = useState(0);
   const [selectedOption, setSelectedOption] = useState(0);
 
   const el = useRef(null);
@@ -54,12 +52,11 @@ const NuevasCardsHosting = () => {
       cursorChar: ''
     };
     
-    // elRef refers to the <span> rendered below
+  
     typed.current = new Typed(el.current, options);
       
     return () => {
-      // Make sure to destroy Typed instance during cleanup
-      // to prevent memory leaks
+   
       typed.current.destroy();
     }
   }, [])

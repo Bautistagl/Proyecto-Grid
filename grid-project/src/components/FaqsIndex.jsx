@@ -48,10 +48,7 @@ const FaqsIndex = () => {
     }
 
   return (
-    // <div 
-    // ref={ref}
-    // style={inView ? fadeInStylesLeft : {}}  
-    // className='container-nuevoFaqs'>
+
       <div className='flex'>
 
     <div className='faqs-grid'>
@@ -98,7 +95,7 @@ const FaqsIndex = () => {
        
            </div>
       </div>
-    {/* </div> */}
+
         
      <img alt='' src='faqsIlu.svg' className='faqs-ilu'/> 
       

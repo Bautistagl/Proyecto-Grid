@@ -4,8 +4,8 @@ import NameBox from './deployBoxes/NameBox';
 import DeployMethod from './deployBoxes/DeployMethod';
 import EnvVariables from './deployBoxes/EnvVariables';
 import PreDeploy from './deployBoxes/PreDeploy';
-import { NewServices } from './deployBoxes/NewServices';
-import { Details } from './deployBoxes/Details';
+import  NewServices  from './deployBoxes/NewServices';
+import  Details  from './deployBoxes/Details';
 import PayApp from './deployBoxes/PayApp';
 
 const NewApplicationj = () => {
@@ -49,7 +49,7 @@ const NewApplicationj = () => {
         <div className="contenedor-flex-only4">
           <div className="div-newApp"> LET&apos;S GET STARTED!</div>
         </div>
-        <NameBox onNextStep={() => handleCompleteStep(1)} />
+        <NameBox onNextStep={() => handleCompleteStep(1)} ref={nameRef} />
         {completedSteps.includes(1) && <Details onNextStep={() => handleCompleteStep(2)} ref={detailsRef} />}
         {completedSteps.includes(2) && <NewServices onNextStep={() => handleCompleteStep(3)} ref={servicesRef} />}
         {completedSteps.includes(3) && <DeployMethod onNextStep={() => handleCompleteStep(4)} ref={deployRef} />}

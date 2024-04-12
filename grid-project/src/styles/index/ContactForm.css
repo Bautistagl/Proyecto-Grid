@@ -17,26 +17,6 @@
     
 }
 
-.contact-section{
-    display: flex;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.114);
-    width: 90%;
-    height: auto;
-    margin: auto;
-    margin-bottom: 100px;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, white, gray, transparent) 1;
-    margin-top: 100px;
-    border-radius: 15px;
-    -webkit-mask: /*4*/
-    linear-gradient(#fff 0 0) padding-box, 
-    linear-gradient(#fff 0 0);
- 
-        
-
- 
-}
 .contact-form{
     display: flex;
     flex-direction: column;
@@ -103,17 +83,14 @@
    
 }
 .contact-select{
-    
     border-style: none;
-    
     margin-top: 2%;
     width:65% ;
-   
     border-radius: 15px;
     background: #303030;
     color: rgba(255, 255, 255, 0.4);
     padding: 10px 20px;
-   
+
 }
 
 .contact-input::placeholder{
@@ -127,22 +104,7 @@
 
 
 
-.contact-button{
-    border-style: none;
-    background: #328761;
-    width: 100px;
-    margin-top: 6%;
-    margin-bottom: 10%;
-    height: 35px;
-    border-radius: 30px;
-    font-family: rouben;
-    font-size: 1rem;
-    justify-content: end;
-    align-self: flex-end;
-    margin-left: 81%;
-    color: white;
-    cursor: pointer;
-}
+
 
 
 .titulos-contact{
@@ -165,15 +127,7 @@
     text-align: ce;
     color: white;
 }
-.contact-titulo2{
-    justify-content: flex-start;
-    align-self: flex-start;
-    display: flex;
-    font-family: rouben;
-    font-size: 2.5rem;
-    margin-top: 4%;
-    color: white;
-}
+
 .contenedorFlex2{
     display: flex;
     justify-content: center;
@@ -183,34 +137,9 @@
     margin-bottom: 20px;
 
 }
-.contact-subtitulo{
-    justify-content: flex-start;
-    align-self: flex-start;
-    display: flex;
-    margin-left: 60px;
-    font-family: rouben ligth;
-    font-size: 1.5rem;
-    color: white;
 
-}
-.contact-subtitulo2{
-    display: flex;
-    margin-top: 20px;
-    font-family: rouben;
-    font-size: 1.5rem;
-    color: white !important;
-    
-   
-}
-.contact-subtitulo3{
-    display: flex;
-    margin-top: 20px;
-    font-family: rouben;
-    font-size: 1rem;
-    color:rgba(255, 255, 255, 0.713);
-    
-   
-}
+
+
 
 
 .iconos-register{
@@ -276,9 +205,7 @@
        font-size: 3.5rem;
        width: 100%;
     }
-    .contact-subtitulo{
-        font-size: 1.2rem;
-     }
+
    
     .contact-form{
         margin-top: 5vh ;
@@ -292,10 +219,6 @@
     .contact-titulo{
         font-size: 2.5rem;
         width: 100%;
-        margin-left: 0;
-     }
-     .contact-subtitulo{
-        font-size: 0.9rem;
         margin-left: 0;
      }
      .contenedorFlex2{
@@ -351,10 +274,7 @@
         width: 100%;
        
     }
-    .contact-subtitulo{
-        justify-content:center;
-        align-self:center;
-    }
+
 
     .contact-form{
       width: 100%;
@@ -374,25 +294,13 @@
         height: 90px;
     }
 
-    .contact-section{
-        height: 100%;
-        width: 80%;
-        border: 2px solid transparent;
-        border-image: linear-gradient(to bottom, white, gray, transparent) 1 ;
-        
-    }
     .contact-input-description::placeholder{
     
         font-size: 0.9rem;
         width: 100%;
     }
 
-    .contact-button{
-        margin-left: 58%;    
-        font-size: 1rem;
-        justify-content: center;
-        align-items: center;
-    }
+
     .contact-span{
        justify-content: center;
        margin-left: 30%;

@@ -514,6 +514,7 @@
     border: 1px solid white;
     font-weight: bold;
     border-radius: 5px;
+    cursor: pointer;
     
 }
 .repo-git img{
@@ -527,7 +528,7 @@
 .repo-git2{
     display: flex;
     background-color: transparent;
-    width: 85%;
+    width: 90%;
     margin: 5px auto;
     justify-content: flex-start;
     height: 35px;
@@ -554,6 +555,7 @@
     border: 1px solid white;
     font-weight: bold;
     border-radius: 5px;
+    cursor: pointerd;
     
 }
 .repo-build span{
@@ -569,11 +571,12 @@
 
 .repo-selected{
     display: flex;
-    width: 85%;
+    width: 90%;
     margin: 5px auto;
     background-color: #0c1317d9;
     height: 40px;
     border-radius: 5px;
+    
     
 }
 .repo-selected h5{
@@ -602,7 +605,7 @@
 .repo-path{
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 90%;
     margin: 30px auto;
     font-family: rouben ligth;
 }
@@ -626,6 +629,14 @@
     color: white;
     padding: 5px;
 
+}
+.newClassName{
+    background-color: #0c1317d9 !important;
+    height: 30px !important;
+    border-radius: 5px !important;
+    border: none !important;
+    pointer-events: none;
+  
 }
 .repo-path input::placeholder{
   color: rgba(255, 255, 255, 0.666);
@@ -692,7 +703,7 @@
    
     color: white;
     height: 30px;
-    width: 85%;
+    width: 90%;
     border-radius: 5px;
     margin: 40px auto auto auto;
  

@@ -1,7 +1,58 @@
 import Image from 'next/image';
-import React, { forwardRef } from 'react';
+import React, { forwardRef, use, useEffect, useRef, useState } from 'react';
+
+import Step1 from '@/github/githubSteps/Step1';
+import Step2 from '@/github/githubSteps/Step2';
+import Step3 from '@/github/githubSteps/Step3';
+import Step4 from '@/github/githubSteps/Step4';
+import BuildpackModal from '@/github/githubSteps/BuildpackModal';
+import Step1Docker from '@/dockerSteps/Step1';
+import Step2Docker from '@/dockerSteps/Step2';
+
 
 const DeployMethod = forwardRef(({ onNextStep }, ref) => {
+
+  const [completedSteps, setCompletedSteps] = useState([]);
+  const [activeStep, setActiveStep] = useState(null);
+  const [repo,setRepo] = useState('');
+  const [gits,setGits] = useState(false);
+  const [docker, setDocker] = useState(false)
+
+  const git = useRef(null)
+  const step1= useRef(null);
+  const step2 = useRef(null);
+  const step3 = useRef(null);
+  const step4 = useRef(null);
+  const step1Docker = useRef(null);
+  const step2Docker = useRef(null);
+  const payRef = useRef(null);
+
+  useEffect(() => {
+    if (completedSteps.length > 0) {
+      setActiveStep(completedSteps[completedSteps.length - 1] + 1);
+    }
+  }, [completedSteps]);
+
+  const handleCompleteStep = (step, repo) => {
+    setCompletedSteps(prevSteps => [...prevSteps, step]);
+    setRepo(repo);
+    setGits(true)
+    setDocker(false)
+  };
+
+  const handleCompleteStep2 = (step, repo) => {
+    setCompletedSteps(prevSteps => [...prevSteps, step]);
+    setRepo(repo);
+    setGits(false)
+    setDocker(true)
+  };
+
+
+
+
+
+
+
   return (
     <div ref={ref}>
       <Image
@@ -16,8 +67,9 @@ const DeployMethod = forwardRef(({ onNextStep }, ref) => {
         <span>Deploy from a Git repository or a Docker registry.</span>
         <div className="contenedor-flex-only">
           <div className="card-newApp">
-            <div className="icono-titulo">
+            <div  onClick={()=>handleCompleteStep(1)} className="icono-titulo">
               <Image
+               
                 className="icon-card-newApp"
                 src="/iconGit.png"
                 alt="/iconGit.png"
@@ -31,7 +83,7 @@ const DeployMethod = forwardRef(({ onNextStep }, ref) => {
               Deploy using source from a Git repo.{' '}
             </span>
           </div>
-          <div style={{ marginLeft: '30px' }} className="card-newApp">
+          <div onClick={()=>handleCompleteStep2(5)}  style={{ marginLeft: '30px' }} className="card-newApp">
             <div className="icono-titulo">
               <Image
                 className="icon-card-newApp"
@@ -49,213 +101,21 @@ const DeployMethod = forwardRef(({ onNextStep }, ref) => {
             <input placeholder="Docker image namespace/repository:tag" />
           </div>
         </div>
-        <div>
-          <h2>Build settings</h2>
-          <span
-            style={{ color: 'rgba(255, 255, 255, 0.686)', fontSize: '0.9rem' }}>
-            {' '}
-            Specify your GitHub repository.{' '}
-          </span>
-          <div className="build-button">
-            <button>
-              {' '}
-              <Image alt="" src="/github.png" height={15} width={15} /> Install
-              the GridCloud app
-            </button>
-          </div>
-        </div>
-
-        <div className="repos-github">
-          <div className="titulos-repo">
-            <div className="build-button2">
-              <span>
-                {' '}
-                <Image alt="" src="/github.png" height={15} width={15} />{' '}
-                GridClient
-              </span>
-            </div>
-            <div className="input-with-image2">
-              <input placeholder="Search " />
-              <Image alt="" src="/searc.png" height={15} width={15} />
-            </div>
-          </div>
-          <div className="repo-git">
-            <Image alt="" src="/github.png" height={20} width={20} />
-            <span> GridClient/repo-01</span>
-          </div>
-          <div className="repo-git">
-            <Image alt="" src="/github.png" height={20} width={20} />
-            <span> GridClient/repo-02</span>
-          </div>
-          <div className="repo-git">
-            <Image alt="" src="/github.png" height={20} width={20} />
-            <span> GridClient/repo-03</span>
-          </div>
-          <div className="repo-git">
-            <Image alt="" src="/github.png" height={20} width={20} />
-            <span> GridClient/repo-04</span>
-          </div>
-        </div>
-        <div className="repo-selected">
-          <div className="circle1"> </div>
-          <h5> GitHub repository:</h5>
-          <span> gridClient/repo-01</span>
-          <p> Change </p>
-        </div>
-        <div className="repo-selected">
-          <div className="circle1"> </div>
-          <h5> GitHub branch:</h5>
-          <span> main</span>
-          <p> Change </p>
-        </div>
-        <div className="repo-path">
-          <span> Specify your application root path.</span>
-          <label> Application root path:</label>
-          <input placeholder="./" />
-        </div>
-
-        <div className="buildpack-window">
-          <label>Build Method:</label>
-          <select>
-            <option>Buildpacks</option>
-            <option>Opcion 2</option>
-            <option>Opcion 3</option>
-          </select>
-          <label>Builder:</label>
-          <select>
-            <option>Buildpacks</option>
-            <option>Opcion 2</option>
-            <option>Opcion 3</option>
-          </select>
-
-          <div> Buildpacks:</div>
-          <span>
-            {' '}
-            The following buildpacks were detected at your applications root
-            path. You can also manually add, remove, or re-order buildpacks here
-          </span>
-          <div className="repo-build">
-            <Image alt="" src="/github.png" height={20} width={20} />
-            <span> NodeJS</span>
-            <Image
-              style={{ marginLeft: 'auto' }}
-              alt=""
-              src="/delete3.png"
-              height={14}
-              width={14}
-            />
-          </div>
-          <button> +Add buildpacks</button>
-        </div>
-        <div className="card">
-          <h2> Buildpack Configuration</h2>
-          <label> Selected buildpacks:</label>
-          <div className="repo-build">
-            <Image alt="" src="/node-js.png" height={20} width={20} />
-            <span> NodeJS</span>
-            <Image
-              style={{ marginLeft: 'auto' }}
-              alt=""
-              src="/plus2.png"
-              height={14}
-              width={14}
-            />
-          </div>
-
-          <label>Available buildpacks:</label>
-          <div className="repo-build">
-            <Image alt="" src="/node-js.png" height={20} width={20} />
-            <span> NodeJS</span>
-            <Image
-              style={{ marginLeft: 'auto' }}
-              alt=""
-              src="/plus2.png"
-              height={14}
-              width={14}
-            />
-          </div>
-          <div className="repo-build">
-            <Image alt="" src="/node-js.png" height={20} width={20} />
-            <span> NodeJS</span>
-            <Image
-              style={{ marginLeft: 'auto' }}
-              alt=""
-              src="/plus2.png"
-              height={14}
-              width={14}
-            />
-          </div>
-          <div className="repo-build">
-            <Image alt="" src="/node-js.png" height={20} width={20} />
-            <span> NodeJS</span>
-            <Image
-              style={{ marginLeft: 'auto' }}
-              alt=""
-              src="/plus2.png"
-              height={14}
-              width={14}
-            />
-          </div>
-
-          <label> Custom buildpacks</label>
-          <span>
-            {' '}
-            You may also add buildpacks by directly providing their GitHub links
-            or links to ZIP files that contain the buildpack source code.
-          </span>
-          <label> GitHub or ZIP URL : </label>
-          <div>
-            <input />
-            <button className="boton-config"> + </button>
-          </div>
-          <button> Done</button>
-        </div>
+        {gits ?  <>
+          {completedSteps.includes(1) && <Step1 onNextStep={() => handleCompleteStep(2)} ref={step1} />}
+          {completedSteps.includes(2) && <Step2 repo={repo} onNextStep={(repo) => handleCompleteStep(3, repo)} ref={step2} />}
+          {completedSteps.includes(3) && <Step3 onNextStep={() => handleCompleteStep(4)} ref={step3} />}
+          {completedSteps.includes(4) && <Step4 ref={step4} />}
+        </> : ''}
+        {docker ?  <>
+          {completedSteps.includes(5) && <Step1Docker onNextStep={() => handleCompleteStep(6)} ref={step1Docker} />}
+          {completedSteps.includes(6) && <Step2Docker ref={step2Docker} />}
+        </>: ''}
+   
+       
 
 
-        <div>
-        <h3>Image settings</h3>
-        <span>Specify your image URL</span>
-        <div className="input-with-image3">
-              <input placeholder="Search images " />
-              <Image alt="" src="/searc.png" height={15} width={15} />
-            </div>
-            <div className='no-docker'>
-              <div style={{opacity:'0'}}>.</div>
-              <p style={{marginTop:'30px',marginBottom:'15px'}}>No linked images found</p>
-              <p style={{marginBottom:'30px'}}> Configure linked image registries, or provide the URL of a public image (e.g. &apos;nginx&apos;) to continue.</p>
-              <div style={{opacity:'0'}}>.</div>
-            </div>
-            <div className="repo-git2">
-            <Image alt="" src="/plus2.png" height={10} width={10} />
-            <span> Use image URL: &apos;prueba&apos;</span>
-          </div>
-        <div className="repo-selected">
-          <div className="circle1"> </div>
-          <h5> Image URL:</h5>
-          <span> prueba</span>
-          <p> Change </p>
-        </div>
-        <span >Specify your image tag</span>
-        <div className="input-with-image3">
-              <input placeholder="Search tags " />
-              <Image alt="" src="/searc.png" height={15} width={15} />
-            </div>
-            <div className='no-docker'>
-            <div style={{opacity:'0'}}>.</div>
-              <p style={{marginTop:'30px',marginBottom:'30px'}}>Please specify a tag.</p>
-              <div style={{opacity:'0'}}>.</div>
-            </div>
-            <div className="repo-git2">
-            <Image alt="" src="/plus2.png" height={10} width={10} />
-            <span> Use tag: &apos;prueba&apos;</span>
-          </div>
-            <div className="repo-selected">
-          <div className="circle1"> </div>
-          <h5> Image tag:</h5>
-          <span> prueba</span>
-          <p> Change </p>
-        </div>
-        </div>
+    
         <button
           style={{ margin: 'auto', marginBottom: '30px' }}
           className="boton-continue"

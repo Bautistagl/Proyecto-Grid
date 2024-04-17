@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import dynamic from 'next/dynamic';
 import Paginacion from '@/commons/Paginacion';
@@ -17,7 +17,26 @@ const Repositories = ({ username, accessToken, data }) => {
     loading: () => <p> Im f</p>,
   });
 
+  const [repositories, setRepositories] = useState([]);
 
+  useEffect(() => {
+    // Fetch user repositories
+    const fetchUserRepositories = async () => {
+      try {
+        const response = await axios.get(data.repos_url, {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        });
+        setRepositories(response.data);
+      } catch (error) {
+        console.error('Error fetching user repositories', error);
+        setRepositories([]);
+      }
+    };
+
+    fetchUserRepositories();
+  }, [accessToken, data.repos_url]);
 
 
   
@@ -52,22 +71,19 @@ const Repositories = ({ username, accessToken, data }) => {
 
   return (
     <div>
-       <div className= "logged-home-component">
-        {console.log(data,'ESTO ES DATA')}
-        {console.log(accessToken,'ESTO ES ACCES TOKEN')}
-         <DynamicNavbar/>
-     
-        <div style={{opacity:'0'}}>.</div>
-       
-    <Paginacion anterior="Home" links="/profile" titulo='Repositories' />
-    <div className='contenedor-repositories'>
-
-      <h1>Lista de Repositorios</h1>
-      <h1>Username: {username}aa</h1>
+    <div className="logged-home-component">
+      <DynamicNavbar />
+      <Paginacion anterior="Home" links="/profile" titulo="Repositories" />
+      <div className="contenedor-repositories">
+        <h1>Lista de Repositorios de {username}</h1>
+        <ul>
+          {repositories.map((repo) => (
+            <li key={repo.id}>{repo.name}</li>
+          ))}
+        </ul>
       </div>
-
     </div>
-    </div>
+  </div>
   
    
   );

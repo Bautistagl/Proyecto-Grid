@@ -20,7 +20,7 @@ const Repositories = ({ username, accessToken, data }) => {
 
 
 
-  const [accessToken, setAccessToken] = useState('');
+  
 
 
 

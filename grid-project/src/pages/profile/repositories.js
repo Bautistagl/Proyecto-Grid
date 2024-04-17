@@ -7,7 +7,7 @@ import { parse } from 'cookie';
 
 
 
-const Repositories = ({username,data}) => {
+const Repositories = ({ username, accessToken, data }) => {
 
 
  
@@ -53,7 +53,8 @@ const Repositories = ({username,data}) => {
   return (
     <div>
        <div className= "logged-home-component">
-        {console.log(data)}
+        {console.log(data,'ESTO ES DATA')}
+        {console.log(accessToken,'ESTO ES ACCES TOKEN')}
          <DynamicNavbar/>
      
         <div style={{opacity:'0'}}>.</div>
@@ -73,19 +74,19 @@ const Repositories = ({username,data}) => {
 };
 
 export async function getServerSideProps(context) {
-  // Verifica si ya hay un accessToken en las cookies
+  
   const storedToken = parse(context.req.headers.cookie || '').githubAccessToken;
 
   if (storedToken) {
     try {
-      // Obtener información del usuario
+      
       const userResponse = await axios.get('https://api.github.com/user', {
         headers: {
           Authorization: `Bearer ${storedToken}`,
         },
       });
   
-      // Extraer el nombre de usuario del objeto de respuesta
+    
       const username = userResponse.data.login;
       const data = userResponse
   
@@ -100,23 +101,22 @@ export async function getServerSideProps(context) {
     }
   }
 
-  // Si no hay accessToken en las cookies, continúa con el proceso de autenticación
+ 
   const code = context.query.code;
 
-  // Si no hay código de autorización, redirige a la página de autorización de GitHub
   if (!code) {
     const CLIENT_ID = 'Iv1.dc11b1e22135af26';
     const REDIRECT_URI = 'https://www.ongrid.run/repos';
     const AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=user`;
   
-    // Redirige al usuario a la página de autorización de GitHub
+    
     context.res.writeHead(302, { Location: AUTH_URL });
     context.res.end();
     return { props: {} };
   }
   
   try {
-    // Utiliza el código de autorización para obtener el token de acceso
+    
     const CLIENT_ID = 'Iv1.dc11b1e22135af26';
     const CLIENT_SECRET = '921ae413f1c27dba4711650d8a9937a09d8561b5';
     const REDIRECT_URI = 'https://www.ongrid.run/profile/repositories';
@@ -137,10 +137,10 @@ export async function getServerSideProps(context) {
   
     const accessToken = response.data.access_token;
   
-    // Guarda el nuevo accessToken en las cookies
+  
     context.res.setHeader('Set-Cookie', `githubAccessToken=${accessToken}; Path=/; SameSite=None; Secure; HttpOnly`);
   
-    // Utiliza el token de acceso para obtener la información del usuario autenticado
+
     const userResponse = await axios.get('https://api.github.com/user', {
       headers: {
         Authorization: `Bearer ${accessToken}`,

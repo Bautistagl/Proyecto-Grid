@@ -684,6 +684,9 @@
     border-radius: 10px;
     margin: auto;
 }
+.buildpack-window option{
+    background-color: #0c1317;
+}
 .boton-config{
     padding: 0px;
     border: 2px solid white;

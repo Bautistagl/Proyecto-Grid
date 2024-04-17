@@ -150,7 +150,7 @@ export async function getServerSideProps(context) {
     const username = userResponse.data.login;
   
     return {
-      props: { username },
+      props: { username,accessToken, data: userResponse.data },
     };
   } catch (error) {
     console.error('Error al obtener la información del usuario', error);

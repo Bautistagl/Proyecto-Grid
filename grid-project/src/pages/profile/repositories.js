@@ -38,8 +38,20 @@ const Repositories = ({ username, accessToken, data }) => {
     fetchUserRepositories();
   }, [accessToken, data.repos_url]);
 
-
-  
+  const modifyRepo = async (name) => {
+    try {
+      const fullName = `${username}/${name}`;
+      const response = await axios.post('/api/github/modifyRepo', {
+        name: name,
+        fullName: fullName,
+      });
+      console.log(response.data);
+      // Maneja el mensaje de éxito si es necesario
+    } catch (error) {
+      console.error('Error modificando el repositorio', error);
+      // Maneja el mensaje de error si es necesario
+    }
+  };;
 
 
 
@@ -78,7 +90,10 @@ const Repositories = ({ username, accessToken, data }) => {
         <h1>Lista de Repositorios de {username}</h1>
         <ul>
           {repositories.map((repo) => (
-            <li key={repo.id}>{repo.name}</li>
+            <li key={repo.id}>{repo.name}
+              <button onClick={() => modifyRepo(repo.name)}>Modificar</button>
+            </li>
+            
           ))}
         </ul>
       </div>

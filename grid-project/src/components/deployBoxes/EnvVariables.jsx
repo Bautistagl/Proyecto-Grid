@@ -4,10 +4,18 @@ import EnvModal from '../EnvModal';
 
 const EnvVariables = forwardRef(({ onNextStep }, ref) => {
   const [modalVisible, setModalVisible] = useState(false);
+  const [envVariables, setEnvVariables] = useState([]);
 
   const handleAddBuildpackClick = () => {
     setModalVisible(true);
   };
+
+  const handleSaveEnvVariable = (key, value) => {
+    // Actualizar el estado con la nueva variable de entorno
+    setEnvVariables([...envVariables, { key, value }]);
+    setModalVisible(false)
+  };
+
   return (
     <div>
       
@@ -25,10 +33,34 @@ const EnvVariables = forwardRef(({ onNextStep }, ref) => {
         </h3>
         <span>Deploy from a Git repository or a Docker registry.</span>
         <button onClick={handleAddBuildpackClick} className="button-newApp"> + Add row</button>
+        <div>
+        <h3>Environment Variables:</h3>
+        
+        <ul className='ul-variable' >
+          {envVariables.map((variable, index) => (
+            <div className='variable-keys' key={index} >
+
+              <div style={{display:'flex',flexDirection:'column'}}>
+              <label> Key</label>
+              <span>{variable.key} </span>
+              </div>
+
+              <div style={{display:'flex',flexDirection:'column'}}>
+              <label> Value </label>
+              <span> {variable.value}</span>
+              </div>
+
+            </div>
+          ))}
+        </ul>
+      </div>
         <button onClick={() => onNextStep()}> Continue</button>
       </div>
+      
     </div>
-    {modalVisible && <EnvModal visible={() => setModalVisible(false)}/>}
+  
+    {modalVisible && <EnvModal onSave={handleSaveEnvVariable} onCancel={() => setModalVisible(false)} />}
+    
     </div>
   );
 });

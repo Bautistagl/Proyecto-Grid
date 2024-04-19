@@ -57,8 +57,9 @@ const PreDeployJob = ({visible}) => {
 
                 <input
                   style={{
-                  
+                    color:'white',
                     backgroundColor: '#0c1317',
+                   
                   }}
                   placeholder='command'
                 />
@@ -68,7 +69,7 @@ const PreDeployJob = ({visible}) => {
 
                 <input
                   style={{
-                    
+                    color:'white',
                     backgroundColor: '#0c1317',
                   }}
                   placeholder='ports'
